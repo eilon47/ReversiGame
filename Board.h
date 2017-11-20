@@ -1,0 +1,109 @@
+/*
+ * Created by Eilon Bashari.
+ * Board's header file.
+ */
+
+#ifndef EX1_BOARD_H
+#define EX1_BOARD_H
+
+#include <vector>
+#include "Point.h"
+#include <iostream>
+using namespace std;
+
+class Board {
+ private:
+  //Members.
+  char **board;
+  int size;
+  int freeSquares;
+  /**
+   * Initalize the board.
+   */
+  void setBoard();
+ public:
+  /**
+   * Constructor.
+   * @param size size of the board.
+   */
+  explicit Board(int size);
+  /**
+   * Default constructor.
+   */
+  Board();
+  /**
+   * Copy constructor.
+   * @param b another board.
+   */
+  Board(const Board& b);
+
+  /**
+   * Destructor.
+   */
+  ~Board();
+  /**
+   * getSize.
+   * @return board's size.
+   */
+  int getSize() const;
+  /**
+   * getBoard.
+   * @return board 2d array.
+   */
+  char** getBoard();
+  /**
+   * addToBoard.
+   * adds char c to board by row and col.
+   * @param c sign.
+   * @param row x value.
+   * @param col y value.
+   */
+  void addToBoard(char c, int row, int col);
+  /**
+   * hasSpaceOnBoard.
+   * checks if the board is not full.
+   * @return boolean
+   */
+  bool hasSpaceOnBoard() const;
+  /**
+   * flip.
+   * Gets point to start from and direction, if there is a row with opp's
+   * signs and at the end player's sign then flip them.
+   * returns how many were flipped.
+   * @param start point to start from.
+   * @param player sign of the current player.
+   * @param jumpRow direction on x values.
+   * @param jumpCol direction on y values.
+   * @return how many opp's signs were flipped.
+   */
+  int flip(Point start, char player, int jumpRow, int jumpCol);
+  /**
+   * getNextPossibleMoves.
+   * checks the next possible move in one direction in each time.
+   * @param opp sign of the opp.
+   * @param jumpRow direction on x values.
+   * @param jumpCol direction on y values.
+   * @param currentRow x start.
+   * @param currentCol y start.
+   * @return vector of points.
+   */
+  vector<Point> getNextPossibleMoves(char opp, int jumpRow, int jumpCol,
+                                     int currentRow, int currentCol);
+  /**
+   * operator =.
+   * Assignment operator.
+   * @param b another board.
+   * @return new Board.
+   */
+  Board& operator =(const Board &b);
+  /**
+   * operator out for printing.
+   * @param out ostream object.
+   * @param b board.
+   * @return ostream object.
+   */
+  friend ostream& operator <<(ostream &out, const Board &b);
+};
+
+
+#endif //EX1_BOARD_H
