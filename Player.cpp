@@ -7,7 +7,6 @@
 
 #include "Player.h"
 //Constructors.
-Player::Player(char sign):sign(sign), numOfSoldiers(2) {}
 Player::Player(): sign(' '), numOfSoldiers(2) {}
 Player::Player(const Player &p) {
   this->sign = p.sign;

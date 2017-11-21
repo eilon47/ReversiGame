@@ -6,8 +6,8 @@
 
 #include "Play.h"
 //Constructors.
-Play::Play(Board &b, Player &p1, Player &p2): b(&b), p1(&p1), p2(&p2),
-                                              turn(true){
+Play::Play(Board &b, Player &p1, Player &p2, Rules &rules): b(&b), p1(&p1), p2(&p2),
+                                              turn(true), rules(&rules){
   //if player is not initialized with sign.
   if(p1.getSign() == ' ' && p2.getSign() != 'X'){
     p1.setSign('X');
@@ -25,48 +25,22 @@ Play::Play(const Play &p) {
   this->p1 = p.p1;
   this->p2 = p.p2;
   this->turn = p.turn;
+  this->rules = p.rules;
 }
 //Checks for possible moves.
 vector<Point> Play::checkAllMoves() {
   int i, j;
   vector<Point> vRet;
   char player = this->currentPlayer()->getSign();
-  char opp = this->currentOpp()->getSign();
   for(i = 1; i < this->b->getSize(); i++) {
-    vector<Point> v2;
-    for(j = 1; j < this->b->getSize(); j++){
-      vector<Point> v1;
-      char c = this->b->getBoard()[i][j];
-      if(c == ' ' || c != player) {
-        continue;
-      } else {
-        //south east.
-        v1 = this->b->getNextPossibleMoves(opp, 1, 1, i, j);
-        v2.insert(v2.end(), v1.begin(), v1.end());
-        //south west
-        v1 = this->b->getNextPossibleMoves(opp, 1, -1, i, j);
-        v2.insert(v2.end(), v1.begin(), v1.end());
-        //south
-        v1 = this->b->getNextPossibleMoves(opp, 1, 0, i, j);
-        v2.insert(v2.end(), v1.begin(), v1.end());
-        //north
-        v1 = this->b->getNextPossibleMoves(opp, -1, 0, i, j);
-        v2.insert(v2.end(), v1.begin(), v1.end());
-        //north east
-        v1 = this->b->getNextPossibleMoves(opp, -1, 1, i, j);
-        v2.insert(v2.end(), v1.begin(), v1.end());
-        //north west
-        v1 = this->b->getNextPossibleMoves(opp, -1, -1, i, j);
-        v2.insert(v2.end(), v1.begin(), v1.end());
-        //east
-        v1 = this->b->getNextPossibleMoves(opp, 0, 1, i, j);
-        v2.insert(v2.end(), v1.begin(), v1.end());
-        //west
-        v1 = this->b->getNextPossibleMoves(opp, 0, -1, i, j);
-        v2.insert(v2.end(), v1.begin(), v1.end());
+    for(j =1 ; j < this->b->getSize(); j++) {
+      if(this->b->getBoard()[i][j] == ' ') {
+        Point p(i, j);
+        if (rules->checkPoint(*this->b, p, player)) {
+          vRet.push_back(p);
+        }
       }
     }
-    this->addVectorToOther(vRet, v2);
   }
   sort(vRet.begin(), vRet.end());
   return vRet;

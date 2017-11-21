@@ -34,12 +34,14 @@ Board::Board(const Board &b) {
 }
 Board& Board::operator=(const Board &b) {
   if (this != &b) {
+    //Deleting this board for alloctaing new one.
     for(int i = 0; i < this->size; i++) {
       delete[] this->board[i];
     }
     delete this->board;
     this->size = b.size;
     this->freeSquares = b.freeSquares;
+    //Allocating new board.
     this->board = new char*[this->size];
     for (int i = 0; i < this->size ; i++) {
       this->board[i] = new char[this->size];
