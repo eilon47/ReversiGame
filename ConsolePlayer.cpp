@@ -12,7 +12,7 @@ ConsolePlayer::ConsolePlayer(const ConsolePlayer &cp) {
   this->numOfSoldiers = cp.numOfSoldiers;
 }
 //Get point from user.
-void ConsolePlayer::getPointFromPlayer(Point &p, vector<Point> v) {
+void ConsolePlayer::getPointFromPlayer(Board b, Point &p, vector<Point> v) {
   //Prints the possible moves.
   for(int i = 0; i < v.size(); i++) {
     cout << v[i];
@@ -26,7 +26,7 @@ void ConsolePlayer::getPointFromPlayer(Point &p, vector<Point> v) {
   cin.clear();
   cin.ignore(100, '\n');
   //Checks the values are in the right range.
-  if (row > 8 || row <= 0 || col > 8 || col <=0) {
+  if (row > b.getSize() || row <= 0 || col > b.getSize() || col <=0) {
     cout << "Wrong entry. " << endl;
     return;
   }

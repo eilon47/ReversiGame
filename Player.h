@@ -10,6 +10,7 @@
 #define EX2_PLAYER_H
 
 #include "Point.h"
+#include "Board.h"
 #include <vector>
 using namespace std;
 class Player {
@@ -58,7 +59,7 @@ class Player {
    * @param p point to change.
    * @param v vector of possible points.
    */
-  virtual void getPointFromPlayer(Point &p, vector<Point> v) = 0;
+  virtual void getPointFromPlayer(Board b, Point &p, vector<Point> v) = 0;
   /**
   * operator ==.
   * @param p const Player.

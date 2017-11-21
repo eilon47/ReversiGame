@@ -142,7 +142,7 @@ void Play::run() {
     }
     oneMove = false;
     Point p;
-    this->currentPlayer()->getPointFromPlayer(p, vMoves);
+    this->currentPlayer()->getPointFromPlayer(*b, p, vMoves);
     if (!this->checkVecHasPoint(vMoves, p)){
       cout << "You can not do that move." << endl;
       continue;

@@ -32,7 +32,7 @@ class ConsolePlayer: public Player {
    * @param p point to change.
    * @param v vector of possible moves.
    */
-  virtual void getPointFromPlayer(Point &p, vector<Point> v);
+  virtual void getPointFromPlayer(Board b, Point &p, vector<Point> v);
 };
 
 #endif //EX2_CONSOLEPLAYER_H
