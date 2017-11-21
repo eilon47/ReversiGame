@@ -91,7 +91,7 @@ class Board {
                                      int currentRow, int currentCol);
   /**
    * operator =.
-   * Assignment operator.
+   * Assignment operator, shallow copy.
    * @param b another board.
    * @return new Board.
    */

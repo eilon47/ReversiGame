@@ -19,11 +19,6 @@ class Player {
   int numOfSoldiers;
  public:
   /**
-  * Constructor.
-  * @param sign player's sign
-  */
-  explicit Player(char sign);
-  /**
   * Copy constructor.
   * @param p another player.
   */

@@ -12,6 +12,7 @@
 #include <vector>
 #include "Board.h"
 #include "ConsolePlayer.h"
+#include "Rules.h"
 
 using namespace std;
 class Play {
@@ -19,6 +20,7 @@ class Play {
   Board *b;
   Player *p1;
   Player *p2;
+  Rules *rules;
   bool turn;
  public:
   /**
@@ -27,7 +29,7 @@ class Play {
    * @param p1 Player 1.
    * @param p2 Player 2.
    */
-  Play(Board &b, Player &p1, Player &p2);
+  Play(Board &b, Player &p1, Player &p2, Rules &rules);
   /**
    * Copy constructor.
    * @param p another Play.
