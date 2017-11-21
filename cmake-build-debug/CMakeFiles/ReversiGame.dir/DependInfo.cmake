@@ -4,13 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dandan/Desktop/git/ReversiGame/AIPlayer.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o"
-  "/home/dandan/Desktop/git/ReversiGame/Board.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/Board.cpp.o"
-  "/home/dandan/Desktop/git/ReversiGame/ConsolePlayer.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/ConsolePlayer.cpp.o"
-  "/home/dandan/Desktop/git/ReversiGame/Play.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/Play.cpp.o"
-  "/home/dandan/Desktop/git/ReversiGame/Player.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/Player.cpp.o"
-  "/home/dandan/Desktop/git/ReversiGame/Point.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/Point.cpp.o"
-  "/home/dandan/Desktop/git/ReversiGame/main.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/main.cpp.o"
+  "/home/elon/Desktop/Git/ReversiGame/AIPlayer.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o"
+  "/home/elon/Desktop/Git/ReversiGame/Board.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/Board.cpp.o"
+  "/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/ConsolePlayer.cpp.o"
+  "/home/elon/Desktop/Git/ReversiGame/Play.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/Play.cpp.o"
+  "/home/elon/Desktop/Git/ReversiGame/Player.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/Player.cpp.o"
+  "/home/elon/Desktop/Git/ReversiGame/Point.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/Point.cpp.o"
+  "/home/elon/Desktop/Git/ReversiGame/RegularRules.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/RegularRules.cpp.o"
+  "/home/elon/Desktop/Git/ReversiGame/Rules.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/Rules.cpp.o"
+  "/home/elon/Desktop/Git/ReversiGame/main.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiGame.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

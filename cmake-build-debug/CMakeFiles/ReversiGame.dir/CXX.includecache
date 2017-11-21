@@ -6,49 +6,51 @@
 
 #IncludeRegexTransform: 
 
-/home/dandan/Desktop/git/ReversiGame/AIPlayer.cpp
+/home/elon/Desktop/Git/ReversiGame/AIPlayer.cpp
 algorithm
 -
 map
 -
 AIPlayer.h
-/home/dandan/Desktop/git/ReversiGame/AIPlayer.h
+/home/elon/Desktop/Git/ReversiGame/AIPlayer.h
 Play.h
-/home/dandan/Desktop/git/ReversiGame/Play.h
+/home/elon/Desktop/Git/ReversiGame/Play.h
 
-/home/dandan/Desktop/git/ReversiGame/AIPlayer.h
+/home/elon/Desktop/Git/ReversiGame/AIPlayer.h
 Player.h
-/home/dandan/Desktop/git/ReversiGame/Player.h
+/home/elon/Desktop/Git/ReversiGame/Player.h
 Board.h
-/home/dandan/Desktop/git/ReversiGame/Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
+Rules.h
+/home/elon/Desktop/Git/ReversiGame/Rules.h
 
-/home/dandan/Desktop/git/ReversiGame/Board.cpp
+/home/elon/Desktop/Git/ReversiGame/Board.cpp
 Board.h
-/home/dandan/Desktop/git/ReversiGame/Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
 
-/home/dandan/Desktop/git/ReversiGame/Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
 vector
 -
 Point.h
-/home/dandan/Desktop/git/ReversiGame/Point.h
+/home/elon/Desktop/Git/ReversiGame/Point.h
 iostream
 -
 
-/home/dandan/Desktop/git/ReversiGame/ConsolePlayer.cpp
+/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.cpp
 ConsolePlayer.h
-/home/dandan/Desktop/git/ReversiGame/ConsolePlayer.h
+/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.h
 
-/home/dandan/Desktop/git/ReversiGame/ConsolePlayer.h
+/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.h
 iostream
 -
 Player.h
-/home/dandan/Desktop/git/ReversiGame/Player.h
+/home/elon/Desktop/Git/ReversiGame/Player.h
 
-/home/dandan/Desktop/git/ReversiGame/Play.cpp
+/home/elon/Desktop/Git/ReversiGame/Play.cpp
 Play.h
-/home/dandan/Desktop/git/ReversiGame/Play.h
+/home/elon/Desktop/Git/ReversiGame/Play.h
 
-/home/dandan/Desktop/git/ReversiGame/Play.h
+/home/elon/Desktop/Git/ReversiGame/Play.h
 iostream
 -
 algorithm
@@ -56,33 +58,53 @@ algorithm
 vector
 -
 Board.h
-/home/dandan/Desktop/git/ReversiGame/Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
 ConsolePlayer.h
-/home/dandan/Desktop/git/ReversiGame/ConsolePlayer.h
+/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.h
+Rules.h
+/home/elon/Desktop/Git/ReversiGame/Rules.h
 
-/home/dandan/Desktop/git/ReversiGame/Player.cpp
+/home/elon/Desktop/Git/ReversiGame/Player.cpp
 Player.h
-/home/dandan/Desktop/git/ReversiGame/Player.h
+/home/elon/Desktop/Git/ReversiGame/Player.h
 
-/home/dandan/Desktop/git/ReversiGame/Player.h
+/home/elon/Desktop/Git/ReversiGame/Player.h
 Point.h
-/home/dandan/Desktop/git/ReversiGame/Point.h
+/home/elon/Desktop/Git/ReversiGame/Point.h
 Board.h
-/home/dandan/Desktop/git/ReversiGame/Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
 vector
 -
 
-/home/dandan/Desktop/git/ReversiGame/Point.cpp
+/home/elon/Desktop/Git/ReversiGame/Point.cpp
 Point.h
-/home/dandan/Desktop/git/ReversiGame/Point.h
+/home/elon/Desktop/Git/ReversiGame/Point.h
 
-/home/dandan/Desktop/git/ReversiGame/Point.h
+/home/elon/Desktop/Git/ReversiGame/Point.h
 iostream
 -
 
-/home/dandan/Desktop/git/ReversiGame/main.cpp
+/home/elon/Desktop/Git/ReversiGame/RegularRules.cpp
+RegularRules.h
+/home/elon/Desktop/Git/ReversiGame/RegularRules.h
+
+/home/elon/Desktop/Git/ReversiGame/RegularRules.h
+Rules.h
+/home/elon/Desktop/Git/ReversiGame/Rules.h
+
+/home/elon/Desktop/Git/ReversiGame/Rules.cpp
+Rules.h
+/home/elon/Desktop/Git/ReversiGame/Rules.h
+
+/home/elon/Desktop/Git/ReversiGame/Rules.h
+Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
+
+/home/elon/Desktop/Git/ReversiGame/main.cpp
 Play.h
-/home/dandan/Desktop/git/ReversiGame/Play.h
+/home/elon/Desktop/Git/ReversiGame/Play.h
 AIPlayer.h
-/home/dandan/Desktop/git/ReversiGame/AIPlayer.h
+/home/elon/Desktop/Git/ReversiGame/AIPlayer.h
+RegularRules.h
+/home/elon/Desktop/Git/ReversiGame/RegularRules.h
 

@@ -8,6 +8,7 @@ CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o: ../ConsolePlayer.h
 CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o: ../Play.h
 CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o: ../Player.h
 CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o: ../Point.h
+CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o: ../Rules.h
 
 CMakeFiles/ReversiGame.dir/Board.cpp.o: ../Board.cpp
 CMakeFiles/ReversiGame.dir/Board.cpp.o: ../Board.h
@@ -25,6 +26,7 @@ CMakeFiles/ReversiGame.dir/Play.cpp.o: ../Play.cpp
 CMakeFiles/ReversiGame.dir/Play.cpp.o: ../Play.h
 CMakeFiles/ReversiGame.dir/Play.cpp.o: ../Player.h
 CMakeFiles/ReversiGame.dir/Play.cpp.o: ../Point.h
+CMakeFiles/ReversiGame.dir/Play.cpp.o: ../Rules.h
 
 CMakeFiles/ReversiGame.dir/Player.cpp.o: ../Board.h
 CMakeFiles/ReversiGame.dir/Player.cpp.o: ../Player.cpp
@@ -34,11 +36,24 @@ CMakeFiles/ReversiGame.dir/Player.cpp.o: ../Point.h
 CMakeFiles/ReversiGame.dir/Point.cpp.o: ../Point.cpp
 CMakeFiles/ReversiGame.dir/Point.cpp.o: ../Point.h
 
+CMakeFiles/ReversiGame.dir/RegularRules.cpp.o: ../Board.h
+CMakeFiles/ReversiGame.dir/RegularRules.cpp.o: ../Point.h
+CMakeFiles/ReversiGame.dir/RegularRules.cpp.o: ../RegularRules.cpp
+CMakeFiles/ReversiGame.dir/RegularRules.cpp.o: ../RegularRules.h
+CMakeFiles/ReversiGame.dir/RegularRules.cpp.o: ../Rules.h
+
+CMakeFiles/ReversiGame.dir/Rules.cpp.o: ../Board.h
+CMakeFiles/ReversiGame.dir/Rules.cpp.o: ../Point.h
+CMakeFiles/ReversiGame.dir/Rules.cpp.o: ../Rules.cpp
+CMakeFiles/ReversiGame.dir/Rules.cpp.o: ../Rules.h
+
 CMakeFiles/ReversiGame.dir/main.cpp.o: ../AIPlayer.h
 CMakeFiles/ReversiGame.dir/main.cpp.o: ../Board.h
 CMakeFiles/ReversiGame.dir/main.cpp.o: ../ConsolePlayer.h
 CMakeFiles/ReversiGame.dir/main.cpp.o: ../Play.h
 CMakeFiles/ReversiGame.dir/main.cpp.o: ../Player.h
 CMakeFiles/ReversiGame.dir/main.cpp.o: ../Point.h
+CMakeFiles/ReversiGame.dir/main.cpp.o: ../RegularRules.h
+CMakeFiles/ReversiGame.dir/main.cpp.o: ../Rules.h
 CMakeFiles/ReversiGame.dir/main.cpp.o: ../main.cpp
 

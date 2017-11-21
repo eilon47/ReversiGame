@@ -5,12 +5,14 @@
 
 #include "Play.h"
 #include "AIPlayer.h"
+#include "RegularRules.h"
 
 int main() {
   Board b;
   ConsolePlayer cp1, cp2;
-  AIPlayer p1;
-  Play p(b, cp1, p1);
+  RegularRules rules;
+  AIPlayer p1('O', rules);
+  Play p(b, cp1, p1, rules);
   p.run();
   return 0;
 }

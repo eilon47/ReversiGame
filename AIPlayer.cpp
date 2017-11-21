@@ -8,7 +8,7 @@
 #include "Play.h"
 using namespace std;
 //Constructors.
-AIPlayer::AIPlayer(char sign): sign(sign), numOfSoldiers(2)  {}
+AIPlayer::AIPlayer(char sign, Rules &r): sign(sign), numOfSoldiers(2), rules(&r)  {}
 AIPlayer::AIPlayer(): sign(' '), numOfSoldiers(2) {}
 AIPlayer::AIPlayer(const AIPlayer &AIp) {
     this->sign = AIp.sign;
@@ -25,7 +25,7 @@ void AIPlayer::getPointFromPlayer(Board b, Point &p, vector<Point> v) {
         for (int i = 0; i < v.size(); i++) {
             Board b1 = b;
             ConsolePlayer cp;
-            Play tempP(b1, cp, *this);
+            Play tempP(b1, cp, *this, *this->rules);
             int score = 0;
             tempP.playOneTurn(v[i]);
 

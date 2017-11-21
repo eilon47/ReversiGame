@@ -8,6 +8,7 @@
 
 #include "Player.h"
 #include "Board.h"
+#include "Rules.h"
 
 class AIPlayer : public Player {
 public:
@@ -15,7 +16,7 @@ public:
      * Constructor.
      * @param sign sign.
      */
-    explicit AIPlayer(char sign);
+    explicit AIPlayer(char sign, Rules &r);
     /**
      * Default Constructor.
      */
@@ -35,6 +36,7 @@ public:
 private:
     char sign;
     int numOfSoldiers;
+    Rules *rules;
 };
 
 

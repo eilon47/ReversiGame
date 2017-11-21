@@ -4,6 +4,8 @@ project(ReversiGame)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
+        AIPlayer.cpp
+        AIPlayer.h
         Board.cpp
         Board.h
         ConsolePlayer.cpp
@@ -14,6 +16,10 @@ set(SOURCE_FILES
         Player.cpp
         Player.h
         Point.cpp
-        Point.h AIPlayer.cpp AIPlayer.h)
+        Point.h
+        RegularRules.cpp
+        RegularRules.h
+        Rules.cpp
+        Rules.h)
 
 add_executable(ReversiGame ${SOURCE_FILES})

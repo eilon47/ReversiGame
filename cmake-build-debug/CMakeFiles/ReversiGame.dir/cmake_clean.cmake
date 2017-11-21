@@ -1,11 +1,13 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o"
   "CMakeFiles/ReversiGame.dir/Board.cpp.o"
   "CMakeFiles/ReversiGame.dir/ConsolePlayer.cpp.o"
   "CMakeFiles/ReversiGame.dir/main.cpp.o"
   "CMakeFiles/ReversiGame.dir/Play.cpp.o"
   "CMakeFiles/ReversiGame.dir/Player.cpp.o"
   "CMakeFiles/ReversiGame.dir/Point.cpp.o"
-  "CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o"
+  "CMakeFiles/ReversiGame.dir/RegularRules.cpp.o"
+  "CMakeFiles/ReversiGame.dir/Rules.cpp.o"
   "ReversiGame.pdb"
   "ReversiGame"
 )
