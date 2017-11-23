@@ -40,14 +40,14 @@ class Play {
    * Checks all the next moves the player can do.
    * @return list of the possible moves.
    */
-  vector<Point> checkAllMoves();
+  vector<Point> checkAllMoves(char sign);
   /**
    * playOneTurn.
    * After the player chose his next move - he can put it there.
    * @param p point that was chosen by player.
    * @return number of flipped soldiers.
    */
-  int playOneTurn(Point &p);
+  int playOneTurn(Point &p, char sign);
   /**
    * checkVecHasPoint.
    * checks if the wanted point by user is valid.
@@ -89,6 +89,10 @@ class Play {
    * @param v2 v2.
    */
   void addVectorToOther(vector<Point> &v1, vector<Point> &v2);
+    /**
+     *
+     */
+    void changePlayer();
 
 };
 

@@ -28,15 +28,16 @@ Play::Play(const Play &p) {
   this->rules = p.rules;
 }
 //Checks for possible moves.
-vector<Point> Play::checkAllMoves() {
+vector<Point> Play::checkAllMoves(char sign) {
   int i, j;
   vector<Point> vRet;
-  char player = this->currentPlayer()->getSign();
+  //char player = this->currentPlayer()->getSign();
   for(i = 1; i < this->b->getSize(); i++) {
     for(j =1 ; j < this->b->getSize(); j++) {
       if(this->b->getBoard()[i][j] == ' ') {
+
         Point p(i, j);
-        if (rules->checkPoint(*this->b, p, player)) {
+        if (rules->checkPoint(*this->b, p, sign)) {
           vRet.push_back(p);
         }
       }
@@ -46,28 +47,28 @@ vector<Point> Play::checkAllMoves() {
   return vRet;
 }
 //Put next move and returns the score.
-int Play::playOneTurn(Point &p) {
+int Play::playOneTurn(Point &p, char sign) {
   int row = p.getX();
   int col = p.getY();
   int score = 0;
-  char player = this->currentPlayer()->getSign();
-  this->b->addToBoard(player, row, col);
+  //char player = this->currentPlayer()->getSign();
+  this->b->addToBoard(sign, row, col);
   //south east
-  score += this->b->flip(p, player, 1, 1);
+  score += this->b->flip(p, sign, 1, 1);
   //south west
-  score += this->b->flip(p, player, 1, -1);
+  score += this->b->flip(p, sign, 1, -1);
   //south
-  score += this->b->flip(p, player, 1, 0);
+  score += this->b->flip(p, sign, 1, 0);
   //north east
-  score += this->b->flip(p, player, -1, 1);
+  score += this->b->flip(p, sign, -1, 1);
   //north west
-  score += this->b->flip(p, player, -1, -1);
+  score += this->b->flip(p, sign, -1, -1);
   //north
-  score += this->b->flip(p, player, -1, 0);
+  score += this->b->flip(p, sign, -1, 0);
   //west
-  score += this->b->flip(p, player, 0, -1);
+  score += this->b->flip(p, sign, 0, -1);
   //east
-  score += this->b->flip(p, player, 0, 1);
+  score += this->b->flip(p, sign, 0, 1);
   return score;
 
 }
@@ -100,8 +101,8 @@ void Play::run() {
   bool oneMove = false;
   int score;
   while (this->b->hasSpaceOnBoard()) {
-    cout << this->currentPlayer()->getSign() << ": It's your move." << endl;
-    vector<Point> vMoves = this->checkAllMoves();
+      cout << this->currentPlayer()->getSign() << ": It's your move." << endl;
+    vector<Point> vMoves = this->checkAllMoves(currentPlayer()->getSign());
     if (vMoves.empty()) {
       //2 turns in a row without moves.
       if (oneMove) {
@@ -114,21 +115,21 @@ void Play::run() {
            << endl;
       continue;
     }
-    oneMove = false;
-    Point p;
-    this->currentPlayer()->getPointFromPlayer(*b, p, vMoves);
-    if (!this->checkVecHasPoint(vMoves, p)){
+      oneMove = false;
+      Point p;
+      this->currentPlayer()->getPointFromPlayer(*b, p, vMoves);
+      if (!this->checkVecHasPoint(vMoves, p)){
       cout << "You can not do that move." << endl;
       continue;
-    }
-    score = this->playOneTurn(p);
-    cout << *(this->b);
-    this->setScoresAfterMove(score);
-    cout << "Current score: " << p1->getSign() << ": " << p1->getSoldiers()
-         << ", " << p2->getSign() << ": " << p2->getSoldiers() << endl;
-    turn = !turn;
-  }
-  this->endGame();
+        }
+      score = this->playOneTurn(p, currentPlayer()->getSign());
+      cout << *(this->b);
+      this->setScoresAfterMove(score);
+      cout << "Current score: " << p1->getSign() << ": " << p1->getSoldiers()
+           << ", " << p2->getSign() << ": " << p2->getSoldiers() << endl;
+      turn = !turn;
+      }
+    this->endGame();
 }
 //Updates players scores.
 void Play::setScoresAfterMove(int num) {
@@ -162,11 +163,12 @@ void Play::endGame() {
   cout << loser << " maybe next time :(" << endl;
 }
 //Combine vectors.
-void Play::addVectorToOther(vector<Point> &v1, vector<Point> &v2){
-  for(int i = 0; i < v2.size(); i++) {
-    if(!this->checkVecHasPoint(v1, v2[i])) {
-      v1.push_back(v2[i]);
+void Play::addVectorToOther(vector<Point> &v1, vector<Point> &v2) {
+    for (int i = 0; i < v2.size(); i++) {
+        if (!this->checkVecHasPoint(v1, v2[i])) {
+            v1.push_back(v2[i]);
+        }
     }
-  }
-
 }
+
+

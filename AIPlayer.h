@@ -33,6 +33,7 @@ public:
      * @param v vector of possible moves.
      */
     void getPointFromPlayer(Board b, Point &p, vector<Point> v);
+
 private:
     char sign;
     int numOfSoldiers;

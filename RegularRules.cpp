@@ -19,7 +19,7 @@ bool RegularRules::checkPoint(const Board b,const Point p, char player) const {
 bool RegularRules::checkInDirection(Board b,const Point p, char player, int jumpRow, int jumpCol) const {
   int row = p.getX() + jumpRow;
   int col = p.getY() + jumpCol;
-  if(row == b.getSize() || col == b.getSize() || row == 0 || col == 0){
+  if(row >= b.getSize() || col >= b.getSize() || row == 0 || col == 0) {
     return false;
   }
   if(b.getBoard()[row][col] != player) {
@@ -28,6 +28,9 @@ bool RegularRules::checkInDirection(Board b,const Point p, char player, int jump
       if (c == ' ') { return false; }
       row += jumpRow;
       col += jumpCol;
+      if(row >= b.getSize() || col >= b.getSize() || row == 0 || col == 0) {
+        return false;
+      }
     }
     return true;
   }

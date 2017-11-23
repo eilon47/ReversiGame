@@ -3,7 +3,6 @@
 //
 
 #include <algorithm>
-#include <map>
 #include "AIPlayer.h"
 #include "Play.h"
 using namespace std;
@@ -16,32 +15,47 @@ AIPlayer::AIPlayer(const AIPlayer &AIp) {
 }
 //Get point from user.
 void AIPlayer::getPointFromPlayer(Board b, Point &p, vector<Point> v) {
-    Point lowestOppScore;
-    map<int,Point> pointToScore;
+    //checks if there is only one possible move
+    if(v.size() == 1) {
+        p.setPoint(v[0].getX(), v[0].getY());
+        return;
+    }
+    //this is a vector witch contains pairs of  score(int)/Point.
+    vector<pair<int, Point>> pointToScore;
     char oppSign = 'X';
     if (this->sign == oppSign) {
         oppSign = 'O';
     }
+    //for each possible move simulates a board with that move.
         for (int i = 0; i < v.size(); i++) {
             Board b1 = b;
             ConsolePlayer cp;
-            Play tempP(b1, cp, *this, *this->rules);
+            Play tempP(b1, *this, cp, *this->rules);
             int score = 0;
-            tempP.playOneTurn(v[i]);
+            tempP.playOneTurn(v[i], sign);
 
             if (b1.hasSpaceOnBoard()) {
-                vector<Point> v2 = tempP.checkAllMoves();
+                vector<Point> v2 = tempP.checkAllMoves(oppSign);
+                //for each move the opponent can do calculates the score he will get in that move.
                 for (int j = 0; j < v2.size(); j++) {
                     Board b2 = b1;
-                    int tempScore = tempP.playOneTurn(v2[j]);
+
+                    Play innerTempPlay(b2, cp, *this, *this->rules);
+                    cp.setSign('X');
+                    int tempScore(innerTempPlay.playOneTurn(v2[j], cp.getSign()));
+                    //saves the point of the highest score.
                     if (tempScore > score) {
                         score = tempScore;
-                        pointToScore.insert(pair<int,Point>(score, v[i]));
+                        pointToScore.push_back(pair<int,Point>(score, v[i]));
                     }
                 };
             };
     }
-    //sort(pointToScore.begin(), pointToScore.end(), pointToScore.value_comp(pointToScore.begin(),pointToScore.end()));
-    p.setPoint(pointToScore[0].getX(), pointToScore[0].getY());
+    sort(pointToScore.begin(), pointToScore.end());
+    if (!pointToScore.empty()) {
+        p.setPoint(pointToScore[0].second.getX(), pointToScore[0].second.getY());
+    }
+    this->setSign('O');
 }
+
 

@@ -8,9 +8,6 @@
 #include <iostream>
 #include "Player.h"
 class ConsolePlayer: public Player {
- private:
-  char sign;
-  int numOfSoldiers;
  public:
   /**
    * Constructor.
@@ -33,6 +30,9 @@ class ConsolePlayer: public Player {
    * @param v vector of possible moves.
    */
   virtual void getPointFromPlayer(Board b, Point &p, vector<Point> v);
+private:
+    char sign;
+    int numOfSoldiers;
 };
 
 #endif //EX2_CONSOLEPLAYER_H
