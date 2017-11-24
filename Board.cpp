@@ -94,7 +94,7 @@ int Board::flip(Point start, char player, int jumpRow, int jumpCol) {
   int col = start.getY() + jumpCol;
   int counter = 0;
 
-  if(row == this->getSize() || col == this->getSize() || row == 0 || col == 0){
+  if(row >= this->getSize() || col >= this->getSize() || row <= 0 || col <= 0) {
     return 0;
   }
   while(this->board[row][col] != player) {
@@ -104,7 +104,7 @@ int Board::flip(Point start, char player, int jumpRow, int jumpCol) {
     counter++;
     row += jumpRow;
     col += jumpCol;
-    if(row == this->getSize() || col == this->getSize() || row == 0 || col == 0){
+    if(row >= this->getSize() || col >= this->getSize() || row <= 0 || col <= 0){
       return 0;
     }
 

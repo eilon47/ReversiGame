@@ -41,7 +41,7 @@ void AIPlayer::getPointFromPlayer(Board b, Point &p, vector<Point> v) {
                     Board b2 = b1;
 
                     Play innerTempPlay(b2, cp, *this, *this->rules);
-                    cp.setSign('X');
+                    cp.setSign(oppSign);
                     int tempScore(innerTempPlay.playOneTurn(v2[j], cp.getSign()));
                     //saves the point of the highest score.
                     if (tempScore > score) {
@@ -50,12 +50,13 @@ void AIPlayer::getPointFromPlayer(Board b, Point &p, vector<Point> v) {
                     }
                 };
             };
-    }
+        }
     sort(pointToScore.begin(), pointToScore.end());
     if (!pointToScore.empty()) {
         p.setPoint(pointToScore[0].second.getX(), pointToScore[0].second.getY());
     }
-    this->setSign('O');
+    this->setSign(sign);
+
 }
 
 

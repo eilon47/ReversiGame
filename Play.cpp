@@ -101,7 +101,7 @@ void Play::run() {
   bool oneMove = false;
   int score;
   while (this->b->hasSpaceOnBoard()) {
-      cout << this->currentPlayer()->getSign() << ": It's your move." << endl;
+      cout << this->currentPlayer()->getSign() << ": It's your move:" << endl;
     vector<Point> vMoves = this->checkAllMoves(currentPlayer()->getSign());
     if (vMoves.empty()) {
       //2 turns in a row without moves.
@@ -118,15 +118,15 @@ void Play::run() {
       oneMove = false;
       Point p;
       this->currentPlayer()->getPointFromPlayer(*b, p, vMoves);
-      if (!this->checkVecHasPoint(vMoves, p)){
+      if (!this->checkVecHasPoint(vMoves, p) && p.getX() != 0 && p.getY() != 0) {
       cout << "You can not do that move." << endl;
       continue;
         }
       score = this->playOneTurn(p, currentPlayer()->getSign());
-      cout << *(this->b);
+      cout << *b;
       this->setScoresAfterMove(score);
       cout << "Current score: " << p1->getSign() << ": " << p1->getSoldiers()
-           << ", " << p2->getSign() << ": " << p2->getSoldiers() << endl;
+           << ", " << p2->getSign() << ": " << p2->getSoldiers() << endl << endl;
       turn = !turn;
       }
     this->endGame();
