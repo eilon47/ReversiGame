@@ -29,7 +29,7 @@ class ConsolePlayer: public Player {
    * @param p point to change.
    * @param v vector of possible moves.
    */
-  virtual void getPointFromPlayer(Board b, Point &p, vector<Point> v);
+  virtual Point getPointFromPlayer(Board b, vector<Point> v);
 private:
     char sign;
     int numOfSoldiers;

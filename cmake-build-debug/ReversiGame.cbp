@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReversiGame">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/ReversiGame" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/ReversiGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiGame"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiGame"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReversiGame/fast">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/ReversiGame" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/ReversiGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,65 +77,71 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiGame/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiGame/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/AIPlayer.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/AIPlayer.cpp">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/AIPlayer.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/AIPlayer.h">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Board.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Board.cpp">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Board.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Board.h">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/ConsolePlayer.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.cpp">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/ConsolePlayer.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.h">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Play.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Game.cpp">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Play.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Game.h">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Player.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/GameMenu.cpp">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Player.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/GameMenu.h">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Point.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Player.cpp">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Point.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Player.h">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/RegularRules.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Point.cpp">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/RegularRules.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Point.h">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Rules.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/RegularRules.cpp">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Rules.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/RegularRules.h">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/main.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Rules.cpp">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/CMakeLists.txt">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Rules.h">
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/main.cpp">
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

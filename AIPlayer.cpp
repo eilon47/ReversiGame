@@ -4,7 +4,7 @@
 
 #include <algorithm>
 #include "AIPlayer.h"
-#include "Play.h"
+#include "Game.h"
 using namespace std;
 //Constructors.
 AIPlayer::AIPlayer(char sign, Rules &r): sign(sign), numOfSoldiers(2), rules(&r)  {}
@@ -14,11 +14,12 @@ AIPlayer::AIPlayer(const AIPlayer &AIp) {
     this->numOfSoldiers = AIp.numOfSoldiers;
 }
 //Get point from user.
-void AIPlayer::getPointFromPlayer(Board b, Point &p, vector<Point> v) {
+Point AIPlayer::getPointFromPlayer(Board b, vector<Point> v) {
     //checks if there is only one possible move
+    Point p;
     if(v.size() == 1) {
         p.setPoint(v[0].getX(), v[0].getY());
-        return;
+        return p;
     }
     //this is a vector witch contains pairs of  score(int)/Point.
     vector<pair<int, Point>> pointToScore;
@@ -30,7 +31,7 @@ void AIPlayer::getPointFromPlayer(Board b, Point &p, vector<Point> v) {
         for (int i = 0; i < v.size(); i++) {
             Board b1 = b;
             ConsolePlayer cp;
-            Play tempP(b1, *this, cp, *this->rules);
+            Game tempP(b1, *this, cp, *this->rules);
             int score = 0;
             tempP.playOneTurn(v[i], sign);
 
@@ -40,7 +41,7 @@ void AIPlayer::getPointFromPlayer(Board b, Point &p, vector<Point> v) {
                 for (int j = 0; j < v2.size(); j++) {
                     Board b2 = b1;
 
-                    Play innerTempPlay(b2, cp, *this, *this->rules);
+                    Game innerTempPlay(b2, cp, *this, *this->rules);
                     cp.setSign(oppSign);
                     int tempScore(innerTempPlay.playOneTurn(v2[j], cp.getSign()));
                     //saves the point of the highest score.
@@ -56,7 +57,7 @@ void AIPlayer::getPointFromPlayer(Board b, Point &p, vector<Point> v) {
         p.setPoint(pointToScore[0].second.getX(), pointToScore[0].second.getY());
     }
     this->setSign(sign);
-
+  return p;
 }
 
 

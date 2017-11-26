@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dandan/Desktop/git/ReversiGame
+CMAKE_SOURCE_DIR = /home/elon/Desktop/Git/ReversiGame
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dandan/Desktop/git/ReversiGame/cmake-build-debug
+CMAKE_BINARY_DIR = /home/elon/Desktop/Git/ReversiGame/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/dandan/Desktop/git/ReversiGame/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles /home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles /home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -204,32 +204,59 @@ ConsolePlayer.cpp.s:
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/ConsolePlayer.cpp.s
 .PHONY : ConsolePlayer.cpp.s
 
-Play.o: Play.cpp.o
+Game.o: Game.cpp.o
 
-.PHONY : Play.o
+.PHONY : Game.o
 
 # target to build an object file
-Play.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/Play.cpp.o
-.PHONY : Play.cpp.o
+Game.cpp.o:
+	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/Game.cpp.o
+.PHONY : Game.cpp.o
 
-Play.i: Play.cpp.i
+Game.i: Game.cpp.i
 
-.PHONY : Play.i
+.PHONY : Game.i
 
 # target to preprocess a source file
-Play.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/Play.cpp.i
-.PHONY : Play.cpp.i
+Game.cpp.i:
+	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/Game.cpp.i
+.PHONY : Game.cpp.i
 
-Play.s: Play.cpp.s
+Game.s: Game.cpp.s
 
-.PHONY : Play.s
+.PHONY : Game.s
 
 # target to generate assembly for a file
-Play.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/Play.cpp.s
-.PHONY : Play.cpp.s
+Game.cpp.s:
+	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
+GameMenu.o: GameMenu.cpp.o
+
+.PHONY : GameMenu.o
+
+# target to build an object file
+GameMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/GameMenu.cpp.o
+.PHONY : GameMenu.cpp.o
+
+GameMenu.i: GameMenu.cpp.i
+
+.PHONY : GameMenu.i
+
+# target to preprocess a source file
+GameMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/GameMenu.cpp.i
+.PHONY : GameMenu.cpp.i
+
+GameMenu.s: GameMenu.cpp.s
+
+.PHONY : GameMenu.s
+
+# target to generate assembly for a file
+GameMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/GameMenu.cpp.s
+.PHONY : GameMenu.cpp.s
 
 Player.o: Player.cpp.o
 
@@ -384,9 +411,12 @@ help:
 	@echo "... ConsolePlayer.o"
 	@echo "... ConsolePlayer.i"
 	@echo "... ConsolePlayer.s"
-	@echo "... Play.o"
-	@echo "... Play.i"
-	@echo "... Play.s"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
+	@echo "... GameMenu.o"
+	@echo "... GameMenu.i"
+	@echo "... GameMenu.s"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"

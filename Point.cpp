@@ -36,3 +36,7 @@ ostream& operator <<(ostream &out, const Point &p) {
 bool Point::operator==(const Point &p) const {
   return (this->x == p.x && this->y == p.y);
 }
+Point& Point::operator=(const Point &p) {
+  this->x = p.x;
+  this->y = p.y;
+}

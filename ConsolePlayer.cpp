@@ -3,6 +3,7 @@
 // Class for console player . inheritor from class Player.
 //
 
+#include <algorithm>
 #include "ConsolePlayer.h"
 //Constructors.
 ConsolePlayer::ConsolePlayer(char sign): sign(sign), numOfSoldiers(2)  {}
@@ -12,8 +13,9 @@ ConsolePlayer::ConsolePlayer(const ConsolePlayer &cp) {
   this->numOfSoldiers = cp.numOfSoldiers;
 }
 //Get point from user.
-void ConsolePlayer::getPointFromPlayer(Board b, Point &p, vector<Point> v) {
+Point ConsolePlayer::getPointFromPlayer(Board b, vector<Point> v) {
   //Prints the possible moves.
+  sort(v.begin(), v.end());
   for(int i = 0; i < v.size(); i++) {
     cout << v[i];
     if (i != v.size() - 1) {
@@ -25,10 +27,12 @@ void ConsolePlayer::getPointFromPlayer(Board b, Point &p, vector<Point> v) {
   cin >> row >> col;
   cin.clear();
   cin.ignore(100, '\n');
+  Point p;
   //Checks the values are in the right range.
   if (row > b.getSize() || row <= 0 || col > b.getSize() || col <=0) {
-    cout << "Wrong entry. " << endl;
-    return;
+    cout << "Wrong entry." << endl;
+    return p;
   }
   p.setPoint(row, col);
+  return p;
 }

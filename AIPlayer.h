@@ -32,7 +32,7 @@ public:
      * @param p point to change.
      * @param v vector of possible moves.
      */
-    void getPointFromPlayer(Board b, Point &p, vector<Point> v);
+    Point getPointFromPlayer(Board b, vector<Point> v);
 
 private:
     char sign;

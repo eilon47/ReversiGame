@@ -36,6 +36,7 @@ class Point {
   * @return boolean.
   */
   bool operator == (const Point &p) const;
+  Point& operator = (const Point &p);
   /**
   * operator <.
   * @param p another point.

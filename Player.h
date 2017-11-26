@@ -54,7 +54,7 @@ class Player {
    * @param p point to change.
    * @param v vector of possible points.
    */
-  virtual void getPointFromPlayer(Board b, Point &p, vector<Point> v) = 0;
+  virtual Point getPointFromPlayer(Board b, vector<Point> v) = 0;
   /**
   * operator ==.
   * @param p const Player.

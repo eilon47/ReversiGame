@@ -3,16 +3,12 @@
  * main file.
  */
 
-#include "Play.h"
-#include "AIPlayer.h"
-#include "RegularRules.h"
+#include "Game.h"
+#include "GameMenu.h"
 
 int main() {
-  Board b;
-  ConsolePlayer cp1, cp2;
-  RegularRules rules;
-  AIPlayer p1('X', rules), p2('O',rules);
-  Play p(b, p2, p1, rules);
+  GameMenu gm;
+  Game p = gm.showMenu();
   p.run();
   return 0;
 }

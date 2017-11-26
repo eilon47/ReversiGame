@@ -11,8 +11,8 @@ set(SOURCE_FILES
         ConsolePlayer.cpp
         ConsolePlayer.h
         main.cpp
-        Play.cpp
-        Play.h
+        Game.cpp
+        Game.h
         Player.cpp
         Player.h
         Point.cpp
@@ -20,6 +20,6 @@ set(SOURCE_FILES
         RegularRules.cpp
         RegularRules.h
         Rules.cpp
-        Rules.h)
+        Rules.h GameMenu.cpp GameMenu.h)
 
 add_executable(ReversiGame ${SOURCE_FILES})
