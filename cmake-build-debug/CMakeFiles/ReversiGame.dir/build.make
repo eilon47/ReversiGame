@@ -129,33 +129,9 @@ CMakeFiles/ReversiGame.dir/ConsolePlayer.cpp.o.provides: CMakeFiles/ReversiGame.
 CMakeFiles/ReversiGame.dir/ConsolePlayer.cpp.o.provides.build: CMakeFiles/ReversiGame.dir/ConsolePlayer.cpp.o
 
 
-CMakeFiles/ReversiGame.dir/main.cpp.o: CMakeFiles/ReversiGame.dir/flags.make
-CMakeFiles/ReversiGame.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ReversiGame.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiGame.dir/main.cpp.o -c /home/elon/Desktop/Git/ReversiGame/main.cpp
-
-CMakeFiles/ReversiGame.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiGame.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elon/Desktop/Git/ReversiGame/main.cpp > CMakeFiles/ReversiGame.dir/main.cpp.i
-
-CMakeFiles/ReversiGame.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiGame.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elon/Desktop/Git/ReversiGame/main.cpp -o CMakeFiles/ReversiGame.dir/main.cpp.s
-
-CMakeFiles/ReversiGame.dir/main.cpp.o.requires:
-
-.PHONY : CMakeFiles/ReversiGame.dir/main.cpp.o.requires
-
-CMakeFiles/ReversiGame.dir/main.cpp.o.provides: CMakeFiles/ReversiGame.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/ReversiGame.dir/main.cpp.o.provides
-
-CMakeFiles/ReversiGame.dir/main.cpp.o.provides.build: CMakeFiles/ReversiGame.dir/main.cpp.o
-
-
 CMakeFiles/ReversiGame.dir/Game.cpp.o: CMakeFiles/ReversiGame.dir/flags.make
 CMakeFiles/ReversiGame.dir/Game.cpp.o: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ReversiGame.dir/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ReversiGame.dir/Game.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiGame.dir/Game.cpp.o -c /home/elon/Desktop/Git/ReversiGame/Game.cpp
 
 CMakeFiles/ReversiGame.dir/Game.cpp.i: cmake_force
@@ -179,7 +155,7 @@ CMakeFiles/ReversiGame.dir/Game.cpp.o.provides.build: CMakeFiles/ReversiGame.dir
 
 CMakeFiles/ReversiGame.dir/Player.cpp.o: CMakeFiles/ReversiGame.dir/flags.make
 CMakeFiles/ReversiGame.dir/Player.cpp.o: ../Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ReversiGame.dir/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ReversiGame.dir/Player.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiGame.dir/Player.cpp.o -c /home/elon/Desktop/Git/ReversiGame/Player.cpp
 
 CMakeFiles/ReversiGame.dir/Player.cpp.i: cmake_force
@@ -203,7 +179,7 @@ CMakeFiles/ReversiGame.dir/Player.cpp.o.provides.build: CMakeFiles/ReversiGame.d
 
 CMakeFiles/ReversiGame.dir/Point.cpp.o: CMakeFiles/ReversiGame.dir/flags.make
 CMakeFiles/ReversiGame.dir/Point.cpp.o: ../Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ReversiGame.dir/Point.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ReversiGame.dir/Point.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiGame.dir/Point.cpp.o -c /home/elon/Desktop/Git/ReversiGame/Point.cpp
 
 CMakeFiles/ReversiGame.dir/Point.cpp.i: cmake_force
@@ -227,7 +203,7 @@ CMakeFiles/ReversiGame.dir/Point.cpp.o.provides.build: CMakeFiles/ReversiGame.di
 
 CMakeFiles/ReversiGame.dir/RegularRules.cpp.o: CMakeFiles/ReversiGame.dir/flags.make
 CMakeFiles/ReversiGame.dir/RegularRules.cpp.o: ../RegularRules.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ReversiGame.dir/RegularRules.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ReversiGame.dir/RegularRules.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiGame.dir/RegularRules.cpp.o -c /home/elon/Desktop/Git/ReversiGame/RegularRules.cpp
 
 CMakeFiles/ReversiGame.dir/RegularRules.cpp.i: cmake_force
@@ -251,7 +227,7 @@ CMakeFiles/ReversiGame.dir/RegularRules.cpp.o.provides.build: CMakeFiles/Reversi
 
 CMakeFiles/ReversiGame.dir/Rules.cpp.o: CMakeFiles/ReversiGame.dir/flags.make
 CMakeFiles/ReversiGame.dir/Rules.cpp.o: ../Rules.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ReversiGame.dir/Rules.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ReversiGame.dir/Rules.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiGame.dir/Rules.cpp.o -c /home/elon/Desktop/Git/ReversiGame/Rules.cpp
 
 CMakeFiles/ReversiGame.dir/Rules.cpp.i: cmake_force
@@ -275,7 +251,7 @@ CMakeFiles/ReversiGame.dir/Rules.cpp.o.provides.build: CMakeFiles/ReversiGame.di
 
 CMakeFiles/ReversiGame.dir/GameMenu.cpp.o: CMakeFiles/ReversiGame.dir/flags.make
 CMakeFiles/ReversiGame.dir/GameMenu.cpp.o: ../GameMenu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ReversiGame.dir/GameMenu.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ReversiGame.dir/GameMenu.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiGame.dir/GameMenu.cpp.o -c /home/elon/Desktop/Git/ReversiGame/GameMenu.cpp
 
 CMakeFiles/ReversiGame.dir/GameMenu.cpp.i: cmake_force
@@ -297,18 +273,42 @@ CMakeFiles/ReversiGame.dir/GameMenu.cpp.o.provides: CMakeFiles/ReversiGame.dir/G
 CMakeFiles/ReversiGame.dir/GameMenu.cpp.o.provides.build: CMakeFiles/ReversiGame.dir/GameMenu.cpp.o
 
 
+CMakeFiles/ReversiGame.dir/main.cpp.o: CMakeFiles/ReversiGame.dir/flags.make
+CMakeFiles/ReversiGame.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ReversiGame.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiGame.dir/main.cpp.o -c /home/elon/Desktop/Git/ReversiGame/main.cpp
+
+CMakeFiles/ReversiGame.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiGame.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elon/Desktop/Git/ReversiGame/main.cpp > CMakeFiles/ReversiGame.dir/main.cpp.i
+
+CMakeFiles/ReversiGame.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiGame.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elon/Desktop/Git/ReversiGame/main.cpp -o CMakeFiles/ReversiGame.dir/main.cpp.s
+
+CMakeFiles/ReversiGame.dir/main.cpp.o.requires:
+
+.PHONY : CMakeFiles/ReversiGame.dir/main.cpp.o.requires
+
+CMakeFiles/ReversiGame.dir/main.cpp.o.provides: CMakeFiles/ReversiGame.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/ReversiGame.dir/main.cpp.o.provides
+
+CMakeFiles/ReversiGame.dir/main.cpp.o.provides.build: CMakeFiles/ReversiGame.dir/main.cpp.o
+
+
 # Object files for target ReversiGame
 ReversiGame_OBJECTS = \
 "CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o" \
 "CMakeFiles/ReversiGame.dir/Board.cpp.o" \
 "CMakeFiles/ReversiGame.dir/ConsolePlayer.cpp.o" \
-"CMakeFiles/ReversiGame.dir/main.cpp.o" \
 "CMakeFiles/ReversiGame.dir/Game.cpp.o" \
 "CMakeFiles/ReversiGame.dir/Player.cpp.o" \
 "CMakeFiles/ReversiGame.dir/Point.cpp.o" \
 "CMakeFiles/ReversiGame.dir/RegularRules.cpp.o" \
 "CMakeFiles/ReversiGame.dir/Rules.cpp.o" \
-"CMakeFiles/ReversiGame.dir/GameMenu.cpp.o"
+"CMakeFiles/ReversiGame.dir/GameMenu.cpp.o" \
+"CMakeFiles/ReversiGame.dir/main.cpp.o"
 
 # External object files for target ReversiGame
 ReversiGame_EXTERNAL_OBJECTS =
@@ -316,13 +316,13 @@ ReversiGame_EXTERNAL_OBJECTS =
 ReversiGame: CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o
 ReversiGame: CMakeFiles/ReversiGame.dir/Board.cpp.o
 ReversiGame: CMakeFiles/ReversiGame.dir/ConsolePlayer.cpp.o
-ReversiGame: CMakeFiles/ReversiGame.dir/main.cpp.o
 ReversiGame: CMakeFiles/ReversiGame.dir/Game.cpp.o
 ReversiGame: CMakeFiles/ReversiGame.dir/Player.cpp.o
 ReversiGame: CMakeFiles/ReversiGame.dir/Point.cpp.o
 ReversiGame: CMakeFiles/ReversiGame.dir/RegularRules.cpp.o
 ReversiGame: CMakeFiles/ReversiGame.dir/Rules.cpp.o
 ReversiGame: CMakeFiles/ReversiGame.dir/GameMenu.cpp.o
+ReversiGame: CMakeFiles/ReversiGame.dir/main.cpp.o
 ReversiGame: CMakeFiles/ReversiGame.dir/build.make
 ReversiGame: CMakeFiles/ReversiGame.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ReversiGame"
@@ -336,13 +336,13 @@ CMakeFiles/ReversiGame.dir/build: ReversiGame
 CMakeFiles/ReversiGame.dir/requires: CMakeFiles/ReversiGame.dir/AIPlayer.cpp.o.requires
 CMakeFiles/ReversiGame.dir/requires: CMakeFiles/ReversiGame.dir/Board.cpp.o.requires
 CMakeFiles/ReversiGame.dir/requires: CMakeFiles/ReversiGame.dir/ConsolePlayer.cpp.o.requires
-CMakeFiles/ReversiGame.dir/requires: CMakeFiles/ReversiGame.dir/main.cpp.o.requires
 CMakeFiles/ReversiGame.dir/requires: CMakeFiles/ReversiGame.dir/Game.cpp.o.requires
 CMakeFiles/ReversiGame.dir/requires: CMakeFiles/ReversiGame.dir/Player.cpp.o.requires
 CMakeFiles/ReversiGame.dir/requires: CMakeFiles/ReversiGame.dir/Point.cpp.o.requires
 CMakeFiles/ReversiGame.dir/requires: CMakeFiles/ReversiGame.dir/RegularRules.cpp.o.requires
 CMakeFiles/ReversiGame.dir/requires: CMakeFiles/ReversiGame.dir/Rules.cpp.o.requires
 CMakeFiles/ReversiGame.dir/requires: CMakeFiles/ReversiGame.dir/GameMenu.cpp.o.requires
+CMakeFiles/ReversiGame.dir/requires: CMakeFiles/ReversiGame.dir/main.cpp.o.requires
 
 .PHONY : CMakeFiles/ReversiGame.dir/requires
 
