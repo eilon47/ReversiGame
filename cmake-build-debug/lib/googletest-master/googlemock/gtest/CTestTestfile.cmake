@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest
-# Build directory: /home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest
+# Source directory: /home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest
+# Build directory: /home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
