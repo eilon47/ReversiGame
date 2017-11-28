@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.8)
 project(ReversiGame)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 98)
 
 add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
-include_directories(includes)
+include_directories(includes/)
 set(SOURCE_FILES
         src/AIPlayer.cpp
         includes/AIPlayer.h
@@ -17,6 +17,8 @@ set(SOURCE_FILES
         src/Game.cpp
         includes/Game.h
         src/Player.cpp
+        src/Sign.cpp
+        includes/Sign.h
         includes/Player.h
         src/Point.cpp
         includes/Point.h
@@ -36,6 +38,8 @@ set(TEST_FILES
         src/Game.cpp
         includes/Game.h
         src/Player.cpp
+        src/Sign.cpp
+        includes/Sign.h
         includes/Player.h
         src/Point.cpp
         includes/Point.h

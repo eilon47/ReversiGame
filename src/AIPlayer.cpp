@@ -24,7 +24,7 @@ Point AIPlayer::getPointFromPlayer(Board b, vector<Point> v) {
         return p;
     }
     //this is a vector witch contains pairs of  score(int)/Point.
-    vector<pair<int, Point>> pointToScore;
+    vector<pair<int, Point> > pointToScore;
     SIGN oppSign = XSIGN;
     if (this->sign == oppSign) {
         oppSign = OSIGN;
