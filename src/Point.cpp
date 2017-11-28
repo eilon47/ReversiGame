@@ -4,7 +4,7 @@
 // Each Point has x value and y value.
 //
 
-#include "../includes/Point.h"
+#include "Point.h"
 //Constructors.
 Point::Point(int x, int y): x(x), y(y) {}
 Point::Point() {

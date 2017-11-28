@@ -8,13 +8,15 @@
 
 #include <vector>
 #include "Point.h"
+#include "Sign.h"
+
 #include <iostream>
 using namespace std;
 
 class Board {
  private:
   //Members.
-  char **board;
+  Sign **board;
   int size;
   int freeSquares;
   /**
@@ -50,15 +52,15 @@ class Board {
    * getBoard.
    * @return board 2d array.
    */
-  char** getBoard();
+  Sign** getBoard();
   /**
    * addToBoard.
    * adds char c to board by row and col.
-   * @param c sign.
+   * @param sign sign.
    * @param row x value.
    * @param col y value.
    */
-  void addToBoard(char c, int row, int col);
+  void addToBoard(SIGN sign, int row, int col);
   /**
    * hasSpaceOnBoard.
    * checks if the board is not full.
@@ -76,7 +78,7 @@ class Board {
    * @param jumpCol direction on y values.
    * @return how many opp's signs were flipped.
    */
-  int flip(Point start, char player, int jumpRow, int jumpCol);
+  int flip(Point start, SIGN sign, int jumpRow, int jumpCol);
   /**
    * getNextPossibleMoves.
    * checks the next possible move in one direction in each time.

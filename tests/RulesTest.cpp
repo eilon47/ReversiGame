@@ -4,9 +4,10 @@
 
 
 #include <gtest/gtest.h>
-#include "../includes/Board.h"
-#include "../includes/Game.h"
-#include "../includes/RegularRules.h"
+#include "../Board.h"
+#include "../Game.h"
+#include "../AIPlayer.h"
+#include "../RegularRules.h"
 
 class RulesTest: public testing::Test {
 public:
@@ -20,8 +21,8 @@ TEST_F(RulesTest, ValidPointTest) {
     Board b2(b1), b3(b1);
     for(int i = 0; i < b1.getSize(); i++) {
         for (int j = 0; j < b1.getSize(); j++) {
-            b2.addToBoard('X', i, j);
-            b3.addToBoard(' ', i, j);
+            b2.addToBoard(XSIGN, i, j);
+            b3.addToBoard(EMPTY, i, j);
         }
     }
     int middle = b1.getSize() /2;

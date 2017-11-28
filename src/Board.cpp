@@ -2,29 +2,30 @@
  * Created by Elon, 308576933.
  * Board's source file.
  */
+#include "Sign.h"
+#include "Board.h"
 
-#include "../includes/Board.h"
 //Constructors.
 Board::Board(int size): size(size + 1), freeSquares((size * size) - 4) {
-  this->board = new char*[this->size];
+  this->board = new Sign*[this->size];
   for(int i = 0; i < this->size; i++){
-    this->board[i] = new char[this->size];
+    this->board[i] = new Sign[this->size];
   }
   setBoard();
 }
 Board::Board(): size(9), freeSquares(60) {
-  this->board = new char*[this->size];
+  this->board = new Sign*[this->size];
   for(int i = 0; i < this->size; i++){
-    this->board[i] = new char[this->size];
+    this->board[i] = new Sign[this->size];
   }
   setBoard();
 }
 Board::Board(const Board &b) {
   this->size = b.size;
   this->freeSquares = b.freeSquares;
-  this->board = new char*[this->size];
+  this->board = new Sign*[this->size];
   for(int i = 0; i < this->size; i++){
-    this->board[i] = new char[this->size];
+    this->board[i] = new Sign[this->size];
   }
   for(int i = 0; i < this->size; i++){
     for (int j = 0; j< this->size; j++) {
@@ -42,9 +43,9 @@ Board& Board::operator=(const Board &b) {
     this->size = b.size;
     this->freeSquares = b.freeSquares;
     //Allocating new board.
-    this->board = new char*[this->size];
+    this->board = new Sign*[this->size];
     for (int i = 0; i < this->size ; i++) {
-      this->board[i] = new char[this->size];
+      this->board[i] = new Sign[this->size];
     }
     for(int i = 0; i < this->size; i++) {
       for(int j = 0; j < this->size; j++) {
@@ -58,14 +59,14 @@ Board& Board::operator=(const Board &b) {
 void Board::setBoard() {
   for(int i = 0; i < this->size ; i++) {
     for (int j = 0; j < this->size; j++) {
-      this->board[i][j] = ' ';
+      this->board[i][j].setSign(EMPTY);
     }
   }
   int mid = (this->size / 2);
-  this->board[mid][mid] = 'O';
-  this->board[mid + 1][mid + 1] = 'O';
-  this->board[mid + 1][mid] = 'X';
-  this->board[mid][mid + 1] = 'X';
+  this->board[mid][mid].setSign(OSIGN);
+  this->board[mid + 1][mid + 1].setSign(OSIGN);
+  this->board[mid + 1][mid].setSign(XSIGN);
+  this->board[mid][mid + 1].setSign(XSIGN);
 }
 //Destructor.
 Board::~Board()  {
@@ -75,13 +76,13 @@ Board::~Board()  {
   delete[] this->board;
 }
 //Getters.
-char** Board::getBoard() {
+Sign** Board::getBoard() {
   return this->board;
 }
 int Board::getSize() const { return this->size; }
 //Adding to board.
-void Board::addToBoard(char c, int row, int col) {
-  this->board[row][col] = c;
+void Board::addToBoard(SIGN sign, int row, int col) {
+  this->board[row][col].setSign(sign);
   this->freeSquares--;
 }
 //Checks if board is not full.
@@ -89,7 +90,7 @@ bool Board::hasSpaceOnBoard() const {
   return this->freeSquares > 0;
 }
 //Flips after each move in one direction.
-int Board::flip(Point start, char player, int jumpRow, int jumpCol) {
+int Board::flip(Point start, SIGN sign, int jumpRow, int jumpCol) {
   int row = start.getX() + jumpRow;
   int col = start.getY() + jumpCol;
   int counter = 0;
@@ -97,10 +98,10 @@ int Board::flip(Point start, char player, int jumpRow, int jumpCol) {
   if(row >= this->getSize() || col >= this->getSize() || row <= 0 || col <= 0) {
     return 0;
   }
-  while(this->board[row][col] != player) {
-    char c = this->board[row][col];
-    if (c == ' ') { return 0; }
-    if (c == player) { break; }
+  while(this->board[row][col].getSign() != sign) {
+    SIGN c = this->board[row][col].getSign();
+    if (c == EMPTY) { return 0; }
+    if (c == sign) { break; }
     counter++;
     row += jumpRow;
     col += jumpCol;
@@ -112,37 +113,13 @@ int Board::flip(Point start, char player, int jumpRow, int jumpCol) {
   row = start.getX();
   col = start.getY();
   for (int i = 0; i <= counter; i++) {
-    this->board[row][col] = player;
+    this->board[row][col].setSign(sign);
     row += jumpRow;
     col += jumpCol;
   }
   return counter;
-}/*
-//Get the next possible move in one direction.
-vector<Point> Board::getNextPossibleMoves(char opp, int jumpRow, int jumpCol,
-                                          int currentRow, int currentCol) {
-  vector<Point> v;
-  int row = currentRow + jumpRow;
-  int col = currentCol + jumpCol;
-  int counter = 0;
-  char c;
-  while (row < this->getSize() && col < this->getSize() && col > 0 && row > 0){
-    c = this->board[row][col];
-    if (c == opp) {
-      row += jumpRow;
-      col += jumpCol;
-      counter++;
-      continue;
-    }
-    if (c == ' ' && counter != 0) {
-      Point p(row, col);
-      v.push_back(p);
-      break;
-    }
-    break;
-  }
-  return v;
-}*/
+}
+
 //Operator for printing the Board.
 ostream& operator<<(ostream &out, const Board &b) {
   for(int i = 0; i < b.size; i++) {
@@ -163,7 +140,7 @@ ostream& operator<<(ostream &out, const Board &b) {
         }
         continue;
       }
-      out << b.board[i][j] <<" | ";
+      out << (char) b.board[i][j].getSign() <<" | ";
     }
     out << endl;
     out << "---";

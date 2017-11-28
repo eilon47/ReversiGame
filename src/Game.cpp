@@ -3,21 +3,22 @@
 // Class for Game.
 // Game is in charge of the game flow.
 //
+#include "Sign.h"
+#include "Game.h"
 
-#include "../includes/Game.h"
 //Constructors.
 Game::Game(Board &b, Player &p1, Player &p2, Rules &rules): b(&b), p1(&p1), p2(&p2),
                                               turn(true), rules(&rules){
   //if player is not initialized with sign.
-  if(p1.getSign() == ' ' && p2.getSign() != 'X'){
-    p1.setSign('X');
+  if(p1.getSign() == EMPTY && p2.getSign() != XSIGN){
+    p1.setSign(XSIGN);
   } else {
-    p1.setSign('O');
+    p1.setSign(OSIGN);
   }
-  if(p2.getSign() == ' ' && p1.getSign() != 'O') {
-    p2.setSign('O');
+  if(p2.getSign() == EMPTY && p1.getSign() != OSIGN) {
+    p2.setSign(OSIGN);
   } else {
-    p2.setSign('X');
+    p2.setSign(XSIGN);
   }
 }
 Game::Game(const Game &p) {
@@ -28,13 +29,13 @@ Game::Game(const Game &p) {
   this->rules = p.rules;
 }
 //Checks for possible moves.
-vector<Point> Game::checkAllMoves(char sign) {
+vector<Point> Game::checkAllMoves(SIGN sign) {
   int i, j;
   vector<Point> vRet;
   //char player = this->currentPlayer()->getSign();
   for(i = 1; i < this->b->getSize(); i++) {
     for(j =1 ; j < this->b->getSize(); j++) {
-      if(this->b->getBoard()[i][j] == ' ') {
+      if(this->b->getBoard()[i][j].getSign() == EMPTY) {
 
         Point p(i, j);
         if (rules->checkPoint(*this->b, p, sign)) {
@@ -50,7 +51,7 @@ vector<Point> Game::checkAllMoves(char sign) {
   return vRet;
 }
 //Put next move and returns the score.
-int Game::playOneTurn(Point &p, char sign) {
+int Game::playOneTurn(Point &p, SIGN sign) {
   int row = p.getX();
   int col = p.getY();
   int score = 0;
@@ -77,6 +78,9 @@ int Game::playOneTurn(Point &p, char sign) {
 }
 //Checks if vector has a point.
 bool Game::checkVecHasPoint(vector<Point> &v, Point &p) {
+  if (v.empty()){
+    return false;
+  }
   for(int i = 0; i < v.size(); i++) {
     if(v[i] == (p)) {
       return true;
@@ -104,9 +108,9 @@ void Game::run() {
   bool oneMove = false;
   int score;
   while (this->b->hasSpaceOnBoard()) {
-      cout << this->currentPlayer()->getSign() << ": It's your move:" << endl;
+      cout << (char) this->currentPlayer()->getSign() << ": It's your move:" << endl;
     vector<Point> vMoves = this->checkAllMoves(currentPlayer()->getSign());
-    if (vMoves.empty()) {
+    if (!vMoves.empty() && vMoves.size() == 1 && vMoves[0].getX() == 0 && vMoves[0].getY() == 0) {
       //2 turns in a row without moves.
       if (oneMove) {
         this->endGame();
@@ -127,8 +131,8 @@ void Game::run() {
       score = this->playOneTurn(p, currentPlayer()->getSign());
       cout << *b;
       this->setScoresAfterMove(score);
-      cout << "Current score: " << p1->getSign() << ": " << p1->getSoldiers()
-           << ", " << p2->getSign() << ": " << p2->getSoldiers() << endl;
+      cout << "Current score: " << (char) p1->getSign() << ": " << p1->getSoldiers()
+           << ", " << (char) p2->getSign() << ": " << p2->getSoldiers() << endl;
       turn = !turn;
       }
     this->endGame();

@@ -5,18 +5,18 @@
 // and can choose a location for next move.
 //
 
-#include "../includes/Player.h"
+#include "Player.h"
 //Constructors.
-Player::Player(): sign(' '), numOfSoldiers(2) {}
+Player::Player(): sign(EMPTY), numOfSoldiers(2) {}
 Player::Player(const Player &p) {
   this->sign = p.sign;
   this->numOfSoldiers = p.numOfSoldiers;
 }
 //Getters.
-char Player::getSign() const { return this->sign; }
+SIGN Player::getSign() const { return this->sign; }
 int Player::getSoldiers() const { return this->numOfSoldiers;}
 //Setters.
-void Player::setSign(char c) {this->sign = c;}
+void Player::setSign(SIGN s) {this->sign = s;}
 void Player::addSoldiers(int num) {
   this->numOfSoldiers += num;
 }

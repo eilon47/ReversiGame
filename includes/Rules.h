@@ -6,9 +6,11 @@
 #define REVERSIGAME_RULES_H
 
 #include "Board.h"
+#include "Sign.h"
+
 class Rules {
  public:
-  virtual bool checkPoint(Board b, Point p, char player) const = 0;
+  virtual bool checkPoint(Board b, Point p, SIGN sign) const = 0;
 };
 
 #endif //REVERSIGAME_RULES_H

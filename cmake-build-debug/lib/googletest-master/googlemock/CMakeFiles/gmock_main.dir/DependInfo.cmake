@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/src/gtest-all.cc" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o"
-  "/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/src/gmock-all.cc" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o"
-  "/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/src/gmock_main.cc" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+  "/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/src/gtest-all.cc" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o"
+  "/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/src/gmock-all.cc" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o"
+  "/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/src/gmock_main.cc" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

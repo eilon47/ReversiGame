@@ -4,20 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/elon/Desktop/Git/ReversiGame/src/AIPlayer.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/src/AIPlayer.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/src/Board.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/src/Board.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/src/ConsolePlayer.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/src/ConsolePlayer.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/src/Game.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/src/Game.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/src/GameMenu.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/src/GameMenu.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/src/Player.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/src/Player.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/src/Point.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/src/Point.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/src/RegularRules.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/src/RegularRules.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/src/Rules.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/src/Rules.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/tests/AITest.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/AITest.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/tests/BoardTest.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/tests/GameTest.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/GameTest.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/tests/RulesTest.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/tests/main_test.cpp" "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/main_test.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/AIPlayer.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/AIPlayer.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/Board.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/Board.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/ConsolePlayer.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/ConsolePlayer.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/Game.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/Game.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/GameMenu.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/GameMenu.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/Player.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/Player.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/Point.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/Point.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/RegularRules.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/RegularRules.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/Rules.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/Rules.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/Sign.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/Sign.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/tests/AITest.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/AITest.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/tests/BoardTest.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/tests/GameTest.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/GameTest.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/tests/RulesTest.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/tests/main_test.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/main_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -25,13 +26,12 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../lib/googletest-master/googletest/include"
   "../lib/googletest-master/googlemock/include"
-  "../includes"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

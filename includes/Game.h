@@ -40,14 +40,14 @@ class Game {
    * Checks all the next moves the player can do.
    * @return list of the possible moves.
    */
-  vector<Point> checkAllMoves(char sign);
+  vector<Point> checkAllMoves(SIGN sign);
   /**
    * playOneTurn.
    * After the player chose his next move - he can put it there.
    * @param p point that was chosen by player.
    * @return number of flipped soldiers.
    */
-  int playOneTurn(Point &p, char sign);
+  int playOneTurn(Point &p, SIGN sign);
   /**
    * checkVecHasPoint.
    * checks if the wanted point by user is valid.
