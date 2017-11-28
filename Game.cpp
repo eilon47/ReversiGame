@@ -78,6 +78,9 @@ int Game::playOneTurn(Point &p, SIGN sign) {
 }
 //Checks if vector has a point.
 bool Game::checkVecHasPoint(vector<Point> &v, Point &p) {
+  if (v.empty()){
+    return false;
+  }
   for(int i = 0; i < v.size(); i++) {
     if(v[i] == (p)) {
       return true;
@@ -105,9 +108,9 @@ void Game::run() {
   bool oneMove = false;
   int score;
   while (this->b->hasSpaceOnBoard()) {
-      cout << this->currentPlayer()->getSign() << ": It's your move:" << endl;
+      cout << (char) this->currentPlayer()->getSign() << ": It's your move:" << endl;
     vector<Point> vMoves = this->checkAllMoves(currentPlayer()->getSign());
-    if (vMoves.empty()) {
+    if (!vMoves.empty() && vMoves.size() == 1 && vMoves[0].getX() == 0 && vMoves[0].getY() == 0) {
       //2 turns in a row without moves.
       if (oneMove) {
         this->endGame();
@@ -128,8 +131,8 @@ void Game::run() {
       score = this->playOneTurn(p, currentPlayer()->getSign());
       cout << *b;
       this->setScoresAfterMove(score);
-      cout << "Current score: " << p1->getSign() << ": " << p1->getSoldiers()
-           << ", " << p2->getSign() << ": " << p2->getSoldiers() << endl;
+      cout << "Current score: " << (char) p1->getSign() << ": " << p1->getSoldiers()
+           << ", " << (char) p2->getSign() << ": " << p2->getSoldiers() << endl;
       turn = !turn;
       }
     this->endGame();
