@@ -4,7 +4,7 @@
 // Game is in charge of the game flow.
 //
 
-#include "Game.h"
+#include "../includes/Game.h"
 //Constructors.
 Game::Game(Board &b, Player &p1, Player &p2, Rules &rules): b(&b), p1(&p1), p2(&p2),
                                               turn(true), rules(&rules){

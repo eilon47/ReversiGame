@@ -3,8 +3,8 @@
  * main file.
  */
 
-#include "Game.h"
-#include "GameMenu.h"
+#include "includes/Game.h"
+#include "includes/GameMenu.h"
 
 int main() {
   GameMenu gm;

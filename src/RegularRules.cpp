@@ -2,7 +2,7 @@
 // Created by elon on 21/11/17.
 //
 
-#include "RegularRules.h"
+#include "../includes/RegularRules.h"
 bool RegularRules::checkPoint(const Board b,const Point p, char player) const {
   if (p.getX() < 0 || p.getY() <0) {
     return false;

@@ -8,84 +8,85 @@
 		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\googletest-master\;CMake Files\lib\googletest-master\googlemock\;CMake Files\lib\googletest-master\googlemock\cmake\;CMake Files\lib\googletest-master\googletest\;CMake Files\lib\googletest-master\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReversiTest">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/ReversiTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/ReversiTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/includes"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -96,21 +97,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiTest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiTest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReversiTest/fast">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/ReversiTest" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/ReversiTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/includes"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -121,21 +123,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiTest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiTest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReversiGame">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/ReversiGame" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/ReversiGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/includes"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -146,21 +149,22 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiGame"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiGame"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReversiGame/fast">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/ReversiGame" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/ReversiGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/includes"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -171,23 +175,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiGame/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiGame/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -198,23 +202,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main/fast">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/libgmock_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -225,23 +229,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -252,23 +256,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock/fast">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/libgmockd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/libgmockd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -279,21 +283,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -304,21 +308,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtest_maind.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -329,21 +333,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -354,21 +358,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest/fast">
-				<Option output="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
+				<Option output="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/libgtestd.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -379,200 +383,200 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/AIPlayer.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/includes/AIPlayer.h">
 			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/AIPlayer.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/includes/Board.h">
 			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Board.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/includes/ConsolePlayer.h">
 			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Board.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/includes/Game.h">
 			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/ConsolePlayer.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/includes/GameMenu.h">
 			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/ConsolePlayer.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/includes/Player.h">
 			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Game.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/includes/Point.h">
 			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Game.h">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/includes/RegularRules.h">
 			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/GameMenu.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/includes/Rules.h">
 			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/GameMenu.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Player.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Player.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Point.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Point.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/RegularRules.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/RegularRules.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Rules.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Rules.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/src/gmock-all.cc">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/src/gmock_main.cc">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/src/gmock_main.cc">
 			<Option target="gmock_main"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/src/gtest-all.cc">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/src/gtest-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
 			<Option target="gtest"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/src/gtest_main.cc">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/main.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/main.cpp">
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/AITest.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/AIPlayer.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Board.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/ConsolePlayer.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Game.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/GameMenu.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Player.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Point.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/RegularRules.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Rules.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/tests/AITest.cpp">
 			<Option target="ReversiTest"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/BoardTest.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/tests/BoardTest.cpp">
 			<Option target="ReversiTest"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/GameTest.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/tests/GameTest.cpp">
 			<Option target="ReversiTest"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/RulesTest.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/tests/RulesTest.cpp">
 			<Option target="ReversiTest"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/main_test.cpp">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/tests/main_test.cpp">
 			<Option target="ReversiTest"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/CMakeLists.txt">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/CMakeLists.txt">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/CMakeLists.txt">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/CMakeLists.txt">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/CMakeLists.txt">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/CMakeLists.txt">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock_main.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock_main.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock_main.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock_main.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock_main.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/cmake/gmock_main.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googlemock\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/CMakeLists.txt">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/CMakeLists.txt">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/CMakeLists.txt">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/CMakeLists.txt">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/gtest.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/gtest.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/gtest.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/gtest.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/gtest.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/gtest.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/gtest.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/gtest.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/cmake/gtest_main.pc.in">
 			<Option virtualFolder="CMake Files\lib\googletest-master\googletest\cmake\"/>
 		</Unit>
 	</Project>

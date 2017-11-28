@@ -4,10 +4,9 @@
 
 
 #include <gtest/gtest.h>
-#include "../Board.h"
-#include "../Game.h"
-#include "../AIPlayer.h"
-#include "../RegularRules.h"
+#include "../includes/Board.h"
+#include "../includes/Game.h"
+#include "../includes/RegularRules.h"
 
 class RulesTest: public testing::Test {
 public:

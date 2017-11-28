@@ -3,8 +3,8 @@
 //
 
 #include <algorithm>
-#include "AIPlayer.h"
-#include "Game.h"
+#include "../includes/AIPlayer.h"
+#include "../includes/Game.h"
 using namespace std;
 //Constructors.
 AIPlayer::AIPlayer(char sign, Rules &r): sign(sign), numOfSoldiers(2), rules(&r)  {}

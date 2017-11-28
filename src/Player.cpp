@@ -5,7 +5,7 @@
 // and can choose a location for next move.
 //
 
-#include "Player.h"
+#include "../includes/Player.h"
 //Constructors.
 Player::Player(): sign(' '), numOfSoldiers(2) {}
 Player::Player(const Player &p) {

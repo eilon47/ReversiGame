@@ -6,43 +6,43 @@ set(CMAKE_CXX_STANDARD 11)
 add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
-
+include_directories(includes)
 set(SOURCE_FILES
-        AIPlayer.cpp
-        AIPlayer.h
-        Board.cpp
-        Board.h
-        ConsolePlayer.cpp
-        ConsolePlayer.h
-        Game.cpp
-        Game.h
-        Player.cpp
-        Player.h
-        Point.cpp
-        Point.h
-        RegularRules.cpp
-        RegularRules.h
-        Rules.cpp
-        Rules.h GameMenu.cpp GameMenu.h)
+        src/AIPlayer.cpp
+        includes/AIPlayer.h
+        src/Board.cpp
+        includes/Board.h
+        src/ConsolePlayer.cpp
+        includes/ConsolePlayer.h
+        src/Game.cpp
+        includes/Game.h
+        src/Player.cpp
+        includes/Player.h
+        src/Point.cpp
+        includes/Point.h
+        src/RegularRules.cpp
+        includes/RegularRules.h
+        src/Rules.cpp
+        includes/Rules.h src/GameMenu.cpp includes/GameMenu.h)
 
 set(TEST_FILES
         tests/main_test.cpp
-        AIPlayer.cpp
-        AIPlayer.h
-        Board.cpp
-        Board.h
-        ConsolePlayer.cpp
-        ConsolePlayer.h
-        Game.cpp
-        Game.h
-        Player.cpp
-        Player.h
-        Point.cpp
-        Point.h
-        RegularRules.cpp
-        RegularRules.h
-        Rules.cpp
-        Rules.h GameMenu.cpp GameMenu.h tests/BoardTest.cpp tests/AITest.cpp tests/GameTest.cpp tests/RulesTest.cpp)
+        src/AIPlayer.cpp
+        includes/AIPlayer.h
+        src/Board.cpp
+        includes/Board.h
+        src/ConsolePlayer.cpp
+        includes/ConsolePlayer.h
+        src/Game.cpp
+        includes/Game.h
+        src/Player.cpp
+        includes/Player.h
+        src/Point.cpp
+        includes/Point.h
+        src/RegularRules.cpp
+        includes/RegularRules.h
+        src/Rules.cpp
+        includes/Rules.h src/GameMenu.cpp includes/GameMenu.h tests/BoardTest.cpp tests/AITest.cpp tests/GameTest.cpp tests/RulesTest.cpp)
 
 add_executable(ReversiGame ${SOURCE_FILES} main.cpp)
 add_executable(ReversiTest ${TEST_FILES} ${SOURCE_FILES})

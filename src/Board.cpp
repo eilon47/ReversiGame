@@ -3,7 +3,7 @@
  * Board's source file.
  */
 
-#include "Board.h"
+#include "../includes/Board.h"
 //Constructors.
 Board::Board(int size): size(size + 1), freeSquares((size * size) - 4) {
   this->board = new char*[this->size];

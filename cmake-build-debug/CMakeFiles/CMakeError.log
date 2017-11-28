@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c60e3/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c60e3.dir/build.make CMakeFiles/cmTC_c60e3.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c60e3.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_c60e3.dir/CheckSymbolExists.c.o   -c /home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_c60e3
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c60e3.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c60e3.dir/CheckSymbolExists.c.o  -o cmTC_c60e3 
-CMakeFiles/cmTC_c60e3.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_b2829/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b2829.dir/build.make CMakeFiles/cmTC_b2829.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2829.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b2829.dir/CheckSymbolExists.c.o   -c /home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_b2829
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2829.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b2829.dir/CheckSymbolExists.c.o  -o cmTC_b2829 
+CMakeFiles/cmTC_b2829.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_c60e3.dir/build.make:97: recipe for target 'cmTC_c60e3' failed
-make[1]: *** [cmTC_c60e3] Error 1
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_c60e3/fast' failed
-make: *** [cmTC_c60e3/fast] Error 2
+CMakeFiles/cmTC_b2829.dir/build.make:97: recipe for target 'cmTC_b2829' failed
+make[1]: *** [cmTC_b2829] Error 1
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b2829/fast' failed
+make: *** [cmTC_b2829/fast] Error 2
 
-File /home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/elon/Desktop/Git/ReversiGame/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 

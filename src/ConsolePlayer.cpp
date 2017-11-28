@@ -4,7 +4,7 @@
 //
 
 #include <algorithm>
-#include "ConsolePlayer.h"
+#include "../includes/ConsolePlayer.h"
 //Constructors.
 ConsolePlayer::ConsolePlayer(char sign): sign(sign), numOfSoldiers(2)  {}
 ConsolePlayer::ConsolePlayer(): sign(' '), numOfSoldiers(2) {}

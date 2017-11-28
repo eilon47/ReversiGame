@@ -2,9 +2,9 @@
 // Created by elon on 26/11/17.
 //
 
-#include "GameMenu.h"
-#include "AIPlayer.h"
-#include "RegularRules.h"
+#include "../includes/GameMenu.h"
+#include "../includes/AIPlayer.h"
+#include "../includes/RegularRules.h"
 Game GameMenu::showMenu() {
   int boardSize = 0,rules = 0,type = 0;
   bool boardBool = false, rulesBool = false, typeBool = false;
