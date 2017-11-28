@@ -482,6 +482,9 @@
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/BoardTest.cpp">
 			<Option target="ReversiTest"/>
 		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/GameTest.cpp">
+			<Option target="ReversiTest"/>
+		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/main_test.cpp">
 			<Option target="ReversiTest"/>
 		</Unit>

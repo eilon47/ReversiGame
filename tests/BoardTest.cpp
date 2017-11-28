@@ -21,7 +21,7 @@ protected:
         //EXPECT_TRUE(b.getBoard()[-1][-1] == NULL);
         for(int i = 0; i < b.getSize(); i++) {
             for (int j = 0; j < b.getSize(); j++) {
-                EXPECT_TRUE(b.getBoard()[i][j] != NULL) << ("not null");
+                EXPECT_TRUE(!(b.getBoard()[i][j] == NULL)) << ("not null");
             }
         }
         EXPECT_EQ(b.getBoard()[middle][middle],'O') << ("mid is not O");

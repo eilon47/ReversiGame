@@ -42,7 +42,7 @@ set(TEST_FILES
         RegularRules.cpp
         RegularRules.h
         Rules.cpp
-        Rules.h GameMenu.cpp GameMenu.h tests/BoardTest.cpp tests/AITest.cpp)
+        Rules.h GameMenu.cpp GameMenu.h tests/BoardTest.cpp tests/AITest.cpp tests/GameTest.cpp)
 
 add_executable(ReversiGame ${SOURCE_FILES} main.cpp)
 add_executable(ReversiTest ${TEST_FILES} ${SOURCE_FILES})

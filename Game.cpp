@@ -43,6 +43,10 @@ vector<Point> Game::checkAllMoves(char sign) {
       }
     }
   }
+  if (vRet.empty()) {
+    Point p1(0,0);
+    vRet.push_back(p1);
+  }
   return vRet;
 }
 //Put next move and returns the score.
@@ -71,7 +75,7 @@ int Game::playOneTurn(Point &p, char sign) {
   return score;
 
 }
-//Checks if vecotr has a point.
+//Checks if vector has a point.
 bool Game::checkVecHasPoint(vector<Point> &v, Point &p) {
   for(int i = 0; i < v.size(); i++) {
     if(v[i] == (p)) {

@@ -404,6 +404,18 @@ gtest/gtest.h
 ../Game.h
 /home/dandan/Desktop/git/ReversiGame/Game.h
 
+/home/dandan/Desktop/git/ReversiGame/tests/GameTest.cpp
+gtest/gtest.h
+-
+../Board.h
+/home/dandan/Desktop/git/ReversiGame/Board.h
+../Game.h
+/home/dandan/Desktop/git/ReversiGame/Game.h
+../AIPlayer.h
+/home/dandan/Desktop/git/ReversiGame/AIPlayer.h
+../RegularRules.h
+/home/dandan/Desktop/git/ReversiGame/RegularRules.h
+
 /home/dandan/Desktop/git/ReversiGame/tests/main_test.cpp
 gtest/gtest.h
 /home/dandan/Desktop/git/ReversiGame/tests/gtest/gtest.h
