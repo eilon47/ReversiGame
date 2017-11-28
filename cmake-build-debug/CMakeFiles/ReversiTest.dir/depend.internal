@@ -154,6 +154,38 @@ CMakeFiles/ReversiTest.dir/tests/GameTest.cpp.o
  /home/dandan/Desktop/git/ReversiGame/RegularRules.h
  /home/dandan/Desktop/git/ReversiGame/Rules.h
  /home/dandan/Desktop/git/ReversiGame/tests/GameTest.cpp
+CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o
+ ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-message.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-param-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-printers.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-test-part.h
+ ../lib/googletest-master/googletest/include/gtest/gtest-typed-test.h
+ ../lib/googletest-master/googletest/include/gtest/gtest.h
+ ../lib/googletest-master/googletest/include/gtest/gtest_pred_impl.h
+ ../lib/googletest-master/googletest/include/gtest/gtest_prod.h
+ ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
+ ../lib/googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-filepath.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-internal.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-linked_ptr.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util-generated.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-param-util.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-port.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
+ ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+ /home/dandan/Desktop/git/ReversiGame/AIPlayer.h
+ /home/dandan/Desktop/git/ReversiGame/Board.h
+ /home/dandan/Desktop/git/ReversiGame/ConsolePlayer.h
+ /home/dandan/Desktop/git/ReversiGame/Game.h
+ /home/dandan/Desktop/git/ReversiGame/Player.h
+ /home/dandan/Desktop/git/ReversiGame/Point.h
+ /home/dandan/Desktop/git/ReversiGame/RegularRules.h
+ /home/dandan/Desktop/git/ReversiGame/Rules.h
+ /home/dandan/Desktop/git/ReversiGame/tests/RulesTest.cpp
 CMakeFiles/ReversiTest.dir/tests/main_test.cpp.o
  ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
  ../lib/googletest-master/googletest/include/gtest/gtest-message.h

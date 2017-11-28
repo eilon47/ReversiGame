@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dandan/Desktop/git/ReversiGame/tests/AITest.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/AITest.cpp.o"
   "/home/dandan/Desktop/git/ReversiGame/tests/BoardTest.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o"
   "/home/dandan/Desktop/git/ReversiGame/tests/GameTest.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/GameTest.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/tests/RulesTest.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o"
   "/home/dandan/Desktop/git/ReversiGame/tests/main_test.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/main_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

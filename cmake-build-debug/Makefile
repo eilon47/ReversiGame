@@ -612,6 +612,33 @@ tests/GameTest.cpp.s:
 	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/GameTest.cpp.s
 .PHONY : tests/GameTest.cpp.s
 
+tests/RulesTest.o: tests/RulesTest.cpp.o
+
+.PHONY : tests/RulesTest.o
+
+# target to build an object file
+tests/RulesTest.cpp.o:
+	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o
+.PHONY : tests/RulesTest.cpp.o
+
+tests/RulesTest.i: tests/RulesTest.cpp.i
+
+.PHONY : tests/RulesTest.i
+
+# target to preprocess a source file
+tests/RulesTest.cpp.i:
+	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.i
+.PHONY : tests/RulesTest.cpp.i
+
+tests/RulesTest.s: tests/RulesTest.cpp.s
+
+.PHONY : tests/RulesTest.s
+
+# target to generate assembly for a file
+tests/RulesTest.cpp.s:
+	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.s
+.PHONY : tests/RulesTest.cpp.s
+
 tests/main_test.o: tests/main_test.cpp.o
 
 .PHONY : tests/main_test.o
@@ -696,6 +723,9 @@ help:
 	@echo "... tests/GameTest.o"
 	@echo "... tests/GameTest.i"
 	@echo "... tests/GameTest.s"
+	@echo "... tests/RulesTest.o"
+	@echo "... tests/RulesTest.i"
+	@echo "... tests/RulesTest.s"
 	@echo "... tests/main_test.o"
 	@echo "... tests/main_test.i"
 	@echo "... tests/main_test.s"

@@ -4,6 +4,9 @@
 
 #include "RegularRules.h"
 bool RegularRules::checkPoint(const Board b,const Point p, char player) const {
+  if (p.getX() < 0 || p.getY() <0) {
+    return false;
+  }
   for(int i = -1; i < 2; i++) {
     for(int j = -1; j < 2; j++) {
       if( i == 0 && j ==0) {
