@@ -13,6 +13,8 @@ AIPlayer::AIPlayer(const AIPlayer &AIp) {
     this->sign = AIp.sign;
     this->numOfSoldiers = AIp.numOfSoldiers;
 }
+
+
 //Get point from user.
 Point AIPlayer::getPointFromPlayer(Board b, vector<Point> v) {
     //checks if there is only one possible move

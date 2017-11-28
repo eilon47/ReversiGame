@@ -117,7 +117,7 @@ int Board::flip(Point start, char player, int jumpRow, int jumpCol) {
     col += jumpCol;
   }
   return counter;
-}
+}/*
 //Get the next possible move in one direction.
 vector<Point> Board::getNextPossibleMoves(char opp, int jumpRow, int jumpCol,
                                           int currentRow, int currentCol) {
@@ -142,7 +142,7 @@ vector<Point> Board::getNextPossibleMoves(char opp, int jumpRow, int jumpCol,
     break;
   }
   return v;
-}
+}*/
 //Operator for printing the Board.
 ostream& operator<<(ostream &out, const Board &b) {
   for(int i = 0; i < b.size; i++) {

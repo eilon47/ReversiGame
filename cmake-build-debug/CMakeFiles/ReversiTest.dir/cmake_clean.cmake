@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ReversiTest.dir/RegularRules.cpp.o"
   "CMakeFiles/ReversiTest.dir/Rules.cpp.o"
   "CMakeFiles/ReversiTest.dir/GameMenu.cpp.o"
+  "CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o"
   "CMakeFiles/ReversiTest.dir/tests/AITest.cpp.o"
   "ReversiTest.pdb"
   "ReversiTest"
