@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dandan/Desktop/git/ReversiGame/Point.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/Point.cpp.o"
   "/home/dandan/Desktop/git/ReversiGame/RegularRules.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/RegularRules.cpp.o"
   "/home/dandan/Desktop/git/ReversiGame/Rules.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/Rules.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/Sign.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/Sign.cpp.o"
   "/home/dandan/Desktop/git/ReversiGame/tests/AITest.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/AITest.cpp.o"
   "/home/dandan/Desktop/git/ReversiGame/tests/BoardTest.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o"
   "/home/dandan/Desktop/git/ReversiGame/tests/GameTest.cpp" "/home/dandan/Desktop/git/ReversiGame/cmake-build-debug/CMakeFiles/ReversiTest.dir/tests/GameTest.cpp.o"

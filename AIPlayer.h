@@ -16,7 +16,7 @@ public:
      * Constructor.
      * @param sign sign.
      */
-    explicit AIPlayer(char sign, Rules &r);
+    explicit AIPlayer(SIGN sign, Rules &r);
     /**
      * Default Constructor.
      */
@@ -35,7 +35,7 @@ public:
     Point getPointFromPlayer(Board b, vector<Point> v);
 
 private:
-    char sign;
+    SIGN sign;
     int numOfSoldiers;
     Rules *rules;
 };

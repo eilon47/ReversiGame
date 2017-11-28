@@ -13,7 +13,7 @@ class ConsolePlayer: public Player {
    * Constructor.
    * @param sign sign.
    */
-  explicit ConsolePlayer(char sign);
+  explicit ConsolePlayer(SIGN sign);
   /**
    * Default Constructor.
    */
@@ -31,7 +31,7 @@ class ConsolePlayer: public Player {
    */
   virtual Point getPointFromPlayer(Board b, vector<Point> v);
 private:
-    char sign;
+    SIGN sign;
     int numOfSoldiers;
 };
 

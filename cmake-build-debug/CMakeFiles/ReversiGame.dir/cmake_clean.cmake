@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ReversiGame.dir/RegularRules.cpp.o"
   "CMakeFiles/ReversiGame.dir/Rules.cpp.o"
   "CMakeFiles/ReversiGame.dir/GameMenu.cpp.o"
+  "CMakeFiles/ReversiGame.dir/Sign.cpp.o"
   "CMakeFiles/ReversiGame.dir/main.cpp.o"
   "ReversiGame.pdb"
   "ReversiGame"

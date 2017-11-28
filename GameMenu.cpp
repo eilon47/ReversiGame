@@ -64,23 +64,23 @@ Game GameMenu::showMenu() {
   }
   switch(type) {
     case 1: {
-      this->p1 = new ConsolePlayer('X');
-      this->p2 = new ConsolePlayer('O');
+      this->p1 = new ConsolePlayer(XSIGN);
+      this->p2 = new ConsolePlayer(OSIGN);
       break;
     }
     case 2: {
-      this->p1 = new ConsolePlayer('X');
-      this->p2 = new AIPlayer('O', *(this->r));
+      this->p1 = new ConsolePlayer(XSIGN);
+      this->p2 = new AIPlayer(OSIGN, *(this->r));
       break;
     }
     case 3: {
-      this->p1 = new AIPlayer('X', *(this->r));
-      this->p2 = new AIPlayer('O', *(this->r));
+      this->p1 = new AIPlayer(XSIGN, *(this->r));
+      this->p2 = new AIPlayer(OSIGN, *(this->r));
       break;
     }
     default:{
-      this->p1 = new ConsolePlayer('X');
-      this->p2 = new ConsolePlayer('O');
+      this->p1 = new ConsolePlayer(XSIGN);
+      this->p2 = new ConsolePlayer(OSIGN);
       break;
     }
   }

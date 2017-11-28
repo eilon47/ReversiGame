@@ -458,6 +458,14 @@
 			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Sign.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/Sign.h">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>

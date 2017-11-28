@@ -23,7 +23,7 @@ set(SOURCE_FILES
         RegularRules.cpp
         RegularRules.h
         Rules.cpp
-        Rules.h GameMenu.cpp GameMenu.h)
+        Rules.h GameMenu.cpp GameMenu.h Sign.cpp Sign.h)
 
 set(TEST_FILES
         tests/main_test.cpp
@@ -42,8 +42,8 @@ set(TEST_FILES
         RegularRules.cpp
         RegularRules.h
         Rules.cpp
-        Rules.h GameMenu.cpp GameMenu.h tests/BoardTest.cpp tests/AITest.cpp tests/GameTest.cpp tests/RulesTest.cpp)
+        Rules.h GameMenu.cpp GameMenu.h tests/BoardTest.cpp tests/AITest.cpp tests/GameTest.cpp tests/RulesTest.cpp Sign.cpp Sign.h)
 
-add_executable(ReversiGame ${SOURCE_FILES} main.cpp)
+add_executable(ReversiGame ${SOURCE_FILES} main.cpp Sign.cpp Sign.h)
 add_executable(ReversiTest ${TEST_FILES} ${SOURCE_FILES})
 target_link_libraries(ReversiTest gtest gtest_main)

@@ -3,21 +3,22 @@
 // Class for Game.
 // Game is in charge of the game flow.
 //
-
+#include "Sign.h"
 #include "Game.h"
+
 //Constructors.
 Game::Game(Board &b, Player &p1, Player &p2, Rules &rules): b(&b), p1(&p1), p2(&p2),
                                               turn(true), rules(&rules){
   //if player is not initialized with sign.
-  if(p1.getSign() == ' ' && p2.getSign() != 'X'){
-    p1.setSign('X');
+  if(p1.getSign() == EMPTY && p2.getSign() != XSIGN){
+    p1.setSign(XSIGN);
   } else {
-    p1.setSign('O');
+    p1.setSign(OSIGN);
   }
-  if(p2.getSign() == ' ' && p1.getSign() != 'O') {
-    p2.setSign('O');
+  if(p2.getSign() == EMPTY && p1.getSign() != OSIGN) {
+    p2.setSign(OSIGN);
   } else {
-    p2.setSign('X');
+    p2.setSign(XSIGN);
   }
 }
 Game::Game(const Game &p) {
@@ -28,13 +29,13 @@ Game::Game(const Game &p) {
   this->rules = p.rules;
 }
 //Checks for possible moves.
-vector<Point> Game::checkAllMoves(char sign) {
+vector<Point> Game::checkAllMoves(SIGN sign) {
   int i, j;
   vector<Point> vRet;
   //char player = this->currentPlayer()->getSign();
   for(i = 1; i < this->b->getSize(); i++) {
     for(j =1 ; j < this->b->getSize(); j++) {
-      if(this->b->getBoard()[i][j] == ' ') {
+      if(this->b->getBoard()[i][j].getSign() == EMPTY) {
 
         Point p(i, j);
         if (rules->checkPoint(*this->b, p, sign)) {
@@ -50,7 +51,7 @@ vector<Point> Game::checkAllMoves(char sign) {
   return vRet;
 }
 //Put next move and returns the score.
-int Game::playOneTurn(Point &p, char sign) {
+int Game::playOneTurn(Point &p, SIGN sign) {
   int row = p.getX();
   int col = p.getY();
   int score = 0;

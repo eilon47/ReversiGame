@@ -6,8 +6,8 @@
 #include <algorithm>
 #include "ConsolePlayer.h"
 //Constructors.
-ConsolePlayer::ConsolePlayer(char sign): sign(sign), numOfSoldiers(2)  {}
-ConsolePlayer::ConsolePlayer(): sign(' '), numOfSoldiers(2) {}
+ConsolePlayer::ConsolePlayer(SIGN sign): sign(sign), numOfSoldiers(2)  {}
+ConsolePlayer::ConsolePlayer(): sign(EMPTY), numOfSoldiers(2) {}
 ConsolePlayer::ConsolePlayer(const ConsolePlayer &cp) {
   this->sign = cp.sign;
   this->numOfSoldiers = cp.numOfSoldiers;

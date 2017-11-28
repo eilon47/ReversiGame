@@ -7,8 +7,8 @@
 #include "Game.h"
 using namespace std;
 //Constructors.
-AIPlayer::AIPlayer(char sign, Rules &r): sign(sign), numOfSoldiers(2), rules(&r)  {}
-AIPlayer::AIPlayer(): sign(' '), numOfSoldiers(2) {}
+AIPlayer::AIPlayer(SIGN sign, Rules &r): sign(sign), numOfSoldiers(2), rules(&r)  {}
+AIPlayer::AIPlayer(): sign(EMPTY), numOfSoldiers(2) {}
 AIPlayer::AIPlayer(const AIPlayer &AIp) {
     this->sign = AIp.sign;
     this->numOfSoldiers = AIp.numOfSoldiers;
@@ -25,9 +25,9 @@ Point AIPlayer::getPointFromPlayer(Board b, vector<Point> v) {
     }
     //this is a vector witch contains pairs of  score(int)/Point.
     vector<pair<int, Point>> pointToScore;
-    char oppSign = 'X';
+    SIGN oppSign = XSIGN;
     if (this->sign == oppSign) {
-        oppSign = 'O';
+        oppSign = OSIGN;
     }
     //for each possible move simulates a board with that move.
         for (int i = 0; i < v.size(); i++) {

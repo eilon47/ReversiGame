@@ -11,11 +11,12 @@
 
 #include "Point.h"
 #include "Board.h"
+#include "Sign.h"
 #include <vector>
 using namespace std;
 class Player {
  private:
-  char sign;
+  SIGN sign;
   int numOfSoldiers;
  public:
   /**
@@ -31,7 +32,7 @@ class Player {
   * getSign.
   * @return player's sign.
   */
-  char getSign () const;
+  SIGN getSign () const;
   /**
   * getSoldiers.
   * @return number of soldiers.
@@ -42,7 +43,7 @@ class Player {
   * changes the sign of the player.
   * @param c sign
   */
-  void setSign(char c);
+  void setSign(SIGN s);
   /**
   * addSoldiers.
   * updates the number of soldier player has on board.

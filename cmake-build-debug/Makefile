@@ -504,6 +504,36 @@ Rules.cpp.s:
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/Rules.cpp.s
 .PHONY : Rules.cpp.s
 
+Sign.o: Sign.cpp.o
+
+.PHONY : Sign.o
+
+# target to build an object file
+Sign.cpp.o:
+	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/Sign.cpp.o
+	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/Sign.cpp.o
+.PHONY : Sign.cpp.o
+
+Sign.i: Sign.cpp.i
+
+.PHONY : Sign.i
+
+# target to preprocess a source file
+Sign.cpp.i:
+	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/Sign.cpp.i
+	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/Sign.cpp.i
+.PHONY : Sign.cpp.i
+
+Sign.s: Sign.cpp.s
+
+.PHONY : Sign.s
+
+# target to generate assembly for a file
+Sign.cpp.s:
+	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/Sign.cpp.s
+	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/Sign.cpp.s
+.PHONY : Sign.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -711,6 +741,9 @@ help:
 	@echo "... Rules.o"
 	@echo "... Rules.i"
 	@echo "... Rules.s"
+	@echo "... Sign.o"
+	@echo "... Sign.i"
+	@echo "... Sign.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
