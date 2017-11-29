@@ -1,4 +1,5 @@
-# Alon Vita 311233431
+# Eilon Bashari, 308576933.
+# Daniel Greenspan, 308243948
 
 CXX = g++
 #CXXFLAGS = -std=c++0x
