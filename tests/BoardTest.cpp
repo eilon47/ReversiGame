@@ -3,9 +3,7 @@
 //
 
 #include <gtest/gtest.h>
-#include "../AIPlayer.h"
-#include "../RegularRules.h"
-#include "../Game.h"
+#include <Board.h>
 
 class BoardTest: public testing::Test {
 
@@ -18,25 +16,25 @@ protected:
     TEST_F(BoardTest, SetTest) {
         int middle = b.getSize() / 2;
         EXPECT_EQ(9,b.getSize()) << ("board size is not correct");
-        //EXPECT_TRUE(b.getBoard()[-1][-1] == NULL);
         for(int i = 0; i < b.getSize(); i++) {
             for (int j = 0; j < b.getSize(); j++) {
-                EXPECT_TRUE(!(b.getBoard()[i][j] == NULL)) << ("not null");
+                EXPECT_TRUE(b.getBoard()[i][j].getSign() == XSIGN || b.getBoard()[i][j].getSign()  == OSIGN ||
+                b.getBoard()[i][j].getSign() == EMPTY);
             }
         }
-        EXPECT_EQ(b.getBoard()[middle][middle],'O') << ("mid is not O");
-        EXPECT_EQ(b.getBoard()[middle + 1][middle + 1],'O') << ("mid is not O");
-        EXPECT_EQ(b.getBoard()[middle][middle + 1],'X') << ("mid is not X");
-        EXPECT_EQ(b.getBoard()[middle + 1][middle],'X') << ("mid is not X");
+        EXPECT_EQ(b.getBoard()[middle][middle].getSign(),OSIGN) << ("mid is not O");
+        EXPECT_EQ(b.getBoard()[middle + 1][middle + 1].getSign(),OSIGN) << ("mid is not O");
+        EXPECT_EQ(b.getBoard()[middle][middle + 1].getSign(),XSIGN) << ("mid is not X");
+        EXPECT_EQ(b.getBoard()[middle + 1][middle].getSign(),XSIGN) << ("mid is not X");
     }
 
 TEST_F(BoardTest, AddTest) {
-    b.addToBoard('X', 6, 6);
-    b.addToBoard('O', 2, 2);
-    EXPECT_EQ('X',b.getBoard()[6][6]);
-    EXPECT_EQ('O',b.getBoard()[2][2]);
-    EXPECT_NE('O',b.getBoard()[1][1]);
-    EXPECT_NE('X',b.getBoard()[7][7]);
+    b.addToBoard(XSIGN, 6, 6);
+    b.addToBoard(OSIGN, 2, 2);
+    EXPECT_TRUE(XSIGN ==b.getBoard()[6][6].getSign());
+    EXPECT_EQ(OSIGN,b.getBoard()[2][2].getSign());
+    EXPECT_NE(OSIGN,b.getBoard()[1][1].getSign());
+    EXPECT_NE(XSIGN,b.getBoard()[7][7].getSign());
 
 }
 
@@ -44,7 +42,7 @@ TEST_F(BoardTest, HasSpaceTest ) {
     EXPECT_TRUE(b.hasSpaceOnBoard());
     for(int i = 0; i < b.getSize(); i++) {
         for (int j = 0; j < b.getSize(); j++) {
-            b.addToBoard('X', i, j);
+            b.addToBoard(XSIGN, i, j);
         }
     }
     EXPECT_TRUE(!b.hasSpaceOnBoard());
@@ -60,11 +58,11 @@ TEST_F(BoardTest, FlipTest ) {
             if( i == 0 && j ==0) {
                 continue;
             }
-            tempBoard.flip(p,'X', i, j);
+            tempBoard.flip(p,XSIGN, i, j);
             if (i == 1 && j ==0) {
-                EXPECT_EQ(tempBoard.getBoard()[middle][middle], 'X');
+                EXPECT_EQ(tempBoard.getBoard()[middle][middle].getSign(), XSIGN);
             } else {
-                EXPECT_NE(tempBoard.getBoard()[middle][middle], 'X');
+                EXPECT_NE(tempBoard.getBoard()[middle][middle].getSign(), XSIGN);
 
             }
         }

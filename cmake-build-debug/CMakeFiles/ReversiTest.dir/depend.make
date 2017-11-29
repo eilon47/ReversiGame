@@ -102,14 +102,8 @@ CMakeFiles/ReversiTest.dir/tests/AITest.cpp.o: ../lib/googletest-master/googlete
 CMakeFiles/ReversiTest.dir/tests/AITest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 CMakeFiles/ReversiTest.dir/tests/AITest.cpp.o: ../tests/AITest.cpp
 
-CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o: ../includes/AIPlayer.h
 CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o: ../includes/Board.h
-CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o: ../includes/ConsolePlayer.h
-CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o: ../includes/Game.h
-CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o: ../includes/Player.h
 CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o: ../includes/Point.h
-CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o: ../includes/RegularRules.h
-CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o: ../includes/Rules.h
 CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o: ../includes/Sign.h
 CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/gtest-message.h
