@@ -445,8 +445,6 @@ iostream
 /home/elon/Desktop/Git/ReversiGame/src/RegularRules.cpp
 RegularRules.h
 /home/elon/Desktop/Git/ReversiGame/src/RegularRules.h
-Sign.h
-/home/elon/Desktop/Git/ReversiGame/src/Sign.h
 
 /home/elon/Desktop/Git/ReversiGame/src/RegularRules.h
 Rules.h
@@ -507,8 +505,6 @@ Board.h
 /home/elon/Desktop/Git/ReversiGame/tests/Board.h
 Game.h
 /home/elon/Desktop/Git/ReversiGame/tests/Game.h
-AIPlayer.h
-/home/elon/Desktop/Git/ReversiGame/tests/AIPlayer.h
 RegularRules.h
 /home/elon/Desktop/Git/ReversiGame/tests/RegularRules.h
 

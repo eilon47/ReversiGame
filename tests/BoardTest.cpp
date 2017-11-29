@@ -14,20 +14,20 @@ public:
 protected:
      Board b;
 };
-    TEST_F(BoardTest, SetTest) {
-        int middle = b.getSize() / 2;
-        EXPECT_EQ(9,b.getSize()) << ("board size is not correct");
-        for(int i = 0; i < b.getSize(); i++) {
-            for (int j = 0; j < b.getSize(); j++) {
-                EXPECT_TRUE(b.getBoard()[i][j].getSign() == XSIGN || b.getBoard()[i][j].getSign()  == OSIGN ||
-                b.getBoard()[i][j].getSign() == EMPTY);
-            }
+TEST_F(BoardTest, SetTest) {
+    int middle = b.getSize() / 2;
+    EXPECT_EQ(9,b.getSize()) << ("board size is not correct");
+    for(int i = 0; i < b.getSize(); i++) {
+        for (int j = 0; j < b.getSize(); j++) {
+            EXPECT_TRUE(b.getBoard()[i][j].getSign() == XSIGN || b.getBoard()[i][j].getSign()  == OSIGN ||
+            b.getBoard()[i][j].getSign() == EMPTY);
         }
-        EXPECT_EQ(b.getBoard()[middle][middle].getSign(),OSIGN) << ("mid is not O");
-        EXPECT_EQ(b.getBoard()[middle + 1][middle + 1].getSign(),OSIGN) << ("mid is not O");
-        EXPECT_EQ(b.getBoard()[middle][middle + 1].getSign(),XSIGN) << ("mid is not X");
-        EXPECT_EQ(b.getBoard()[middle + 1][middle].getSign(),XSIGN) << ("mid is not X");
     }
+    EXPECT_EQ(b.getBoard()[middle][middle].getSign(),OSIGN) << ("mid is not O");
+    EXPECT_EQ(b.getBoard()[middle + 1][middle + 1].getSign(),OSIGN) << ("mid is not O");
+    EXPECT_EQ(b.getBoard()[middle][middle + 1].getSign(),XSIGN) << ("mid is not X");
+    EXPECT_EQ(b.getBoard()[middle + 1][middle].getSign(),XSIGN) << ("mid is not X");
+}
 
 TEST_F(BoardTest, AddTest) {
     b.addToBoard(XSIGN, 6, 6);

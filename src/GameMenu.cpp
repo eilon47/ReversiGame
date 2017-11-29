@@ -13,12 +13,11 @@ Game GameMenu::showMenu() {
   while(!typeBool) {
     cout << "Please choose game type:\n"
         "1.Player vs. Player.\n"
-        "2.Player vs. Computer.\n"
-        "3.Computer vs. Computer" << endl;
+        "2.Player vs. Computer."<< endl;
     cin >> type;
     cin.clear();
     cin.ignore(100, '\n');
-    if(type == 0 || type > 3){
+    if(type == 0 || type > 2){
       cout << "Please enter valid choice" << endl;
       type = 0;
       continue;
@@ -74,11 +73,6 @@ Game GameMenu::showMenu() {
     }
     case 2: {
       this->p1 = new ConsolePlayer(XSIGN);
-      this->p2 = new AIPlayer(OSIGN, *(this->r));
-      break;
-    }
-    case 3: {
-      this->p1 = new AIPlayer(XSIGN, *(this->r));
       this->p2 = new AIPlayer(OSIGN, *(this->r));
       break;
     }

@@ -184,7 +184,6 @@ CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o: ../lib/googletest-master/googl
 CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-tuple.h
 CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o: ../lib/googletest-master/googletest/include/gtest/internal/gtest-type-util.h
-CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o: ../src/AIPlayer.h
 CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o: ../src/Board.h
 CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o: ../src/ConsolePlayer.h
 CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o: ../src/Game.h
