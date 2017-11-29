@@ -1,0 +1,11 @@
+./Player.o
+./RegularRules.o
+./main.o
+./Sign.o
+./Point.o
+./ConsolePlayer.o
+./Game.o
+./AIPlayer.o
+./Board.o
+./GameMenu.o
+./Rules.o

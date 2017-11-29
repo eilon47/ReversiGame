@@ -1,0 +1,10 @@
+includes/Board.h
+includes/Player.h
+includes/Point.h
+includes/Sign.h
+includes/RegularRules.h
+includes/Game.h
+includes/AIPlayer.h
+includes/Rules.h
+includes/GameMenu.h
+includes/ConsolePlayer.h

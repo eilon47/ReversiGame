@@ -9,44 +9,44 @@ include_directories(lib/googletest-master/googlemock/include)
 include_directories(includes/)
 set(SOURCE_FILES
         src/AIPlayer.cpp
-        includes/AIPlayer.h
+        src/AIPlayer.h
         src/Board.cpp
-        includes/Board.h
+        src/Board.h
         src/ConsolePlayer.cpp
-        includes/ConsolePlayer.h
+        src/ConsolePlayer.h
         src/Game.cpp
-        includes/Game.h
+        src/Game.h
         src/Player.cpp
         src/Sign.cpp
-        includes/Sign.h
-        includes/Player.h
+        src/Sign.h
+        src/Player.h
         src/Point.cpp
-        includes/Point.h
+        src/Point.h
         src/RegularRules.cpp
-        includes/RegularRules.h
+        src/RegularRules.h
         src/Rules.cpp
-        includes/Rules.h src/GameMenu.cpp includes/GameMenu.h)
+        src/Rules.h src/GameMenu.cpp src/GameMenu.h)
 
 set(TEST_FILES
         tests/main_test.cpp
         src/AIPlayer.cpp
-        includes/AIPlayer.h
+        src/AIPlayer.h
         src/Board.cpp
-        includes/Board.h
+        src/Board.h
         src/ConsolePlayer.cpp
         includes/ConsolePlayer.h
         src/Game.cpp
-        includes/Game.h
+        src/Game.h
         src/Player.cpp
         src/Sign.cpp
-        includes/Sign.h
-        includes/Player.h
+        src/Sign.h
+        src/Player.h
         src/Point.cpp
-        includes/Point.h
+        src/Point.h
         src/RegularRules.cpp
-        includes/RegularRules.h
+        src/RegularRules.h
         src/Rules.cpp
-        includes/Rules.h src/GameMenu.cpp includes/GameMenu.h tests/BoardTest.cpp tests/AITest.cpp tests/GameTest.cpp tests/RulesTest.cpp)
+        src/Rules.h src/GameMenu.cpp src/GameMenu.h tests/BoardTest.cpp tests/AITest.cpp tests/GameTest.cpp tests/RulesTest.cpp)
 
 add_executable(ReversiGame ${SOURCE_FILES} main.cpp)
 add_executable(ReversiTest ${TEST_FILES} ${SOURCE_FILES})

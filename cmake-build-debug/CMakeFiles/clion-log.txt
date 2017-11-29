@@ -1,4 +1,13 @@
 /home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/dandan/Desktop/git/ReversiGame
 -- Configuring done
+CMake Error at CMakeLists.txt:52 (add_executable):
+  Cannot find source file:
+
+    includes/ConsolePlayer.h
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
 -- Generating done
 -- Build files have been written to: /home/dandan/Desktop/git/ReversiGame/cmake-build-debug

@@ -1,27 +1,23 @@
-#elon bashari
-#308576933
+# Alon Vita 311233431
 
-a.out: Board.o Player.o ConsolePlayer.o Point.o Play.o main.o
-	g++ Board.o Player.o ConsolePlayer.o Point.o Play.o main.o
-	
-Board.o: Board.cpp Board.h
-	g++ -c Board.cpp
+CXX = g++
+#CXXFLAGS = -std=c++0x
+RM = rm -f
+#LIBS = -pthread -lboost_serialization -I.
 
-Player.o: Player.cpp Player.h
-	g++ -c Player.cpp
 
-ConsolePlayer.o: ConsolePlayer.cpp ConsolePlayer.h
-	g++ -c ConsolePlayer.cpp
+a.out: core.o makeO
+	$(CXX) $(CXXFLAGS) @compile.txt
 
-Point.o: Point.cpp Point.h
-	g++ -c Point.cpp
+core.o:
+	find src -name "*.cpp" > sources.txt
+	$(CXX) $(CXXFLAGS) -c @sources.txt
 
-Play.o: Play.cpp Play.h
-	g++ -c Play.cpp
-	
-main.o: main.cpp Board.h Play.h
-	g++ -c main.cpp
+makeO:
+	find -name "*.o" > compile.txt
+	sed -i '/cmake-build-debug/d' ./compile.txt
 
-run:
-	./a.out
-
+clean:
+	$(RM) *.o
+	$(RM) sources.txt
+	$(RM) compile.txt

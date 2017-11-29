@@ -1,0 +1,10 @@
+src/Game.cpp
+src/Rules.cpp
+src/RegularRules.cpp
+src/Player.cpp
+src/Board.cpp
+src/GameMenu.cpp
+src/AIPlayer.cpp
+src/Sign.cpp
+src/ConsolePlayer.cpp
+src/Point.cpp

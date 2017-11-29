@@ -390,46 +390,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/includes/AIPlayer.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/includes/Board.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/includes/ConsolePlayer.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/includes/Game.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/includes/GameMenu.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/includes/Player.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/includes/Point.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/includes/RegularRules.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/includes/Rules.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/includes/Sign.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/lib/googletest-master/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
@@ -449,59 +409,64 @@
 			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/AIPlayer.cpp">
-			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/AIPlayer.h">
 			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Board.cpp">
-			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Board.h">
 			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/ConsolePlayer.cpp">
-			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/ConsolePlayer.h">
 			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Game.cpp">
-			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Game.h">
 			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/GameMenu.cpp">
-			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/GameMenu.h">
 			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Player.cpp">
-			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Player.h">
 			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Point.cpp">
-			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Point.h">
 			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/RegularRules.cpp">
-			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/RegularRules.h">
 			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Rules.cpp">
-			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Rules.h">
 			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Sign.cpp">
-			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/AITest.cpp">
-			<Option target="ReversiTest"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/BoardTest.cpp">
-			<Option target="ReversiTest"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/GameTest.cpp">
-			<Option target="ReversiTest"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/RulesTest.cpp">
-			<Option target="ReversiTest"/>
-		</Unit>
-		<Unit filename="/home/dandan/Desktop/git/ReversiGame/tests/main_test.cpp">
-			<Option target="ReversiTest"/>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/src/Sign.h">
+			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

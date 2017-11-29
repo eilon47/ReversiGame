@@ -267,7 +267,6 @@ src/AIPlayer.o: src/AIPlayer.cpp.o
 
 # target to build an object file
 src/AIPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/AIPlayer.cpp.o
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/AIPlayer.cpp.o
 .PHONY : src/AIPlayer.cpp.o
 
@@ -277,7 +276,6 @@ src/AIPlayer.i: src/AIPlayer.cpp.i
 
 # target to preprocess a source file
 src/AIPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/AIPlayer.cpp.i
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/AIPlayer.cpp.i
 .PHONY : src/AIPlayer.cpp.i
 
@@ -287,7 +285,6 @@ src/AIPlayer.s: src/AIPlayer.cpp.s
 
 # target to generate assembly for a file
 src/AIPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/AIPlayer.cpp.s
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/AIPlayer.cpp.s
 .PHONY : src/AIPlayer.cpp.s
 
@@ -297,7 +294,6 @@ src/Board.o: src/Board.cpp.o
 
 # target to build an object file
 src/Board.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Board.cpp.o
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Board.cpp.o
 .PHONY : src/Board.cpp.o
 
@@ -307,7 +303,6 @@ src/Board.i: src/Board.cpp.i
 
 # target to preprocess a source file
 src/Board.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Board.cpp.i
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Board.cpp.i
 .PHONY : src/Board.cpp.i
 
@@ -317,7 +312,6 @@ src/Board.s: src/Board.cpp.s
 
 # target to generate assembly for a file
 src/Board.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Board.cpp.s
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Board.cpp.s
 .PHONY : src/Board.cpp.s
 
@@ -327,7 +321,6 @@ src/ConsolePlayer.o: src/ConsolePlayer.cpp.o
 
 # target to build an object file
 src/ConsolePlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/ConsolePlayer.cpp.o
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/ConsolePlayer.cpp.o
 .PHONY : src/ConsolePlayer.cpp.o
 
@@ -337,7 +330,6 @@ src/ConsolePlayer.i: src/ConsolePlayer.cpp.i
 
 # target to preprocess a source file
 src/ConsolePlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/ConsolePlayer.cpp.i
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/ConsolePlayer.cpp.i
 .PHONY : src/ConsolePlayer.cpp.i
 
@@ -347,7 +339,6 @@ src/ConsolePlayer.s: src/ConsolePlayer.cpp.s
 
 # target to generate assembly for a file
 src/ConsolePlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/ConsolePlayer.cpp.s
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/ConsolePlayer.cpp.s
 .PHONY : src/ConsolePlayer.cpp.s
 
@@ -357,7 +348,6 @@ src/Game.o: src/Game.cpp.o
 
 # target to build an object file
 src/Game.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Game.cpp.o
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Game.cpp.o
 .PHONY : src/Game.cpp.o
 
@@ -367,7 +357,6 @@ src/Game.i: src/Game.cpp.i
 
 # target to preprocess a source file
 src/Game.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Game.cpp.i
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Game.cpp.i
 .PHONY : src/Game.cpp.i
 
@@ -377,7 +366,6 @@ src/Game.s: src/Game.cpp.s
 
 # target to generate assembly for a file
 src/Game.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Game.cpp.s
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
@@ -387,7 +375,6 @@ src/GameMenu.o: src/GameMenu.cpp.o
 
 # target to build an object file
 src/GameMenu.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/GameMenu.cpp.o
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/GameMenu.cpp.o
 .PHONY : src/GameMenu.cpp.o
 
@@ -397,7 +384,6 @@ src/GameMenu.i: src/GameMenu.cpp.i
 
 # target to preprocess a source file
 src/GameMenu.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/GameMenu.cpp.i
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/GameMenu.cpp.i
 .PHONY : src/GameMenu.cpp.i
 
@@ -407,7 +393,6 @@ src/GameMenu.s: src/GameMenu.cpp.s
 
 # target to generate assembly for a file
 src/GameMenu.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/GameMenu.cpp.s
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/GameMenu.cpp.s
 .PHONY : src/GameMenu.cpp.s
 
@@ -417,7 +402,6 @@ src/Player.o: src/Player.cpp.o
 
 # target to build an object file
 src/Player.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Player.cpp.o
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Player.cpp.o
 .PHONY : src/Player.cpp.o
 
@@ -427,7 +411,6 @@ src/Player.i: src/Player.cpp.i
 
 # target to preprocess a source file
 src/Player.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Player.cpp.i
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Player.cpp.i
 .PHONY : src/Player.cpp.i
 
@@ -437,7 +420,6 @@ src/Player.s: src/Player.cpp.s
 
 # target to generate assembly for a file
 src/Player.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Player.cpp.s
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
@@ -447,7 +429,6 @@ src/Point.o: src/Point.cpp.o
 
 # target to build an object file
 src/Point.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Point.cpp.o
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Point.cpp.o
 .PHONY : src/Point.cpp.o
 
@@ -457,7 +438,6 @@ src/Point.i: src/Point.cpp.i
 
 # target to preprocess a source file
 src/Point.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Point.cpp.i
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Point.cpp.i
 .PHONY : src/Point.cpp.i
 
@@ -467,7 +447,6 @@ src/Point.s: src/Point.cpp.s
 
 # target to generate assembly for a file
 src/Point.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Point.cpp.s
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Point.cpp.s
 .PHONY : src/Point.cpp.s
 
@@ -477,7 +456,6 @@ src/RegularRules.o: src/RegularRules.cpp.o
 
 # target to build an object file
 src/RegularRules.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/RegularRules.cpp.o
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/RegularRules.cpp.o
 .PHONY : src/RegularRules.cpp.o
 
@@ -487,7 +465,6 @@ src/RegularRules.i: src/RegularRules.cpp.i
 
 # target to preprocess a source file
 src/RegularRules.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/RegularRules.cpp.i
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/RegularRules.cpp.i
 .PHONY : src/RegularRules.cpp.i
 
@@ -497,7 +474,6 @@ src/RegularRules.s: src/RegularRules.cpp.s
 
 # target to generate assembly for a file
 src/RegularRules.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/RegularRules.cpp.s
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/RegularRules.cpp.s
 .PHONY : src/RegularRules.cpp.s
 
@@ -507,7 +483,6 @@ src/Rules.o: src/Rules.cpp.o
 
 # target to build an object file
 src/Rules.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Rules.cpp.o
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Rules.cpp.o
 .PHONY : src/Rules.cpp.o
 
@@ -517,7 +492,6 @@ src/Rules.i: src/Rules.cpp.i
 
 # target to preprocess a source file
 src/Rules.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Rules.cpp.i
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Rules.cpp.i
 .PHONY : src/Rules.cpp.i
 
@@ -527,7 +501,6 @@ src/Rules.s: src/Rules.cpp.s
 
 # target to generate assembly for a file
 src/Rules.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Rules.cpp.s
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Rules.cpp.s
 .PHONY : src/Rules.cpp.s
 
@@ -537,7 +510,6 @@ src/Sign.o: src/Sign.cpp.o
 
 # target to build an object file
 src/Sign.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Sign.cpp.o
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Sign.cpp.o
 .PHONY : src/Sign.cpp.o
 
@@ -547,7 +519,6 @@ src/Sign.i: src/Sign.cpp.i
 
 # target to preprocess a source file
 src/Sign.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Sign.cpp.i
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Sign.cpp.i
 .PHONY : src/Sign.cpp.i
 
@@ -557,144 +528,8 @@ src/Sign.s: src/Sign.cpp.s
 
 # target to generate assembly for a file
 src/Sign.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/src/Sign.cpp.s
 	$(MAKE) -f CMakeFiles/ReversiGame.dir/build.make CMakeFiles/ReversiGame.dir/src/Sign.cpp.s
 .PHONY : src/Sign.cpp.s
-
-tests/AITest.o: tests/AITest.cpp.o
-
-.PHONY : tests/AITest.o
-
-# target to build an object file
-tests/AITest.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/AITest.cpp.o
-.PHONY : tests/AITest.cpp.o
-
-tests/AITest.i: tests/AITest.cpp.i
-
-.PHONY : tests/AITest.i
-
-# target to preprocess a source file
-tests/AITest.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/AITest.cpp.i
-.PHONY : tests/AITest.cpp.i
-
-tests/AITest.s: tests/AITest.cpp.s
-
-.PHONY : tests/AITest.s
-
-# target to generate assembly for a file
-tests/AITest.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/AITest.cpp.s
-.PHONY : tests/AITest.cpp.s
-
-tests/BoardTest.o: tests/BoardTest.cpp.o
-
-.PHONY : tests/BoardTest.o
-
-# target to build an object file
-tests/BoardTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.o
-.PHONY : tests/BoardTest.cpp.o
-
-tests/BoardTest.i: tests/BoardTest.cpp.i
-
-.PHONY : tests/BoardTest.i
-
-# target to preprocess a source file
-tests/BoardTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.i
-.PHONY : tests/BoardTest.cpp.i
-
-tests/BoardTest.s: tests/BoardTest.cpp.s
-
-.PHONY : tests/BoardTest.s
-
-# target to generate assembly for a file
-tests/BoardTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/BoardTest.cpp.s
-.PHONY : tests/BoardTest.cpp.s
-
-tests/GameTest.o: tests/GameTest.cpp.o
-
-.PHONY : tests/GameTest.o
-
-# target to build an object file
-tests/GameTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/GameTest.cpp.o
-.PHONY : tests/GameTest.cpp.o
-
-tests/GameTest.i: tests/GameTest.cpp.i
-
-.PHONY : tests/GameTest.i
-
-# target to preprocess a source file
-tests/GameTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/GameTest.cpp.i
-.PHONY : tests/GameTest.cpp.i
-
-tests/GameTest.s: tests/GameTest.cpp.s
-
-.PHONY : tests/GameTest.s
-
-# target to generate assembly for a file
-tests/GameTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/GameTest.cpp.s
-.PHONY : tests/GameTest.cpp.s
-
-tests/RulesTest.o: tests/RulesTest.cpp.o
-
-.PHONY : tests/RulesTest.o
-
-# target to build an object file
-tests/RulesTest.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o
-.PHONY : tests/RulesTest.cpp.o
-
-tests/RulesTest.i: tests/RulesTest.cpp.i
-
-.PHONY : tests/RulesTest.i
-
-# target to preprocess a source file
-tests/RulesTest.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.i
-.PHONY : tests/RulesTest.cpp.i
-
-tests/RulesTest.s: tests/RulesTest.cpp.s
-
-.PHONY : tests/RulesTest.s
-
-# target to generate assembly for a file
-tests/RulesTest.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.s
-.PHONY : tests/RulesTest.cpp.s
-
-tests/main_test.o: tests/main_test.cpp.o
-
-.PHONY : tests/main_test.o
-
-# target to build an object file
-tests/main_test.cpp.o:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/main_test.cpp.o
-.PHONY : tests/main_test.cpp.o
-
-tests/main_test.i: tests/main_test.cpp.i
-
-.PHONY : tests/main_test.i
-
-# target to preprocess a source file
-tests/main_test.cpp.i:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/main_test.cpp.i
-.PHONY : tests/main_test.cpp.i
-
-tests/main_test.s: tests/main_test.cpp.s
-
-.PHONY : tests/main_test.s
-
-# target to generate assembly for a file
-tests/main_test.cpp.s:
-	$(MAKE) -f CMakeFiles/ReversiTest.dir/build.make CMakeFiles/ReversiTest.dir/tests/main_test.cpp.s
-.PHONY : tests/main_test.cpp.s
 
 # Help Target
 help:
@@ -747,21 +582,6 @@ help:
 	@echo "... src/Sign.o"
 	@echo "... src/Sign.i"
 	@echo "... src/Sign.s"
-	@echo "... tests/AITest.o"
-	@echo "... tests/AITest.i"
-	@echo "... tests/AITest.s"
-	@echo "... tests/BoardTest.o"
-	@echo "... tests/BoardTest.i"
-	@echo "... tests/BoardTest.s"
-	@echo "... tests/GameTest.o"
-	@echo "... tests/GameTest.i"
-	@echo "... tests/GameTest.s"
-	@echo "... tests/RulesTest.o"
-	@echo "... tests/RulesTest.i"
-	@echo "... tests/RulesTest.s"
-	@echo "... tests/main_test.o"
-	@echo "... tests/main_test.i"
-	@echo "... tests/main_test.s"
 .PHONY : help
 
 
