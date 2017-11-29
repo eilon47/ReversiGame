@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++98
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include -I/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include -I/home/elon/Desktop/Git/ReversiGame/src 
+CXX_INCLUDES = -I/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include -I/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include 
 

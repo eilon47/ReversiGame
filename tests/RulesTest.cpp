@@ -3,9 +3,9 @@
  */
 
 #include <gtest/gtest.h>
-#include "Board.h"
-#include "Game.h"
-#include "RegularRules.h"
+#include "../Board.h"
+#include "../Game.h"
+#include "../RegularRules.h"
 
 class RulesTest: public testing::Test {
 public:

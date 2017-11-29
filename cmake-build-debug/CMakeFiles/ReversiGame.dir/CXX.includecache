@@ -6,63 +6,57 @@
 
 #IncludeRegexTransform: 
 
-/home/elon/Desktop/Git/ReversiGame/main.cpp
-src/Game.h
-/home/elon/Desktop/Git/ReversiGame/src/Game.h
-src/GameMenu.h
-/home/elon/Desktop/Git/ReversiGame/src/GameMenu.h
-
-/home/elon/Desktop/Git/ReversiGame/src/AIPlayer.cpp
+/home/elon/Desktop/Git/ReversiGame/AIPlayer.cpp
 algorithm
 -
 AIPlayer.h
-/home/elon/Desktop/Git/ReversiGame/src/AIPlayer.h
+/home/elon/Desktop/Git/ReversiGame/AIPlayer.h
 Game.h
-/home/elon/Desktop/Git/ReversiGame/src/Game.h
+/home/elon/Desktop/Git/ReversiGame/Game.h
 
-/home/elon/Desktop/Git/ReversiGame/src/AIPlayer.h
+/home/elon/Desktop/Git/ReversiGame/AIPlayer.h
 Player.h
-/home/elon/Desktop/Git/ReversiGame/src/Player.h
+/home/elon/Desktop/Git/ReversiGame/Player.h
 Board.h
-/home/elon/Desktop/Git/ReversiGame/src/Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
 Rules.h
-/home/elon/Desktop/Git/ReversiGame/src/Rules.h
+/home/elon/Desktop/Git/ReversiGame/Rules.h
 
-/home/elon/Desktop/Git/ReversiGame/src/Board.cpp
+/home/elon/Desktop/Git/ReversiGame/Board.cpp
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/src/Sign.h
+/home/elon/Desktop/Git/ReversiGame/Sign.h
 Board.h
-/home/elon/Desktop/Git/ReversiGame/src/Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
 
-/home/elon/Desktop/Git/ReversiGame/src/Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
 vector
 -
 Point.h
-/home/elon/Desktop/Git/ReversiGame/src/Point.h
+/home/elon/Desktop/Git/ReversiGame/Point.h
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/src/Sign.h
+/home/elon/Desktop/Git/ReversiGame/Sign.h
 iostream
 -
 
-/home/elon/Desktop/Git/ReversiGame/src/ConsolePlayer.cpp
+/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.cpp
 algorithm
 -
 ConsolePlayer.h
-/home/elon/Desktop/Git/ReversiGame/src/ConsolePlayer.h
+/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.h
 
-/home/elon/Desktop/Git/ReversiGame/src/ConsolePlayer.h
+/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.h
 iostream
 -
 Player.h
-/home/elon/Desktop/Git/ReversiGame/src/Player.h
+/home/elon/Desktop/Git/ReversiGame/Player.h
 
-/home/elon/Desktop/Git/ReversiGame/src/Game.cpp
+/home/elon/Desktop/Git/ReversiGame/Game.cpp
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/src/Sign.h
+/home/elon/Desktop/Git/ReversiGame/Sign.h
 Game.h
-/home/elon/Desktop/Git/ReversiGame/src/Game.h
+/home/elon/Desktop/Git/ReversiGame/Game.h
 
-/home/elon/Desktop/Git/ReversiGame/src/Game.h
+/home/elon/Desktop/Git/ReversiGame/Game.h
 iostream
 -
 algorithm
@@ -70,69 +64,75 @@ algorithm
 vector
 -
 Board.h
-/home/elon/Desktop/Git/ReversiGame/src/Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
 ConsolePlayer.h
-/home/elon/Desktop/Git/ReversiGame/src/ConsolePlayer.h
+/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.h
 Rules.h
-/home/elon/Desktop/Git/ReversiGame/src/Rules.h
+/home/elon/Desktop/Git/ReversiGame/Rules.h
 
-/home/elon/Desktop/Git/ReversiGame/src/GameMenu.cpp
+/home/elon/Desktop/Git/ReversiGame/GameMenu.cpp
 GameMenu.h
-/home/elon/Desktop/Git/ReversiGame/src/GameMenu.h
+/home/elon/Desktop/Git/ReversiGame/GameMenu.h
 AIPlayer.h
-/home/elon/Desktop/Git/ReversiGame/src/AIPlayer.h
+/home/elon/Desktop/Git/ReversiGame/AIPlayer.h
 RegularRules.h
-/home/elon/Desktop/Git/ReversiGame/src/RegularRules.h
+/home/elon/Desktop/Git/ReversiGame/RegularRules.h
 
-/home/elon/Desktop/Git/ReversiGame/src/GameMenu.h
+/home/elon/Desktop/Git/ReversiGame/GameMenu.h
 Game.h
-/home/elon/Desktop/Git/ReversiGame/src/Game.h
+/home/elon/Desktop/Git/ReversiGame/Game.h
 
-/home/elon/Desktop/Git/ReversiGame/src/Player.cpp
+/home/elon/Desktop/Git/ReversiGame/Player.cpp
 Player.h
-/home/elon/Desktop/Git/ReversiGame/src/Player.h
+/home/elon/Desktop/Git/ReversiGame/Player.h
 
-/home/elon/Desktop/Git/ReversiGame/src/Player.h
+/home/elon/Desktop/Git/ReversiGame/Player.h
 Point.h
-/home/elon/Desktop/Git/ReversiGame/src/Point.h
+/home/elon/Desktop/Git/ReversiGame/Point.h
 Board.h
-/home/elon/Desktop/Git/ReversiGame/src/Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/src/Sign.h
+/home/elon/Desktop/Git/ReversiGame/Sign.h
 vector
 -
 
-/home/elon/Desktop/Git/ReversiGame/src/Point.cpp
+/home/elon/Desktop/Git/ReversiGame/Point.cpp
 Point.h
-/home/elon/Desktop/Git/ReversiGame/src/Point.h
+/home/elon/Desktop/Git/ReversiGame/Point.h
 
-/home/elon/Desktop/Git/ReversiGame/src/Point.h
+/home/elon/Desktop/Git/ReversiGame/Point.h
 iostream
 -
 
-/home/elon/Desktop/Git/ReversiGame/src/RegularRules.cpp
+/home/elon/Desktop/Git/ReversiGame/RegularRules.cpp
 RegularRules.h
-/home/elon/Desktop/Git/ReversiGame/src/RegularRules.h
+/home/elon/Desktop/Git/ReversiGame/RegularRules.h
 
-/home/elon/Desktop/Git/ReversiGame/src/RegularRules.h
+/home/elon/Desktop/Git/ReversiGame/RegularRules.h
 Rules.h
-/home/elon/Desktop/Git/ReversiGame/src/Rules.h
+/home/elon/Desktop/Git/ReversiGame/Rules.h
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/src/Sign.h
+/home/elon/Desktop/Git/ReversiGame/Sign.h
 
-/home/elon/Desktop/Git/ReversiGame/src/Rules.cpp
+/home/elon/Desktop/Git/ReversiGame/Rules.cpp
 Rules.h
-/home/elon/Desktop/Git/ReversiGame/src/Rules.h
+/home/elon/Desktop/Git/ReversiGame/Rules.h
 
-/home/elon/Desktop/Git/ReversiGame/src/Rules.h
+/home/elon/Desktop/Git/ReversiGame/Rules.h
 Board.h
-/home/elon/Desktop/Git/ReversiGame/src/Board.h
+/home/elon/Desktop/Git/ReversiGame/Board.h
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/src/Sign.h
+/home/elon/Desktop/Git/ReversiGame/Sign.h
 
-/home/elon/Desktop/Git/ReversiGame/src/Sign.cpp
+/home/elon/Desktop/Git/ReversiGame/Sign.cpp
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/src/Sign.h
+/home/elon/Desktop/Git/ReversiGame/Sign.h
 
-/home/elon/Desktop/Git/ReversiGame/src/Sign.h
+/home/elon/Desktop/Git/ReversiGame/Sign.h
+
+/home/elon/Desktop/Git/ReversiGame/main.cpp
+Game.h
+/home/elon/Desktop/Git/ReversiGame/Game.h
+GameMenu.h
+/home/elon/Desktop/Git/ReversiGame/GameMenu.h
 

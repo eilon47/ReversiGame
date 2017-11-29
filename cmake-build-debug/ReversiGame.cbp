@@ -86,7 +86,6 @@
 				<Compiler>
 					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/elon/Desktop/Git/ReversiGame/src"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -112,7 +111,6 @@
 				<Compiler>
 					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/elon/Desktop/Git/ReversiGame/src"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -138,7 +136,6 @@
 				<Compiler>
 					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/elon/Desktop/Git/ReversiGame/src"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -164,7 +161,6 @@
 				<Compiler>
 					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/include"/>
 					<Add directory="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/include"/>
-					<Add directory="/home/elon/Desktop/Git/ReversiGame/src"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -390,6 +386,86 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/AIPlayer.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/AIPlayer.h">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Board.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Board.h">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.h">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Game.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Game.h">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/GameMenu.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/GameMenu.h">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Player.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Player.h">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Point.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Point.h">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/RegularRules.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/RegularRules.h">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Rules.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Rules.h">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Sign.cpp">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Sign.h">
+			<Option target="ReversiTest"/>
+			<Option target="ReversiGame"/>
+		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
@@ -406,86 +482,6 @@
 			<Option target="gtest_main"/>
 		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/main.cpp">
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/AIPlayer.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/AIPlayer.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Board.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Board.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/ConsolePlayer.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/ConsolePlayer.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Game.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Game.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/GameMenu.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/GameMenu.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Player.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Player.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Point.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Point.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/RegularRules.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/RegularRules.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Rules.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Rules.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Sign.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/src/Sign.h">
-			<Option target="ReversiTest"/>
 			<Option target="ReversiGame"/>
 		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/tests/AITest.cpp">
