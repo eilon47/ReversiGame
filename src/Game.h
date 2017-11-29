@@ -1,8 +1,8 @@
-//
-// Created by Eilon Bashari.
-// Class for Game.
-// Game is in charge of the game flow.
-//
+/*
+* Created by Eilon Bashari and Daniel Greenspan.
+* Class for Game.
+* Game is in charge of the game flow.
+*/
 
 #ifndef EX2_PLAY_H
 #define EX2_PLAY_H
@@ -89,10 +89,11 @@ class Game {
    * @param v2 v2.
    */
   void addVectorToOther(vector<Point> &v1, vector<Point> &v2);
-    /**
-     *
-     */
-    void changePlayer();
+  /**
+   * Assignment opertaor =.
+   * @param p another game
+   * @return game, after shallow copy.
+   */
   Game&operator = (const Game &p);
 };
 

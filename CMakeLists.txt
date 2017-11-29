@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 98)
 add_subdirectory(lib/googletest-master)
 include_directories(lib/googletest-master/googletest/include)
 include_directories(lib/googletest-master/googlemock/include)
-include_directories(includes/)
+include_directories(src/)
 set(SOURCE_FILES
         src/AIPlayer.cpp
         src/AIPlayer.h
@@ -29,24 +29,10 @@ set(SOURCE_FILES
 
 set(TEST_FILES
         tests/main_test.cpp
-        src/AIPlayer.cpp
-        src/AIPlayer.h
-        src/Board.cpp
-        src/Board.h
-        src/ConsolePlayer.cpp
-        includes/ConsolePlayer.h
-        src/Game.cpp
-        src/Game.h
-        src/Player.cpp
-        src/Sign.cpp
-        src/Sign.h
-        src/Player.h
-        src/Point.cpp
-        src/Point.h
-        src/RegularRules.cpp
-        src/RegularRules.h
-        src/Rules.cpp
-        src/Rules.h src/GameMenu.cpp src/GameMenu.h tests/BoardTest.cpp tests/AITest.cpp tests/GameTest.cpp tests/RulesTest.cpp)
+        tests/BoardTest.cpp
+        tests/AITest.cpp
+        tests/GameTest.cpp
+        tests/RulesTest.cpp)
 
 add_executable(ReversiGame ${SOURCE_FILES} main.cpp)
 add_executable(ReversiTest ${TEST_FILES} ${SOURCE_FILES})

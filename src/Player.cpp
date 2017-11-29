@@ -1,9 +1,9 @@
-//
-// Created by Eilon Bashari.
-// Class for Player.
-// Player has sign, knows how many soldiers it has on board
-// and can choose a location for next move.
-//
+/*
+* Created by Eilon Bashari and Daniel Greenspan.
+* Class for Player.
+* Player has sign, knows how many soldiers it has on board
+* and can choose a location for next move.
+*/
 
 #include "Player.h"
 //Constructors.

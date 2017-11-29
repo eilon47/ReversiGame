@@ -1,6 +1,7 @@
-//
-// Created by dandan on 21/11/17.
-//
+/*
+ * Created by Daniel Greenspan and Eilon Bashari.
+ * AIPlayer class derived from Player class.
+ */
 
 #ifndef REVERSIGAME_AIPLAYER_H
 #define REVERSIGAME_AIPLAYER_H
@@ -29,11 +30,11 @@ public:
     /**
      * getPointFromPlayer.
      * Ask the player to enter a point for the next move.
-     * @param p point to change.
+     * @param b current board.
      * @param v vector of possible moves.
+     * @return Point the player chose.
      */
     Point getPointFromPlayer(Board b, vector<Point> v);
-
 private:
     SIGN sign;
     int numOfSoldiers;

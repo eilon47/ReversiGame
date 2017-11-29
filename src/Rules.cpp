@@ -1,5 +1,5 @@
-//
-// Created by elon on 21/11/17.
-//
-
+/**
+ * Created by Daniel Greenspan Eilon Bashari.
+ * Rules source file.
+ */
 #include "Rules.h"

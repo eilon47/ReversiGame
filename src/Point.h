@@ -1,8 +1,8 @@
-//
-// Created by Eilon Bashari.
-// Class for Point.
-// Each Point has x value and y value.
-//
+/*
+* Created by Daniel Greenspan Eilon Bashari.
+* Class for Point.
+* Each Point has x value and y value.
+*/
 
 #ifndef EX2_POINT_H
 #define EX2_POINT_H

@@ -1,6 +1,7 @@
-//
-// Created by dandan on 27/11/17.
-//
+/**
+ * Created by Daniel Greenspan Eilon Bashari.
+ * Tests for AIPlayer class.
+ */
 
 #include <gtest/gtest.h>
 #include "AIPlayer.h"

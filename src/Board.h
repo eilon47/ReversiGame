@@ -1,5 +1,5 @@
 /*
- * Created by Eilon Bashari.
+ * Created by Daniel Greenspan and Eilon Bashari.
  * Board's header file.
  */
 
@@ -9,8 +9,8 @@
 #include <vector>
 #include "Point.h"
 #include "Sign.h"
-
 #include <iostream>
+
 using namespace std;
 
 class Board {
@@ -38,7 +38,6 @@ class Board {
    * @param b another board.
    */
   Board(const Board& b);
-
   /**
    * Destructor.
    */
@@ -79,18 +78,6 @@ class Board {
    * @return how many opp's signs were flipped.
    */
   int flip(Point start, SIGN sign, int jumpRow, int jumpCol);
-  /**
-   * getNextPossibleMoves.
-   * checks the next possible move in one direction in each time.
-   * @param opp sign of the opp.
-   * @param jumpRow direction on x values.
-   * @param jumpCol direction on y values.
-   * @param currentRow x start.
-   * @param currentCol y start.
-   * @return vector of points.
-   */
-  vector<Point> getNextPossibleMoves(char opp, int jumpRow, int jumpCol,
-                                     int currentRow, int currentCol);
   /**
    * operator =.
    * Assignment operator, shallow copy.

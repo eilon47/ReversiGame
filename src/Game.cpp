@@ -1,8 +1,8 @@
-//
-// Created by Eilon Bashari.
-// Class for Game.
-// Game is in charge of the game flow.
-//
+/*
+* Created by Daniel Greenspan and Eilon Bashari.
+* Class for Game.
+* Game is in charge of the game flow.
+*/
 #include "Sign.h"
 #include "Game.h"
 
@@ -183,5 +183,3 @@ Game& Game::operator=(const Game &p) {
   this->rules = p.rules;
   this->turn = p.turn;
 }
-
-

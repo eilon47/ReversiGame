@@ -1,9 +1,10 @@
-//
-// Created by dandan on 27/11/17.
-//
+/**
+ * Created by Daniel Greenspan Eilon Bashari.
+ * Tests for Board class.
+ */
 
 #include <gtest/gtest.h>
-#include <Board.h>
+#include "Board.h"
 
 class BoardTest: public testing::Test {
 

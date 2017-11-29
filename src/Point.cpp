@@ -1,8 +1,8 @@
-//
-// Created by Eilon Bashari.
-// Class for Point.
-// Each Point has x value and y value.
-//
+/*
+* Created by Daniel Greenspan Eilon Bashari.
+* Class for Point.
+* Each Point has x value and y value.
+*/
 
 #include "Point.h"
 //Constructors.
@@ -30,12 +30,15 @@ bool Point::operator<(const Point &p) const {
   }
   return this->getX() < p.getX();
 }
+//out operator for printing.
 ostream& operator <<(ostream &out, const Point &p) {
   out << "(" << p.x << "," << p.y << ")";
 }
+//equals operator.
 bool Point::operator==(const Point &p) const {
   return (this->x == p.x && this->y == p.y);
 }
+//assign operator.
 Point& Point::operator=(const Point &p) {
   this->x = p.x;
   this->y = p.y;

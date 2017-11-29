@@ -1,7 +1,7 @@
-//
-// Created by Eilon Bashari.
-// Class for console player . inheritor from class Player.
-//
+/*
+ * Created by Daniel Greenspan and Eilon Bashari.
+ * ConsolePlayer class derived from Player class.
+ */
 
 #ifndef EX2_CONSOLEPLAYER_H
 #define EX2_CONSOLEPLAYER_H
@@ -24,11 +24,12 @@ class ConsolePlayer: public Player {
    */
   ConsolePlayer(const ConsolePlayer &cp);
   /**
-   * getPointFromPlayer.
-   * Ask the player to enter a point for the next move.
-   * @param p point to change.
-   * @param v vector of possible moves.
-   */
+  * getPointFromPlayer.
+  * Ask the player to enter a point for the next move.
+  * @param b current board.
+  * @param v vector of possible moves.
+  * @return Point the player chose.
+  */
   virtual Point getPointFromPlayer(Board b, vector<Point> v);
 private:
     SIGN sign;

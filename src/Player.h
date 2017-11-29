@@ -1,9 +1,9 @@
-//
-// Created by Eilon Bashari.
-// Class for Player.
-// Player has sign, knows how many soldiers it has on board
-// and can choose a location for next move.
-//
+/*
+* Created by Eilon Bashari and Daniel Greenspan.
+* Class for Player.
+* Player has sign, knows how many soldiers it has on board
+* and can choose a location for next move.
+*/
 
 
 #ifndef EX2_PLAYER_H
@@ -51,10 +51,12 @@ class Player {
   */
   void addSoldiers(int num);
   /**
-   * Pure virtual function to get the next move from player.
-   * @param p point to change.
-   * @param v vector of possible points.
-   */
+  * getPointFromPlayer.
+  * Ask the player to enter a point for the next move.
+  * @param b current board.
+  * @param v vector of possible moves.
+  * @return Point the player chose.
+  */
   virtual Point getPointFromPlayer(Board b, vector<Point> v) = 0;
   /**
   * operator ==.

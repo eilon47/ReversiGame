@@ -1,13 +1,14 @@
-//
-// Created by dandan on 28/11/17.
-//
+/**
+ * Created by Daniel Greenspan Eilon Bashari.
+ * Tests for Game class.
+ */
 
 #include <gtest/gtest.h>
-#include <Board.h>
-#include <ConsolePlayer.h>
-#include <AIPlayer.h>
-#include <RegularRules.h>
-#include <Game.h>
+#include "Board.h"
+#include "ConsolePlayer.h"
+#include "AIPlayer.h"
+#include "RegularRules.h"
+#include "Game.h"
 
 class GameTest: public testing::Test {
 };

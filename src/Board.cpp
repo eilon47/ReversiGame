@@ -1,5 +1,5 @@
 /*
- * Created by Elon, 308576933.
+ * Created by Eilon Bashari and Daniel Greenspan.
  * Board's source file.
  */
 #include "Sign.h"
@@ -119,7 +119,6 @@ int Board::flip(Point start, SIGN sign, int jumpRow, int jumpCol) {
   }
   return counter;
 }
-
 //Operator for printing the Board.
 ostream& operator<<(ostream &out, const Board &b) {
   for(int i = 0; i < b.size; i++) {

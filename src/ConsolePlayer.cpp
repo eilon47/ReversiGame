@@ -1,7 +1,7 @@
-//
-// Created by Eilon Bashari.
-// Class for console player . inheritor from class Player.
-//
+/*
+ * Created by Daniel Greenspan and Eilon Bashari.
+ * ConsolePlayer class derived from Player class.
+ */
 
 #include <algorithm>
 #include "ConsolePlayer.h"
