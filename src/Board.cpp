@@ -1,5 +1,4 @@
 /*
- * Created by Eilon Bashari and Daniel Greenspan.
  * Board's source file.
  */
 #include "Sign.h"

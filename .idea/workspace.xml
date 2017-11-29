@@ -17,10 +17,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="410487de-6258-48a6-b60a-f9bd3ec063ed" name="Default" comment="included GameTest">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameMenu.o" afterPath="$PROJECT_DIR$/GameMenu.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/a.out" afterPath="$PROJECT_DIR$/a.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AIPlayer.cpp" afterPath="$PROJECT_DIR$/src/AIPlayer.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AIPlayer.h" afterPath="$PROJECT_DIR$/src/AIPlayer.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Board.cpp" afterPath="$PROJECT_DIR$/src/Board.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Board.h" afterPath="$PROJECT_DIR$/src/Board.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConsolePlayer.cpp" afterPath="$PROJECT_DIR$/src/ConsolePlayer.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ConsolePlayer.h" afterPath="$PROJECT_DIR$/src/ConsolePlayer.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.cpp" afterPath="$PROJECT_DIR$/src/Game.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Game.h" afterPath="$PROJECT_DIR$/src/Game.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameMenu.cpp" afterPath="$PROJECT_DIR$/src/GameMenu.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameMenu.h" afterPath="$PROJECT_DIR$/src/GameMenu.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Player.cpp" afterPath="$PROJECT_DIR$/src/Player.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Player.h" afterPath="$PROJECT_DIR$/src/Player.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Point.cpp" afterPath="$PROJECT_DIR$/src/Point.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Point.h" afterPath="$PROJECT_DIR$/src/Point.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RegularRules.cpp" afterPath="$PROJECT_DIR$/src/RegularRules.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RegularRules.h" afterPath="$PROJECT_DIR$/src/RegularRules.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules.cpp" afterPath="$PROJECT_DIR$/src/Rules.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rules.h" afterPath="$PROJECT_DIR$/src/Rules.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sign.cpp" afterPath="$PROJECT_DIR$/src/Sign.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sign.h" afterPath="$PROJECT_DIR$/src/Sign.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/AITest.cpp" afterPath="$PROJECT_DIR$/tests/AITest.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/BoardTest.cpp" afterPath="$PROJECT_DIR$/tests/BoardTest.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/GameTest.cpp" afterPath="$PROJECT_DIR$/tests/GameTest.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/RulesTest.cpp" afterPath="$PROJECT_DIR$/tests/RulesTest.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/main_test.cpp" afterPath="$PROJECT_DIR$/tests/main_test.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,51 +53,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AITest.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/AITest.cpp">
+      <file leaf-file-name="Player.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Player.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding>
-                <element signature="e#84#108#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoardTest.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/BoardTest.cpp">
+      <file leaf-file-name="Player.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Player.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
-              <folding>
-                <element signature="e#81#105#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameMenu.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GameMenu.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#77#0" expanded="false" />
-                <element signature="e#1984#2073#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameTest.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/GameTest.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding>
-                <element signature="e#80#104#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,25 +76,22 @@
       <file leaf-file-name="RegularRules.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RegularRules.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <element signature="e#0#103#0" expanded="false" />
-                <element signature="e#130#575#0" expanded="false" />
-                <element signature="e#576#1308#0" expanded="false" />
+                <element signature="e#84#529#0" expanded="false" />
+                <element signature="e#530#1262#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RulesTest.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/RulesTest.cpp">
+      <file leaf-file-name="Point.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Point.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#88#112#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,19 +99,18 @@
       <file leaf-file-name="Point.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Point.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1540">
-              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <element signature="e#0#107#0" expanded="false" />
-                <element signature="e#245#318#0" expanded="false" />
-                <element signature="e#344#377#0" expanded="false" />
-                <element signature="e#391#449#0" expanded="false" />
-                <element signature="e#477#551#0" expanded="false" />
-                <element signature="e#635#708#0" expanded="false" />
-                <element signature="e#754#860#0" expanded="false" />
-                <element signature="e#924#963#0" expanded="false" />
-                <element signature="e#986#1024#0" expanded="false" />
-                <element signature="e#1047#1135#0" expanded="false" />
+                <element signature="e#200#273#0" expanded="false" />
+                <element signature="e#299#332#0" expanded="false" />
+                <element signature="e#346#404#0" expanded="false" />
+                <element signature="e#432#506#0" expanded="false" />
+                <element signature="e#590#663#0" expanded="false" />
+                <element signature="e#709#815#0" expanded="false" />
+                <element signature="e#879#918#0" expanded="false" />
+                <element signature="e#941#979#0" expanded="false" />
+                <element signature="e#1002#1090#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -131,23 +119,12 @@
       <file leaf-file-name="RegularRules.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RegularRules.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <element signature="e#0#103#0" expanded="false" />
-                <element signature="e#261#453#0" expanded="false" />
-                <element signature="e#531#739#0" expanded="false" />
+                <element signature="e#215#407#0" expanded="false" />
+                <element signature="e#485#693#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main_test.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/main_test.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -155,9 +132,45 @@
       <file leaf-file-name="Rules.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Rules.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rules.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Rules.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#151#325#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sign.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sign.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sign.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Sign.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#84#134#1" expanded="false" />
+                <element signature="e#162#217#0" expanded="false" />
+                <element signature="e#248#305#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,7 +194,6 @@
         <option value="$PROJECT_DIR$/GameMenu.h" />
         <option value="$PROJECT_DIR$/Play.h" />
         <option value="$PROJECT_DIR$/Play.cpp" />
-        <option value="$PROJECT_DIR$/tests/main_test.cpp" />
         <option value="$PROJECT_DIR$/RegularRules.h" />
         <option value="$PROJECT_DIR$/RegularRules.cpp" />
         <option value="$PROJECT_DIR$/Player.h" />
@@ -200,14 +212,20 @@
         <option value="$PROJECT_DIR$/Game.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/ConsolePlayer.cpp" />
-        <option value="$PROJECT_DIR$/src/ConsolePlayer.h" />
-        <option value="$PROJECT_DIR$/src/Board.cpp" />
+        <option value="$PROJECT_DIR$/tests/AITest.cpp" />
+        <option value="$PROJECT_DIR$/tests/BoardTest.cpp" />
+        <option value="$PROJECT_DIR$/tests/GameTest.cpp" />
+        <option value="$PROJECT_DIR$/tests/main_test.cpp" />
+        <option value="$PROJECT_DIR$/tests/RulesTest.cpp" />
         <option value="$PROJECT_DIR$/src/AIPlayer.cpp" />
         <option value="$PROJECT_DIR$/src/AIPlayer.h" />
+        <option value="$PROJECT_DIR$/src/Board.cpp" />
         <option value="$PROJECT_DIR$/src/Board.h" />
-        <option value="$PROJECT_DIR$/src/Game.h" />
+        <option value="$PROJECT_DIR$/src/ConsolePlayer.cpp" />
+        <option value="$PROJECT_DIR$/src/ConsolePlayer.h" />
         <option value="$PROJECT_DIR$/src/Game.cpp" />
+        <option value="$PROJECT_DIR$/src/Game.h" />
+        <option value="$PROJECT_DIR$/src/GameMenu.cpp" />
         <option value="$PROJECT_DIR$/src/GameMenu.h" />
         <option value="$PROJECT_DIR$/src/Player.cpp" />
         <option value="$PROJECT_DIR$/src/Player.h" />
@@ -217,13 +235,8 @@
         <option value="$PROJECT_DIR$/src/RegularRules.h" />
         <option value="$PROJECT_DIR$/src/Rules.cpp" />
         <option value="$PROJECT_DIR$/src/Rules.h" />
-        <option value="$PROJECT_DIR$/src/Sign.h" />
         <option value="$PROJECT_DIR$/src/Sign.cpp" />
-        <option value="$PROJECT_DIR$/tests/AITest.cpp" />
-        <option value="$PROJECT_DIR$/tests/GameTest.cpp" />
-        <option value="$PROJECT_DIR$/tests/RulesTest.cpp" />
-        <option value="$PROJECT_DIR$/src/GameMenu.cpp" />
-        <option value="$PROJECT_DIR$/tests/BoardTest.cpp" />
+        <option value="$PROJECT_DIR$/src/Sign.h" />
       </list>
     </option>
   </component>
@@ -357,6 +370,7 @@
       <workItem from="1511951742761" duration="298000" />
       <workItem from="1511955015114" duration="2220000" />
       <workItem from="1511977635044" duration="1091000" />
+      <workItem from="1511979452089" duration="148000" />
     </task>
     <task id="LOCAL-00001" summary="aitest">
       <created>1511809520585</created>
@@ -369,7 +383,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81729000" />
+    <option name="totallyTimeSpent" value="81877000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -381,22 +395,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="497" y="137" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="497" y="137" width="1857" height="1092" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22810932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23201339" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30043858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33004385" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40679824" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3366228" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40679824" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33507854" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33507854" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30043858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -540,247 +553,250 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AIPlayer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="97" column="20" lean-forward="true" selection-start-line="97" selection-start-column="20" selection-end-line="97" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#80#0" expanded="false" />
-            <element signature="e#307#342#0" expanded="false" />
-            <element signature="e#373#436#0" expanded="false" />
-            <element signature="e#467#502#0" expanded="false" />
-            <element signature="e#516#577#0" expanded="false" />
-            <element signature="e#605#631#0" expanded="false" />
-            <element signature="e#646#696#0" expanded="false" />
-            <element signature="e#722#775#0" expanded="false" />
-            <element signature="e#799#940#0" expanded="false" />
-            <element signature="e#991#1081#0" expanded="false" />
-            <element signature="e#1116#1522#0" expanded="false" />
-            <element signature="e#1587#1706#0" expanded="false" />
-            <element signature="e#1746#1869#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConsolePlayer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ConsolePlayer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Board.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AIPlayer.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Point.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameMenu.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#156#0" expanded="false" />
-            <element signature="e#267#384#0" expanded="false" />
-            <element signature="e#406#432#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sign.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#74#0" expanded="false" />
-            <element signature="e#130#180#1" expanded="false" />
-            <element signature="e#208#263#0" expanded="false" />
-            <element signature="e#294#351#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sign.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#75#0" expanded="false" />
-            <element signature="e#197#371#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rules.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RegularRules.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#103#0" expanded="false" />
-            <element signature="e#261#453#0" expanded="false" />
-            <element signature="e#531#739#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RegularRules.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#103#0" expanded="false" />
-            <element signature="e#130#575#0" expanded="false" />
-            <element signature="e#576#1308#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Point.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#107#0" expanded="false" />
-            <element signature="e#245#318#0" expanded="false" />
-            <element signature="e#344#377#0" expanded="false" />
-            <element signature="e#391#449#0" expanded="false" />
-            <element signature="e#477#551#0" expanded="false" />
-            <element signature="e#635#708#0" expanded="false" />
-            <element signature="e#754#860#0" expanded="false" />
-            <element signature="e#924#963#0" expanded="false" />
-            <element signature="e#986#1024#0" expanded="false" />
-            <element signature="e#1047#1135#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/main_test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/AITest.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
           <folding>
-            <element signature="e#84#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/RulesTest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#88#112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/GameTest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding>
-            <element signature="e#80#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameMenu.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#77#0" expanded="false" />
-            <element signature="e#1984#2073#0" expanded="false" />
+            <element signature="e#38#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/BoardTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#81#105#0" expanded="true" />
+            <element signature="e#35#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/GameTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/main_test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/RulesTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AIPlayer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AIPlayer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Board.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#257#292#0" expanded="false" />
+            <element signature="e#323#386#0" expanded="false" />
+            <element signature="e#417#452#0" expanded="false" />
+            <element signature="e#466#527#0" expanded="false" />
+            <element signature="e#555#581#0" expanded="false" />
+            <element signature="e#596#646#0" expanded="false" />
+            <element signature="e#672#725#0" expanded="false" />
+            <element signature="e#749#890#0" expanded="false" />
+            <element signature="e#941#1031#0" expanded="false" />
+            <element signature="e#1066#1472#0" expanded="false" />
+            <element signature="e#1537#1656#0" expanded="false" />
+            <element signature="e#1696#1819#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConsolePlayer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ConsolePlayer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameMenu.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#1936#2025#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameMenu.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#217#334#0" expanded="false" />
+            <element signature="e#356#382#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Point.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Point.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#200#273#0" expanded="false" />
+            <element signature="e#299#332#0" expanded="false" />
+            <element signature="e#346#404#0" expanded="false" />
+            <element signature="e#432#506#0" expanded="false" />
+            <element signature="e#590#663#0" expanded="false" />
+            <element signature="e#709#815#0" expanded="false" />
+            <element signature="e#879#918#0" expanded="false" />
+            <element signature="e#941#979#0" expanded="false" />
+            <element signature="e#1002#1090#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RegularRules.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#84#529#0" expanded="false" />
+            <element signature="e#530#1262#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RegularRules.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#215#407#0" expanded="false" />
+            <element signature="e#485#693#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rules.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#151#325#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sign.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sign.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#84#134#1" expanded="false" />
+            <element signature="e#162#217#0" expanded="false" />
+            <element signature="e#248#305#0" expanded="false" />
           </folding>
         </state>
       </provider>

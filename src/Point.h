@@ -1,5 +1,4 @@
 /*
-* Created by Daniel Greenspan Eilon Bashari.
 * Class for Point.
 * Each Point has x value and y value.
 */

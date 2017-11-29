@@ -1,5 +1,4 @@
 /**
- * Created by Daniel Greenspan Eilon Bashari.
  * Regular rules source file. Derived from Rules.
  */
 #include "RegularRules.h"

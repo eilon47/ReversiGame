@@ -1,5 +1,4 @@
 /**
- * Created by Daniel Greenspan Eilon Bashari.
  * Sign source file.
  */
 #include "Sign.h"

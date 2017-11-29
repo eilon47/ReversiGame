@@ -1,5 +1,4 @@
 /*
- * Created by Daniel Greenspan and Eilon Bashari.
  * ConsolePlayer class derived from Player class.
  */
 

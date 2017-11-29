@@ -1,5 +1,4 @@
 /*
- * Created by Daniel Greenspan and Eilon Bashari.
  * Board's header file.
  */
 

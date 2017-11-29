@@ -1,5 +1,4 @@
 /**
- * Created by Daniel Greenspan Eilon Bashari.
  * Regular rules header file. Derived from Rules.
  */
 

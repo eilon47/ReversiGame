@@ -1,5 +1,4 @@
 /*
-* Created by Eilon Bashari and Daniel Greenspan.
 * Class for Game.
 * Game is in charge of the game flow.
 */

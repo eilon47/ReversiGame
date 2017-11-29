@@ -1,5 +1,4 @@
 /**
- * Created by Daniel Greenspan and Eilon Bashari.
  * GameMenu header file.
  * GameMenu is charge to show to the user the game options and create it.
  */

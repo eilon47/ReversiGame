@@ -1,5 +1,4 @@
 /**
- * Created by Daniel Greenspan Eilon Bashari.
  * Sign header file.
  */
 #ifndef REVERSIGAME_SIGN_H

@@ -1,5 +1,4 @@
 /*
- * Created by Daniel Greenspan and Eilon Bashari.
  * AIPlayer class derived from Player class.
  */
 

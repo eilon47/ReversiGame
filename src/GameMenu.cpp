@@ -1,5 +1,4 @@
 /*
-* Created by Eilon Bashari and Daniel Greenspan
 * GameMenu source file.
 */
 
