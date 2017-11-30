@@ -3,9 +3,9 @@
  */
 
 #include <gtest/gtest.h>
-#include "../AIPlayer.h"
-#include "../RegularRules.h"
-#include "../Game.h"
+#include "AIPlayer.h"
+#include "RegularRules.h"
+#include "Game.h"
 
 class AITest: public testing::Test {
 };

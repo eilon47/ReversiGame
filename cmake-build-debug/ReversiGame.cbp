@@ -386,86 +386,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/AIPlayer.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/AIPlayer.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Board.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Board.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/ConsolePlayer.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Game.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Game.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/GameMenu.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/GameMenu.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Player.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Player.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Point.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Point.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/RegularRules.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/RegularRules.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Rules.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Rules.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Sign.cpp">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/Sign.h">
-			<Option target="ReversiTest"/>
-			<Option target="ReversiGame"/>
-		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
@@ -480,24 +400,6 @@
 		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/lib/googletest-master/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/main.cpp">
-			<Option target="ReversiGame"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/tests/AITest.cpp">
-			<Option target="ReversiTest"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/tests/BoardTest.cpp">
-			<Option target="ReversiTest"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/tests/GameTest.cpp">
-			<Option target="ReversiTest"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/tests/RulesTest.cpp">
-			<Option target="ReversiTest"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/tests/main_test.cpp">
-			<Option target="ReversiTest"/>
 		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
