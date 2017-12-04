@@ -10,6 +10,11 @@
 class GameMenu {
  public:
   /**
+   * Constructor.
+   * @param display to show menu.
+   */
+  GameMenu(Display &display);
+  /**
    * showMenu.
    * Shows the menu to the user and creating a game by it's request.
    * @return game type.
@@ -24,6 +29,7 @@ class GameMenu {
   Rules *r;
   Player *p1;
   Player *p2;
+  Display *d;
 };
 
 #endif //REVERSIGAME_GAMEMENU_H

@@ -5,14 +5,14 @@
 
 #ifndef EX2_PLAY_H
 #define EX2_PLAY_H
-
+enum GAME_T{PvsP, PvsAI};
 #include <iostream>
 #include <algorithm>
 #include <vector>
 #include "Board.h"
-#include "ConsolePlayer.h"
+#include "HumanPlayer.h"
 #include "Rules.h"
-
+#include "Display.h"
 using namespace std;
 class Game {
  private:
@@ -20,6 +20,8 @@ class Game {
   Player *p1;
   Player *p2;
   Rules *rules;
+  Display *display;
+  GAME_T type;
   bool turn;
  public:
   /**
@@ -27,8 +29,18 @@ class Game {
    * @param b Board.
    * @param p1 Player 1.
    * @param p2 Player 2.
+   * @param rules game rules;
+   * @param display display game.
    */
-  Game(Board &b, Player &p1, Player &p2, Rules &rules);
+  Game(Board &b, Player &p1, Player &p2, Rules &rules, Display &display, GAME_T type);
+  /**
+   * Construcotr to game without display.
+   * @param b board
+   * @param p1 player 1.
+   * @param p2 player 2.
+   * @param rules game rules.
+   */
+  Game(Board &b, Player &p1, Player &p2, Rules &rules, GAME_T type);
   /**
    * Copy constructor.
    * @param p another Play.
@@ -81,13 +93,6 @@ class Game {
    * screen for end game.
    */
   void endGame();
-  /**
-   * addVectorToOther.
-   * combines vectors.
-   * @param v1 v1.
-   * @param v2 v2.
-   */
-  void addVectorToOther(vector<Point> &v1, vector<Point> &v2);
   /**
    * Assignment opertaor =.
    * @param p another game

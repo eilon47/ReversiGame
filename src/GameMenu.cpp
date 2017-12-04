@@ -5,54 +5,13 @@
 #include "GameMenu.h"
 #include "AIPlayer.h"
 #include "RegularRules.h"
+GameMenu::GameMenu(Display &display) {
+  this->d = &display;
+}
 Game GameMenu::showMenu() {
   int boardSize = 0,rules = 0,type = 0;
-  bool boardBool = false, rulesBool = false, typeBool = false;
-  //Asks for game type.
-  while(!typeBool) {
-    cout << "Please choose game type:\n"
-        "1.Player vs. Player.\n"
-        "2.Player vs. Computer."<< endl;
-    cin >> type;
-    cin.clear();
-    cin.ignore(100, '\n');
-    if(type == 0 || type > 2){
-      cout << "Please enter valid choice" << endl;
-      type = 0;
-      continue;
-    } else {
-      typeBool = true;
-    }
-  }
-  //Asks for Board size.
-  while (!boardBool) {
-    cout << "Please enter board size:\n";
-    cin >> boardSize;
-    cin.clear();
-    cin.ignore(100, '\n');
-    if(boardSize < 4){
-      cout << "Please enter valid choice" << endl;
-      boardSize = 0;
-      continue;
-    } else {
-      boardBool = true;
-    }
-  }
-  //Asks for rules type.
-  while(!rulesBool) {
-    cout << "Please choose game rules:\n"
-        "1.Regular game." << endl;
-    cin >> rules;
-    cin.clear();
-    cin.ignore(100, '\n');
-    if(rules != 1){
-      cout << "Please enter valid choice" << endl;
-      rules = 0;
-      continue;
-    } else {
-      rulesBool = true;
-    }
-  }
+  //Show menu with display and change the values of board rules and type.
+  this->d->showMenu(type, rules, boardSize);
   //Creating the wanted game.
   switch (rules) {
     case 1: {
@@ -64,25 +23,29 @@ Game GameMenu::showMenu() {
       break;
     }
   }
+  GAME_T gtype;
   switch(type) {
     case 1: {
-      this->p1 = new ConsolePlayer(XSIGN);
-      this->p2 = new ConsolePlayer(OSIGN);
+      this->p1 = new HumanPlayer(XSIGN);
+      this->p2 = new HumanPlayer(OSIGN);
+      gtype = PvsP;
       break;
     }
     case 2: {
-      this->p1 = new ConsolePlayer(XSIGN);
+      this->p1 = new HumanPlayer(XSIGN);
       this->p2 = new AIPlayer(OSIGN, *(this->r));
+      gtype = PvsAI;
       break;
     }
     default:{
-      this->p1 = new ConsolePlayer(XSIGN);
-      this->p2 = new ConsolePlayer(OSIGN);
+      this->p1 = new HumanPlayer(XSIGN);
+      this->p2 = new HumanPlayer(OSIGN);
+      gtype = PvsP;
       break;
     }
   }
   this->b = new Board(boardSize);
-  Game p(*this->b, *this->p1, *this->p2, *this->r);
+  Game p(*this->b, *this->p1, *this->p2, *this->r, *this->d, gtype);
   return p;
 }
 //Destructor.

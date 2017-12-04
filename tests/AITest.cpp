@@ -16,7 +16,7 @@ class AITest: public testing::Test {
 TEST_F(AITest, InitialTest) {
   Board b;
   RegularRules reg;
-  ConsolePlayer p1(XSIGN);
+  HumanPlayer p1(XSIGN);
   AIPlayer ai(OSIGN,reg);
   Game g(b,p1,ai,reg);
   Point p(3,4);
@@ -37,7 +37,7 @@ TEST_F(AITest, NoMoeTest) {
     Board b;
 
     RegularRules reg;
-    ConsolePlayer p1(XSIGN);
+    HumanPlayer p1(XSIGN);
     AIPlayer ai(OSIGN,reg);
     //initializing an empty board.
     b.addToBoard(EMPTY,5,5);

@@ -8,10 +8,11 @@
 using namespace std;
 //Constructors.
 AIPlayer::AIPlayer(SIGN sign, Rules &r): sign(sign), numOfSoldiers(2), rules(&r)  {}
-AIPlayer::AIPlayer(): sign(EMPTY), numOfSoldiers(2) {}
+AIPlayer::AIPlayer(): sign(EMPTY), numOfSoldiers(2), rules(NULL){}
 AIPlayer::AIPlayer(const AIPlayer &AIp) {
     this->sign = AIp.sign;
     this->numOfSoldiers = AIp.numOfSoldiers;
+    this->rules = AIp.rules;
 }
 //Get point from user.
 Point AIPlayer::getPointFromPlayer(Board b, vector<Point> v) {
@@ -30,8 +31,8 @@ Point AIPlayer::getPointFromPlayer(Board b, vector<Point> v) {
     //for each possible move simulates a board with that move.
     for (int i = 0; i < v.size(); i++) {
         Board b1 = b;
-        ConsolePlayer cp;
-        Game tempP(b1, *this, cp, *this->rules);
+        HumanPlayer cp;
+        Game tempP(b1, *this, cp, *this->rules, PvsAI);
         int score = 0;
         tempP.playOneTurn(v[i], sign);
         if (b1.hasSpaceOnBoard()) {
@@ -39,7 +40,7 @@ Point AIPlayer::getPointFromPlayer(Board b, vector<Point> v) {
             //for each move the opponent can do calculates the score he will get in that move.
             for (int j = 0; j < v2.size(); j++) {
                 Board b2 = b1;
-                Game innerTempPlay(b2, cp, *this, *this->rules);
+                Game innerTempPlay(b2, cp, *this, *this->rules, PvsAI);
                 cp.setSign(oppSign);
                 int tempScore(innerTempPlay.playOneTurn(v2[j], cp.getSign()));
                 //saves the point of the highest score.

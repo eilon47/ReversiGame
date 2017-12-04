@@ -4,7 +4,7 @@
 
 #include <gtest/gtest.h>
 #include "Board.h"
-#include "ConsolePlayer.h"
+#include "HumanPlayer.h"
 #include "AIPlayer.h"
 #include "RegularRules.h"
 #include "Game.h"
@@ -13,7 +13,7 @@ class GameTest: public testing::Test {
 };
 TEST_F(GameTest, SetTest) {
     Board b;
-    ConsolePlayer p1,p2, p3, p4;
+    HumanPlayer p1,p2, p3, p4;
     AIPlayer p5, p6, p7, p8;
     RegularRules rules;
 
@@ -47,7 +47,7 @@ TEST_F(GameTest, SetTest) {
 TEST_F(GameTest, GetPossibleMovesTest) {
     Board b;
     Point p;
-    ConsolePlayer p1,p2, p3, p4;
+    HumanPlayer p1,p2, p3, p4;
     AIPlayer p5, p6, p7, p8;
     RegularRules rules;
     Game g1(b,p1,p2,rules);

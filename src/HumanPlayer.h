@@ -1,27 +1,27 @@
 /*
- * ConsolePlayer class derived from Player class.
+ * HumanPlayer class derived from Player class.
  */
 
 #ifndef EX2_CONSOLEPLAYER_H
 #define EX2_CONSOLEPLAYER_H
 #include <iostream>
 #include "Player.h"
-class ConsolePlayer: public Player {
+class HumanPlayer: public Player {
  public:
   /**
    * Constructor.
    * @param sign sign.
    */
-  explicit ConsolePlayer(SIGN sign);
+  explicit HumanPlayer(SIGN sign);
   /**
    * Default Constructor.
    */
-  ConsolePlayer();
+  HumanPlayer();
   /**
    * Copy constructor.
    * @param cp
    */
-  ConsolePlayer(const ConsolePlayer &cp);
+  HumanPlayer(const HumanPlayer &cp);
   /**
   * getPointFromPlayer.
   * Ask the player to enter a point for the next move.
