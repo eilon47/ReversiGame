@@ -1,3 +1,0 @@
-/home/elon/Desktop/Git/ReversiGame/src/server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/elon/Desktop/Git/ReversiGame/src/server/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/elon/Desktop/Git/ReversiGame/src/server/cmake-build-debug/CMakeFiles/server.dir
