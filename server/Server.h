@@ -12,15 +12,15 @@ class Server {
   void start();
   void stop();
  private:
-    Point *p;
   int port;
   int serverSocket; // the socket's file descriptor
   void handleClients(int clientSocket,int clientSocket2);
   void handleWaitingClient(int clientSocket);
-  void handlePlayingClient(int clientSocket, Point &p);
+  void handlePlayingClient(int clientSocket, string &p);
   void organizeGame(int clientSocket,int clientSocket2);
-  void movePoint(int clientSocket, Point &p);
+  void movePoint(int clientSocket, string &p);
   void messageToClient(int clientSocket, string m);
+  bool endGame(string point);
 };
 
 #endif //SERVER_SERVER_H

@@ -3,23 +3,27 @@
 #include <netinet/in.h>
 #include <unistd.h>
 #include <string.h>
-#include <iostream>
 #include <stdio.h>
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 2
-Server::Server(int port): port(port), serverSocket(0) {
-    this->p = new Point();
-  // Assign a local address to the socket
-  struct sockaddr_in serverAddress;
-  bzero((void *)&serverAddress,
-        sizeof(serverAddress));
-  serverAddress.sin_family = AF_INET;
-  serverAddress.sin_addr.s_addr = INADDR_ANY;
-  serverAddress.sin_port = htons(port);
-  if (bind(serverSocket, (struct sockaddr
-  *)&serverAddress, sizeof(serverAddress)) == -1) {
-    throw "Error on binding";
-  }
+Server::Server(int port): port(port), serverSocket(0) {}
+void Server::start() {
+    // Create a socket point
+    serverSocket = socket(AF_INET, SOCK_STREAM, 0);
+    if (serverSocket == -1) {
+      throw "Error opening socket";
+    }
+    // Assign a local address to the socket
+    struct sockaddr_in serverAddress;
+    bzero((void *)&serverAddress,
+          sizeof(serverAddress));
+    serverAddress.sin_family = AF_INET;
+    serverAddress.sin_addr.s_addr = INADDR_ANY;
+    serverAddress.sin_port = htons(port);
+    if (bind(serverSocket, (struct sockaddr
+    *)&serverAddress, sizeof(serverAddress)) == -1) {
+      throw "Error on binding";
+    }
   // Start listening to incoming connections
   listen(serverSocket, MAX_CONNECTED_CLIENTS);
   // Define the client socket's structures
@@ -49,30 +53,31 @@ Server::Server(int port): port(port), serverSocket(0) {
 }
 // Handle requests from a specific client
 void Server::handleClients(int clientSocket, int clientSocket2) {
-    messageToClient(clientSocket, "Let's Go!");
+  messageToClient(clientSocket, "Let's Go!");
   organizeGame(clientSocket, clientSocket2);
+  string point;
   bool turn = true;
   while (true) {
     if(turn){
       handleWaitingClient(clientSocket2);
-      handlePlayingClient(clientSocket, *p);
-      if(p->getX() == -1 || p->getY() == -1) {
+      handlePlayingClient(clientSocket, point);
+      if(endGame(point)) {
         break;
       }
-      movePoint(clientSocket2, *p);
+      movePoint(clientSocket2, point);
       turn = !turn;
     } else {
       handleWaitingClient(clientSocket);
-      handlePlayingClient(clientSocket2, *p);
-      if(p->getX() == -1 || p->getY() == -1) {
+      handlePlayingClient(clientSocket2, point);
+      if(endGame(point)) {
         break;
       }
-      movePoint(clientSocket, *p);
+      movePoint(clientSocket, point);
       turn = !turn;
     }
   }
 }
-void Server::handlePlayingClient(int clientSocket, Point &p) {
+void Server::handlePlayingClient(int clientSocket, string &p) {
   int n = read(clientSocket, &p, sizeof(&p));
   if (n == -1) {
     cout << "Error reading board" << endl;
@@ -101,7 +106,7 @@ void Server::organizeGame(int clientSocket, int clientSocket2) {
     return;
   }
 }
-void Server::movePoint(int clientSocket, Point &p) {
+void Server::movePoint(int clientSocket, string &p) {
   int n = write(clientSocket, &p , sizeof(p));
   if(n == -1) {
     cout << "Error writing point to other player" << endl;
@@ -114,4 +119,10 @@ void Server::messageToClient(int clientSocket, string m) {
     cout << "Error writing message to client" << endl;
     return;
   }
+}
+bool Server::endGame(string point) {
+  if(strcmp(point.c_str(), "(-1, -1)") == 0) {
+    return true;
+  }
+  return false;
 }
