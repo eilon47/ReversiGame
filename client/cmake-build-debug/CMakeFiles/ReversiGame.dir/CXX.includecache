@@ -74,69 +74,75 @@ Sign.h
 
 ../src/Sign.h
 
-/home/elon/Desktop/Git/ReversiGame/client/main.cpp
+/home/dandan/Desktop/git/ReversiGame/client/main.cpp
 ConsoleDisplay.h
-/home/elon/Desktop/Git/ReversiGame/client/ConsoleDisplay.h
+/home/dandan/Desktop/git/ReversiGame/client/ConsoleDisplay.h
 Game.h
-/home/elon/Desktop/Git/ReversiGame/client/Game.h
+/home/dandan/Desktop/git/ReversiGame/client/Game.h
 GameMenu.h
-/home/elon/Desktop/Git/ReversiGame/client/GameMenu.h
+/home/dandan/Desktop/git/ReversiGame/client/GameMenu.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/AIPlayer.cpp
+/home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.cpp
 algorithm
 -
 AIPlayer.h
-/home/elon/Desktop/Git/ReversiGame/client/src/AIPlayer.h
+/home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.h
 Game.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Game.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Game.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/AIPlayer.h
+/home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.h
 Player.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Player.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Player.h
 Board.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Board.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Board.h
 Rules.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Rules.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Rules.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Board.cpp
+/home/dandan/Desktop/git/ReversiGame/client/src/Board.cpp
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 Board.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Board.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Board.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Board.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Board.h
 vector
 -
 Point.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Point.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Point.h
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 iostream
 -
 
-/home/elon/Desktop/Git/ReversiGame/client/src/ConsoleDisplay.cpp
+/home/dandan/Desktop/git/ReversiGame/client/src/Client.cpp
+Client.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Client.h
+
+/home/dandan/Desktop/git/ReversiGame/client/src/Client.h
+
+/home/dandan/Desktop/git/ReversiGame/client/src/ConsoleDisplay.cpp
 ConsoleDisplay.h
-/home/elon/Desktop/Git/ReversiGame/client/src/ConsoleDisplay.h
+/home/dandan/Desktop/git/ReversiGame/client/src/ConsoleDisplay.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/ConsoleDisplay.h
+/home/dandan/Desktop/git/ReversiGame/client/src/ConsoleDisplay.h
 Display.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Display.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Display.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Display.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Display.h
 Board.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Board.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Board.h
 Player.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Player.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Player.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Game.cpp
+/home/dandan/Desktop/git/ReversiGame/client/src/Game.cpp
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 Game.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Game.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Game.h
 AIPlayer.h
-/home/elon/Desktop/Git/ReversiGame/client/src/AIPlayer.h
+/home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Game.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Game.h
 iostream
 -
 algorithm
@@ -144,83 +150,83 @@ algorithm
 vector
 -
 Board.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Board.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Board.h
 HumanPlayer.h
-/home/elon/Desktop/Git/ReversiGame/client/src/HumanPlayer.h
+/home/dandan/Desktop/git/ReversiGame/client/src/HumanPlayer.h
 Rules.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Rules.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Rules.h
 Display.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Display.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Display.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/GameMenu.cpp
+/home/dandan/Desktop/git/ReversiGame/client/src/GameMenu.cpp
 GameMenu.h
-/home/elon/Desktop/Git/ReversiGame/client/src/GameMenu.h
+/home/dandan/Desktop/git/ReversiGame/client/src/GameMenu.h
 AIPlayer.h
-/home/elon/Desktop/Git/ReversiGame/client/src/AIPlayer.h
+/home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.h
 RegularRules.h
-/home/elon/Desktop/Git/ReversiGame/client/src/RegularRules.h
+/home/dandan/Desktop/git/ReversiGame/client/src/RegularRules.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/GameMenu.h
+/home/dandan/Desktop/git/ReversiGame/client/src/GameMenu.h
 Game.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Game.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Game.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/HumanPlayer.cpp
+/home/dandan/Desktop/git/ReversiGame/client/src/HumanPlayer.cpp
 algorithm
 -
 HumanPlayer.h
-/home/elon/Desktop/Git/ReversiGame/client/src/HumanPlayer.h
+/home/dandan/Desktop/git/ReversiGame/client/src/HumanPlayer.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/HumanPlayer.h
+/home/dandan/Desktop/git/ReversiGame/client/src/HumanPlayer.h
 iostream
 -
 Player.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Player.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Player.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Player.cpp
+/home/dandan/Desktop/git/ReversiGame/client/src/Player.cpp
 Player.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Player.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Player.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Player.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Player.h
 Point.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Point.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Point.h
 Board.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Board.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Board.h
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 vector
 -
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Point.cpp
+/home/dandan/Desktop/git/ReversiGame/client/src/Point.cpp
 Point.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Point.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Point.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Point.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Point.h
 iostream
 -
 
-/home/elon/Desktop/Git/ReversiGame/client/src/RegularRules.cpp
+/home/dandan/Desktop/git/ReversiGame/client/src/RegularRules.cpp
 RegularRules.h
-/home/elon/Desktop/Git/ReversiGame/client/src/RegularRules.h
+/home/dandan/Desktop/git/ReversiGame/client/src/RegularRules.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/RegularRules.h
+/home/dandan/Desktop/git/ReversiGame/client/src/RegularRules.h
 Rules.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Rules.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Rules.h
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Rules.cpp
+/home/dandan/Desktop/git/ReversiGame/client/src/Rules.cpp
 Rules.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Rules.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Rules.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Rules.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Rules.h
 Board.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Board.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Board.h
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Sign.cpp
+/home/dandan/Desktop/git/ReversiGame/client/src/Sign.cpp
 Sign.h
-/home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 
-/home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 

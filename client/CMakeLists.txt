@@ -30,14 +30,14 @@ set(SOURCE_FILES
         src/GameMenu.h
         src/Display.h
         src/ConsoleDisplay.cpp
-        src/ConsoleDisplay.h)
+        src/ConsoleDisplay.h src/Client.cpp src/Client.h src/NetworkPlayer.cpp src/NetworkPlayer.h)
 
 set(TEST_FILES
         tests/main_test.cpp
         tests/BoardTest.cpp
         tests/AITest.cpp
         tests/GameTest.cpp
-        tests/RulesTest.cpp)
+        tests/RulesTest.cpp src/Client.cpp src/Client.h src/NetworkPlayer.cpp src/NetworkPlayer.h)
 
 add_executable(ReversiGame ${SOURCE_FILES} main.cpp)
 add_executable(ReversiTest ${TEST_FILES} ${SOURCE_FILES})

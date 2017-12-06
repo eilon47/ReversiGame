@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ReversiTest.dir/tests/AITest.cpp.o"
   "CMakeFiles/ReversiTest.dir/tests/GameTest.cpp.o"
   "CMakeFiles/ReversiTest.dir/tests/RulesTest.cpp.o"
+  "CMakeFiles/ReversiTest.dir/src/Client.cpp.o"
+  "CMakeFiles/ReversiTest.dir/src/NetworkPlayer.cpp.o"
   "CMakeFiles/ReversiTest.dir/src/AIPlayer.cpp.o"
   "CMakeFiles/ReversiTest.dir/src/Board.cpp.o"
   "CMakeFiles/ReversiTest.dir/src/HumanPlayer.cpp.o"

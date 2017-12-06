@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/elon/Desktop/Git/ReversiGame/client/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/dandan/Desktop/git/ReversiGame/client/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2f986/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2f986.dir/build.make CMakeFiles/cmTC_2f986.dir/build
-make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2f986.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_2f986.dir/CheckSymbolExists.c.o   -c /home/elon/Desktop/Git/ReversiGame/client/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_2f986
-/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f986.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2f986.dir/CheckSymbolExists.c.o  -o cmTC_2f986 
-CMakeFiles/cmTC_2f986.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_fb95f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fb95f.dir/build.make CMakeFiles/cmTC_fb95f.dir/build
+make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fb95f.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fb95f.dir/CheckSymbolExists.c.o   -c /home/dandan/Desktop/git/ReversiGame/client/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_fb95f
+/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb95f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_fb95f.dir/CheckSymbolExists.c.o  -o cmTC_fb95f 
+CMakeFiles/cmTC_fb95f.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_2f986.dir/build.make:97: recipe for target 'cmTC_2f986' failed
-make[1]: *** [cmTC_2f986] Error 1
-make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/client/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_2f986/fast' failed
-make: *** [cmTC_2f986/fast] Error 2
+CMakeFiles/cmTC_fb95f.dir/build.make:97: recipe for target 'cmTC_fb95f' failed
+make[1]: *** [cmTC_fb95f] Error 1
+make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/client/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_fb95f/fast' failed
+make: *** [cmTC_fb95f/fast] Error 2
 
-File /home/elon/Desktop/Git/ReversiGame/client/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/dandan/Desktop/git/ReversiGame/client/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 

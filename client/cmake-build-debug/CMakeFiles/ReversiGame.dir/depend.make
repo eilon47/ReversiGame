@@ -29,6 +29,9 @@ CMakeFiles/ReversiGame.dir/src/Board.cpp.o: ../src/Board.h
 CMakeFiles/ReversiGame.dir/src/Board.cpp.o: ../src/Point.h
 CMakeFiles/ReversiGame.dir/src/Board.cpp.o: ../src/Sign.h
 
+CMakeFiles/ReversiGame.dir/src/Client.cpp.o: ../src/Client.cpp
+CMakeFiles/ReversiGame.dir/src/Client.cpp.o: ../src/Client.h
+
 CMakeFiles/ReversiGame.dir/src/ConsoleDisplay.cpp.o: ../src/Board.h
 CMakeFiles/ReversiGame.dir/src/ConsoleDisplay.cpp.o: ../src/ConsoleDisplay.cpp
 CMakeFiles/ReversiGame.dir/src/ConsoleDisplay.cpp.o: ../src/ConsoleDisplay.h

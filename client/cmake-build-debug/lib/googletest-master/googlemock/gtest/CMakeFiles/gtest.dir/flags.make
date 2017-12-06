@@ -6,5 +6,5 @@ CXX_FLAGS = -g    -Wall -Wshadow -Werror -DGTEST_HAS_PTHREAD=1 -fexceptions -Wex
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/elon/Desktop/Git/ReversiGame/client/lib/googletest-master/googletest/include -I/home/elon/Desktop/Git/ReversiGame/client/lib/googletest-master/googletest 
+CXX_INCLUDES = -I/home/dandan/Desktop/git/ReversiGame/client/lib/googletest-master/googletest/include -I/home/dandan/Desktop/git/ReversiGame/client/lib/googletest-master/googletest 
 
