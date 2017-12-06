@@ -6,7 +6,7 @@
 #include "ConsoleDisplay.h"
 #include "Game.h"
 #include "GameMenu.h"
-
+#include "../server/Server.h"
 int main() {
   Display *d = new ConsoleDisplay;
   GameMenu gm(*d);

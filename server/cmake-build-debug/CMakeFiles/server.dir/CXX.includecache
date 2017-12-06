@@ -6,25 +6,13 @@
 
 #IncludeRegexTransform: 
 
-../../client/src/Board.h
-vector
--
-Point.h
-../../client/src/Point.h
-Sign.h
-../../client/src/Sign.h
-iostream
--
-
 ../../client/src/Point.h
 iostream
 -
 
-../../client/src/Sign.h
-
-/home/elon/Desktop/Git/ReversiGame/server/Server.cpp
+/home/dandan/Desktop/git/ReversiGame/server/Server.cpp
 Server.h
-/home/elon/Desktop/Git/ReversiGame/server/Server.h
+/home/dandan/Desktop/git/ReversiGame/server/Server.h
 sys/socket.h
 -
 netinet/in.h
@@ -38,15 +26,17 @@ iostream
 stdio.h
 -
 
-/home/elon/Desktop/Git/ReversiGame/server/Server.h
-Board.h
--
+/home/dandan/Desktop/git/ReversiGame/server/Server.h
+Point.h
+/home/dandan/Desktop/git/ReversiGame/server/Point.h
 
-/home/elon/Desktop/Git/ReversiGame/server/main.cpp
+/home/dandan/Desktop/git/ReversiGame/server/main.cpp
 Server.h
-/home/elon/Desktop/Git/ReversiGame/server/Server.h
+/home/dandan/Desktop/git/ReversiGame/server/Server.h
 iostream
 -
 stdlib.h
 -
+Point.h
+/home/dandan/Desktop/git/ReversiGame/server/Point.h
 

@@ -31,11 +31,12 @@ void ConsoleDisplay::showMenu(int &type, int &rules, int &boardSize) {
   while(!typeBool) {
     cout << "Please choose game type:\n"
         "1.Player vs. Player.\n"
-        "2.Player vs. Computer."<< endl;
-    cin >> type;
+        "2.Player vs. Computer.\n"
+            "3. Player vs Remote Player" << endl;
+      cin >> type;
     cin.clear();
     cin.ignore(100, '\n');
-    if(type == 0 || type > 2){
+    if(type <= 0 || type > 3){
       cout << "Please enter valid choice" << endl;
       type = 0;
       continue;
@@ -45,6 +46,10 @@ void ConsoleDisplay::showMenu(int &type, int &rules, int &boardSize) {
   }
   //Asks for Board size.
   while (!boardBool) {
+      if(type == 3) {
+          boardSize == 8;
+          break;
+      }
     cout << "Please enter board size:\n";
     cin >> boardSize;
     cin.clear();
@@ -59,6 +64,10 @@ void ConsoleDisplay::showMenu(int &type, int &rules, int &boardSize) {
   }
   //Asks for rules type.
   while(!rulesBool) {
+      if (type == 3) {
+          rules = 1;
+          break;
+      }
     cout << "Please choose game rules:\n"
         "1.Regular game." << endl;
     cin >> rules;

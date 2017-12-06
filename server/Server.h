@@ -4,7 +4,7 @@
 
 #ifndef SERVER_SERVER_H
 #define SERVER_SERVER_H
-#include <Board.h>
+#include "Point.h"
 
 class Server {
  public:
@@ -12,6 +12,7 @@ class Server {
   void start();
   void stop();
  private:
+    Point *p;
   int port;
   int serverSocket; // the socket's file descriptor
   void handleClients(int clientSocket,int clientSocket2);

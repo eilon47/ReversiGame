@@ -9,12 +9,14 @@
 #include <netdb.h>
 #include <string.h>
 #include <unistd.h>
+
 using namespace std;
 
 
 Client::Client(const char *serverIP, int serverPort): serverIP(serverIP),
                                                       serverPort(serverPort), clientSocket(0) {
-        cout << "Client" << endl;
+    turnNum = 0;
+    cout << "Client" << endl;
     }
 
 void Client::connectToServer() {
@@ -23,17 +25,16 @@ void Client::connectToServer() {
         throw "Error opening socket";
     }
     struct in_addr address;
-
     if (!inet_aton(serverIP, &address)) {
         throw "Can't parse IP address";
     }
 
     struct hostent *server;
-    server = gethostbyaddr((const void *)&address, sizeof
-            address, AF_INET);
+    server = gethostbyaddr((const void *)&address, sizeof address, AF_INET);
     if (server == NULL) {
         throw "Host is unreachable";
     }
+
     struct sockaddr_in serverAddress;
     bzero((char *)&address, sizeof(address));
     serverAddress.sin_family = AF_INET;
@@ -44,11 +45,18 @@ void Client::connectToServer() {
     if (connect(clientSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress)) == -1) {
         throw "Error connecting to server";
     }
-
+    //connections confirmation.
     cout << "Connected to server" << endl;
-    if (read(clientSocket,&turnNum, sizeof(int) == -1)) {
-        throw "Error in getting sign";
+    getNumTurn();
+    if(turnNum == 1) {
+        cout << "Waiting for other player to join..." << endl;
     }
+    else {
+        cout << "you are the second player. We are ready to start the game!" << endl;
+    }
+    string s(getMessage());
+    cout << s << endl;
+
 }
 void Client::sendMove(Point move) {
     int n = write(clientSocket, &move, sizeof(move));
@@ -63,6 +71,20 @@ Point Client::getMove() {
         throw "Error reading turn from socket";
     }
     return p;
+}
+
+void Client::getNumTurn() {
+    if (read(clientSocket,&turnNum, sizeof(int) == -1)) {
+        throw "Error in getting sign";
+    }
+}
+
+string Client::getMessage() {
+    string s;
+    int n = read(clientSocket,&s,sizeof(string));
+    if (n == -1) {
+        throw "Error in reading message";
+    }
 }
 
 int Client::getClientSign() { return this->turnNum; }

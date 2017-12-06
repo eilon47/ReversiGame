@@ -16,11 +16,11 @@ class NetworkPlayer : public Player {
          * Constructor.
          * @param sign sign.
          */
-        explicit NetworkPlayer(SIGN sign, Rules &r);
+        explicit NetworkPlayer(SIGN sign);
         /**
          * Default Constructor.
          */
-        NetworkPlayer();
+        NetworkPlayer(Client client);
         /**
          * Copy constructor.
          * @param cp

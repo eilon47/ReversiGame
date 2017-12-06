@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/elon/Desktop/Git/ReversiGame/server/Server.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/Server.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/server/main.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/Server.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/Server.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/main.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

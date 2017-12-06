@@ -36,6 +36,18 @@ Game::Game(Board &b, Player &p1, Player &p2, Rules &rules,GAME_T type):
     p2.setSign(XSIGN);
   }
 }
+
+Game::Game(Board &b, Player &p1, Rules &rules,GAME_T type):
+  b(&b), p1(&p1), rules(&rules), type(type) {
+  if (p1.getSign() == XSIGN) {
+    turn = true;
+  } else {
+    turn = false;
+  }
+}
+
+
+
 Game::Game(const Game &p) {
   this->b = p.b;
   this->p1 = p.p1;
@@ -131,31 +143,37 @@ void Game::run() {
     if (!vMoves.empty() && vMoves.size() == 1 && vMoves[0].getX() == 0 && vMoves[0].getY() == 0) {
       //2 turns in a row without moves.
       if (oneMove) {
+        vMoves[0].setPoint(-1, -1);
+        this->currentPlayer()->getPointFromPlayer(*b, vMoves);
         this->endGame();
         return;
       }
       oneMove = true;
-      turn = !turn;
+      if (type != PvsRP) {
+        turn = !turn;
+      }
       display->showMessage("No possible moves. Game passes back to the other player.\n");
       continue;
     }
     oneMove = false;
     sort(vMoves.begin(), vMoves.end());
-    if(type == PvsP || (type == PvsAI && turn)) {
+    if (type == PvsP || (type == PvsAI && turn)) {
       this->display->showPossibleMoves(vMoves);
       display->showMessage("Please enter your move: row col\n");
     }
     Point p = this->currentPlayer()->getPointFromPlayer(*b, vMoves);
     if (!this->checkVecHasPoint(vMoves, p) || p.getX() == 0 || p.getY() == 0) {
-    display->showMessage("You can not do that move.\n");
+      display->showMessage("You can not do that move.\n");
       continue;
     }
     score = this->playOneTurn(p, currentPlayer()->getSign());
     display->showBoard(*this->b);
     this->setScoresAfterMove(score);
     display->showScore(*this->p1, *this->p2);
-    turn = !turn;
+    if (type != PvsRP) {
+      turn = !turn;
     }
+  }
   this->endGame();
 }
 //Updates players scores.

@@ -13,6 +13,7 @@ CMakeFiles/ReversiGame.dir/main.cpp.o
  ../src/Rules.h
  ../src/Sign.h
  /home/dandan/Desktop/git/ReversiGame/client/main.cpp
+ /home/dandan/Desktop/git/ReversiGame/server/Server.h
 CMakeFiles/ReversiGame.dir/src/AIPlayer.cpp.o
  /home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.cpp
  /home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.h
@@ -32,6 +33,8 @@ CMakeFiles/ReversiGame.dir/src/Board.cpp.o
 CMakeFiles/ReversiGame.dir/src/Client.cpp.o
  /home/dandan/Desktop/git/ReversiGame/client/src/Client.cpp
  /home/dandan/Desktop/git/ReversiGame/client/src/Client.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/Point.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 CMakeFiles/ReversiGame.dir/src/ConsoleDisplay.cpp.o
  /home/dandan/Desktop/git/ReversiGame/client/src/Board.h
  /home/dandan/Desktop/git/ReversiGame/client/src/ConsoleDisplay.cpp
@@ -54,11 +57,13 @@ CMakeFiles/ReversiGame.dir/src/Game.cpp.o
 CMakeFiles/ReversiGame.dir/src/GameMenu.cpp.o
  /home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.h
  /home/dandan/Desktop/git/ReversiGame/client/src/Board.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/Client.h
  /home/dandan/Desktop/git/ReversiGame/client/src/Display.h
  /home/dandan/Desktop/git/ReversiGame/client/src/Game.h
  /home/dandan/Desktop/git/ReversiGame/client/src/GameMenu.cpp
  /home/dandan/Desktop/git/ReversiGame/client/src/GameMenu.h
  /home/dandan/Desktop/git/ReversiGame/client/src/HumanPlayer.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/NetworkPlayer.h
  /home/dandan/Desktop/git/ReversiGame/client/src/Player.h
  /home/dandan/Desktop/git/ReversiGame/client/src/Point.h
  /home/dandan/Desktop/git/ReversiGame/client/src/RegularRules.h
@@ -70,6 +75,19 @@ CMakeFiles/ReversiGame.dir/src/HumanPlayer.cpp.o
  /home/dandan/Desktop/git/ReversiGame/client/src/HumanPlayer.h
  /home/dandan/Desktop/git/ReversiGame/client/src/Player.h
  /home/dandan/Desktop/git/ReversiGame/client/src/Point.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
+CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o
+ /home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/Board.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/Client.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/Display.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/Game.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/HumanPlayer.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/NetworkPlayer.cpp
+ /home/dandan/Desktop/git/ReversiGame/client/src/NetworkPlayer.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/Player.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/Point.h
+ /home/dandan/Desktop/git/ReversiGame/client/src/Rules.h
  /home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 CMakeFiles/ReversiGame.dir/src/Player.cpp.o
  /home/dandan/Desktop/git/ReversiGame/client/src/Board.h

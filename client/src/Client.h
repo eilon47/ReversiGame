@@ -16,13 +16,14 @@ class Client {
         void sendMove(Point point);
         Point getMove();
         int getClientSign();
+        string getMessage();
+        void getNumTurn();
     private:
         const char *serverIP;
         int serverPort;
         int clientSocket;
         int turnNum;
     };
-};
 
 
 #endif //REVERSIGAME_CLIENT_H

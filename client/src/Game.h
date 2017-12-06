@@ -5,7 +5,7 @@
 
 #ifndef EX2_PLAY_H
 #define EX2_PLAY_H
-enum GAME_T{PvsP, PvsAI};
+enum GAME_T{PvsP, PvsAI, PvsRP};
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -41,7 +41,10 @@ class Game {
    * @param rules game rules.
    */
   Game(Board &b, Player &p1, Player &p2, Rules &rules, GAME_T type);
-  /**
+
+    Game(Board &b, Player &p1, Rules &rules, GAME_T type);
+
+    /**
    * Copy constructor.
    * @param p another Play.
    */

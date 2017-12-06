@@ -81,6 +81,8 @@ Game.h
 /home/dandan/Desktop/git/ReversiGame/client/Game.h
 GameMenu.h
 /home/dandan/Desktop/git/ReversiGame/client/GameMenu.h
+../server/Server.h
+/home/dandan/Desktop/git/ReversiGame/server/Server.h
 
 /home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.cpp
 algorithm
@@ -115,10 +117,26 @@ iostream
 -
 
 /home/dandan/Desktop/git/ReversiGame/client/src/Client.cpp
+sys/socket.h
+-
 Client.h
 /home/dandan/Desktop/git/ReversiGame/client/src/Client.h
+netinet/in.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+string.h
+-
+unistd.h
+-
 
 /home/dandan/Desktop/git/ReversiGame/client/src/Client.h
+Point.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Point.h
+Sign.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 
 /home/dandan/Desktop/git/ReversiGame/client/src/ConsoleDisplay.cpp
 ConsoleDisplay.h
@@ -165,6 +183,8 @@ AIPlayer.h
 /home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.h
 RegularRules.h
 /home/dandan/Desktop/git/ReversiGame/client/src/RegularRules.h
+NetworkPlayer.h
+/home/dandan/Desktop/git/ReversiGame/client/src/NetworkPlayer.h
 
 /home/dandan/Desktop/git/ReversiGame/client/src/GameMenu.h
 Game.h
@@ -181,6 +201,22 @@ iostream
 -
 Player.h
 /home/dandan/Desktop/git/ReversiGame/client/src/Player.h
+
+/home/dandan/Desktop/git/ReversiGame/client/src/NetworkPlayer.cpp
+NetworkPlayer.h
+/home/dandan/Desktop/git/ReversiGame/client/src/NetworkPlayer.h
+Client.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Client.h
+Game.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Game.h
+
+/home/dandan/Desktop/git/ReversiGame/client/src/NetworkPlayer.h
+Player.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Player.h
+AIPlayer.h
+/home/dandan/Desktop/git/ReversiGame/client/src/AIPlayer.h
+Client.h
+/home/dandan/Desktop/git/ReversiGame/client/src/Client.h
 
 /home/dandan/Desktop/git/ReversiGame/client/src/Player.cpp
 Player.h
@@ -229,4 +265,8 @@ Sign.h
 /home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
 
 /home/dandan/Desktop/git/ReversiGame/client/src/Sign.h
+
+/home/dandan/Desktop/git/ReversiGame/server/Server.h
+Point.h
+/home/dandan/Desktop/git/ReversiGame/server/Point.h
 

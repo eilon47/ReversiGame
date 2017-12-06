@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++98
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/elon/Desktop/Git/ReversiGame/server/../client/src 
+CXX_INCLUDES = -I/home/dandan/Desktop/git/ReversiGame/server/../client/src 
 

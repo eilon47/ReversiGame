@@ -5,6 +5,8 @@
 #include "GameMenu.h"
 #include "AIPlayer.h"
 #include "RegularRules.h"
+#include "NetworkPlayer.h"
+
 GameMenu::GameMenu(Display &display) {
   this->d = &display;
 }
@@ -36,6 +38,15 @@ Game GameMenu::showMenu() {
       this->p2 = new AIPlayer(OSIGN, *(this->r));
       gtype = PvsAI;
       break;
+    }
+    case 3: {
+      gtype = PvsRP;
+      boardSize = 8;
+      this->b = new Board(boardSize);
+      Client client("127.0.0.1", 8000);
+      this -> p1 = new NetworkPlayer(client);
+      Game g(*this->b,*this->p1,*this->r,gtype);
+      return g;
     }
     default:{
       this->p1 = new HumanPlayer(XSIGN);
