@@ -24,7 +24,10 @@ class Point {
   * Default constructor.
   */
   Point();
-  /**
+    Point(string PointAsString);
+
+
+    /**
   * Copy constructor.
   * @param p another point.
   */
@@ -66,6 +69,7 @@ class Point {
   * @param y y value.
   */
   void setPoint(int x, int y);
+    string& toString();
 };
 
 #endif //EX2_POINT_H

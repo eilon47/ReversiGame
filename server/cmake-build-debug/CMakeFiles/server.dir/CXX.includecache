@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/elon/Desktop/Git/ReversiGame/server/Server.cpp
+Server.h
+/home/elon/Desktop/Git/ReversiGame/server/Server.h
+sys/socket.h
+-
+netinet/in.h
+-
+unistd.h
+-
+string.h
+-
+stdio.h
+-
+
+/home/elon/Desktop/Git/ReversiGame/server/Server.h
+iostream
+-
+
+/home/elon/Desktop/Git/ReversiGame/server/main.cpp
+Server.h
+/home/elon/Desktop/Git/ReversiGame/server/Server.h
+stdlib.h
+-
+

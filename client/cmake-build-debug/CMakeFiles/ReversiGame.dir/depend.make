@@ -12,7 +12,6 @@ CMakeFiles/ReversiGame.dir/main.cpp.o: ../src/Point.h
 CMakeFiles/ReversiGame.dir/main.cpp.o: ../src/Rules.h
 CMakeFiles/ReversiGame.dir/main.cpp.o: ../src/Sign.h
 CMakeFiles/ReversiGame.dir/main.cpp.o: ../main.cpp
-CMakeFiles/ReversiGame.dir/main.cpp.o: /home/dandan/Desktop/git/ReversiGame/server/Server.h
 
 CMakeFiles/ReversiGame.dir/src/AIPlayer.cpp.o: ../src/AIPlayer.cpp
 CMakeFiles/ReversiGame.dir/src/AIPlayer.cpp.o: ../src/AIPlayer.h

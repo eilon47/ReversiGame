@@ -59,18 +59,20 @@ void Client::connectToServer() {
 
 }
 void Client::sendMove(Point move) {
-    int n = write(clientSocket, &move, sizeof(move));
+    string m = move.toString();
+    int n = write(clientSocket, &m, sizeof(m));
     if (n == -1) {
         throw "Error writing turn to socket";
     }
 }
 Point Client::getMove() {
-    Point p;
+    string p;
     int n = read(clientSocket, &p, sizeof(p));
     if (n == -1) {
         throw "Error reading turn from socket";
     }
-    return p;
+    Point p1(p);
+    return p1;
 }
 
 void Client::getNumTurn() {
