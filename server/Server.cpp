@@ -41,6 +41,7 @@ void Server::start() {
     if (clientSocket == -1)
       throw "Error on accept";
     setPlayer(clientSocket,1);
+      messageToClient(clientSocket, "you are connected!");
     int clientSocket2 = accept(serverSocket, (struct
             sockaddr *)&clientAddress2, &client2AddressLen);
     cout << "Second client connected" << endl;
@@ -87,14 +88,15 @@ void Server::handlePlayingClient(int clientSocket, string &p) {
 }
 void Server::handleWaitingClient(int clientSocket) {
   string waitMessage = "Waiting for the other player's move...";
-  int n = write(clientSocket, &waitMessage, sizeof(waitMessage));
+  ssize_t n = write(clientSocket, &waitMessage, sizeof(waitMessage));
   if (n == -1) {
     cout << "Error writing board to socket" << endl;
     return;
   }
 }
 void Server::setPlayer(int clientSocket, int numTurn) {
-  int n = write(clientSocket, &numTurn, sizeof(numTurn));
+
+  ssize_t n = write(clientSocket, &numTurn, sizeof(numTurn));
   if (n == -1) {
     cout << "Error writing board to socket" << endl;
     return;
@@ -102,18 +104,33 @@ void Server::setPlayer(int clientSocket, int numTurn) {
   }
 }
   void Server::movePoint(int clientSocket, string &p) {
-    int n = write(clientSocket, &p, sizeof(p));
+    ssize_t n = write(clientSocket, &p, sizeof(p));
     if (n == -1) {
       cout << "Error writing point to other player" << endl;
       return;
     }
   }
   void Server::messageToClient(int clientSocket, string m) {
-    int n = write(clientSocket, &m, sizeof(m));
-    if (n == -1) {
-      cout << "Error writing message to client" << endl;
-      return;
-    }
+      char c[20];
+      bzero((void *) &c, sizeof(c));
+      strcpy(c, m.c_str());
+      for (int i = 0; i < 17; i++) {
+          if (c[i] == 0) {
+              char c2[i];
+              strcpy(c2, c);
+              c2[i] = '\n';
+              ssize_t n = write(clientSocket, &c2, sizeof(c2));
+              if (n == -1) {
+                  cout << "Error writing message to client" << endl;
+                  return;
+              }
+          }
+          ssize_t n = write(clientSocket, &c, sizeof(c));
+          if (n == -1) {
+              cout << "Error writing message to client" << endl;
+              return;
+          }
+      }
   }
   bool Server::endGame(string point) {
     if (strcmp(point.c_str(), "(-1, -1)") == 0) {

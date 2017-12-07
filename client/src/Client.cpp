@@ -9,6 +9,7 @@
 #include <netdb.h>
 #include <string.h>
 #include <unistd.h>
+#include <malloc.h>
 
 using namespace std;
 
@@ -76,17 +77,22 @@ Point Client::getMove() {
 }
 
 void Client::getNumTurn() {
-    if (read(clientSocket,&turnNum, sizeof(int) == -1)) {
+    int num;
+    ssize_t n = read(clientSocket, &num, sizeof(int));
+    if (n == -1){
         throw "Error in getting sign";
     }
+    this->turnNum = num;
 }
 
 string Client::getMessage() {
-    string s;
-    int n = read(clientSocket,&s,sizeof(string));
+    char c[20];
+    bzero((void *)&c, sizeof(c));
+    ssize_t n = read(clientSocket,&c,sizeof(c));
     if (n == -1) {
         throw "Error in reading message";
     }
+    return c;
 }
 
 int Client::getClientSign() { return this->turnNum; }
