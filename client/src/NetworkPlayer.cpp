@@ -13,12 +13,12 @@ NetworkPlayer::NetworkPlayer(Client c) : client(c) {
         cout << msg;
     }
     if (client.getClientSign() == 1) {
-        this->sign == XSIGN;
+        this->sign = XSIGN;
         myTurn = true;
     }
     else if (client.getClientSign() == 2) {
         myTurn = false;
-        this->sign == OSIGN;
+        this->sign = OSIGN;
     }
 }
 

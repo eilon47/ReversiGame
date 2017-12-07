@@ -42,7 +42,7 @@ class Game {
    */
   Game(Board &b, Player &p1, Player &p2, Rules &rules, GAME_T type);
 
-    Game(Board &b, Player &p1, Rules &rules, GAME_T type);
+    Game(Board &b, Player &p1, Rules &rules, Display &display, GAME_T type);
 
     /**
    * Copy constructor.

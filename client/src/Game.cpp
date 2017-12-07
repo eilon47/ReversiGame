@@ -37,11 +37,17 @@ Game::Game(Board &b, Player &p1, Player &p2, Rules &rules,GAME_T type):
   }
 }
 
-Game::Game(Board &b, Player &p1, Rules &rules,GAME_T type):
-  b(&b), p1(&p1), rules(&rules), type(type) {
+Game::Game(Board &b, Player &p1, Rules &rules, Display &display, GAME_T type):
+  b(&b), p1(&p1), rules(&rules), type(type), display(&display) {
   if (p1.getSign() == XSIGN) {
+    p2 = new HumanPlayer();
+    p2->setSign(OSIGN);
+    *this->display = display;
     turn = true;
   } else {
+    p2 = new HumanPlayer();
+    p2->setSign(XSIGN);
+    *this->display = display;
     turn = false;
   }
 }
@@ -134,7 +140,7 @@ Player* Game::currentPlayer() const {
 }
 //Run game.
 void Game::run() {
-  display->showBoard(*this->b);
+  display->showBoard(*b);
   bool oneMove = false;
   int score;
   while (this->b->hasSpaceOnBoard()) {

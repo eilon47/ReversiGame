@@ -45,7 +45,7 @@ Game GameMenu::showMenu() {
       this->b = new Board(boardSize);
       Client client("127.0.0.1", 8000);
       this -> p1 = new NetworkPlayer(client);
-      Game g(*this->b,*this->p1,*this->r,gtype);
+      Game g(*this->b,*this->p1,*this->r, *this->d, gtype);
       return g;
     }
     default:{
