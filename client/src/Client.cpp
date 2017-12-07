@@ -57,7 +57,6 @@ void Client::connectToServer() {
     }
     string s(getMessage());
     cout << s << endl;
-
 }
 void Client::sendMove(Point move) {
     string m = move.toString();

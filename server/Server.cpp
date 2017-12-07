@@ -41,14 +41,20 @@ void Server::start() {
     if (clientSocket == -1)
       throw "Error on accept";
     setPlayer(clientSocket,1);
-      messageToClient(clientSocket, "you are connected!");
+      //messageToClient(clientSocket, "you are connected!");
     int clientSocket2 = accept(serverSocket, (struct
             sockaddr *)&clientAddress2, &client2AddressLen);
     cout << "Second client connected" << endl;
     if (clientSocket2 == -1)
       throw "Error on accept";
     setPlayer(clientSocket2,2);
-    handleClients(clientSocket, clientSocket2);
+      messageToClient(clientSocket, "you are connected!");
+      messageToClient(clientSocket2, "you are connected!");
+
+      messageToClient(clientSocket, "ready.");
+      messageToClient(clientSocket2, "ready.");
+
+      handleClients(clientSocket, clientSocket2);
     // Close communication with the client
     close(clientSocket);
     close(clientSocket2);
@@ -114,7 +120,7 @@ void Server::setPlayer(int clientSocket, int numTurn) {
       char c[20];
       bzero((void *) &c, sizeof(c));
       strcpy(c, m.c_str());
-      for (int i = 0; i < 17; i++) {
+      for (int i = 0; i < 20; i++) {
           if (c[i] == 0) {
               char c2[i];
               strcpy(c2, c);
@@ -124,6 +130,7 @@ void Server::setPlayer(int clientSocket, int numTurn) {
                   cout << "Error writing message to client" << endl;
                   return;
               }
+              return;
           }
           ssize_t n = write(clientSocket, &c, sizeof(c));
           if (n == -1) {
