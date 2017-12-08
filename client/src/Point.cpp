@@ -23,9 +23,9 @@ Point::Point(string PointAsString) {
   for(int i = 0; i < PointAsString.size(); i++) {
     if (PointAsString[i] > 47 && PointAsString[i] < 57) {
       if (x ==0) {
-      this->x = (int) PointAsString[i];
+      this->x = (int) PointAsString[i] - 48;
     } else {
-        this->y = (int) PointAsString[i];
+        this->y = (int) PointAsString[i] - 48;
       }
     }
   }
@@ -58,10 +58,10 @@ Point& Point::operator=(const Point &p) {
   this->x = p.x;
   this->y = p.y;
 }
-string& Point::toString() {
-  ostringstream ss;
-  ss.clear();
-  ss << this;
+string Point::toString() {
+  stringstream ss;
+  Point p(this->getX(), this->getY());
+  ss << p;
   string s = ss.str();
   return s;
 }

@@ -41,9 +41,6 @@ class Game {
    * @param rules game rules.
    */
   Game(Board &b, Player &p1, Player &p2, Rules &rules, GAME_T type);
-
-    Game(Board &b, Player &p1, Rules &rules, Display &display, GAME_T type);
-
     /**
    * Copy constructor.
    * @param p another Play.
@@ -102,6 +99,7 @@ class Game {
    * @return game, after shallow copy.
    */
   Game&operator = (const Game &p);
+  void netRun();
 };
 
 #endif //EX2_PLAY_H

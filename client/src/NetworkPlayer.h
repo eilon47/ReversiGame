@@ -13,19 +13,14 @@
 class NetworkPlayer : public Player {
     public:
         /**
-         * Constructor.
-         * @param sign sign.
-         */
-        explicit NetworkPlayer(SIGN sign);
-        /**
          * Default Constructor.
          */
-        NetworkPlayer(Client client);
+        NetworkPlayer(Client &client);
         /**
          * Copy constructor.
          * @param cp
          */
-        NetworkPlayer(const AIPlayer &cp);
+        NetworkPlayer(const NetworkPlayer &cp);
         /**
          * getPointFromPlayer.
          * Ask the player to enter a point for the next move.
@@ -34,14 +29,10 @@ class NetworkPlayer : public Player {
          * @return Point the player chose.
          */
         Point getPointFromPlayer(Board b, vector<Point> v);
-
-        void play();
-    private:
+  private:
         SIGN sign;
         int numOfSoldiers;
-        Rules *rules;
-        Client client;
-        bool myTurn;
+        Client *client;
     };
 
 #endif //REVERSIGAME_NETWORKPLAYER_H

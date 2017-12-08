@@ -39,6 +39,6 @@ set(TEST_FILES
         tests/GameTest.cpp
         tests/RulesTest.cpp src/Client.cpp src/Client.h src/NetworkPlayer.cpp src/NetworkPlayer.h)
 
-add_executable(ReversiGame ${SOURCE_FILES} main.cpp)
+add_executable(ReversiGame ${SOURCE_FILES} main.cpp src/NetworkReadPlayer.cpp src/NetworkReadPlayer.h)
 add_executable(ReversiTest ${TEST_FILES} ${SOURCE_FILES})
 target_link_libraries(ReversiTest gtest gtest_main)

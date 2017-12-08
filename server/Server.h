@@ -14,12 +14,11 @@ public:
     void stop();
 private:
     int port;
+    string message;
     int serverSocket; // the socket's file descriptor
     void handleClients(int clientSocket,int clientSocket2);
-    void handleWaitingClient(int clientSocket);
-    void handlePlayingClient(int clientSocket, string &p);
+    void handlePlayingClient(int clientSocket);
     void setPlayer(int clientSocket,int numTurn);
-    void movePoint(int clientSocket, string &p);
     void messageToClient(int clientSocket, string m);
     bool endGame(string point);
 };

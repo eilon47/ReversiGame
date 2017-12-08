@@ -69,7 +69,7 @@ class Point {
   * @param y y value.
   */
   void setPoint(int x, int y);
-    string& toString();
+    string toString();
 };
 
 #endif //EX2_POINT_H

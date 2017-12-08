@@ -5,10 +5,13 @@
 #include <algorithm>
 #include "HumanPlayer.h"
 //Constructors.
-HumanPlayer::HumanPlayer(SIGN sign): sign(sign), numOfSoldiers(2)  {}
+HumanPlayer::HumanPlayer(SIGN sign): sign(sign), numOfSoldiers(2)  {
+  this->setSign(sign);
+}
 HumanPlayer::HumanPlayer(): sign(EMPTY), numOfSoldiers(2) {}
 HumanPlayer::HumanPlayer(const HumanPlayer &cp) {
   this->sign = cp.sign;
+  this->setSign(cp.sign);
   this->numOfSoldiers = cp.numOfSoldiers;
 }
 //Get point from user.

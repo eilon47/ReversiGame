@@ -5,52 +5,58 @@
 #include "Sign.h"
 #include "Game.h"
 #include "AIPlayer.h"
+#include "NetworkPlayer.h"
+#include "NetworkReadPlayer.h"
 
 //Constructors.
 Game::Game(Board &b, Player &p1, Player &p2, Rules &rules, Display &display,GAME_T type)
     : b(&b), p1(&p1), p2(&p2),turn(true), rules(&rules), display(&display), type(type){
-  //if player is not initialized with sign.
-  if(p1.getSign() == EMPTY && p2.getSign() != XSIGN){
-    p1.setSign(XSIGN);
-  } else {
-    p1.setSign(OSIGN);
-  }
-  if(p2.getSign() == EMPTY && p1.getSign() != OSIGN) {
-    p2.setSign(OSIGN);
-  } else {
-    p2.setSign(XSIGN);
+  if(type != PvsRP) {
+    //if player is not initialized with sign.
+    if (p1.getSign() == EMPTY && p2.getSign() != XSIGN) {
+      p1.setSign(XSIGN);
+    } else {
+      p1.setSign(OSIGN);
+    }
+    if (p2.getSign() == EMPTY && p1.getSign() != OSIGN) {
+      p2.setSign(OSIGN);
+    } else {
+      p2.setSign(XSIGN);
+    }
   }
 }
 Game::Game(Board &b, Player &p1, Player &p2, Rules &rules,GAME_T type):
     b(&b), p1(&p1), p2(&p2), turn(true), rules(&rules), type(type){
   this->display = NULL;
-  //if player is not initialized with sign.
-  if(p1.getSign() == EMPTY && p2.getSign() != XSIGN){
-    p1.setSign(XSIGN);
-  } else {
-    p1.setSign(OSIGN);
-  }
-  if(p2.getSign() == EMPTY && p1.getSign() != OSIGN) {
-    p2.setSign(OSIGN);
-  } else {
-    p2.setSign(XSIGN);
+  if(type != PvsRP) {
+    //if player is not initialized with sign.
+    if (p1.getSign() == EMPTY && p2.getSign() != XSIGN) {
+      p1.setSign(XSIGN);
+    } else {
+      p1.setSign(OSIGN);
+    }
+    if (p2.getSign() == EMPTY && p1.getSign() != OSIGN) {
+      p2.setSign(OSIGN);
+    } else {
+      p2.setSign(XSIGN);
+    }
   }
 }
 
-Game::Game(Board &b, Player &p1, Rules &rules, Display &display, GAME_T type):
-  b(&b), p1(&p1), rules(&rules), type(type), display(&display) {
-  if (p1.getSign() == XSIGN) {
-    p2 = new HumanPlayer();
-    p2->setSign(OSIGN);
-    *this->display = display;
-    turn = true;
-  } else {
-    p2 = new HumanPlayer();
-    p2->setSign(XSIGN);
-    *this->display = display;
-    turn = false;
-  }
-}
+//Game::Game(Board &b, Player &p1, Rules &rules, Display &display, GAME_T type):
+//  b(&b), p1(&p1), rules(&rules), type(type), display(&display) {
+//  if (p1.getSign() == XSIGN) {
+//    p2 = new HumanPlayer();
+//    p2->setSign(OSIGN);
+//    *this->display = display;
+//    turn = true;
+//  } else {
+//    p2 = new HumanPlayer();
+//    p2->setSign(XSIGN);
+//    *this->display = display;
+//    turn = false;
+//  }
+//}
 
 
 
@@ -140,47 +146,48 @@ Player* Game::currentPlayer() const {
 }
 //Run game.
 void Game::run() {
-  display->showBoard(*b);
-  bool oneMove = false;
-  int score;
-  while (this->b->hasSpaceOnBoard()) {
-    display->showTurn(*this->currentPlayer());
-    vector<Point> vMoves = this->checkAllMoves(currentPlayer()->getSign());
-    if (!vMoves.empty() && vMoves.size() == 1 && vMoves[0].getX() == 0 && vMoves[0].getY() == 0) {
-      //2 turns in a row without moves.
-      if (oneMove) {
-        vMoves[0].setPoint(-1, -1);
-        this->currentPlayer()->getPointFromPlayer(*b, vMoves);
-        this->endGame();
-        return;
-      }
-      oneMove = true;
-      if (type != PvsRP) {
+  if(this->type != PvsRP) {
+    display->showBoard(*b);
+    bool oneMove = false;
+    int score;
+    while (this->b->hasSpaceOnBoard()) {
+      display->showTurn(*this->currentPlayer());
+      vector<Point> vMoves = this->checkAllMoves(currentPlayer()->getSign());
+      if (!vMoves.empty() && vMoves.size() == 1 && vMoves[0].getX() == 0 && vMoves[0].getY() == 0) {
+        //2 turns in a row without moves.
+        if (oneMove) {
+          vMoves[0].setPoint(-1, -1);
+          this->currentPlayer()->getPointFromPlayer(*b, vMoves);
+          this->endGame();
+          return;
+        }
+        oneMove = true;
         turn = !turn;
+        display->showMessage("No possible moves. Game passes back to the other player.\n");
+        continue;
       }
-      display->showMessage("No possible moves. Game passes back to the other player.\n");
-      continue;
-    }
-    oneMove = false;
-    sort(vMoves.begin(), vMoves.end());
-    if (type == PvsP || (type == PvsAI && turn)) {
-      this->display->showPossibleMoves(vMoves);
-      display->showMessage("Please enter your move: row col\n");
-    }
-    Point p = this->currentPlayer()->getPointFromPlayer(*b, vMoves);
-    if (!this->checkVecHasPoint(vMoves, p) || p.getX() == 0 || p.getY() == 0) {
-      display->showMessage("You can not do that move.\n");
-      continue;
-    }
-    score = this->playOneTurn(p, currentPlayer()->getSign());
-    display->showBoard(*this->b);
-    this->setScoresAfterMove(score);
-    display->showScore(*this->p1, *this->p2);
-    if (type != PvsRP) {
+      oneMove = false;
+      sort(vMoves.begin(), vMoves.end());
+
+      if (type == PvsP || (type == PvsAI && turn)) {
+        this->display->showPossibleMoves(vMoves);
+        display->showMessage("Please enter your move: row col\n");
+      }
+      Point p = this->currentPlayer()->getPointFromPlayer(*b, vMoves);
+      if (!this->checkVecHasPoint(vMoves, p) || p.getX() == 0 || p.getY() == 0) {
+        display->showMessage("You can not do that move.\n");
+        continue;
+      }
+      score = this->playOneTurn(p, currentPlayer()->getSign());
+      display->showBoard(*this->b);
+      this->setScoresAfterMove(score);
+      display->showScore(*this->p1, *this->p2);
       turn = !turn;
     }
+    this->endGame();
+  }else {
+    this->netRun();
   }
-  this->endGame();
 }
 //Updates players scores.
 void Game::setScoresAfterMove(int num) {
@@ -204,4 +211,47 @@ Game& Game::operator=(const Game &p) {
   this->rules = p.rules;
   this->turn = p.turn;
   this->display = p.display;
+}
+void Game::netRun() {
+  if(this->currentPlayer()->getSign() == OSIGN) {
+    turn = !turn;
+  }
+  display->showBoard(*b);
+  bool oneMove = false;
+  int score;
+  while (this->b->hasSpaceOnBoard()) {
+    display->showTurn(*this->currentPlayer());
+    vector<Point> vMoves = this->checkAllMoves(currentPlayer()->getSign());
+    if (!vMoves.empty() && vMoves.size() == 1 && vMoves[0].getX() == 0 && vMoves[0].getY() == 0) {
+      //2 turns in a row without moves.
+      if (oneMove) {
+        vMoves[0].setPoint(-1, -1);
+        this->currentPlayer()->getPointFromPlayer(*b, vMoves);
+        this->endGame();
+        return;
+      }
+      oneMove = true;
+      turn = !turn;
+      display->showMessage("No possible moves. Game passes back to the other player.\n");
+      continue;
+    }
+    oneMove = false;
+    sort(vMoves.begin(), vMoves.end());
+
+    if (turn) {
+      this->display->showPossibleMoves(vMoves);
+      display->showMessage("Please enter your move: row col\n");
+    }
+    Point p = this->currentPlayer()->getPointFromPlayer(*b, vMoves);
+    if (!this->checkVecHasPoint(vMoves, p) || p.getX() == 0 || p.getY() == 0) {
+      display->showMessage("You can not do that move.\n");
+      continue;
+    }
+    score = this->playOneTurn(p, currentPlayer()->getSign());
+    display->showBoard(*this->b);
+    this->setScoresAfterMove(score);
+    display->showScore(*this->p1, *this->p2);
+    turn = !turn;
+  }
+  this->endGame();
 }

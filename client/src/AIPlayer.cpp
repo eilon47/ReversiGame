@@ -7,12 +7,15 @@
 #include "Game.h"
 using namespace std;
 //Constructors.
-AIPlayer::AIPlayer(SIGN sign, Rules &r): sign(sign), numOfSoldiers(2), rules(&r)  {}
+AIPlayer::AIPlayer(SIGN sign, Rules &r): sign(sign), numOfSoldiers(2), rules(&r)  {
+    this->setSign(sign);
+}
 AIPlayer::AIPlayer(): sign(EMPTY), numOfSoldiers(2), rules(NULL){}
-AIPlayer::AIPlayer(const AIPlayer &AIp) {
-    this->sign = AIp.sign;
-    this->numOfSoldiers = AIp.numOfSoldiers;
-    this->rules = AIp.rules;
+AIPlayer::AIPlayer(const AIPlayer &aip) {
+    this->sign = aip.sign;
+    this->setSign(aip.sign);
+    this->numOfSoldiers = aip.numOfSoldiers;
+    this->rules = aip.rules;
 }
 //Get point from user.
 Point AIPlayer::getPointFromPlayer(Board b, vector<Point> v) {

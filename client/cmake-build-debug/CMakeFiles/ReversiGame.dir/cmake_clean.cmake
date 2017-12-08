@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ReversiGame.dir/src/Client.cpp.o"
   "CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o"
   "CMakeFiles/ReversiGame.dir/main.cpp.o"
+  "CMakeFiles/ReversiGame.dir/src/NetworkReadPlayer.cpp.o"
   "ReversiGame.pdb"
   "ReversiGame"
 )
