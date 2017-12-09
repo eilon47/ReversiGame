@@ -23,6 +23,7 @@ private:
     void messageToClient(int clientSocket, string m);
     bool endGame(string point);
     int getPortFromFile(string path);
+    bool badMove(string point);
 };
 
 #endif //SERVER_SERVER_H

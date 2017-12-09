@@ -237,14 +237,17 @@ void Game::netRun() {
     }
     oneMove = false;
     sort(vMoves.begin(), vMoves.end());
-
     if (turn) {
       this->display->showPossibleMoves(vMoves);
       display->showMessage("Please enter your move: row col\n");
     }
     Point p = this->currentPlayer()->getPointFromPlayer(*b, vMoves);
-    if (!this->checkVecHasPoint(vMoves, p) || p.getX() == 0 || p.getY() == 0) {
-      display->showMessage("You can not do that move.\n");
+    if ((p.getX() == 0 || p.getY() == 0) && turn) {
+      display->showMessage("You can not do that move, please choose another move.\n");
+      continue;
+    }
+    if ((p.getX() == 0 || p.getY() == 0) && !turn) {
+      display->showMessage("The other player choose bad move - he tries again.");
       continue;
     }
     score = this->playOneTurn(p, currentPlayer()->getSign());

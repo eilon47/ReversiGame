@@ -35,18 +35,32 @@ NetworkPlayer::NetworkPlayer(const NetworkPlayer &cp) {
         return p;
     }
     //if its the client's turn he plays a move and sends it to server.
-
     int row = 0, col = 0;
     cin >> row >> col;
     cin.clear();
     cin.ignore(100, '\n');
-    Point p;
+    Point p(0,0);
     //Checks the values are in the right range.
     if (row > b.getSize() || row <= 0 || col > b.getSize() || col <= 0) {
       return p;
     }
     p.setPoint(row, col);
-      //cout << p.toString() << endl;
-      client->sendMove(p);
+    if(!this->checkVecHasPoint(v, p)){
+      p.setPoint(0,0);
+    }
+    //cout << p.toString() << endl;
+    client->sendMove(p);
     return p;
+}
+
+bool NetworkPlayer::checkVecHasPoint(vector<Point> &v, Point &p) {
+  if (v.empty()){
+    return false;
+  }
+  for(int i = 0; i < v.size(); i++) {
+    if(v[i] == (p)) {
+      return true;
+    }
+  }
+  return false;
 }

@@ -75,22 +75,28 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
   bool turn = true;
   while (true) {
     if(turn){
-      messageToClient(clientSocket2,"Waiting for the other player's move...");
+      //messageToClient(clientSocket2,"Waiting for the other player's move...");
       handlePlayingClient(clientSocket);
       cout <<  "X played: " << message << endl;
       if(endGame(message)) {
         break;
       }
       messageToClient(clientSocket2, message);
+      if(badMove(message)) {
+        continue;
+      }
       turn = !turn;
     } else {
-      messageToClient(clientSocket,"Waiting for the other player's move...");
+      //messageToClient(clientSocket,"Waiting for the other player's move...");
       handlePlayingClient(clientSocket2);
       cout <<  "O played: " << message << endl;
       if(endGame(this->message)) {
         break;
       }
       messageToClient(clientSocket, this->message);
+      if(badMove(message)) {
+        continue;
+      }
       turn = !turn;
     }
   }
@@ -122,25 +128,31 @@ void Server::setPlayer(int clientSocket, int numTurn) {
 }
   void Server::messageToClient(int clientSocket, string m) {
     int size =(int) m.size();
-    char message[size];
-    strcpy(message, m.c_str());
+    char point[size];
+    strcpy(point, m.c_str());
     int n = write(clientSocket, &size, sizeof(size));
     if(n == -1){
       cout << "Error writing message to client" << endl;
               return;
     }
-    n = write(clientSocket, message, sizeof(message));
+    n = write(clientSocket, &point, sizeof(point));
     if(n == -1){
       cout << "Error writing message to client" << endl;
       return;
     }
   }
-  bool Server::endGame(string point) {
-    if (strcmp(point.c_str(), "(-1,-1)") == 0) {
-      return true;
-    }
-    return false;
+bool Server::endGame(string point) {
+  if (strstr(point.c_str(), "(-1,-1)") != NULL) {
+    return true;
   }
+  return false;
+}
+bool Server::badMove(string point) {
+  if (strstr(point.c_str(), "(0,0)") != NULL) {
+    return true;
+  }
+  return false;
+}
 int Server::getPortFromFile(string path) {
   int port = 0;
   ifstream file;

@@ -33,6 +33,7 @@ class NetworkPlayer : public Player {
         SIGN sign;
         int numOfSoldiers;
         Client *client;
+        bool checkVecHasPoint(vector<Point> &v, Point &p);
     };
 
 #endif //REVERSIGAME_NETWORKPLAYER_H

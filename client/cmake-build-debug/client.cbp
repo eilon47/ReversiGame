@@ -582,6 +582,12 @@
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/client/src/NetworkPlayer.h">
 			<Option target="client"/>
 		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/client/src/NetworkReadPlayer.cpp">
+			<Option target="client"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/client/src/NetworkReadPlayer.h">
+			<Option target="client"/>
+		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/client/src/Player.cpp">
 			<Option target="client"/>
 		</Unit>
