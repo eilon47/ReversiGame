@@ -13,15 +13,19 @@ Game::Game(Board &b, Player &p1, Player &p2, Rules &rules, Display &display,GAME
     : b(&b), p1(&p1), p2(&p2),turn(true), rules(&rules), display(&display), type(type){
   if(type != PvsRP) {
     //if player is not initialized with sign.
-    if (p1.getSign() == EMPTY && p2.getSign() != XSIGN) {
-      p1.setSign(XSIGN);
-    } else {
-      p1.setSign(OSIGN);
+    if (p1.getSign() == EMPTY) {
+      if (p2.getSign() != XSIGN) {
+        p1.setSign(XSIGN);
+      } else {
+        p1.setSign(OSIGN);
+      }
     }
-    if (p2.getSign() == EMPTY && p1.getSign() != OSIGN) {
-      p2.setSign(OSIGN);
-    } else {
-      p2.setSign(XSIGN);
+    if (p2.getSign() == EMPTY) {
+      if (p1.getSign() == XSIGN) {
+        p2.setSign(OSIGN);
+      } else {
+        p2.setSign(XSIGN);
+      }
     }
   }
 }
@@ -30,34 +34,22 @@ Game::Game(Board &b, Player &p1, Player &p2, Rules &rules,GAME_T type):
   this->display = NULL;
   if(type != PvsRP) {
     //if player is not initialized with sign.
-    if (p1.getSign() == EMPTY && p2.getSign() != XSIGN) {
-      p1.setSign(XSIGN);
-    } else {
-      p1.setSign(OSIGN);
+    if (p1.getSign() == EMPTY) {
+      if (p2.getSign() != XSIGN) {
+        p1.setSign(XSIGN);
+      } else {
+        p1.setSign(OSIGN);
+      }
     }
-    if (p2.getSign() == EMPTY && p1.getSign() != OSIGN) {
-      p2.setSign(OSIGN);
-    } else {
-      p2.setSign(XSIGN);
+    if (p2.getSign() == EMPTY) {
+      if (p1.getSign() == XSIGN) {
+        p2.setSign(OSIGN);
+      } else {
+        p2.setSign(XSIGN);
+      }
     }
   }
 }
-
-//Game::Game(Board &b, Player &p1, Rules &rules, Display &display, GAME_T type):
-//  b(&b), p1(&p1), rules(&rules), type(type), display(&display) {
-//  if (p1.getSign() == XSIGN) {
-//    p2 = new HumanPlayer();
-//    p2->setSign(OSIGN);
-//    *this->display = display;
-//    turn = true;
-//  } else {
-//    p2 = new HumanPlayer();
-//    p2->setSign(XSIGN);
-//    *this->display = display;
-//    turn = false;
-//  }
-//}
-
 
 
 Game::Game(const Game &p) {
@@ -146,7 +138,7 @@ Player* Game::currentPlayer() const {
 }
 //Run game.
 void Game::run() {
-  if(this->currentPlayer()->getSign() == OSIGN) {
+  if(this->currentPlayer()->getSign() == OSIGN && type == PvsRP) {
     turn = !turn;
   }
   display->showBoard(*b);
@@ -184,8 +176,9 @@ void Game::run() {
       if(turn){
         display->showMessage("You can not do that move, please choose another move.\n");
       } else {
-        display->showMessage("The other player choose bad move - he tries again.");
+        display->showMessage("The other player choose bad move - he tries again.\n");
       }
+      continue;
     }
     score = this->playOneTurn(p, currentPlayer()->getSign());
     display->showBoard(*this->b);
