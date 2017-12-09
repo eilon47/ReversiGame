@@ -113,24 +113,27 @@ string Client::getMessage() {
 }
 
 void Client::getSettingsFromFile() {
-    int port = 0;
     ifstream file;
     file.open(CLASS_PATH);
     if (!file.is_open()) {
         throw "Couldn't open information file.";
     }
-    string line, line2;
-    getline(file, line);
-    getline(file, line2);
-    istringstream iss(line);
-    istringstream iss2(line2);
+    string line;
+    istringstream iss;
     //gets ip
-    char * iP = new char[line.size() + 1];
-    std::copy(line.begin(), line.end(), iP);
-    iP[line.size()] = '\0';
-    this->serverIP = iP;
-    //get port.
-    iss >> this-> serverPort;
+    while (getline(file, line, ':')) {
+        if (line == "server") {
+            getline(file, line, '\n');
+            char* iP = new char[line.size()];
+            std::copy(line.begin(), line.end(), iP);
+            this->serverIP = (const char*) iP;
+        }
+        else if (line == "port") {
+            getline(file, line, '\n');
+            istringstream iss(line);
+            iss >> this->serverPort;
+        }
+    }
 }
 
 int Client::getClientSign() { return this->turnNum; }

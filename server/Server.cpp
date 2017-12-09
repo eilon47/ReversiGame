@@ -161,8 +161,13 @@ int Server::getPortFromFile(string path) {
     throw "Couldn't open information file.";
   }
   string line;
-  getline(file,line);
-  istringstream iss(line);
-  iss >> port;
+  while (getline(file, line, ':')) {
+    if (line == "port") {
+      getline(file, line, '\n');
+      istringstream iss(line);
+      iss >> port;
+      break;
+    }
+  }
   return port;
 }

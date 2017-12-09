@@ -48,7 +48,6 @@ NetworkPlayer::NetworkPlayer(const NetworkPlayer &cp) {
     if(!this->checkVecHasPoint(v, p)){
       p.setPoint(0,0);
     }
-    //cout << p.toString() << endl;
     client->sendMove(p);
     return p;
 }
