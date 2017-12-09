@@ -10,6 +10,7 @@ using namespace std;
 class Server {
 public:
     Server(int port);
+    Server();
     void start();
     void stop();
 private:
@@ -21,6 +22,7 @@ private:
     void setPlayer(int clientSocket,int numTurn);
     void messageToClient(int clientSocket, string m);
     bool endGame(string point);
+    int getPortFromFile(string path);
 };
 
 #endif //SERVER_SERVER_H

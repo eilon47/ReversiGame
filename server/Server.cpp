@@ -4,11 +4,21 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include <fstream>
+#include <sstream>
+
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 2
+#define CLASS_PATH "../info.txt"
+
 Server::Server(int port): port(port), serverSocket(0) {
   this->message = "";
 }
+
+Server::Server(): serverSocket(0), port(getPortFromFile(CLASS_PATH)) {
+  this->message = "";
+}
+
 void Server::start() {
   // Create a socket point
   serverSocket = socket(AF_INET, SOCK_STREAM, 0);
@@ -67,7 +77,7 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
     if(turn){
       messageToClient(clientSocket2,"Waiting for the other player's move...");
       handlePlayingClient(clientSocket);
-      cout << message << endl;
+      cout <<  "X played: " << message << endl;
       if(endGame(message)) {
         break;
       }
@@ -76,6 +86,7 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
     } else {
       messageToClient(clientSocket,"Waiting for the other player's move...");
       handlePlayingClient(clientSocket2);
+      cout <<  "O played: " << message << endl;
       if(endGame(this->message)) {
         break;
       }
@@ -85,13 +96,14 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
   }
 }
 void Server::handlePlayingClient(int clientSocket) {
-  int size;
+  int size = 0;
   int n = read(clientSocket, &size, sizeof(&size));
   if (n == -1) {
     cout << "Error reading board" << endl;
     return;
   }
-  char point[size];
+  char point[size + 1];
+    bzero((char*)point,sizeof(point));
   n = read(clientSocket, &point, sizeof(point));
   if (n == -1) {
     cout << "Error reading board" << endl;
@@ -129,3 +141,16 @@ void Server::setPlayer(int clientSocket, int numTurn) {
     }
     return false;
   }
+int Server::getPortFromFile(string path) {
+  int port = 0;
+  ifstream file;
+  file.open(path);
+  if (!file.is_open()) {
+    throw "Couldn't open information file.";
+  }
+  string line;
+  getline(file,line);
+  istringstream iss(line);
+  iss >> port;
+  return port;
+}

@@ -17,5 +17,6 @@ Point NetworkReadPlayer::getPointFromPlayer(Board b, vector<Point> v) {
   string s = this->client->getMessage();
   cout << s << endl;
   Point p = this->client->getMove();
+  cout << "The other player played: " << p.toString() << endl << endl;
   return p;
 }

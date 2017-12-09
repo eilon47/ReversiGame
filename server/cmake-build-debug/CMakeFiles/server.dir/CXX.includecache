@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/elon/Desktop/Git/ReversiGame/server/Server.cpp
+/home/dandan/Desktop/git/ReversiGame/server/Server.cpp
 Server.h
-/home/elon/Desktop/Git/ReversiGame/server/Server.h
+/home/dandan/Desktop/git/ReversiGame/server/Server.h
 sys/socket.h
 -
 netinet/in.h
@@ -19,14 +19,18 @@ string.h
 -
 stdio.h
 -
+fstream
+-
+sstream
+-
 
-/home/elon/Desktop/Git/ReversiGame/server/Server.h
+/home/dandan/Desktop/git/ReversiGame/server/Server.h
 iostream
 -
 
-/home/elon/Desktop/Git/ReversiGame/server/main.cpp
+/home/dandan/Desktop/git/ReversiGame/server/main.cpp
 Server.h
-/home/elon/Desktop/Git/ReversiGame/server/Server.h
+/home/dandan/Desktop/git/ReversiGame/server/Server.h
 stdlib.h
 -
 

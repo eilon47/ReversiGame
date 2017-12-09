@@ -46,6 +46,7 @@ NetworkPlayer::NetworkPlayer(const NetworkPlayer &cp) {
       return p;
     }
     p.setPoint(row, col);
-    client->sendMove(p);
+      //cout << p.toString() << endl;
+      client->sendMove(p);
     return p;
 }
