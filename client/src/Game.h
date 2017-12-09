@@ -99,7 +99,6 @@ class Game {
    * @return game, after shallow copy.
    */
   Game&operator = (const Game &p);
-  void netRun();
 };
 
 #endif //EX2_PLAY_H

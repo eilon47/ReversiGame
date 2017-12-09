@@ -146,73 +146,6 @@ Player* Game::currentPlayer() const {
 }
 //Run game.
 void Game::run() {
-  if(this->type != PvsRP) {
-    display->showBoard(*b);
-    bool oneMove = false;
-    int score;
-    while (this->b->hasSpaceOnBoard()) {
-      display->showTurn(*this->currentPlayer());
-      vector<Point> vMoves = this->checkAllMoves(currentPlayer()->getSign());
-      if (!vMoves.empty() && vMoves.size() == 1 && vMoves[0].getX() == 0 && vMoves[0].getY() == 0) {
-        //2 turns in a row without moves.
-        if (oneMove) {
-          vMoves[0].setPoint(-1, -1);
-          this->currentPlayer()->getPointFromPlayer(*b, vMoves);
-          this->endGame();
-          return;
-        }
-        oneMove = true;
-        turn = !turn;
-        display->showMessage("No possible moves. Game passes back to the other player.\n");
-        continue;
-      }
-      oneMove = false;
-      sort(vMoves.begin(), vMoves.end());
-
-      if (type == PvsP || (type == PvsAI && turn)) {
-        this->display->showPossibleMoves(vMoves);
-        display->showMessage("Please enter your move: row col\n");
-      }
-      Point p = this->currentPlayer()->getPointFromPlayer(*b, vMoves);
-      if (!this->checkVecHasPoint(vMoves, p) || p.getX() == 0 || p.getY() == 0) {
-        display->showMessage("You can not do that move.\n");
-        continue;
-      }
-      score = this->playOneTurn(p, currentPlayer()->getSign());
-      display->showBoard(*this->b);
-      this->setScoresAfterMove(score);
-      display->showScore(*this->p1, *this->p2);
-      turn = !turn;
-    }
-    this->endGame();
-  }else {
-    this->netRun();
-  }
-}
-//Updates players scores.
-void Game::setScoresAfterMove(int num) {
-  if(turn) {
-    this->p1->addSoldiers(num + 1);
-    this->p2->addSoldiers(-num);
-  } else {
-    this->p2->addSoldiers(num + 1);
-    this->p1->addSoldiers(-num);
-  }
-}
-//End game screen.
-void Game::endGame() {
-  this->display->showEndGame(*this->p1, *this->p2);
-}
-
-Game& Game::operator=(const Game &p) {
-  this->b = p.b;
-  this->p1 = p.p1;
-  this->p2 = p.p2;
-  this->rules = p.rules;
-  this->turn = p.turn;
-  this->display = p.display;
-}
-void Game::netRun() {
   if(this->currentPlayer()->getSign() == OSIGN) {
     turn = !turn;
   }
@@ -237,18 +170,22 @@ void Game::netRun() {
     }
     oneMove = false;
     sort(vMoves.begin(), vMoves.end());
-    if (turn) {
+    if (type == PvsP || ((type == PvsRP || type == PvsAI) && turn)) {
       this->display->showPossibleMoves(vMoves);
       display->showMessage("Please enter your move: row col\n");
     }
     Point p = this->currentPlayer()->getPointFromPlayer(*b, vMoves);
-    if ((p.getX() == 0 || p.getY() == 0) && turn) {
-      display->showMessage("You can not do that move, please choose another move.\n");
+    if (type != PvsRP && (!this->checkVecHasPoint(vMoves, p)
+        || p.getX() == 0 || p.getY() == 0)) {
+      display->showMessage("You can not do that move.\n");
       continue;
     }
-    if ((p.getX() == 0 || p.getY() == 0) && !turn) {
-      display->showMessage("The other player choose bad move - he tries again.");
-      continue;
+    if (type == PvsRP && (p.getX() == 0 || p.getY() == 0)){
+      if(turn){
+        display->showMessage("You can not do that move, please choose another move.\n");
+      } else {
+        display->showMessage("The other player choose bad move - he tries again.");
+      }
     }
     score = this->playOneTurn(p, currentPlayer()->getSign());
     display->showBoard(*this->b);
@@ -257,4 +194,27 @@ void Game::netRun() {
     turn = !turn;
   }
   this->endGame();
+}
+//Updates players scores.
+void Game::setScoresAfterMove(int num) {
+  if(turn) {
+    this->p1->addSoldiers(num + 1);
+    this->p2->addSoldiers(-num);
+  } else {
+    this->p2->addSoldiers(num + 1);
+    this->p1->addSoldiers(-num);
+  }
+}
+//End game screen.
+void Game::endGame() {
+  this->display->showEndGame(*this->p1, *this->p2);
+}
+
+Game& Game::operator=(const Game &p) {
+  this->b = p.b;
+  this->p1 = p.p1;
+  this->p2 = p.p2;
+  this->rules = p.rules;
+  this->turn = p.turn;
+  this->display = p.display;
 }
