@@ -42,7 +42,7 @@ Game GameMenu::showMenu() {
     }
     case 3: {
       gtype = PvsRP;
-      Client *client = new Client;
+      Client *client = new Client("127.0.0.1",8000);
       this->p1 = new NetworkPlayer(*client);
       this->p2 = new NetworkReadPlayer(*client);
       cout << client->getMessage() << endl;

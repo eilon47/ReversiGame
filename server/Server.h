@@ -16,14 +16,16 @@ public:
 private:
     int port;
     string message;
+    bool connection;
     int serverSocket; // the socket's file descriptor
-    void handleClients(int clientSocket,int clientSocket2);
-    void handlePlayingClient(int clientSocket);
-    void setPlayer(int clientSocket,int numTurn);
-    void messageToClient(int clientSocket, string m);
-    bool endGame(string point);
-    int getPortFromFile(string path);
-    bool badMove(string point);
+  void handleClients(int clientSocket,int clientSocket2);
+  void handlePlayingClient(int clientSocket);
+  void setPlayer(int clientSocket,int numTurn);
+  void messageToClient(int clientSocket, string m);
+  bool endGame(string point);
+  int getPortFromFile(string path);
+  bool badMove(string point);
+  bool checkConnection(int n);
 };
 
 #endif //SERVER_SERVER_H

@@ -13,10 +13,12 @@ using namespace std;
 
 Server::Server(int port): port(port), serverSocket(0) {
   this->message = "";
+  this->connection = true;
 }
 
 Server::Server(): serverSocket(0), port(getPortFromFile(CLASS_PATH)) {
   this->message = "";
+  this->connection = true;
 }
 
 void Server::start() {
@@ -43,7 +45,7 @@ void Server::start() {
   struct sockaddr_in clientAddress2;
   socklen_t clientAddressLen;
   socklen_t client2AddressLen;
-  while (true) {
+  while (connection) {
     cout << "Waiting for client connections..." << endl;
     // Accept a new client connection
     int clientSocket = accept(serverSocket, (struct
@@ -60,23 +62,31 @@ void Server::start() {
     if (clientSocket2 == -1)
       throw "Error on accept";
     setPlayer(clientSocket2,2);
-      messageToClient(clientSocket, "ready.");
-      messageToClient(clientSocket2, "ready.");
-
-      handleClients(clientSocket, clientSocket2);
+    messageToClient(clientSocket, "ready.");
+    messageToClient(clientSocket2, "ready.");
+    handleClients(clientSocket, clientSocket2);
     // Close communication with the client
     close(clientSocket);
     close(clientSocket2);
   }
+  this->stop();
+  connection = true;
+}
+void Server::stop() {
+  close(this->serverSocket);
 }
 // Handle requests from a specific client
 void Server::handleClients(int clientSocket, int clientSocket2) {
   //messageToClient(clientSocket, "Let's Go!");
   bool turn = true;
-  while (true) {
+
+  while(connection) {
     if(turn){
       //messageToClient(clientSocket2,"Waiting for the other player's move...");
       handlePlayingClient(clientSocket);
+      if(!connection) {
+        return;
+      }
       cout <<  "X played: " << message << endl;
       if(endGame(message)) {
         break;
@@ -89,6 +99,9 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
     } else {
       //messageToClient(clientSocket,"Waiting for the other player's move...");
       handlePlayingClient(clientSocket2);
+      if(!connection) {
+        return;
+      }
       cout <<  "O played: " << message << endl;
       if(endGame(this->message)) {
         break;
@@ -108,6 +121,9 @@ void Server::handlePlayingClient(int clientSocket) {
     cout << "Error reading board" << endl;
     return;
   }
+  if(!checkConnection(n)) {
+    return;
+  }
   char point[size + 1];
     bzero((char*)point,sizeof(point));
   n = read(clientSocket, &point, sizeof(point));
@@ -115,32 +131,43 @@ void Server::handlePlayingClient(int clientSocket) {
     cout << "Error reading board" << endl;
     return;
   }
+  if(!checkConnection(n)) {
+    return;
+  }
   message = point;
 }
 void Server::setPlayer(int clientSocket, int numTurn) {
 
-  ssize_t n = write(clientSocket, &numTurn, sizeof(numTurn));
+  int n = write(clientSocket, &numTurn, sizeof(numTurn));
   if (n == -1) {
     cout << "Error writing board to socket" << endl;
     return;
-
+  }
+  if(!checkConnection(n)) {
+    return;
   }
 }
-  void Server::messageToClient(int clientSocket, string m) {
-    int size =(int) m.size();
-    char point[size];
-    strcpy(point, m.c_str());
-    int n = write(clientSocket, &size, sizeof(size));
-    if(n == -1){
-      cout << "Error writing message to client" << endl;
-              return;
-    }
-    n = write(clientSocket, &point, sizeof(point));
-    if(n == -1){
-      cout << "Error writing message to client" << endl;
-      return;
-    }
+void Server::messageToClient(int clientSocket, string m) {
+  int size =(int) m.size();
+  char point[size];
+  strcpy(point, m.c_str());
+  int n = write(clientSocket, &size, sizeof(size));
+  if(n == -1){
+    cout << "Error writing message to client" << endl;
+            return;
   }
+  if(!checkConnection(n)) {
+    return;
+  }
+  n = write(clientSocket, &point, sizeof(point));
+  if(n == -1){
+    cout << "Error writing message to client" << endl;
+    return;
+  }
+  if(!checkConnection(n)) {
+    return;
+  }
+}
 bool Server::endGame(string point) {
   if (strstr(point.c_str(), "(-1,-1)") != NULL) {
     return true;
@@ -170,4 +197,11 @@ int Server::getPortFromFile(string path) {
     }
   }
   return port;
+}
+bool Server::checkConnection(int n) {
+  if (n == 0) {
+    cout << "Player disconnected" << endl;
+    connection = false;
+  }
+  return connection;
 }
