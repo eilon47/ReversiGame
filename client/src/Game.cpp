@@ -172,13 +172,18 @@ void Game::run() {
       display->showMessage("You can not do that move.\n");
       continue;
     }
-    if (type == PvsRP && (p.getX() == 0 || p.getY() == 0)){
-      if(turn){
-        display->showMessage("You can not do that move, please choose another move.\n");
-      } else {
-        display->showMessage("The other player choose bad move - he tries again.\n");
+    if (type == PvsRP ){
+      if((p.getX() == 0 || p.getY() == 0)) {
+        if (turn) {
+          display->showMessage("You can not do that move, please choose another move.\n");
+        } else {
+          display->showMessage("The other player choose bad move - he tries again.\n");
+        }
+        continue;
       }
-      continue;
+      if(p.getX() == -1 || p.getY() == -1) {
+        return;
+      }
     }
     score = this->playOneTurn(p, currentPlayer()->getSign());
     display->showBoard(*this->b);

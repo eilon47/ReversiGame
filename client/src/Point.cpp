@@ -20,12 +20,24 @@ Point::Point(const Point &p) {
 Point::Point(string PointAsString) {
   this->x = 0;
   this->y = 0;
+  bool negNum = false;
   for(int i = 0; i < PointAsString.size(); i++) {
-    if (PointAsString[i] > 47 && PointAsString[i] < 57) {
+    if(PointAsString[i] == '-'){
+      negNum = true;
+    }
+    if (PointAsString[i] > 47 && PointAsString[i] < 58) {
       if (x ==0) {
       this->x = (int) PointAsString[i] - 48;
+        if(negNum) {
+          this->x *= (-1);
+          negNum = false;
+        }
     } else {
         this->y = (int) PointAsString[i] - 48;
+        if(negNum) {
+          this->y *= (-1);
+          negNum = false;
+        }
       }
     }
   }

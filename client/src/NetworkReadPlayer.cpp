@@ -14,12 +14,11 @@ NetworkReadPlayer::NetworkReadPlayer(Client &c) : client(&c), numOfSoldiers(2) {
   }
 }
 Point NetworkReadPlayer::getPointFromPlayer(Board b, vector<Point> v) {
-//  string s = this->client->getMessage();
-//  cout << s << endl;
   cout << "Waiting for the other player's move..." << endl;
   Point p = this->client->getMove();
-  Point endP(-1, -1);
-  if(!(p == endP)) {
+  Point endP(-1,-1);
+  Point badP(0,0);
+  if(!(p == endP) && !(p == badP)) {
     cout << "The other player played: " << p.toString() << endl << endl;
   }
   return p;

@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <fstream>
 #include <sstream>
+#include <csignal>
 
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 2
@@ -38,53 +39,54 @@ void Server::start() {
   *)&serverAddress, sizeof(serverAddress)) == -1) {
     throw "Error on binding";
   }
-  // Start listening to incoming connections
-  listen(serverSocket, MAX_CONNECTED_CLIENTS);
-  // Define the client socket's structures
-  struct sockaddr_in clientAddress;
-  struct sockaddr_in clientAddress2;
-  socklen_t clientAddressLen;
-  socklen_t client2AddressLen;
-  while (connection) {
-    cout << "Waiting for client connections..." << endl;
-    // Accept a new client connection
-    int clientSocket = accept(serverSocket, (struct
-            sockaddr *)&clientAddress, &clientAddressLen);
-    cout << "First client connected" << endl;
-    //messageToClient(clientSocket, "Waiting for other player to join...");
-    if (clientSocket == -1)
-      throw "Error on accept";
-    setPlayer(clientSocket,1);
+  while(true) {
+    // Start listening to incoming connections
+    listen(serverSocket, MAX_CONNECTED_CLIENTS);
+    // Define the client socket's structures
+    struct sockaddr_in clientAddress;
+    struct sockaddr_in clientAddress2;
+    socklen_t clientAddressLen;
+    socklen_t client2AddressLen;
+    while (connection) {
+      cout << "Waiting for client connections..." << endl;
+      // Accept a new client connection
+      int clientSocket = accept(serverSocket, (struct
+          sockaddr *) &clientAddress, &clientAddressLen);
+      cout << "First client connected" << endl;
+      //messageToClient(clientSocket, "Waiting for other player to join...");
+      if (clientSocket == -1)
+        throw "Error on accept";
+      setPlayer(clientSocket, 1);
       //messageToClient(clientSocket, "you are connected!");
-    int clientSocket2 = accept(serverSocket, (struct
-            sockaddr *)&clientAddress2, &client2AddressLen);
-    cout << "Second client connected" << endl;
-    if (clientSocket2 == -1)
-      throw "Error on accept";
-    setPlayer(clientSocket2,2);
-    messageToClient(clientSocket, "ready.");
-    messageToClient(clientSocket2, "ready.");
-    handleClients(clientSocket, clientSocket2);
-    // Close communication with the client
-    close(clientSocket);
-    close(clientSocket2);
+      int clientSocket2 = accept(serverSocket, (struct
+          sockaddr *) &clientAddress2, &client2AddressLen);
+      cout << "Second client connected" << endl;
+      if (clientSocket2 == -1)
+        throw "Error on accept";
+      setPlayer(clientSocket2, 2);
+      messageToClient(clientSocket, "ready.");
+      messageToClient(clientSocket2, "ready.");
+      handleClients(clientSocket, clientSocket2);
+      // Close communication with the client
+      close(clientSocket);
+      close(clientSocket2);
+    }
+    connection = true;
   }
   this->stop();
-  connection = true;
 }
 void Server::stop() {
   close(this->serverSocket);
 }
+
 // Handle requests from a specific client
 void Server::handleClients(int clientSocket, int clientSocket2) {
-  //messageToClient(clientSocket, "Let's Go!");
   bool turn = true;
-
   while(connection) {
     if(turn){
-      //messageToClient(clientSocket2,"Waiting for the other player's move...");
       handlePlayingClient(clientSocket);
       if(!connection) {
+        messageToClient(clientSocket2, "(-1,-1)");
         return;
       }
       cout <<  "X played: " << message << endl;
@@ -92,6 +94,10 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
         break;
       }
       messageToClient(clientSocket2, message);
+      if(!connection) {
+        messageToClient(clientSocket, "(-1,-1)");
+        return;
+      }
       if(badMove(message)) {
         continue;
       }
@@ -100,6 +106,7 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
       //messageToClient(clientSocket,"Waiting for the other player's move...");
       handlePlayingClient(clientSocket2);
       if(!connection) {
+        messageToClient(clientSocket, "(-1,-1)");
         return;
       }
       cout <<  "O played: " << message << endl;
@@ -107,6 +114,10 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
         break;
       }
       messageToClient(clientSocket, this->message);
+      if(!connection) {
+        messageToClient(clientSocket2, "(-1,-1)");
+        return;
+      }
       if(badMove(message)) {
         continue;
       }
@@ -115,10 +126,11 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
   }
 }
 void Server::handlePlayingClient(int clientSocket) {
+  signal(SIGPIPE, SIG_IGN);
   int size = 0;
   int n = read(clientSocket, &size, sizeof(&size));
   if (n == -1) {
-    cout << "Error reading board" << endl;
+    cout << "Error reading point" << endl;
     return;
   }
   if(!checkConnection(n)) {
@@ -128,7 +140,7 @@ void Server::handlePlayingClient(int clientSocket) {
     bzero((char*)point,sizeof(point));
   n = read(clientSocket, &point, sizeof(point));
   if (n == -1) {
-    cout << "Error reading board" << endl;
+    cout << "Error reading point" << endl;
     return;
   }
   if(!checkConnection(n)) {
@@ -136,6 +148,30 @@ void Server::handlePlayingClient(int clientSocket) {
   }
   message = point;
 }
+void Server::messageToClient(int clientSocket, string m) {
+  signal(SIGPIPE, SIG_IGN);
+  int size =(int) m.size();
+  char point[size];
+  strcpy(point, m.c_str());
+    int n = write(clientSocket, &size, sizeof(size));
+    if (n == -1) {
+      cout << "Error writing message to client" << endl;
+      return;
+    }
+
+    n = write(clientSocket, &point, sizeof(point));
+    if (n == -1) {
+      cout << "Error writing message to client" << endl;
+      return;
+    }
+    if (!checkConnection(n)) {
+      return;
+    }
+
+}
+
+
+
 void Server::setPlayer(int clientSocket, int numTurn) {
 
   int n = write(clientSocket, &numTurn, sizeof(numTurn));
@@ -146,39 +182,6 @@ void Server::setPlayer(int clientSocket, int numTurn) {
   if(!checkConnection(n)) {
     return;
   }
-}
-void Server::messageToClient(int clientSocket, string m) {
-  int size =(int) m.size();
-  char point[size];
-  strcpy(point, m.c_str());
-  int n = write(clientSocket, &size, sizeof(size));
-  if(n == -1){
-    cout << "Error writing message to client" << endl;
-            return;
-  }
-  if(!checkConnection(n)) {
-    return;
-  }
-  n = write(clientSocket, &point, sizeof(point));
-  if(n == -1){
-    cout << "Error writing message to client" << endl;
-    return;
-  }
-  if(!checkConnection(n)) {
-    return;
-  }
-}
-bool Server::endGame(string point) {
-  if (strstr(point.c_str(), "(-1,-1)") != NULL) {
-    return true;
-  }
-  return false;
-}
-bool Server::badMove(string point) {
-  if (strstr(point.c_str(), "(0,0)") != NULL) {
-    return true;
-  }
-  return false;
 }
 int Server::getPortFromFile(string path) {
   int port = 0;
@@ -204,4 +207,16 @@ bool Server::checkConnection(int n) {
     connection = false;
   }
   return connection;
+}
+bool Server::endGame(string point) {
+  if (strstr(point.c_str(), "(-1,-1)") != NULL) {
+    return true;
+  }
+  return false;
+}
+bool Server::badMove(string point) {
+  if (strstr(point.c_str(), "(0,0)") != NULL) {
+    return true;
+  }
+  return false;
 }

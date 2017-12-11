@@ -23,6 +23,10 @@ fstream
 -
 sstream
 -
+bits/signum.h
+-
+csignal
+-
 
 /home/elon/Desktop/Git/ReversiGame/server/Server.h
 iostream
