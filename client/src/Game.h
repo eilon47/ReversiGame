@@ -99,6 +99,16 @@ class Game {
    * @return game, after shallow copy.
    */
   Game&operator = (const Game &p);
+  /**
+   * netRun.
+   * Game flow for network game - PvsRP.
+   */
+  void netRun();
+  /**
+   * localRun.
+   * Game flow for local game - PvsP or PvsAI.
+   */
+  void localRun();
 };
 
 #endif //EX2_PLAY_H

@@ -41,7 +41,7 @@ Game GameMenu::showMenu() {
     }
     case 3: {
       gtype = PvsRP;
-      client = new Client("127.0.0.1", 8500);
+      client = new Client;
       this->p1 = new NetworkPlayer(*client);
       this->p2 = new NetworkReadPlayer(*client);
       this->d->showMessage(client->getMessage());

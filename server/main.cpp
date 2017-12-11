@@ -7,7 +7,7 @@
 #include "Server.h"
 using namespace std;
 int main() {
-  Server server(8500);
+  Server server;
   try {
       server.start();
     } catch (const char *msg) {

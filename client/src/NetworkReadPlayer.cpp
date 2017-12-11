@@ -18,7 +18,8 @@ Point NetworkReadPlayer::getPointFromPlayer(Board b, vector<Point> v) {
   Point p = this->client->getMove();
   Point endP(-1,-1);
   Point badP(0,0);
-  if(!(p == endP) && !(p == badP)) {
+  Point noMoveP(-2,-2);
+  if(!(p == endP) && !(p == badP) && !(p == noMoveP)) {
     cout << "The other player played: " << p.toString() << endl << endl;
   }
   return p;
