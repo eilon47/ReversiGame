@@ -12,6 +12,7 @@
 #define REVERSIGAME_GAMEMENU_H
 
 #include "Game.h"
+#include "Client.h"
 class GameMenu {
  public:
   /**
@@ -34,6 +35,8 @@ class GameMenu {
   Rules *r;
   Player *p1;
   Player *p2;
+  GAME_T gtype;
+  Client *client;
   Display *d;
 };
 

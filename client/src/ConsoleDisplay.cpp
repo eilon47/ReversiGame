@@ -2,6 +2,7 @@
 //ConsoleDisplay source file.
 //
 
+#include <cstdlib>
 #include "ConsoleDisplay.h"
 void ConsoleDisplay::showBoard(Board &b) {
   cout << b;
@@ -32,17 +33,21 @@ void ConsoleDisplay::showMenu(int &type, int &rules, int &boardSize) {
     cout << "Please choose game type:\n"
         "1.Player vs. Player.\n"
         "2.Player vs. Computer.\n"
-        "3.Player vs. Remote Player" << endl;
-      cin >> type;
+        "3.Player vs. Remote Player\n"
+        "4.Quit " << endl;
+    cin >> type;
     cin.clear();
     cin.ignore(100, '\n');
-    if(type <= 0 || type > 3){
+    if(type <= 0 || type > 4){
       cout << "Please enter valid choice" << endl;
       type = 0;
       continue;
     } else {
       typeBool = true;
     }
+  }
+  if(type == 4) {
+    exit(0);
   }
   //Asks for Board size.
   while (!boardBool) {

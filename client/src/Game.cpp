@@ -157,6 +157,10 @@ void Game::run() {
       oneMove = true;
       turn = !turn;
       display->showMessage("No possible moves. Game passes back to the other player.\n");
+      if(type == PvsRP) {
+        vMoves[0].setPoint(0,0);
+        this->currentPlayer()->getPointFromPlayer(*b, vMoves);
+      }
       continue;
     }
     oneMove = false;
@@ -189,6 +193,12 @@ void Game::run() {
     this->setScoresAfterMove(score);
     display->showScore(*this->p1, *this->p2);
     turn = !turn;
+  }
+  if(type == PvsRP) {
+    Point p(-1,-1);
+    vector<Point> vector1;
+    vector1.push_back(p);
+    this->currentPlayer()->getPointFromPlayer(*b, vector1);
   }
   this->endGame();
 }

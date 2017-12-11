@@ -26,7 +26,6 @@ Game GameMenu::showMenu() {
       break;
     }
   }
-  GAME_T gtype;
   switch(type) {
     case 1: {
       this->p1 = new HumanPlayer(XSIGN);
@@ -42,7 +41,7 @@ Game GameMenu::showMenu() {
     }
     case 3: {
       gtype = PvsRP;
-      Client *client = new Client;
+      client = new Client("127.0.0.1", 8500);
       this->p1 = new NetworkPlayer(*client);
       this->p2 = new NetworkReadPlayer(*client);
       this->d->showMessage(client->getMessage());
@@ -61,6 +60,9 @@ Game GameMenu::showMenu() {
 }
 //Destructor.
 GameMenu::~GameMenu() {
+  if(gtype == PvsRP) {
+    delete client;
+  }
   delete b;
   delete p1;
   delete p2;

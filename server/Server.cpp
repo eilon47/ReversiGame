@@ -10,7 +10,7 @@
 
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 2
-#define CLASS_PATH "settings.txt"
+#define CLASS_PATH "../exe/ServerSettings.txt"
 
 Server::Server(int port): port(port), serverSocket(0) {
   this->message = "";
@@ -91,10 +91,11 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
         return;
       }
       cout <<  "X played: " << message << endl;
-      if(endGame(message)) {
-        break;
-      }
       messageToClient(clientSocket2, message);
+      if(endGame(message)) {
+        connection = false;
+        return;
+      }
       if(!connection) {
         messageToClient(clientSocket, "(-1,-1)");
         return;
@@ -110,10 +111,11 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
         return;
       }
       cout <<  "O played: " << message << endl;
-      if(endGame(this->message)) {
-        break;
-      }
       messageToClient(clientSocket, this->message);
+      if(endGame(this->message)) {
+        connection = false;
+        return;
+      }
       if(!connection) {
         messageToClient(clientSocket2, "(-1,-1)");
         return;
@@ -194,6 +196,7 @@ int Server::getPortFromFile(string path) {
       break;
     }
   }
+  file.close();
   return port;
 }
 bool Server::checkConnection(ssize_t n) {
@@ -204,13 +207,13 @@ bool Server::checkConnection(ssize_t n) {
   return connection;
 }
 bool Server::endGame(string point) {
-  if (strstr(point.c_str(), "(-1,-1)") != NULL) {
+  if (strcmp(point.c_str(), "(-1,-1)") == 0) {
     return true;
   }
   return false;
 }
 bool Server::badMove(string point) {
-  if (strstr(point.c_str(), "(0,0)") != NULL) {
+  if (strcmp(point.c_str(), "(0,0)") == 0) {
     return true;
   }
   return false;

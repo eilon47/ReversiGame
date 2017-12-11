@@ -12,7 +12,7 @@
 #include <sstream>
 
 using namespace std;
-#define CLASS_PATH "settings.txt"
+#define CLASS_PATH "../exe/ClientSettings.txt"
 
 Client::Client(const char *serverIP, int serverPort):
     serverIP(serverIP), serverPort(serverPort), clientSocket(0),turnNum(0) { }
@@ -133,6 +133,7 @@ void Client::getSettingsFromFile() {
             iss >> this->serverPort;
         }
     }
+  file.close();
 }
 
 int Client::getClientSign() { return this->turnNum; }
