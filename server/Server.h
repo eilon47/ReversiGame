@@ -6,6 +6,7 @@
 #ifndef SERVER_SERVER_H
 #define SERVER_SERVER_H
 #include <iostream>
+#include <unistd.h>
 using namespace std;
 
 class Server {
@@ -74,7 +75,7 @@ private:
      * @param n - the number which returns from read/write function.
      * @return the status oc the connection.
      */
-  bool checkConnection(int n);
+  bool checkConnection(ssize_t n);
 };
 
 #endif //SERVER_SERVER_H

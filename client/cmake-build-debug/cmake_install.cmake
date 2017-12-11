@@ -1,4 +1,4 @@
-# Install script for directory: /home/dandan/Desktop/git/ReversiGame/client
+# Install script for directory: /home/elon/Desktop/Git/ReversiGame/client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dandan/Desktop/git/ReversiGame/client/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
+  include("/home/elon/Desktop/Git/ReversiGame/client/cmake-build-debug/lib/googletest-master/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dandan/Desktop/git/ReversiGame/client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/elon/Desktop/Git/ReversiGame/client/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

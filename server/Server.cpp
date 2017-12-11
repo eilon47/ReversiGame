@@ -128,7 +128,7 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
 void Server::handlePlayingClient(int clientSocket) {
   signal(SIGPIPE, SIG_IGN);
   int size = 0;
-  int n = read(clientSocket, &size, sizeof(&size));
+  ssize_t n = read(clientSocket, &size, sizeof(&size));
   if (n == -1) {
     cout << "Error reading point" << endl;
     return;
@@ -153,7 +153,7 @@ void Server::messageToClient(int clientSocket, string m) {
   int size =(int) m.size();
   char point[size];
   strcpy(point, m.c_str());
-    int n = write(clientSocket, &size, sizeof(size));
+  ssize_t n = write(clientSocket, &size, sizeof(size));
     if (n == -1) {
       cout << "Error writing message to client" << endl;
       return;
@@ -169,7 +169,7 @@ void Server::messageToClient(int clientSocket, string m) {
 }
 
 void Server::setPlayer(int clientSocket, int numTurn) {
-  int n = write(clientSocket, &numTurn, sizeof(numTurn));
+  ssize_t n = write(clientSocket, &numTurn, sizeof(numTurn));
   if (n == -1) {
     cout << "Error writing board to socket" << endl;
     return;
@@ -196,7 +196,7 @@ int Server::getPortFromFile(string path) {
   }
   return port;
 }
-bool Server::checkConnection(int n) {
+bool Server::checkConnection(ssize_t n) {
   if (n == 0) {
     cout << "Player disconnected" << endl;
     connection = false;
