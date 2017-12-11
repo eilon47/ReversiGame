@@ -1,6 +1,6 @@
-//
-// Created by dandan on 05/12/17.
-//
+/*
+* Class for NetworkPlayer.
+*/
 
 #ifndef REVERSIGAME_NETWORKPLAYER_H
 #define REVERSIGAME_NETWORKPLAYER_H

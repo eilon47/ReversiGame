@@ -10,10 +10,9 @@
 #include <unistd.h>
 #include <fstream>
 #include <sstream>
-#include <stdio.h>
 
 using namespace std;
-#define CLASS_PATH "../info.txt"
+#define CLASS_PATH "settings.txt"
 
 Client::Client(const char *serverIP, int serverPort):
     serverIP(serverIP), serverPort(serverPort), clientSocket(0),turnNum(0) { }
@@ -62,7 +61,6 @@ void Client::sendMove(Point move) {
   ssize_t size = (int) m.size();
   char message[size];
   strcpy(message, m.c_str());
-    //cout << message << endl;
   ssize_t n = write(clientSocket, &size, sizeof(size));
   if (n == -1) {
       throw "Error writing turn to socket";
@@ -128,6 +126,7 @@ void Client::getSettingsFromFile() {
             std::copy(line.begin(), line.end(), iP);
             this->serverIP = (const char*) iP;
         }
+            // gets port.
         else if (line == "port") {
             getline(file, line, '\n');
             istringstream iss(line);

@@ -9,11 +9,13 @@ class Sign {
 
 public:
     /**
+     * setSign.
      * Sets the sign.
      * @param s enum.
      */
     void setSign(SIGN s);
     /**
+     * getSign.
      * Returns the sign.
      * @return sign.
      */

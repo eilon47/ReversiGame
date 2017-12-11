@@ -4,7 +4,6 @@
 */
 #include "Sign.h"
 #include "Game.h"
-#include "AIPlayer.h"
 #include "NetworkPlayer.h"
 #include "NetworkReadPlayer.h"
 

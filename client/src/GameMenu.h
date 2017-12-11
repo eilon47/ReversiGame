@@ -1,6 +1,11 @@
+/*
+* Class for GameMenu.
+* GameMenu is charge to show to the user the game options and create it.
+*/
+
+
 /**
  * GameMenu header file.
- * GameMenu is charge to show to the user the game options and create it.
  */
 
 #ifndef REVERSIGAME_GAMEMENU_H

@@ -10,7 +10,7 @@
 
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 2
-#define CLASS_PATH "../info.txt"
+#define CLASS_PATH "settings.txt"
 
 Server::Server(int port): port(port), serverSocket(0) {
   this->message = "";
@@ -73,7 +73,7 @@ void Server::start() {
     }
     connection = true;
   }
-  this->stop();
+  stop();
 }
 void Server::stop() {
   close(this->serverSocket);
@@ -81,6 +81,7 @@ void Server::stop() {
 
 // Handle requests from a specific client
 void Server::handleClients(int clientSocket, int clientSocket2) {
+  signal(SIGPIPE, SIG_IGN);
   bool turn = true;
   while(connection) {
     if(turn){
@@ -103,7 +104,6 @@ void Server::handleClients(int clientSocket, int clientSocket2) {
       }
       turn = !turn;
     } else {
-      //messageToClient(clientSocket,"Waiting for the other player's move...");
       handlePlayingClient(clientSocket2);
       if(!connection) {
         messageToClient(clientSocket, "(-1,-1)");
@@ -158,7 +158,6 @@ void Server::messageToClient(int clientSocket, string m) {
       cout << "Error writing message to client" << endl;
       return;
     }
-
     n = write(clientSocket, &point, sizeof(point));
     if (n == -1) {
       cout << "Error writing message to client" << endl;
@@ -167,13 +166,9 @@ void Server::messageToClient(int clientSocket, string m) {
     if (!checkConnection(n)) {
       return;
     }
-
 }
 
-
-
 void Server::setPlayer(int clientSocket, int numTurn) {
-
   int n = write(clientSocket, &numTurn, sizeof(numTurn));
   if (n == -1) {
     cout << "Error writing board to socket" << endl;
@@ -186,7 +181,7 @@ void Server::setPlayer(int clientSocket, int numTurn) {
 int Server::getPortFromFile(string path) {
   int port = 0;
   ifstream file;
-  file.open(path);
+  file.open(path.c_str());
   if (!file.is_open()) {
     throw "Couldn't open information file.";
   }

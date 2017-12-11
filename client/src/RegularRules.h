@@ -1,6 +1,6 @@
-/**
- * Regular rules header file. Derived from Rules.
- */
+/*
+* Regular rules header file. Derived from Rules.
+*/
 
 #ifndef REVERSIGAME_REGULARRULES_H
 #define REVERSIGAME_REGULARRULES_H

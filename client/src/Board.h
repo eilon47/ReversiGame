@@ -1,6 +1,7 @@
 /*
- * Board's header file.
- */
+* Class for Board.
+*/
+
 
 #ifndef EX1_BOARD_H
 #define EX1_BOARD_H

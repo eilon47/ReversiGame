@@ -1,6 +1,6 @@
-/**
- * Rules header file.
- */
+/*
+* Rules header file.
+*/
 
 #ifndef REVERSIGAME_RULES_H
 #define REVERSIGAME_RULES_H
