@@ -14,25 +14,28 @@
 using namespace std;
 #define CLASS_PATH "../exe/ClientSettings.txt"
 
-Client::Client(const char *serverIP, int serverPort):
-    serverIP(serverIP), serverPort(serverPort), clientSocket(0),turnNum(0) { }
-Client::Client(): clientSocket(0), turnNum(0) {
+Client::Client(const char *serverIP, int serverPort, Display &display):
+    serverIP(serverIP), serverPort(serverPort), clientSocket(0),turnNum(0), display(&display) { }
+Client::Client(Display &display): clientSocket(0), turnNum(0), display(&display) {
     getSettingsFromFile();
 }
 
 void Client::connectToServer() {
     clientSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (clientSocket == -1) {
+        display->showMessage("Error opening socket\n");
         throw "Error opening socket";
     }
     struct in_addr address;
     if (!inet_aton(serverIP, &address)) {
+      display->showMessage("Can't parse IP address\n");
         throw "Can't parse IP address";
     }
 
     struct hostent *server;
     server = gethostbyaddr((const void *)&address, sizeof address, AF_INET);
     if (server == NULL) {
+      display->showMessage("Host is unreachable\n");
         throw "Host is unreachable";
     }
 
@@ -44,16 +47,17 @@ void Client::connectToServer() {
     serverAddress.sin_port = htons(serverPort);
 
     if (connect(clientSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress)) == -1) {
+      display->showMessage("Error connecting to server\n");
         throw "Error connecting to server";
     }
     //connections confirmation.
-    cout << "Connected to server" << endl;
+    display->showMessage("Connected to server\n");
     getNumTurn();
     if(turnNum == 1) {
-        cout << "Waiting for other player to join..." << endl;
+        display->showMessage("Waiting for other player to join...\n");
     }
     else {
-        cout << "you are the second player. We are ready to start the game!" << endl;
+        display->showMessage("you are the second player. We are ready to start the game!\n");
     }
 }
 void Client::sendMove(Point move) {

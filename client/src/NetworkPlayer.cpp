@@ -8,7 +8,6 @@ NetworkPlayer::NetworkPlayer(Client &c) : client(&c), numOfSoldiers(2) {
     try {
         client->connectToServer();
     } catch (char* msg) {
-        cout << msg;
     }
     if (client->getClientSign() == 1) {
         this->setSign(XSIGN);

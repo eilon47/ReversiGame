@@ -30,8 +30,11 @@ CMakeFiles/ReversiGame.dir/src/Board.cpp.o: ../src/Board.h
 CMakeFiles/ReversiGame.dir/src/Board.cpp.o: ../src/Point.h
 CMakeFiles/ReversiGame.dir/src/Board.cpp.o: ../src/Sign.h
 
+CMakeFiles/ReversiGame.dir/src/Client.cpp.o: ../src/Board.h
 CMakeFiles/ReversiGame.dir/src/Client.cpp.o: ../src/Client.cpp
 CMakeFiles/ReversiGame.dir/src/Client.cpp.o: ../src/Client.h
+CMakeFiles/ReversiGame.dir/src/Client.cpp.o: ../src/Display.h
+CMakeFiles/ReversiGame.dir/src/Client.cpp.o: ../src/Player.h
 CMakeFiles/ReversiGame.dir/src/Client.cpp.o: ../src/Point.h
 CMakeFiles/ReversiGame.dir/src/Client.cpp.o: ../src/Sign.h
 
@@ -83,6 +86,7 @@ CMakeFiles/ReversiGame.dir/src/HumanPlayer.cpp.o: ../src/Sign.h
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/AIPlayer.h
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/Board.h
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/Client.h
+CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/Display.h
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/NetworkPlayer.cpp
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/NetworkPlayer.h
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/Player.h
@@ -92,6 +96,7 @@ CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/Sign.h
 
 CMakeFiles/ReversiGame.dir/src/NetworkReadPlayer.cpp.o: ../src/Board.h
 CMakeFiles/ReversiGame.dir/src/NetworkReadPlayer.cpp.o: ../src/Client.h
+CMakeFiles/ReversiGame.dir/src/NetworkReadPlayer.cpp.o: ../src/Display.h
 CMakeFiles/ReversiGame.dir/src/NetworkReadPlayer.cpp.o: ../src/NetworkReadPlayer.cpp
 CMakeFiles/ReversiGame.dir/src/NetworkReadPlayer.cpp.o: ../src/NetworkReadPlayer.h
 CMakeFiles/ReversiGame.dir/src/NetworkReadPlayer.cpp.o: ../src/Player.h

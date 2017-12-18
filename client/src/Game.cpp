@@ -202,6 +202,8 @@ void Game::netRun() {
     if (turn) {
       this->display->showPossibleMoves(vMoves);
       display->showMessage("Please enter your move: row col\n");
+    } else {
+      display->showMessage("Waiting for the other player's move...\n");
     }
     p = this->currentPlayer()->getPointFromPlayer(*b, vMoves);
     if((p.getX() == 0 || p.getY() == 0)) {
@@ -214,6 +216,9 @@ void Game::netRun() {
     }
     if(p.getX() == -1 || p.getY() == -1) {
       return;
+    }
+    if(!turn){
+      display->showMessage("The other player played: " + p.toString() + "\n");
     }
     score = this->playOneTurn(p, currentPlayer()->getSign());
     display->showBoard(*this->b);

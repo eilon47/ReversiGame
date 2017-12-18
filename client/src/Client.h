@@ -9,6 +9,7 @@
 #include "cstring"
 #include "Point.h"
 #include "Sign.h"
+#include "Display.h"
 
 class Client {
     public:
@@ -17,11 +18,11 @@ class Client {
          * @param serverIP  - the IP address.
          * @param serverPort - the Port number.
          */
-        Client(const char *serverIP, int serverPort);
+        Client(const char *serverIP, int serverPort, Display &display);
     /**
      * constructor.
      */
-        Client();
+        Client(Display &display);
     /**
      * connectToServer.
      * Establishing connection with server
@@ -62,6 +63,7 @@ class Client {
      */
         void getSettingsFromFile();
     private:
+        Display *display;
         const char *serverIP;
         int serverPort;
         int clientSocket;

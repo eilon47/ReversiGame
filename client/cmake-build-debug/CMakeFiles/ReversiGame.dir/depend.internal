@@ -31,8 +31,11 @@ CMakeFiles/ReversiGame.dir/src/Board.cpp.o
  /home/elon/Desktop/Git/ReversiGame/client/src/Point.h
  /home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
 CMakeFiles/ReversiGame.dir/src/Client.cpp.o
+ /home/elon/Desktop/Git/ReversiGame/client/src/Board.h
  /home/elon/Desktop/Git/ReversiGame/client/src/Client.cpp
  /home/elon/Desktop/Git/ReversiGame/client/src/Client.h
+ /home/elon/Desktop/Git/ReversiGame/client/src/Display.h
+ /home/elon/Desktop/Git/ReversiGame/client/src/Player.h
  /home/elon/Desktop/Git/ReversiGame/client/src/Point.h
  /home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
 CMakeFiles/ReversiGame.dir/src/ConsoleDisplay.cpp.o
@@ -84,6 +87,7 @@ CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o
  /home/elon/Desktop/Git/ReversiGame/client/src/AIPlayer.h
  /home/elon/Desktop/Git/ReversiGame/client/src/Board.h
  /home/elon/Desktop/Git/ReversiGame/client/src/Client.h
+ /home/elon/Desktop/Git/ReversiGame/client/src/Display.h
  /home/elon/Desktop/Git/ReversiGame/client/src/NetworkPlayer.cpp
  /home/elon/Desktop/Git/ReversiGame/client/src/NetworkPlayer.h
  /home/elon/Desktop/Git/ReversiGame/client/src/Player.h
@@ -93,6 +97,7 @@ CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o
 CMakeFiles/ReversiGame.dir/src/NetworkReadPlayer.cpp.o
  /home/elon/Desktop/Git/ReversiGame/client/src/Board.h
  /home/elon/Desktop/Git/ReversiGame/client/src/Client.h
+ /home/elon/Desktop/Git/ReversiGame/client/src/Display.h
  /home/elon/Desktop/Git/ReversiGame/client/src/NetworkReadPlayer.cpp
  /home/elon/Desktop/Git/ReversiGame/client/src/NetworkReadPlayer.h
  /home/elon/Desktop/Git/ReversiGame/client/src/Player.h

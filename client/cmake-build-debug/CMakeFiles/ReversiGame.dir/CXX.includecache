@@ -23,6 +23,8 @@ Point.h
 ../src/Point.h
 Sign.h
 ../src/Sign.h
+Display.h
+../src/Display.h
 
 ../src/ConsoleDisplay.h
 Display.h
@@ -149,6 +151,8 @@ Point.h
 /home/elon/Desktop/Git/ReversiGame/client/src/Point.h
 Sign.h
 /home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
+Display.h
+/home/elon/Desktop/Git/ReversiGame/client/src/Display.h
 
 /home/elon/Desktop/Git/ReversiGame/client/src/ConsoleDisplay.cpp
 cstdlib
