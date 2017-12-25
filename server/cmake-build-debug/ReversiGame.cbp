@@ -84,10 +84,58 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/Command.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/Command.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/CommandManager.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/CommandManager.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/GamesListCommand.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/GamesListCommand.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/JoinCommand.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/JoinCommand.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/PlayCommand.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/PlayCommand.h">
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/Server.cpp">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/Server.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/StartCommand.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/StartCommand.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/WaitingGame.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/WaitingGame.h">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/main.cpp">

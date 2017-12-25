@@ -7,6 +7,8 @@
 #define SERVER_SERVER_H
 #include <iostream>
 #include <unistd.h>
+#include <vector>
+#include "WaitingGame.h"
 using namespace std;
 
 class Server {
@@ -17,6 +19,7 @@ public:
     void stop();
 private:
     int port;
+    vector<WaitingGame> waitingGames;
     string message;
     bool connection;
     int serverSocket; // the socket's file descriptor

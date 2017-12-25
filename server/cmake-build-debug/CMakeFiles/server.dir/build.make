@@ -105,19 +105,227 @@ CMakeFiles/server.dir/Server.cpp.o.provides: CMakeFiles/server.dir/Server.cpp.o.
 CMakeFiles/server.dir/Server.cpp.o.provides.build: CMakeFiles/server.dir/Server.cpp.o
 
 
+CMakeFiles/server.dir/StartCommand.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/StartCommand.cpp.o: ../StartCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/StartCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/StartCommand.cpp.o -c /home/elon/Desktop/Git/ReversiGame/server/StartCommand.cpp
+
+CMakeFiles/server.dir/StartCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/StartCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elon/Desktop/Git/ReversiGame/server/StartCommand.cpp > CMakeFiles/server.dir/StartCommand.cpp.i
+
+CMakeFiles/server.dir/StartCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/StartCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elon/Desktop/Git/ReversiGame/server/StartCommand.cpp -o CMakeFiles/server.dir/StartCommand.cpp.s
+
+CMakeFiles/server.dir/StartCommand.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/StartCommand.cpp.o.requires
+
+CMakeFiles/server.dir/StartCommand.cpp.o.provides: CMakeFiles/server.dir/StartCommand.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/StartCommand.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/StartCommand.cpp.o.provides
+
+CMakeFiles/server.dir/StartCommand.cpp.o.provides.build: CMakeFiles/server.dir/StartCommand.cpp.o
+
+
+CMakeFiles/server.dir/GamesListCommand.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/GamesListCommand.cpp.o: ../GamesListCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/GamesListCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/GamesListCommand.cpp.o -c /home/elon/Desktop/Git/ReversiGame/server/GamesListCommand.cpp
+
+CMakeFiles/server.dir/GamesListCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/GamesListCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elon/Desktop/Git/ReversiGame/server/GamesListCommand.cpp > CMakeFiles/server.dir/GamesListCommand.cpp.i
+
+CMakeFiles/server.dir/GamesListCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/GamesListCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elon/Desktop/Git/ReversiGame/server/GamesListCommand.cpp -o CMakeFiles/server.dir/GamesListCommand.cpp.s
+
+CMakeFiles/server.dir/GamesListCommand.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/GamesListCommand.cpp.o.requires
+
+CMakeFiles/server.dir/GamesListCommand.cpp.o.provides: CMakeFiles/server.dir/GamesListCommand.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/GamesListCommand.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/GamesListCommand.cpp.o.provides
+
+CMakeFiles/server.dir/GamesListCommand.cpp.o.provides.build: CMakeFiles/server.dir/GamesListCommand.cpp.o
+
+
+CMakeFiles/server.dir/JoinCommand.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/JoinCommand.cpp.o: ../JoinCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/server.dir/JoinCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/JoinCommand.cpp.o -c /home/elon/Desktop/Git/ReversiGame/server/JoinCommand.cpp
+
+CMakeFiles/server.dir/JoinCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/JoinCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elon/Desktop/Git/ReversiGame/server/JoinCommand.cpp > CMakeFiles/server.dir/JoinCommand.cpp.i
+
+CMakeFiles/server.dir/JoinCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/JoinCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elon/Desktop/Git/ReversiGame/server/JoinCommand.cpp -o CMakeFiles/server.dir/JoinCommand.cpp.s
+
+CMakeFiles/server.dir/JoinCommand.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/JoinCommand.cpp.o.requires
+
+CMakeFiles/server.dir/JoinCommand.cpp.o.provides: CMakeFiles/server.dir/JoinCommand.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/JoinCommand.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/JoinCommand.cpp.o.provides
+
+CMakeFiles/server.dir/JoinCommand.cpp.o.provides.build: CMakeFiles/server.dir/JoinCommand.cpp.o
+
+
+CMakeFiles/server.dir/CloseCommand.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/CloseCommand.cpp.o: ../CloseCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/server.dir/CloseCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/CloseCommand.cpp.o -c /home/elon/Desktop/Git/ReversiGame/server/CloseCommand.cpp
+
+CMakeFiles/server.dir/CloseCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/CloseCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elon/Desktop/Git/ReversiGame/server/CloseCommand.cpp > CMakeFiles/server.dir/CloseCommand.cpp.i
+
+CMakeFiles/server.dir/CloseCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/CloseCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elon/Desktop/Git/ReversiGame/server/CloseCommand.cpp -o CMakeFiles/server.dir/CloseCommand.cpp.s
+
+CMakeFiles/server.dir/CloseCommand.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/CloseCommand.cpp.o.requires
+
+CMakeFiles/server.dir/CloseCommand.cpp.o.provides: CMakeFiles/server.dir/CloseCommand.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CloseCommand.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/CloseCommand.cpp.o.provides
+
+CMakeFiles/server.dir/CloseCommand.cpp.o.provides.build: CMakeFiles/server.dir/CloseCommand.cpp.o
+
+
+CMakeFiles/server.dir/WaitingGame.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/WaitingGame.cpp.o: ../WaitingGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/server.dir/WaitingGame.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/WaitingGame.cpp.o -c /home/elon/Desktop/Git/ReversiGame/server/WaitingGame.cpp
+
+CMakeFiles/server.dir/WaitingGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/WaitingGame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elon/Desktop/Git/ReversiGame/server/WaitingGame.cpp > CMakeFiles/server.dir/WaitingGame.cpp.i
+
+CMakeFiles/server.dir/WaitingGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/WaitingGame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elon/Desktop/Git/ReversiGame/server/WaitingGame.cpp -o CMakeFiles/server.dir/WaitingGame.cpp.s
+
+CMakeFiles/server.dir/WaitingGame.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/WaitingGame.cpp.o.requires
+
+CMakeFiles/server.dir/WaitingGame.cpp.o.provides: CMakeFiles/server.dir/WaitingGame.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/WaitingGame.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/WaitingGame.cpp.o.provides
+
+CMakeFiles/server.dir/WaitingGame.cpp.o.provides.build: CMakeFiles/server.dir/WaitingGame.cpp.o
+
+
+CMakeFiles/server.dir/Command.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/Command.cpp.o: ../Command.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/server.dir/Command.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Command.cpp.o -c /home/elon/Desktop/Git/ReversiGame/server/Command.cpp
+
+CMakeFiles/server.dir/Command.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Command.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elon/Desktop/Git/ReversiGame/server/Command.cpp > CMakeFiles/server.dir/Command.cpp.i
+
+CMakeFiles/server.dir/Command.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Command.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elon/Desktop/Git/ReversiGame/server/Command.cpp -o CMakeFiles/server.dir/Command.cpp.s
+
+CMakeFiles/server.dir/Command.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/Command.cpp.o.requires
+
+CMakeFiles/server.dir/Command.cpp.o.provides: CMakeFiles/server.dir/Command.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Command.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/Command.cpp.o.provides
+
+CMakeFiles/server.dir/Command.cpp.o.provides.build: CMakeFiles/server.dir/Command.cpp.o
+
+
+CMakeFiles/server.dir/CommandManager.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/CommandManager.cpp.o: ../CommandManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/server.dir/CommandManager.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/CommandManager.cpp.o -c /home/elon/Desktop/Git/ReversiGame/server/CommandManager.cpp
+
+CMakeFiles/server.dir/CommandManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/CommandManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elon/Desktop/Git/ReversiGame/server/CommandManager.cpp > CMakeFiles/server.dir/CommandManager.cpp.i
+
+CMakeFiles/server.dir/CommandManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/CommandManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elon/Desktop/Git/ReversiGame/server/CommandManager.cpp -o CMakeFiles/server.dir/CommandManager.cpp.s
+
+CMakeFiles/server.dir/CommandManager.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/CommandManager.cpp.o.requires
+
+CMakeFiles/server.dir/CommandManager.cpp.o.provides: CMakeFiles/server.dir/CommandManager.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CommandManager.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/CommandManager.cpp.o.provides
+
+CMakeFiles/server.dir/CommandManager.cpp.o.provides.build: CMakeFiles/server.dir/CommandManager.cpp.o
+
+
+CMakeFiles/server.dir/PlayCommand.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/PlayCommand.cpp.o: ../PlayCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/server.dir/PlayCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/PlayCommand.cpp.o -c /home/elon/Desktop/Git/ReversiGame/server/PlayCommand.cpp
+
+CMakeFiles/server.dir/PlayCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/PlayCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elon/Desktop/Git/ReversiGame/server/PlayCommand.cpp > CMakeFiles/server.dir/PlayCommand.cpp.i
+
+CMakeFiles/server.dir/PlayCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/PlayCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elon/Desktop/Git/ReversiGame/server/PlayCommand.cpp -o CMakeFiles/server.dir/PlayCommand.cpp.s
+
+CMakeFiles/server.dir/PlayCommand.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/PlayCommand.cpp.o.requires
+
+CMakeFiles/server.dir/PlayCommand.cpp.o.provides: CMakeFiles/server.dir/PlayCommand.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/PlayCommand.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/PlayCommand.cpp.o.provides
+
+CMakeFiles/server.dir/PlayCommand.cpp.o.provides.build: CMakeFiles/server.dir/PlayCommand.cpp.o
+
+
 # Object files for target server
 server_OBJECTS = \
 "CMakeFiles/server.dir/main.cpp.o" \
-"CMakeFiles/server.dir/Server.cpp.o"
+"CMakeFiles/server.dir/Server.cpp.o" \
+"CMakeFiles/server.dir/StartCommand.cpp.o" \
+"CMakeFiles/server.dir/GamesListCommand.cpp.o" \
+"CMakeFiles/server.dir/JoinCommand.cpp.o" \
+"CMakeFiles/server.dir/CloseCommand.cpp.o" \
+"CMakeFiles/server.dir/WaitingGame.cpp.o" \
+"CMakeFiles/server.dir/Command.cpp.o" \
+"CMakeFiles/server.dir/CommandManager.cpp.o" \
+"CMakeFiles/server.dir/PlayCommand.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
 server: CMakeFiles/server.dir/main.cpp.o
 server: CMakeFiles/server.dir/Server.cpp.o
+server: CMakeFiles/server.dir/StartCommand.cpp.o
+server: CMakeFiles/server.dir/GamesListCommand.cpp.o
+server: CMakeFiles/server.dir/JoinCommand.cpp.o
+server: CMakeFiles/server.dir/CloseCommand.cpp.o
+server: CMakeFiles/server.dir/WaitingGame.cpp.o
+server: CMakeFiles/server.dir/Command.cpp.o
+server: CMakeFiles/server.dir/CommandManager.cpp.o
+server: CMakeFiles/server.dir/PlayCommand.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +335,14 @@ CMakeFiles/server.dir/build: server
 
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/main.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/Server.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/StartCommand.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/GamesListCommand.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/JoinCommand.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/CloseCommand.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/WaitingGame.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/Command.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/CommandManager.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/PlayCommand.cpp.o.requires
 
 .PHONY : CMakeFiles/server.dir/requires
 
