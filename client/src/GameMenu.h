@@ -25,7 +25,7 @@ class GameMenu {
    * Shows the menu to the user and creating a game by it's request.
    * @return game type.
    */
-  Game showMenu();
+  Game* showMenu();
   /**
    * Destructor.
    */
@@ -36,6 +36,7 @@ class GameMenu {
   Player *p1;
   Player *p2;
   GAME_T gtype;
+  Game *game;
   Client *client;
   Display *d;
 };

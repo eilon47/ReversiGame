@@ -1,24 +1,9 @@
 # Eilon Bashari, 308576933.
 # Daniel Greenspan, 308243948
 
-CXX = g++
-#CXXFLAGS = -std=c++0x
-RM = rm -f
-#LIBS = -pthread -lboost_serialization -I.
+a.out: compileAll
+	g++ *.o -o ../../exe/client.out
+	rm -f *.o
 
-
-a.out: core.o makeO
-	$(CXX) $(CXXFLAGS) @compile.txt
-
-core.o:
-	find src -name "*.cpp" > sources.txt
-	$(CXX) $(CXXFLAGS) -c @sources.txt
-
-makeO:
-	find -name "*.o" > compile.txt
-	sed -i '/cmake-build-debug/d' ./compile.txt
-
-clean:
-	$(RM) *.o
-	$(RM) sources.txt
-	$(RM) compile.txt
+compileAll: src/*.h src/*.cpp
+	g++ -c src/*.cpp

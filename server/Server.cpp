@@ -9,7 +9,7 @@
 #include <csignal>
 
 using namespace std;
-#define MAX_CONNECTED_CLIENTS 2
+#define MAX_CONNECTED_CLIENTS 10
 #define CLASS_PATH "../exe/ServerSettings.txt"
 
 Server::Server(int port): port(port), serverSocket(0) {

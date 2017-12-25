@@ -11,10 +11,13 @@
 GameMenu::GameMenu(Display &display) {
   this->d = &display;
 }
-Game GameMenu::showMenu() {
+Game* GameMenu::showMenu() {
   int boardSize = 0,rules = 0,type = 0;
   //Show menu with display and change the values of board rules and type.
   this->d->showMenu(type, rules, boardSize);
+  if(type == 4) {
+    return NULL;
+  }
   //Creating the wanted game.
   switch (rules) {
     case 1: {
@@ -55,8 +58,8 @@ Game GameMenu::showMenu() {
     }
   }
   this->b = new Board(boardSize);
-  Game p(*this->b, *this->p1, *this->p2, *this->r, *this->d, gtype);
-  return p;
+  this->game = new Game(*this->b, *this->p1, *this->p2, *this->r, *this->d, gtype);
+  return game;
 }
 //Destructor.
 GameMenu::~GameMenu() {

@@ -47,7 +47,7 @@ void ConsoleDisplay::showMenu(int &type, int &rules, int &boardSize) {
     }
   }
   if(type == 4) {
-    exit(0);
+    return;
   }
   //Asks for Board size.
   while (!boardBool) {

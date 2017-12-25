@@ -226,6 +226,10 @@ void Game::netRun() {
     display->showScore(*this->p1, *this->p2);
     turn = !turn;
   }
+  Point end(-1, -1);
+  vector<Point> v;
+  v.push_back(end);
+  this->currentPlayer()->getPointFromPlayer(*b, v);
   this->endGame();
 }
 

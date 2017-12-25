@@ -9,8 +9,13 @@ int main() {
   while(true) {
     Display *d = new ConsoleDisplay;
     GameMenu gm(*d);
-    Game p = gm.showMenu();
-    p.run();
+    Game *p;
+    p = gm.showMenu();
+    if(p == NULL) {
+      delete d;
+      break;
+    }
+    p->run();
     delete d;
   }
 }
