@@ -8,7 +8,7 @@
 #include <iostream>
 #include <unistd.h>
 #include <vector>
-#include "WaitingGame.h"
+#include "GamesList.h.h"
 using namespace std;
 
 class Server {
@@ -17,9 +17,10 @@ public:
     Server();
     void start();
     void stop();
+
 private:
     int port;
-    vector<WaitingGame> waitingGames;
+    GamesList waitingGames;
     string message;
     bool connection;
     int serverSocket; // the socket's file descriptor
@@ -79,6 +80,7 @@ private:
      * @return the status oc the connection.
      */
   bool checkConnection(ssize_t n);
+
 };
 
 #endif //SERVER_SERVER_H

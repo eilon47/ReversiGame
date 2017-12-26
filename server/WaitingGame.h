@@ -6,10 +6,10 @@
 #define REVERSIGAME_WAITINGGAME_H
 using namespace std;
 class WaitingGame {
- private:
+public:
   string clientSocket;
   string name;
- public:
+
   WaitingGame(string clientSocket, string name);
   string getName() const;
   string getClientSocket() const;

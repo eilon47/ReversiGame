@@ -1,4 +1,5 @@
 #include "Server.h"
+#include "ClientManager.h"
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <unistd.h>
@@ -7,6 +8,9 @@
 #include <fstream>
 #include <sstream>
 #include <csignal>
+#include <pthread.h>
+#include <complex>
+#include <cstdlib>
 
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 10
@@ -15,14 +19,20 @@ using namespace std;
 Server::Server(int port): port(port), serverSocket(0) {
   this->message = "";
   this->connection = true;
+    this->waitingGames = NULL;
 }
 
 Server::Server(): serverSocket(0), port(getPortFromFile(CLASS_PATH)) {
   this->message = "";
   this->connection = true;
+    this->waitingGames = NULL;
+
 }
 
 void Server::start() {
+  int i = 0;
+  ClientManager clM;
+  CommandsManager coM(*this);
   // Create a socket point
   serverSocket = socket(AF_INET, SOCK_STREAM, 0);
   if (serverSocket == -1) {
@@ -39,42 +49,65 @@ void Server::start() {
   *)&serverAddress, sizeof(serverAddress)) == -1) {
     throw "Error on binding";
   }
-  while(true) {
-    // Start listening to incoming connections
-    listen(serverSocket, MAX_CONNECTED_CLIENTS);
+    while (true) {
+        // Start listening to incoming connections
+       listen(serverSocket, MAX_CONNECTED_CLIENTS);
     // Define the client socket's structures
-    struct sockaddr_in clientAddress;
-    struct sockaddr_in clientAddress2;
-    socklen_t clientAddressLen;
-    socklen_t client2AddressLen;
-    while (connection) {
-      cout << "Waiting for client connections..." << endl;
-      // Accept a new client connection
-      int clientSocket = accept(serverSocket, (struct
-          sockaddr *) &clientAddress, &clientAddressLen);
-      cout << "First client connected" << endl;
-      //messageToClient(clientSocket, "Waiting for other player to join...");
-      if (clientSocket == -1)
-        throw "Error on accept";
-      setPlayer(clientSocket, 1);
-      //messageToClient(clientSocket, "you are connected!");
-      int clientSocket2 = accept(serverSocket, (struct
-          sockaddr *) &clientAddress2, &client2AddressLen);
-      cout << "Second client connected" << endl;
-      if (clientSocket2 == -1)
-        throw "Error on accept";
-      setPlayer(clientSocket2, 2);
-      messageToClient(clientSocket, "ready.");
-      messageToClient(clientSocket2, "ready.");
-      handleClients(clientSocket, clientSocket2);
-      // Close communication with the client
-      close(clientSocket);
-      close(clientSocket2);
+        struct sockaddr_in clientAddress;
+        socklen_t clientAddressLen;
+        cout << "Waiting for client connections..." << endl;
+        // Accept a new client connection
+        int clientSocket = accept(serverSocket, (struct
+                sockaddr *)&clientAddress, &clientAddressLen);
+        cout << "Client connected" << endl;
+        if (clientSocket == -1) {
+          throw "Error on accept";
+        }
+      clM.addClient(clientSocket);
+      int rc = pthread_create(i,NULL,(void*)clM.handlePlayingClient(clientSocket)), NULL);
+      if (rc) {
+        cout << "Error: unable to create thread, " << rc << endl;
+        exit(-1);
+      }
+        // Close communication with the client
+        close(clientSocket);
     }
-    connection = true;
+//  while(true) {
+//    // Start listening to incoming connections
+//    listen(serverSocket, MAX_CONNECTED_CLIENTS);
+//    // Define the client socket's structures
+//    struct sockaddr_in clientAddress;
+//    struct sockaddr_in clientAddress2;
+//    socklen_t clientAddressLen;
+//    socklen_t client2AddressLen;
+//    while (connection) {
+//      cout << "Waiting for client connections..." << endl;
+//      // Accept a new client connection
+//      int clientSocket = accept(serverSocket, (struct
+//          sockaddr *) &clientAddress, &clientAddressLen);
+//      cout << "First client connected" << endl;
+//      //messageToClient(clientSocket, "Waiting for other player to join...");
+//      if (clientSocket == -1)
+//        throw "Error on accept";
+//      setPlayer(clientSocket, 1);
+//      //messageToClient(clientSocket, "you are connected!");
+//      int clientSocket2 = accept(serverSocket, (struct
+//          sockaddr *) &clientAddress2, &client2AddressLen);
+//      cout << "Second client connected" << endl;
+//      if (clientSocket2 == -1)
+//        throw "Error on accept";
+//      setPlayer(clientSocket2, 2);
+//      messageToClient(clientSocket, "ready.");
+//      messageToClient(clientSocket2, "ready.");
+//      handleClients(clientSocket, clientSocket2);
+//      // Close communication with the client
+//      close(clientSocket);
+//      close(clientSocket2);
+//    }
+//    connection = true;
   }
-  stop();
-}
+  //stop();
+
 void Server::stop() {
   close(this->serverSocket);
 }
@@ -218,3 +251,5 @@ bool Server::badMove(string point) {
   }
   return false;
 }
+
+vector<WaitingGame> Server::getWaitingGames() { return waitingGames; }

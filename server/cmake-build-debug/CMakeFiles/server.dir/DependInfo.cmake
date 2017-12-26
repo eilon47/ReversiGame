@@ -4,16 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/CloseCommand.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/server/Command.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/Command.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/server/CommandManager.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/CommandManager.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/server/GamesListCommand.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/GamesListCommand.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/server/JoinCommand.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/JoinCommand.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/server/PlayCommand.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/PlayCommand.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/server/Server.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/Server.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/server/StartCommand.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/StartCommand.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/server/WaitingGame.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/WaitingGame.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/server/main.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/ClientManager.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/ClientManager.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/CloseCommand.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/CloseCommand.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/Command.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/Command.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/CommandManager.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/CommandManager.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/GamesListCommand.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/GamesListCommand.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/JoinCommand.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/JoinCommand.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/PlayCommand.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/PlayCommand.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/Server.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/Server.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/StartCommand.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/StartCommand.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/WaitingGame.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/WaitingGame.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/gamesList.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/gamesList.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/main.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

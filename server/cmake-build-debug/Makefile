@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/elon/Desktop/Git/ReversiGame/server
+CMAKE_SOURCE_DIR = /home/dandan/Desktop/git/ReversiGame/server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug
+CMAKE_BINARY_DIR = /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ server: cmake_check_build_system
 server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
+
+ClientManager.o: ClientManager.cpp.o
+
+.PHONY : ClientManager.o
+
+# target to build an object file
+ClientManager.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/ClientManager.cpp.o
+.PHONY : ClientManager.cpp.o
+
+ClientManager.i: ClientManager.cpp.i
+
+.PHONY : ClientManager.i
+
+# target to preprocess a source file
+ClientManager.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/ClientManager.cpp.i
+.PHONY : ClientManager.cpp.i
+
+ClientManager.s: ClientManager.cpp.s
+
+.PHONY : ClientManager.s
+
+# target to generate assembly for a file
+ClientManager.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/ClientManager.cpp.s
+.PHONY : ClientManager.cpp.s
 
 CloseCommand.o: CloseCommand.cpp.o
 
@@ -366,6 +393,33 @@ WaitingGame.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/WaitingGame.cpp.s
 .PHONY : WaitingGame.cpp.s
 
+gamesList.o: gamesList.cpp.o
+
+.PHONY : gamesList.o
+
+# target to build an object file
+gamesList.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/gamesList.cpp.o
+.PHONY : gamesList.cpp.o
+
+gamesList.i: gamesList.cpp.i
+
+.PHONY : gamesList.i
+
+# target to preprocess a source file
+gamesList.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/gamesList.cpp.i
+.PHONY : gamesList.cpp.i
+
+gamesList.s: gamesList.cpp.s
+
+.PHONY : gamesList.s
+
+# target to generate assembly for a file
+gamesList.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/gamesList.cpp.s
+.PHONY : gamesList.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -402,6 +456,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... server"
+	@echo "... ClientManager.o"
+	@echo "... ClientManager.i"
+	@echo "... ClientManager.s"
 	@echo "... CloseCommand.o"
 	@echo "... CloseCommand.i"
 	@echo "... CloseCommand.s"
@@ -429,6 +486,9 @@ help:
 	@echo "... WaitingGame.o"
 	@echo "... WaitingGame.i"
 	@echo "... WaitingGame.s"
+	@echo "... gamesList.o"
+	@echo "... gamesList.i"
+	@echo "... gamesList.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
