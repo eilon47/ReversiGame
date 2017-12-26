@@ -9,10 +9,17 @@
 class JoinCommand : public Command {
  public:
   JoinCommand(Server &server);
-  void execute(vector<string> args);
-  void runGame(int clientSocket1, int clientSocket2);
+  void execute(vector<string> args, GamesList &gl);
+    void handleClients(GameInfo gameInfo);
+    void handlePlayingClient(int clientSocket);
+    bool checkConnection(ssize_t n);
+    bool endGame(string point);
+    bool badMove(string point);
+    void setPlayer(int clientSocket, int numTurn);
  private:
   Server *server;
+    bool connection;
+    string *message;
 };
 
 #endif //REVERSIGAME_JOINCOMMAND_H

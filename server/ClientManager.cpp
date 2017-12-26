@@ -11,7 +11,7 @@
 
 ClientManager::ClientManager(Server &server) {
     this->gl = new GamesList;
-    this->cm = new CommandsManager(server);
+    this->cm = new CommandsManager(server, *gl);
 }
 
 void* ClientManager::handlePlayingClient(void* clientId) {

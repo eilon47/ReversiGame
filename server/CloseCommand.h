@@ -9,7 +9,7 @@
 class CloseCommand : public Command{
  public:
   CloseCommand(Server &server);
-  void execute(vector<string> args);
+  void execute(vector<string> args, GamesList &gl);
  private:
   Server *server;
 };

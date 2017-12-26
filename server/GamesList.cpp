@@ -3,12 +3,13 @@
 //
 
 #include <cstdlib>
+#include <curses.h>
 #include "GamesList.h"
 
 GamesList::GamesList() {
     this->wg = new vector<GameInfo>;
 }
-int GamesList::addgame(GameInfo &waiting) {
+int GamesList::addGame(GameInfo &waiting) {
     vector<string>::iterator it;
     for(int i = 0; i < wg->size(); i++) {
         if (waiting.getName() == wg->at(i).getName()) {
@@ -26,4 +27,10 @@ string GamesList::getNameAt(int i) {
 }
 int GamesList::getSocketIDAt(int i) {
     return atoi(this->wg->at(i).getClientSocket());
+}
+GameInfo& GamesList::getGame(int i) {
+    return this->wg->at(i);
+}
+void GamesList::deleteGame(int i) {
+    erase(wg->at(i));
 }

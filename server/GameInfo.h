@@ -16,6 +16,7 @@ public:
   string getName() const;
   int getClientSocket1() const;
   int getClientSocket2() const;
+
 };
 
 #endif //REVERSIGAME_WAITINGGAME_H

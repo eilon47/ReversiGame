@@ -9,7 +9,7 @@
 class StartCommand : public Command {
  public:
   StartCommand(Server &server);
-  void execute(vector<string> args);
+  void execute(vector<string> args,GamesList &gl);
  private:
   Server *server;
 };

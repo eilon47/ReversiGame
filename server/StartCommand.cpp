@@ -15,9 +15,9 @@ StartCommand::StartCommand(Server &server): Command(server) {
  * give to the game, then we add that to the server.
  * @param args
  */
-void StartCommand::execute(vector<string> args) {
+void StartCommand::execute(vector<string> args, GamesList &gl) {
   int clientSocket = atoi(args.front());
   string name = args.back();
-  GameInfo wg(clientSocket, name);
-
+  GameInfo gi(clientSocket, name);
+  gl.addGame(gi);
 }

@@ -4,13 +4,15 @@
 #include <vector>
 #include <string>
 #include "Server.h"
+#include "GamesList.h"
+
 #ifndef REVERSIGAME_COMMAND_H
 #define REVERSIGAME_COMMAND_H
 using namespace std;
 class Command {
  public:
   Command(Server &server);
-  virtual void execute(vector<string>) = 0;
+  virtual void execute(vector<string>, GamesList &gl) = 0;
   virtual ~Command();
  private:
   Server *server;
