@@ -4,41 +4,41 @@
 
 #include <iostream>
 #include <string>
-#include <zconf.h>
 #include <csignal>
 #include <string.h>
+#include <sstream>
 #include "ClientManager.h"
-#include "Server.h"
 
-ClientManager::ClientManager() {
-    this->gameList = new vector<string>;
-
-
+ClientManager::ClientManager(Server &server) {
+    this->gl = new GamesList;
+    this->cm = new CommandsManager(server);
 }
 
-void ClientManager::addClient(int socket) {
-    gameList->push_back(socket);
-}
-
-void ClientManager::handlePlayingClient(int clientSocket) {
+void* ClientManager::handlePlayingClient(void* clientId) {
+    int clientSocket = (int) clientId;
     signal(SIGPIPE, SIG_IGN);
     int size = 0;
     ssize_t n = read(clientSocket, &size, sizeof(&size));
     if (n == -1) {
         cout << "Error reading point" << endl;
-        return;
+        return NULL;
     }
     if(!checkConnection(n)) {
-        return;
+        return NULL;
     }
     char message[size + 1];
     bzero((char*)message,sizeof(message));
     n = read(clientSocket, &message, sizeof(message));
     if (n == -1) {
         cout << "Error reading point" << endl;
-        return;
+        return NULL;
     }
-    commandsManager->executeCommand(message, *gameList);
+    stringstream clientString;
+    clientString << clientSocket;
+    vector<string> args = this->getArgs(message);
+    string command = args[0];
+    args[0] = clientString.str();
+    this->cm->executeCommand(command, args);
 }
 
 bool ClientManager::checkConnection(ssize_t n) {
@@ -47,4 +47,23 @@ bool ClientManager::checkConnection(ssize_t n) {
         return false;
     }
     return true;
+}
+vector<string> ClientManager::getArgs(char *msg) {
+    string arg;
+    arg = strtok(msg ," ");
+    vector<string> ret;
+    ret.insert(ret.end(), arg);
+    if(arg == "list"){
+        this->setArgs(ret);
+    }
+    while(arg != NULL){
+        arg = strtok(msg ," ");
+        ret.insert(ret.end(), arg);
+    }
+    return ret;
+}
+void ClientManager::setArgs(vector<string> &args) {
+    for(int i = 0; i < this->gl->getSize(); i++){
+        args.insert(args.end(), this->gl->getNameAt(i));
+    }
 }

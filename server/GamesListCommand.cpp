@@ -4,33 +4,23 @@
 
 #include <csignal>
 #include <cstring>
+#include <cstdlib>
 #include "GamesListCommand.h"
 
 }
 GamesListCommand::GamesListCommand(Server &server): Command(server) {
   this->server = &server;
-  this->waitingGames = new vector<WaitingGame>();
 }
 GamesListCommand::~GamesListCommand() {
   delete waitingGames;
 }
 void GamesListCommand::execute(vector<string> args) {
-    signal(SIGPIPE, SIG_IGN);
-    int size =(int) m.size();
-    char point[size];
-    strcpy(point, m.c_str());
-    ssize_t n = write(clientSocket, &size, sizeof(size));
-    if (n == -1) {
-      cout << "Error writing message to client" << endl;
-      return;
-    }
-    n = write(clientSocket, &point, sizeof(point));
-    if (n == -1) {
-      cout << "Error writing message to client" << endl;
-      return;
-    }
-    if (!checkConnection(n)) {
-      return;
-    }
+  int clientSocket = atoi(args[0]);
+  //Delete the clientSocket
+  args.erase(args.begin());
+  int sizeOfList = (int) args.size();
+  this->server->writeToClient(clientSocket, sizeOfList);
+  for(int i = 0; i < sizeOfList; i++) {
+    this->server->writeToClient(clientSocket, args[i]);
   }
 }

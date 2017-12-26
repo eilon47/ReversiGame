@@ -10,11 +10,9 @@ class GamesListCommand : public Command {
  public:
   GamesListCommand(Server &server);
   void execute(vector<string> args);
-  void addGame(WaitingGame &waitingGame);
   ~GamesListCommand();
  private:
   Server *server;
-  vector<WaitingGame> *waitingGames;
 };
 
 #endif //REVERSIGAME_GAMESLISTCOMMAND_H

@@ -8,12 +8,16 @@
 #include <string>
 #include "WaitingGame.h"
 using namespace std;
-class gamesList {
+class GamesList {
 public:
-    gamesList();
+    GamesList();
+  int addgame(WaitingGame &waiting);
+  string getNameAt(int i);
+  int getSocketIDAt(int i);
+  int getSize();
 private:
     vector<WaitingGame> *wg ;
-    int addgame(WaitingGame waiting);
+
 };
 
 

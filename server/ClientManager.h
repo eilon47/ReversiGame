@@ -7,19 +7,21 @@
 
 #include <vector>
 #include "CommandManager.h"
+#include "GamesList.h"
 
 using namespace std;
 
 class ClientManager {
 public:
-    ClientManager();
-    void addClient(int socket);
-    void handlePlayingClient(int clientSocket);
+    ClientManager(Server &server);
+    void* handlePlayingClient(void *clientId);
 
 private:
-    vector<string> *gameList;
-    CommandsManager *commandsManager;
+    GamesList *gl;
+    CommandsManager *cm;
+    void setArgs(vector<string> &args);
     bool checkConnection(ssize_t n);
+    vector<string> getArgs(char *);
 };
 
 
