@@ -17,15 +17,10 @@ using namespace std;
 #define CLASS_PATH "../exe/ServerSettings.txt"
 
 Server::Server(int port): port(port), serverSocket(0) {
-  this->message = "";
-  this->connection = true;
-    this->waitingGames = NULL;
+
 }
 
 Server::Server(): serverSocket(0), port(getPortFromFile(CLASS_PATH)) {
-  this->message = "";
-  this->connection = true;
-    this->waitingGames = NULL;
 
 }
 
@@ -113,3 +108,23 @@ void Server::writeToClient(int clientSocket, string &msg) {
   }
 }
 
+
+int Server::getPortFromFile(string path) {
+  int port = 0;
+  ifstream file;
+  file.open(path.c_str());
+  if (!file.is_open()) {
+    throw "Couldn't open information file.";
+  }
+  string line;
+  while (getline(file, line, ':')) {
+    if (line == "port") {
+      getline(file, line, '\n');
+      istringstream iss(line);
+      iss >> port;
+      break;
+    }
+  }
+  file.close();
+  return port;
+}

@@ -6,9 +6,9 @@
 #include "GamesList.h"
 
 GamesList::GamesList() {
-    this->wg = new vector<WaitingGame>;
+    this->wg = new vector<GameInfo>;
 }
-int GamesList::addgame(WaitingGame &waiting) {
+int GamesList::addgame(GameInfo &waiting) {
     vector<string>::iterator it;
     for(int i = 0; i < wg->size(); i++) {
         if (waiting.getName() == wg->at(i).getName()) {

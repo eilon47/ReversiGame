@@ -7,7 +7,11 @@
 
 JoinCommand::JoinCommand(Server &server): Command(server) {
     this->server = &server;
-}void JoinCommand::execute(vector<string> args) {
-    //vector<WaitingGame> v = server->getWaitingGames();
+}
+void JoinCommand::execute(vector<string> args) {
+    //vector<GameInfo> v = server->getWaitingGames();
+
+}
+void JoinCommand::runGame(int clientSocket1, int clientSocket2) {
 
 }

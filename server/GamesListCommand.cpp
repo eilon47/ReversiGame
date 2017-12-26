@@ -11,9 +11,6 @@
 GamesListCommand::GamesListCommand(Server &server): Command(server) {
   this->server = &server;
 }
-GamesListCommand::~GamesListCommand() {
-  delete waitingGames;
-}
 void GamesListCommand::execute(vector<string> args) {
   int clientSocket = atoi(args[0]);
   //Delete the clientSocket

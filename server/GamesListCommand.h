@@ -10,7 +10,6 @@ class GamesListCommand : public Command {
  public:
   GamesListCommand(Server &server);
   void execute(vector<string> args);
-  ~GamesListCommand();
  private:
   Server *server;
 };

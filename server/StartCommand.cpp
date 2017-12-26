@@ -4,6 +4,7 @@
 
 #include <cstdlib>
 #include "StartCommand.h"
+#include "GameInfo.h"
 
 StartCommand::StartCommand(Server &server): Command(server) {
   this->server = &server;
@@ -15,9 +16,8 @@ StartCommand::StartCommand(Server &server): Command(server) {
  * @param args
  */
 void StartCommand::execute(vector<string> args) {
-  string clientSocket = args.front();
+  int clientSocket = atoi(args.front());
   string name = args.back();
-  WaitingGame wg(clientSocket, name);
-  this->server;//Add wg to the server.
+  GameInfo wg(clientSocket, name);
 
 }

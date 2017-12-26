@@ -54,7 +54,7 @@ vector<string> ClientManager::getArgs(char *msg) {
     vector<string> ret;
     ret.insert(ret.end(), arg);
     if(arg == "list"){
-        this->setArgs(ret);
+        this->setListArgs(ret);
     }
     while(arg != NULL){
         arg = strtok(msg ," ");
@@ -62,7 +62,7 @@ vector<string> ClientManager::getArgs(char *msg) {
     }
     return ret;
 }
-void ClientManager::setArgs(vector<string> &args) {
+void ClientManager::setListArgs(vector<string> &args) {
     for(int i = 0; i < this->gl->getSize(); i++){
         args.insert(args.end(), this->gl->getNameAt(i));
     }

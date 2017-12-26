@@ -19,7 +19,7 @@ public:
 private:
     GamesList *gl;
     CommandsManager *cm;
-    void setArgs(vector<string> &args);
+    void setListArgs(vector<string> &args);
     bool checkConnection(ssize_t n);
     vector<string> getArgs(char *);
 };

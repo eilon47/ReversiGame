@@ -10,6 +10,7 @@ class JoinCommand : public Command {
  public:
   JoinCommand(Server &server);
   void execute(vector<string> args);
+  void runGame(int clientSocket1, int clientSocket2);
  private:
   Server *server;
 };
