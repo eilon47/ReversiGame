@@ -14,8 +14,8 @@ using namespace std;
 class ClientManager {
 public:
     ClientManager();
-    void* handlePlayingClient(void *clientId);
-
+    void handleClient(int clientId);
+    ~ClientManager();
 private:
     CommandsManager *cm;
     bool checkConnection(ssize_t n);

@@ -108,6 +108,12 @@
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/CommandManager.h">
 			<Option target="server"/>
 		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/GameInfo.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/GameInfo.h">
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/GamesList.cpp">
 			<Option target="server"/>
 		</Unit>
@@ -126,12 +132,6 @@
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/JoinCommand.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/PlayCommand.cpp">
-			<Option target="server"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/PlayCommand.h">
-			<Option target="server"/>
-		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/Server.cpp">
 			<Option target="server"/>
 		</Unit>
@@ -142,12 +142,6 @@
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/StartCommand.h">
-			<Option target="server"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/WaitingGame.cpp">
-			<Option target="server"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/WaitingGame.h">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/main.cpp">

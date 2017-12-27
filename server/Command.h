@@ -12,10 +12,9 @@ using namespace std;
 class Command {
  public:
   Command();
-  virtual void* execute(vector<string> *args) = 0;
+  virtual void execute(vector<string> *args) = 0;
   virtual ~Command();
  private:
-  Server *server;
 };
 
 #endif //REVERSIGAME_COMMAND_H

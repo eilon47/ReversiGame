@@ -231,6 +231,33 @@ CommandManager.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CommandManager.cpp.s
 .PHONY : CommandManager.cpp.s
 
+GameInfo.o: GameInfo.cpp.o
+
+.PHONY : GameInfo.o
+
+# target to build an object file
+GameInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/GameInfo.cpp.o
+.PHONY : GameInfo.cpp.o
+
+GameInfo.i: GameInfo.cpp.i
+
+.PHONY : GameInfo.i
+
+# target to preprocess a source file
+GameInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/GameInfo.cpp.i
+.PHONY : GameInfo.cpp.i
+
+GameInfo.s: GameInfo.cpp.s
+
+.PHONY : GameInfo.s
+
+# target to generate assembly for a file
+GameInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/GameInfo.cpp.s
+.PHONY : GameInfo.cpp.s
+
 GamesList.o: GamesList.cpp.o
 
 .PHONY : GamesList.o
@@ -312,33 +339,6 @@ JoinCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/JoinCommand.cpp.s
 .PHONY : JoinCommand.cpp.s
 
-PlayCommand.o: PlayCommand.cpp.o
-
-.PHONY : PlayCommand.o
-
-# target to build an object file
-PlayCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/PlayCommand.cpp.o
-.PHONY : PlayCommand.cpp.o
-
-PlayCommand.i: PlayCommand.cpp.i
-
-.PHONY : PlayCommand.i
-
-# target to preprocess a source file
-PlayCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/PlayCommand.cpp.i
-.PHONY : PlayCommand.cpp.i
-
-PlayCommand.s: PlayCommand.cpp.s
-
-.PHONY : PlayCommand.s
-
-# target to generate assembly for a file
-PlayCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/PlayCommand.cpp.s
-.PHONY : PlayCommand.cpp.s
-
 Server.o: Server.cpp.o
 
 .PHONY : Server.o
@@ -393,33 +393,6 @@ StartCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/StartCommand.cpp.s
 .PHONY : StartCommand.cpp.s
 
-WaitingGame.o: WaitingGame.cpp.o
-
-.PHONY : WaitingGame.o
-
-# target to build an object file
-WaitingGame.cpp.o:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/WaitingGame.cpp.o
-.PHONY : WaitingGame.cpp.o
-
-WaitingGame.i: WaitingGame.cpp.i
-
-.PHONY : WaitingGame.i
-
-# target to preprocess a source file
-WaitingGame.cpp.i:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/WaitingGame.cpp.i
-.PHONY : WaitingGame.cpp.i
-
-WaitingGame.s: WaitingGame.cpp.s
-
-.PHONY : WaitingGame.s
-
-# target to generate assembly for a file
-WaitingGame.cpp.s:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/WaitingGame.cpp.s
-.PHONY : WaitingGame.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -468,6 +441,9 @@ help:
 	@echo "... CommandManager.o"
 	@echo "... CommandManager.i"
 	@echo "... CommandManager.s"
+	@echo "... GameInfo.o"
+	@echo "... GameInfo.i"
+	@echo "... GameInfo.s"
 	@echo "... GamesList.o"
 	@echo "... GamesList.i"
 	@echo "... GamesList.s"
@@ -477,18 +453,12 @@ help:
 	@echo "... JoinCommand.o"
 	@echo "... JoinCommand.i"
 	@echo "... JoinCommand.s"
-	@echo "... PlayCommand.o"
-	@echo "... PlayCommand.i"
-	@echo "... PlayCommand.s"
 	@echo "... Server.o"
 	@echo "... Server.i"
 	@echo "... Server.s"
 	@echo "... StartCommand.o"
 	@echo "... StartCommand.i"
 	@echo "... StartCommand.s"
-	@echo "... WaitingGame.o"
-	@echo "... WaitingGame.i"
-	@echo "... WaitingGame.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -6,18 +6,19 @@
 #define REVERSIGAME_WAITINGGAME_H
 using namespace std;
 class GameInfo {
-private:
-  int clientSocket1;
-  int clientSocket2;
-  string name;
-  bool available;
-public:
+    private:
+    bool available;
+    int clientSocket1;
+    int clientSocket2;
+    string name;
+    public:
     GameInfo(int clientSocket, string name);
-  void addClient2(int clientSocket);
-  string getName() const;
-  int getClientSocket1() const;
-  int getClientSocket2() const;
-    bool isAvailable();
+    void addClient2(int clientSocket);
+    string getName() const;
+    int getClientSocket1() const;
+    int getClientSocket2() const;
+    bool isGameAvailable();
+    bool operator==(const GameInfo &gameInfo) const;
 
 };
 

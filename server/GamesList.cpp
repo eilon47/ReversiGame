@@ -3,39 +3,49 @@
 //
 
 #include <cstdlib>
-#include <curses.h>
 #include "GamesList.h"
-
 GamesList::GamesList() {
-    this->wg = new vector<GameInfo>;
+    this->gi = new vector<GameInfo>;
 }
-int GamesList::addGame(GameInfo &waiting) {
-    vector<string>::iterator it;
-    for(int i = 0; i < wg->size(); i++) {
-        if (waiting.getName() == wg->at(i).getName()) {
+int GamesList::addgame(GameInfo &gameInfo) {
+    for(int i = 0; i < gi->size(); i++) {
+        if (gameInfo.getName() == gi->at(i).getName()) {
             return -1;
         }
     }
-    this->wg->push_back(waiting);
+    this->gi->push_back(gameInfo);
     return 0;
 }
-int GamesList::getSize() {
-    return (int) this->wg->size();
+int GamesList::getSizeOfList() {
+    return (int) this->gi->size();
 }
-string GamesList::getNameAt(int i) {
-    return this->wg->at(i).getName();
+string GamesList::getNameOfGame(int i) {
+    return this->gi->at(i).getName();
 }
-int GamesList::getSocketIDAt(int i) {
-    return atoi(this->wg->at(i).getClientSocket());
+bool GamesList::isAvailableGame(int i) {
+    return this->gi->at(i).isGameAvailable();
 }
-GameInfo& GamesList::getGame(int i) {
-    return this->wg->at(i);
+int GamesList::getSocket1(int i) {
+    return this->gi->at(i).getClientSocket1();
 }
-void GamesList::deleteGame(int i) {
-    erase(wg->at(i));
+int GamesList::getSocket2(int i) {
+    return this->gi->at(i).getClientSocket2();
 }
+void GamesList::deleteGame(GameInfo &gameInfo) {
+    for(int i = 0; i < gi->size(); i++) {
+        if (gameInfo == gi->at(i)) {
+            this->gi->erase(this->gi->begin() + i);
+            return;
+        }
+    }
+}
+bool GamesList::isEmpty() {
+    return this->gi->empty();
+}
+
+GamesList* GamesList:: instance = 0;
 GamesList* GamesList::getInstance() {
-    if(instance == NULL) {
+    if(!instance) {
         instance = new GamesList();
     }
     return instance;

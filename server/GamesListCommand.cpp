@@ -9,15 +9,35 @@
 
 }
 GamesListCommand::GamesListCommand(): Command() { }
+
 void GamesListCommand::execute(vector<string> args) {
-  GamesList* gamesList = GamesList::getInstance();
   int clientSocket = atoi(args[0]);
-  //Delete the clientSocket
-  args.erase(args.begin());
-  int sizeOfList = (int) args.size();
-  this->server->writeToClient(clientSocket, sizeOfList);
-  for(int i = 1; i < sizeOfList; i++) {
-    string str = gamesList->getNameAt(i);
-    this->server->writeToClient(clientSocket,str);
+  //Write to client size of list
+  //Write to client size of string and string.
+  GamesList *gl = GamesList::getInstance();
+  int size = gl->getSizeOfList();
+  ssize_t n = write(clientSocket, &size, sizeof(size));
+  if (n == -1) {
+    cout << "Error writing message to client" << endl;
+    return;
+  }
+  if(size > 0) {
+    for(int i = 0; i < size; i++) {
+      GameInfo game = gl->getGame(i);
+      string s = game.getName();
+      char name[s.size() + 1];
+      strcpy(name, s.c_str());
+      int len = (int) strlen(name);
+      n = write(clientSocket, &len, sizeof(len));
+      if (n == -1) {
+        cout << "Error writing message to client" << endl;
+        return;
+      }
+      n = write(clientSocket, &name, sizeof(name));
+      if (n == -1) {
+        cout << "Error writing message to client" << endl;
+        return;
+      }
+    }
   }
 }

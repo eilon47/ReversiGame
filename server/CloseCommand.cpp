@@ -10,13 +10,20 @@ CloseCommand::CloseCommand(): Command() {
 
 void CloseCommand::execute(vector<string> args) {
     GamesList* gamesList = GamesList::getInstance();
-    int clientSocket = atoi(args[0]);
-    int clientSocket2 = 0;
-    for(int i = 0; i< gamesList->getSize(); i++) {
-        if (args[1] == gamesList->getNameAt(i)) {
-            clientSocket2 = gamesList->getSocketIDAt(i);
-
+  //Name of game to close;
+  int client = atoi(args[0]);
+  string name = args[1];
+    for(int i = 0; i< gamesList->getSizeOfList(); i++) {
+      GameInfo gi = gamesList->getGame(i);
+      if (name == gi.getName()) {
+        if(!gi.isGameAvailable()){
+            int client2 = gi.getClientSocket2();
+            close(client2);
         }
+        gamesList->deleteGame(gi);
+        close(client);
+        return;
+      }
     }
 
 }

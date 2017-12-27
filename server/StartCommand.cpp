@@ -19,5 +19,5 @@ void StartCommand::execute(vector<string> args) {
   int clientSocket = atoi(args.front());
   string name = args.back();
   GameInfo gi(clientSocket, name);
-  gamesList->addGame(gi);
+  gamesList->addgame(gi);
 }

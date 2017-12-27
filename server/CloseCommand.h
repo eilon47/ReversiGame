@@ -11,7 +11,6 @@ class CloseCommand : public Command{
   CloseCommand();
   void execute(vector<string> args);
  private:
-  Server *server;
 };
 
 #endif //REVERSIGAME_CLOSECOMMAND_H

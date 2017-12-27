@@ -11,7 +11,6 @@ class GamesListCommand : public Command {
   GamesListCommand();
   void execute(vector<string> args);
  private:
-  Server *server;
 };
 
 #endif //REVERSIGAME_GAMESLISTCOMMAND_H

@@ -11,16 +11,14 @@ using namespace std;
 class GamesList {
 public:
     static GamesList* getInstance( );
-    int addGame(GameInfo &waiting);
-  string getNameAt(int i);
-  int getSocketIDAt(int i);
-  int getSize();
-    GameInfo &getGame(int i);
-    void deleteGame(int i);
-
-        private:
+    int addgame(GameInfo &gameInfo);
+    GameInfo getGame(int i);
+    int getSizeOfList();
+    bool isEmpty();
+    void deleteGame(GameInfo &gameInfo);
+private:
     GamesList();
-    vector<GameInfo> *wg ;
+    vector<GameInfo> *gi ;
     static GamesList* instance = nullptr;
 
 };

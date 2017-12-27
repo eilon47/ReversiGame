@@ -16,10 +16,7 @@ public:
     Server();
     void start();
     void stop();
-    void readFromClient(int clientSocket, int num);
-    void readFromClient(int clientSocket, string &msg);
-    void writeToClient(int clientSocket, int num);
-    void writeToClient(int clientSocket, string &msg);
+    static void* connecting(void * serverSocket);
 
  private:
     int port;
