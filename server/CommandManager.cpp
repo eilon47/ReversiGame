@@ -7,16 +7,16 @@
 #include "CloseCommand.h"
 #include "JoinCommand.h"
 #include "GamesListCommand.h"
-CommandsManager::CommandsManager(Server &server, GamesList gamesList): gl(&gamesList) {
-  commandsMap["start"] = new StartCommand(server);
-  commandsMap["close"] = new CloseCommand(server);
-  commandsMap["join"] = new JoinCommand(server);
-  commandsMap["list"] = new GamesListCommand(server);
+CommandsManager::CommandsManager() {
+  commandsMap["start"] = new StartCommand();
+  commandsMap["close"] = new CloseCommand();
+  commandsMap["join"] = new JoinCommand();
+  commandsMap["list"] = new GamesListCommand();
 
 }
 void CommandsManager::executeCommand(string command, vector<string> args) {
   Command *commandObj = commandsMap[command];
-  commandObj->execute(args, *gl);
+  commandObj->execute(&args);
 }
 CommandsManager::~CommandsManager() {
   map<string, Command *>::iterator it;

@@ -11,12 +11,11 @@
 
 class CommandsManager {
  public:
-  CommandsManager(Server &server, GamesList gamesList);
+  CommandsManager();
   ~CommandsManager();
   void executeCommand(string command, vector<string> args);
  private:
   map<string, Command *> commandsMap;
-    GamesList *gl;
 
 };
 

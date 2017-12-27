@@ -8,8 +8,8 @@
 #include "Command.h"
 class JoinCommand : public Command {
  public:
-  JoinCommand(Server &server);
-  void execute(vector<string> args, GamesList &gl);
+  JoinCommand();
+  void execute(vector<string> args);
     void handleClients(GameInfo gameInfo);
     void handlePlayingClient(int clientSocket);
     bool checkConnection(ssize_t n);

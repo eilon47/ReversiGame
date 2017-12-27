@@ -8,17 +8,16 @@
 #include "GamesListCommand.h"
 
 }
-GamesListCommand::GamesListCommand(Server &server): Command(server) {
-  this->server = &server;
-}
-void GamesListCommand::execute(vector<string> args, GamesList &gl) {
+GamesListCommand::GamesListCommand(): Command() { }
+void GamesListCommand::execute(vector<string> args) {
+  GamesList* gamesList = GamesList::getInstance();
   int clientSocket = atoi(args[0]);
   //Delete the clientSocket
   args.erase(args.begin());
   int sizeOfList = (int) args.size();
   this->server->writeToClient(clientSocket, sizeOfList);
   for(int i = 1; i < sizeOfList; i++) {
-    string str = gl.getNameAt(i);
+    string str = gamesList->getNameAt(i);
     this->server->writeToClient(clientSocket,str);
   }
 }

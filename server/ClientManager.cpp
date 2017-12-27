@@ -9,9 +9,8 @@
 #include <sstream>
 #include "ClientManager.h"
 
-ClientManager::ClientManager(Server &server) {
-    this->gl = new GamesList;
-    this->cm = new CommandsManager(server, *gl);
+ClientManager::ClientManager() {
+    this->cm = new CommandsManager();
 }
 
 void* ClientManager::handlePlayingClient(void* clientId) {
@@ -38,7 +37,7 @@ void* ClientManager::handlePlayingClient(void* clientId) {
     vector<string> args = this->getArgs(message);
     string command = args[0];
     args[0] = clientString.str();
-    this->cm->executeCommand(command, args);
+    this->cm->executeCommand(command, &args);
 }
 
 bool ClientManager::checkConnection(ssize_t n) {
@@ -53,17 +52,9 @@ vector<string> ClientManager::getArgs(char *msg) {
     arg = strtok(msg ," ");
     vector<string> ret;
     ret.insert(ret.end(), arg);
-    if(arg == "list"){
-        this->setListArgs(ret);
-    }
     while(arg != NULL){
         arg = strtok(msg ," ");
         ret.insert(ret.end(), arg);
     }
     return ret;
-}
-void ClientManager::setListArgs(vector<string> &args) {
-    for(int i = 0; i < this->gl->getSize(); i++){
-        args.insert(args.end(), this->gl->getNameAt(i));
-    }
 }

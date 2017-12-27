@@ -7,6 +7,7 @@ GameInfo::GameInfo(int clientSocket, string name) {
   this->clientSocket1 = clientSocket;
   this->clientSocket2 = -1;
   this->name = name;
+  available = true;
 }
 int GameInfo::getClientSocket1() const {
   return this->clientSocket1;
@@ -19,4 +20,9 @@ int GameInfo::getClientSocket2() const {
 }
 void GameInfo::addClient2(int clientSocket) {
   this->clientSocket2 = clientSocket;
+  this->available = false;
+}
+
+bool GameInfo::isAvailable(){
+  return available;
 }

@@ -26,7 +26,7 @@ Server::Server(): serverSocket(0), port(getPortFromFile(CLASS_PATH)) {
 
 void Server::start() {
   int i = 0;
-  ClientManager cm(*this);
+  ClientManager cm();
   pthread_t threads[MAX_CONNECTED_CLIENTS];
   // Create a socket point
   serverSocket = socket(AF_INET, SOCK_STREAM, 0);

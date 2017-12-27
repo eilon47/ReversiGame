@@ -11,8 +11,8 @@
 using namespace std;
 class Command {
  public:
-  Command(Server &server);
-  virtual void execute(vector<string>, GamesList &gl) = 0;
+  Command();
+  virtual void* execute(vector<string> *args) = 0;
   virtual ~Command();
  private:
   Server *server;

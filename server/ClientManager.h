@@ -13,13 +13,11 @@ using namespace std;
 
 class ClientManager {
 public:
-    ClientManager(Server &server);
+    ClientManager();
     void* handlePlayingClient(void *clientId);
 
 private:
-    GamesList *gl;
     CommandsManager *cm;
-    void setListArgs(vector<string> &args);
     bool checkConnection(ssize_t n);
     vector<string> getArgs(char *);
 };

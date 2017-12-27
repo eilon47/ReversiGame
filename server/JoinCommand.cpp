@@ -6,29 +6,32 @@
 #include <csignal>
 #include <string.h>
 #include "JoinCommand.h"
+pthread_mutex_t join_mutex;
 
-
-JoinCommand::JoinCommand(Server &server): Command(server), connection(true) {
-    this->server = &server;
-}
-void JoinCommand::execute(vector<string> args, GamesList &gl) {
+JoinCommand::JoinCommand(): Command(), connection(true) { }
+void* JoinCommand::execute(vector<string> args) {
     int numGame = 0;
     int clientSocket = atoi(args[0]);
+    GamesList *gamesList = GamesList::getInstance();
     int clientSocket2 = 0;
-    for(int i = 0; i< gl.getSize(); i++) {
-        if (args[1] == gl.getNameAt(i)) {
-            clientSocket2 = gl.getSocketIDAt(i);
-            gl.getGame(i).addClient2(clientSocket2);
+
+    pthread_mutex_lock(&join_mutex);
+    for(int i = 0; i< gamesList->getSize(); i++) {
+        if (args[1] == gamesList->getNameAt(i) && gamesList->getGame(i).isAvailable()) {
+            clientSocket2 = gamesList->getSocketIDAt(i);
+            gamesList->getGame(i).addClient2(clientSocket2);
             numGame = i;
         }
     }
+    pthread_mutex_unlock(&join_mutex);
+
     if(clientSocket2 == 0) {
         server->writeToClient(clientSocket, -1);
         return;
     }
     setPlayer(clientSocket,1);
     setPlayer(clientSocket2,2);
-    handleClients(gl.getGame(numGame));
+    handleClients(gamesList->getGame(numGame));
     close(clientSocket);
     close(clientSocket2);
 }
@@ -37,20 +40,20 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
     bool turn = true;
     while(connection) {
         if(turn){
-            handlePlayingClient(gameInfo.clientSocket1);
+            handlePlayingClient(gameInfo.getClientSocket1());
             if(!connection) {
-                server->writeToClient(gameInfo.clientSocket2, *"(-1,-1)");
+                server->writeToClient(gameInfo.getClientSocket2(), *"(-1,-1)");
                 return;
             }
             cout <<  "X played: " << message << endl;
 
-            server->writeToClient(gameInfo.clientSocket2, *message);
+            server->writeToClient(gameInfo.getClientSocket2(), *message);
             if(endGame(*message)) {
                 connection = false;
                 return;
             }
             if(!connection) {
-                server->writeToClient(gameInfo.clientSocket1, *"(-1,-1)");
+                server->writeToClient(gameInfo.getClientSocket1(), *"(-1,-1)");
                 return;
             }
             if(badMove(*message)) {
@@ -58,19 +61,19 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
             }
             turn = !turn;
         } else {
-            handlePlayingClient(gameInfo.clientSocket2);
+            handlePlayingClient(gameInfo.getClientSocket2());
             if(!connection) {
-                server->writeToClient(gameInfo.clientSocket1, *"(-1,-1)");
+                server->writeToClient(gameInfo.getClientSocket1(), *"(-1,-1)");
                 return;
             }
             cout <<  "O played: " << message << endl;
-            server->writeToClient(gameInfo.clientSocket1, *message);
+            server->writeToClient(gameInfo.getClientSocket1(), *message);
             if(endGame(*message)) {
                 connection = false;
                 return;
             }
             if(!connection) {
-                server->writeToClient(gameInfo.clientSocket2, *"(-1,-1)");
+                server->writeToClient(gameInfo.getClientSocket2(), *"(-1,-1)");
                 return;
             }
             if(badMove(*message)) {

@@ -8,8 +8,8 @@
 #include "Command.h"
 class StartCommand : public Command {
  public:
-  StartCommand(Server &server);
-  void execute(vector<string> args,GamesList &gl);
+  StartCommand();
+  void execute(vector<string> args);
  private:
   Server *server;
 };

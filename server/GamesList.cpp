@@ -34,3 +34,10 @@ GameInfo& GamesList::getGame(int i) {
 void GamesList::deleteGame(int i) {
     erase(wg->at(i));
 }
+GamesList* GamesList::getInstance() {
+    if(instance == NULL) {
+        instance = new GamesList();
+    }
+    return instance;
+
+}

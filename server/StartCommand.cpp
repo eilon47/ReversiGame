@@ -6,8 +6,7 @@
 #include "StartCommand.h"
 #include "GameInfo.h"
 
-StartCommand::StartCommand(Server &server): Command(server) {
-  this->server = &server;
+StartCommand::StartCommand(): Command() {
 }
 
 /**
@@ -15,9 +14,10 @@ StartCommand::StartCommand(Server &server): Command(server) {
  * give to the game, then we add that to the server.
  * @param args
  */
-void StartCommand::execute(vector<string> args, GamesList &gl) {
+void StartCommand::execute(vector<string> args) {
+  GamesList* gamesList = GamesList::getInstance();
   int clientSocket = atoi(args.front());
   string name = args.back();
   GameInfo gi(clientSocket, name);
-  gl.addGame(gi);
+  gamesList->addGame(gi);
 }
