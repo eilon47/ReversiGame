@@ -52,13 +52,6 @@ void Client::connectToServer() {
     }
     //connections confirmation.
     display->showMessage("Connected to server\n");
-    getNumTurn();
-    if(turnNum == 1) {
-        display->showMessage("Waiting for other player to join...\n");
-    }
-    else {
-        display->showMessage("you are the second player. We are ready to start the game!\n");
-    }
 }
 void Client::sendMove(Point move) {
   string m = move.toString();
@@ -74,6 +67,21 @@ void Client::sendMove(Point move) {
     throw "Error writing turn to socket";
   }
 }
+void Client::sendCommand(string command) {
+
+    ssize_t size = (int) command.size();
+    char message[size];
+    strcpy(message, command.c_str());
+    ssize_t n = write(clientSocket, &size, sizeof(size));
+    if (n == -1) {
+        throw "Error writing turn to socket";
+    }
+    n = write(clientSocket, &message, sizeof(message));
+    if (n == -1) {
+        throw "Error writing turn to socket";
+    }
+}
+
 Point Client::getMove() {
     int size;
     int n = read(clientSocket, &size, sizeof(size));

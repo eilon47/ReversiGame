@@ -17,7 +17,8 @@ StartCommand::StartCommand(): Command() {
 void StartCommand::execute(vector<string> args) {
   GamesList* gamesList = GamesList::getInstance();
   int clientSocket = atoi(args.front());
+
   string name = args.back();
   GameInfo gi(clientSocket, name);
-  gamesList->addgame(gi);
+  gamesList->addGame(gi);
 }

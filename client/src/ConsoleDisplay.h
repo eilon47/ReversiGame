@@ -47,6 +47,8 @@ class ConsoleDisplay : public Display{
    * @param p2 player 2.
    */
   void showEndGame(Player &p1, Player &p2);
+
+    void showSubMenu(string &command);
 };
 
 #endif //REVERSIGAME_CONSOLEDISPLAY_H

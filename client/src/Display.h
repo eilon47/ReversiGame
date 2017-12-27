@@ -49,6 +49,8 @@ class Display {
    * @param p2 player 2.
    */
   virtual void showEndGame(Player &p1, Player &p2) = 0;
+
+    virtual void showSubMenu(string &command) = 0;
 };
 
 #endif //REVERSIGAME_DISPLAY_H

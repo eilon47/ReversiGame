@@ -9,14 +9,6 @@ NetworkPlayer::NetworkPlayer(Client &c) : client(&c), numOfSoldiers(2) {
         client->connectToServer();
     } catch (char* msg) {
     }
-    if (client->getClientSign() == 1) {
-        this->setSign(XSIGN);
-        this->sign = XSIGN;
-    }
-    else if (client->getClientSign() == 2) {
-        this->setSign(OSIGN);
-        this->sign = OSIGN;
-    }
 }
 NetworkPlayer::NetworkPlayer(const NetworkPlayer &cp) {
     this->client = cp.client;

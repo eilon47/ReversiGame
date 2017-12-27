@@ -23,7 +23,9 @@ class Game {
   Display *display;
   GAME_T type;
   bool turn;
- public:
+    string *command;
+
+public:
   /**
    * Constructor.
    * @param b Board.

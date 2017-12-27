@@ -107,3 +107,13 @@ void ConsoleDisplay::showEndGame(Player &p1, Player &p2) {
        << winScore << " points! :)" << endl;
   cout << loser << " maybe next time :(" << endl;
 }
+
+void ConsoleDisplay::showSubMenu(string &command) {
+  cout << "Please choose a command:\n"
+          "1.start <name>.\n"
+          "2.join <name>.\n"
+          "3.list_games. \n"
+          "4.close <name> " << endl;
+  cin >> command;
+}
+

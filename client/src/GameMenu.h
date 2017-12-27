@@ -26,6 +26,9 @@ class GameMenu {
    * @return game type.
    */
   Game* showMenu();
+
+    void getCommandFromServer(string &command);
+
   /**
    * Destructor.
    */
@@ -39,6 +42,7 @@ class GameMenu {
   Game *game;
   Client *client;
   Display *d;
+    string *command;
 };
 
 #endif //REVERSIGAME_GAMEMENU_H
