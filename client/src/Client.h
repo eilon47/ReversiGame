@@ -62,7 +62,9 @@ class Client {
      * gets the server number and the port number from file.
      */
         void getSettingsFromFile();
-    private:
+    void sendCommand(string command);
+
+        private:
         Display *display;
         const char *serverIP;
         int serverPort;
