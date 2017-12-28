@@ -16,7 +16,7 @@ ClientManager::~ClientManager(){
   delete this->cm;
 }
 void ClientManager::handleClient(int clientId) {
-    int clientSocket = (int) clientId;
+    int clientSocket = clientId;
     signal(SIGPIPE, SIG_IGN);
     char message[255];
     bzero((char*)message,sizeof(message));
@@ -44,10 +44,9 @@ vector<string> ClientManager::getArgs(char *msg) {
     string arg;
     arg = strtok(msg ," ");
     vector<string> ret;
-    ret.insert(ret.end(), arg);
-    while(arg != NULL){
-        arg = strtok(msg ," ");
-        ret.insert(ret.end(), arg);
-    }
+    do {
+      ret.insert(ret.end(), arg);
+      arg = strtok(msg ," ");
+    } while(arg != NULL);
     return ret;
 }

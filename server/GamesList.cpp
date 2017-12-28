@@ -19,18 +19,10 @@ int GamesList::addgame(GameInfo &gameInfo) {
 int GamesList::getSizeOfList() {
     return (int) this->gi->size();
 }
-string GamesList::getNameOfGame(int i) {
-    return this->gi->at(i).getName();
+GameInfo& GamesList::getGame(int i) {
+    return this->gi->at(i);
 }
-bool GamesList::isAvailableGame(int i) {
-    return this->gi->at(i).isGameAvailable();
-}
-int GamesList::getSocket1(int i) {
-    return this->gi->at(i).getClientSocket1();
-}
-int GamesList::getSocket2(int i) {
-    return this->gi->at(i).getClientSocket2();
-}
+
 void GamesList::deleteGame(GameInfo &gameInfo) {
     for(int i = 0; i < gi->size(); i++) {
         if (gameInfo == gi->at(i)) {
@@ -45,9 +37,8 @@ bool GamesList::isEmpty() {
 
 GamesList* GamesList:: instance = 0;
 GamesList* GamesList::getInstance() {
-    if(!instance) {
+    if (!instance) {
         instance = new GamesList();
     }
     return instance;
-
 }

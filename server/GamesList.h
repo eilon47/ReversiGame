@@ -10,12 +10,12 @@
 using namespace std;
 class GamesList {
 public:
-    static GamesList* getInstance( );
-    int addgame(GameInfo &gameInfo);
-    GameInfo getGame(int i);
-    int getSizeOfList();
-    bool isEmpty();
-    void deleteGame(GameInfo &gameInfo);
+  static GamesList* getInstance( );
+  int addgame(GameInfo &gameInfo);
+  GameInfo& getGame(int i);
+  int getSizeOfList();
+  bool isEmpty();
+  void deleteGame(GameInfo &gameInfo);
 private:
     GamesList();
     vector<GameInfo> *gi ;

@@ -16,7 +16,6 @@ class CommandsManager {
   void executeCommand(string command, vector<string> args);
  private:
   map<string, Command *> commandsMap;
-
 };
 
 #endif //REVERSIGAME_COMMANDMANAGER_H
