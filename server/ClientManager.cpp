@@ -7,6 +7,7 @@
 #include <csignal>
 #include <string.h>
 #include <sstream>
+#include <cstdlib>
 #include "ClientManager.h"
 
 ClientManager::ClientManager() {
@@ -15,8 +16,13 @@ ClientManager::ClientManager() {
 ClientManager::~ClientManager(){
   delete this->cm;
 }
-void ClientManager::handleClient(int clientId) {
-    int clientSocket = clientId;
+void* ClientManager::handClient_t(void *ci) {
+    clientInfo *client = (clientInfo*) ci;
+    int clientSocket = client->cs;
+    ClientManager *clientManager = client->cm;
+    clientManager->doCommand(clientSocket);
+}
+void ClientManager::doCommand(int clientSocket) {
     signal(SIGPIPE, SIG_IGN);
     char message[255];
     bzero((char*)message,sizeof(message));
@@ -31,6 +37,17 @@ void ClientManager::handleClient(int clientId) {
     string command = args[0];
     args[0] = clientString.str();
     this->cm->executeCommand(command, args);
+}
+void ClientManager::handleClient(int clientId) {
+    clientInfo *ci;
+    ci->cm = this;
+    ci->cs = clientId;
+    pthread_t thread;
+    int rc = pthread_create(&thread, NULL, handClient_t, (void *) ci);
+    if(rc) {
+        cout << "Error: unable to create thread, " << rc << endl;
+        exit(-1);
+    }
 }
 
 bool ClientManager::checkConnection(ssize_t n) {

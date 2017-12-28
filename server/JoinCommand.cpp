@@ -18,7 +18,6 @@ void JoinCommand::execute(vector<string> args) {
     int clientSocket2 = atoi(args[0]);
     string name = args[1];
     GamesList *gamesList = GamesList::getInstance();
-
     pthread_mutex_lock(&join_mutex);
     for(int i = 0; i< gamesList->getSizeOfList(); i++) {
         GameInfo game = gamesList->getGame(i);
@@ -30,7 +29,6 @@ void JoinCommand::execute(vector<string> args) {
         }
     }
     pthread_mutex_unlock(&join_mutex);
-
     if(clientSocket1 == 0) {
        writeToClient(clientSocket2, -1);
         return;
@@ -38,8 +36,10 @@ void JoinCommand::execute(vector<string> args) {
     setPlayer(clientSocket1,1);
     setPlayer(clientSocket2,2);
     handleClients(gamesList->getGame(numGame));
+    ///
     close(clientSocket1);
     close(clientSocket2);
+    ///
 }
 void JoinCommand::handleClients(GameInfo gameInfo) {
     signal(SIGPIPE, SIG_IGN);
@@ -66,6 +66,7 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
         if(badMove(*message)) {
             continue;
         }
+        //Swap playing and waiting.
         int temp = playing;
         playing = waiting;
         waiting = temp;
