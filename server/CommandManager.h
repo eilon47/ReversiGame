@@ -8,7 +8,10 @@
 #include <map>
 #include "Command.h"
 #include "GamesList.h"
-
+#include "StartCommand.h"
+#include "CloseCommand.h"
+#include "JoinCommand.h"
+#include "GamesListCommand.h"
 class CommandsManager {
  public:
   CommandsManager();

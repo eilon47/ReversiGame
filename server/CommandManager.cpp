@@ -3,10 +3,6 @@
 //
 
 #include "CommandManager.h"
-#include "StartCommand.h"
-#include "CloseCommand.h"
-#include "JoinCommand.h"
-#include "GamesListCommand.h"
 CommandsManager::CommandsManager() {
   commandsMap["start"] = new StartCommand();
   commandsMap["close"] = new CloseCommand();

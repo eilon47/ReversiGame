@@ -18,7 +18,7 @@ public:
   ~Server();
     void start();
     void stop();
-    void* closeInput(void *input);
+    static void* closeInput(void *input);
  private:
     int port;
     ClientManager *cm;

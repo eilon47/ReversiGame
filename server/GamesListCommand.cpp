@@ -5,13 +5,13 @@
 #include <csignal>
 #include <cstring>
 #include <cstdlib>
+#include <iostream>
 #include "GamesListCommand.h"
+#include "GamesList.h"
 
-}
-GamesListCommand::GamesListCommand(): Command() { }
 
-void GamesListCommand::execute(vector<string> args) {
-  int clientSocket = atoi(args[0]);
+void GamesListCommand::execute(vector<string> *args) {
+  int clientSocket = atoi(args->at(0).c_str());
   //Write to client size of list
   //Write to client size of string and string.
   GamesList *gl = GamesList::getInstance();

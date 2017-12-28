@@ -6,10 +6,10 @@
 #define REVERSIGAME_JOINCOMMAND_H
 
 #include "Command.h"
+#include "GameInfo.h"
 class JoinCommand : public Command {
  public:
-    JoinCommand();
-    void execute(vector<string> args);
+    void execute(vector<string> *args);
     void handleClients(GameInfo gameInfo);
     void handlePlayingClient(int clientSocket);
     bool checkConnection(ssize_t n);

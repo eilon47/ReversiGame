@@ -8,16 +8,12 @@
 #include <vector>
 #include "CommandManager.h"
 #include "GamesList.h"
-struct clientInfo {
-  ClientManager *cm;
-  int cs;
-};
 using namespace std;
 
 class ClientManager {
 public:
     ClientManager();
-    void* handClient_t(void * ci);
+    static void* handClient_t(void * ci);
     void doCommand(int clientSocket);
     void handleClient(int clientSocket);
     ~ClientManager();

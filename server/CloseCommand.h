@@ -8,9 +8,7 @@
 #include "Command.h"
 class CloseCommand : public Command{
  public:
-  CloseCommand();
-  void execute(vector<string> args);
- private:
+  void execute(vector<string> *args);
 };
 
 #endif //REVERSIGAME_CLOSECOMMAND_H

@@ -8,10 +8,8 @@
 #include "Command.h"
 class StartCommand : public Command {
  public:
-  StartCommand();
-  void execute(vector<string> args);
+  void execute(vector<string> *args);
  private:
-  Server *server;
 };
 
 #endif //REVERSIGAME_GAMECOMMAND_H

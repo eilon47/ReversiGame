@@ -19,7 +19,7 @@ public:
 private:
     GamesList();
     vector<GameInfo> *gi ;
-    static GamesList* instance = nullptr;
+    static GamesList* instance;
 
 };
 

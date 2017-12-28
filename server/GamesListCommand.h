@@ -8,9 +8,7 @@
 #include "Command.h"
 class GamesListCommand : public Command {
  public:
-  GamesListCommand();
-  void execute(vector<string> args);
- private:
+  void execute(vector<string> *args);
 };
 
 #endif //REVERSIGAME_GAMESLISTCOMMAND_H

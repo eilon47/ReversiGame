@@ -10,11 +10,18 @@
 #include <cstdlib>
 #include "ClientManager.h"
 
+struct clientInfo {
+  ClientManager *cm;
+  int cs;
+};
 ClientManager::ClientManager() {
     this->cm = new CommandsManager();
 }
 ClientManager::~ClientManager(){
   delete this->cm;
+}
+void ClientManager::closeAllThreads() {
+  
 }
 void* ClientManager::handClient_t(void *ci) {
     clientInfo *client = (clientInfo*) ci;
@@ -24,9 +31,15 @@ void* ClientManager::handClient_t(void *ci) {
 }
 void ClientManager::doCommand(int clientSocket) {
     signal(SIGPIPE, SIG_IGN);
-    char message[255];
+    int size = 0;
+    ssize_t n = read(clientSocket, &size, sizeof(size));
+    if (n == -1) {
+        cout << "Error reading point" << endl;
+        return;
+    }
+    char message[size];
     bzero((char*)message,sizeof(message));
-    ssize_t n = read(clientSocket, &message, sizeof(message));
+    n = read(clientSocket, &message, sizeof(message));
     if (n == -1) {
         cout << "Error reading point" << endl;
         return;
@@ -64,6 +77,6 @@ vector<string> ClientManager::getArgs(char *msg) {
     do {
       ret.insert(ret.end(), arg);
       arg = strtok(msg ," ");
-    } while(arg != NULL);
+    } while(arg.c_str() != NULL);
     return ret;
 }

@@ -3,9 +3,7 @@
 //
 #include <vector>
 #include <string>
-#include "Server.h"
-#include "GamesList.h"
-
+#include <unistd.h>
 #ifndef REVERSIGAME_COMMAND_H
 #define REVERSIGAME_COMMAND_H
 using namespace std;
@@ -14,7 +12,6 @@ class Command {
   Command();
   virtual void execute(vector<string> *args) = 0;
   virtual ~Command();
- private:
 };
 
 #endif //REVERSIGAME_COMMAND_H

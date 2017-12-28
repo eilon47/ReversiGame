@@ -5,18 +5,20 @@
 #include <cstdlib>
 #include <csignal>
 #include <string.h>
+#include <iostream>
 #include "JoinCommand.h"
+#include "GamesList.h"
 pthread_mutex_t join_mutex;
 
-JoinCommand::JoinCommand(): Command(), connection(true) { }
-void JoinCommand::execute(vector<string> args) {
-    if(args.size() < 2){
+void JoinCommand::execute(vector<string> *args) {
+    connection = true;
+    if(args->size() < 2){
         return;
     }
     int numGame = 0;
     int clientSocket1 = 0;
-    int clientSocket2 = atoi(args[0]);
-    string name = args[1];
+    int clientSocket2 = atoi(args->at(0).c_str());
+    string name = args->at(1);
     GamesList *gamesList = GamesList::getInstance();
     pthread_mutex_lock(&join_mutex);
     for(int i = 0; i< gamesList->getSizeOfList(); i++) {
@@ -34,7 +36,7 @@ void JoinCommand::execute(vector<string> args) {
         return;
     }
     setPlayer(clientSocket1,1);
-    setPlayer(clientSocket2,2);
+    setPlayer(clientSocket2,1);
     handleClients(gamesList->getGame(numGame));
     ///
     close(clientSocket1);

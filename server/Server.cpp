@@ -1,13 +1,11 @@
 #include "Server.h"
-#include "ClientManager.h"
+
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <unistd.h>
 #include <string.h>
 #include <stdio.h>
 #include <fstream>
 #include <sstream>
-#include <csignal>
 #include <pthread.h>
 #include <complex>
 #include <cstdlib>
@@ -24,20 +22,21 @@ Server::~Server() {
   delete  cm;
 }
 
-void* Server::closeInput(void *input) {
+void* Server::closeInput(void *server) {
   string s;
+  Server *server1 = (Server *) server;
   while(true){
     cin >> s;
     if(s == "exit"){
       break;
     }
   }
-  this->stop();
+  server1->stop();
 }
 
 void Server::start() {
   pthread_t tClose;
-  int rc = pthread_create(&tClose, NULL, closeInput, NULL);
+  int rc = pthread_create(&tClose, NULL, closeInput,(void *) this);
   if (rc) {
     cout << "Error: unable to create thread, " << rc << endl;
     exit(-1);
