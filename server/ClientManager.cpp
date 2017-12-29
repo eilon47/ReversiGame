@@ -39,8 +39,9 @@ void ClientManager::doCommand(int clientSocket) {
     }
     char message[size];
     bzero((char*)message,sizeof(message));
-    n = read(clientSocket, &message, sizeof(message));
-    if (n == -1) {
+    ssize_t n2 = read(clientSocket, &message, sizeof(message));
+    cout <<message;
+    if (n2 == -1) {
         cout << "Error reading point" << endl;
         return;
     }

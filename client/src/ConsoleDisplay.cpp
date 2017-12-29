@@ -3,6 +3,7 @@
 //
 
 #include <cstdlib>
+#include <string.h>
 #include "ConsoleDisplay.h"
 void ConsoleDisplay::showBoard(Board &b) {
   cout << b;
@@ -114,6 +115,7 @@ void ConsoleDisplay::showSubMenu(string &command) {
           "2.join <name>.\n"
           "3.list_games. \n"
           "4.close <name> " << endl;
-  cin >> command;
+  getline(cin, command);
+  cout << command << endl;
 }
 

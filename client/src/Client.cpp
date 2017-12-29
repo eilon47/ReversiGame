@@ -69,15 +69,16 @@ void Client::sendMove(Point move) {
 }
 void Client::sendCommand(string command) {
 
-    ssize_t size = (int) command.size();
+    int size = (int) command.size() + 1;
     char message[size];
+    bzero((char*)message,sizeof(message));
     strcpy(message, command.c_str());
     ssize_t n = write(clientSocket, &size, sizeof(size));
     if (n == -1) {
         throw "Error writing turn to socket";
     }
-    n = write(clientSocket, &message, sizeof(message));
-    if (n == -1) {
+    ssize_t n2 = write(clientSocket, &message, sizeof(message));
+    if (n2 == -1) {
         throw "Error writing turn to socket";
     }
 }
