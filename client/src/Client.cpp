@@ -55,7 +55,7 @@ void Client::connectToServer() {
 }
 void Client::sendMove(Point move) {
   string m = move.toString();
-  ssize_t size = (int) m.size();
+  int size = (int) m.size()+1;
   char message[size];
   strcpy(message, m.c_str());
   ssize_t n = write(clientSocket, &size, sizeof(size));
@@ -107,6 +107,14 @@ void Client::getNumTurn() {
     this->turnNum = num;
 }
 
+int Client::getNum() {
+  int num;
+  ssize_t n = read(clientSocket, &num, sizeof(int));
+  if (n == -1){
+    throw "Error in getting sign";
+  }
+  return num;
+}
 string Client::getMessage() {
   int size = 0;
   int n = read(clientSocket, &size, sizeof(size));

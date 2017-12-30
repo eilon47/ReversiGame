@@ -16,6 +16,7 @@ void GamesListCommand::execute(vector<string> *args) {
   //Write to client size of string and string.
   GamesList *gl = GamesList::getInstance();
   int size = gl->getSizeOfList();
+  //sends the size of the list.
   ssize_t n = write(clientSocket, &size, sizeof(size));
   if (n == -1) {
     cout << "Error writing message to client" << endl;
@@ -25,9 +26,9 @@ void GamesListCommand::execute(vector<string> *args) {
     for(int i = 0; i < size; i++) {
       GameInfo game = gl->getGame(i);
       string s = game.getName();
-      char name[s.size() + 1];
+      int len =(int) s.size() + 1;
+      char name[len];
       strcpy(name, s.c_str());
-      int len = (int) strlen(name);
       n = write(clientSocket, &len, sizeof(len));
       if (n == -1) {
         cout << "Error writing message to client" << endl;

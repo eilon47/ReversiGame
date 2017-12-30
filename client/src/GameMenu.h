@@ -27,7 +27,7 @@ public:
      */
     Game* showMenu();
 
-    void getCommandFromServer(string &command);
+    bool getInformationFromServer(string command);
 
     /**
      * Destructor.

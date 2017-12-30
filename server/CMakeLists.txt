@@ -4,26 +4,26 @@ project(server)
 set(CMAKE_CXX_FLAGS -pthread)
 
 set(SOURCE_FILES
-        main.cpp
-        Server.cpp
-        Server.h
+        ClientManager.cpp
+        ClientManager.h
+        CloseCommand.cpp
+        CloseCommand.h
+        Command.cpp
         Command.h
-        StartCommand.cpp
-        StartCommand.h
+        CommandManager.cpp
+        CommandManager.h
+        GameInfo.cpp
+        GameInfo.h
+        GamesList.cpp
+        GamesList.h
         GamesListCommand.cpp
         GamesListCommand.h
         JoinCommand.cpp
         JoinCommand.h
-        CloseCommand.cpp
-        CloseCommand.h
-        GameInfo.cpp
-        GameInfo.h
-        Command.cpp
-        CommandManager.cpp
-        CommandManager.h
-        ClientManager.cpp
-        ClientManager.h
-        GamesList.cpp
-        GamesList.h)
+        main.cpp
+        Server.cpp
+        Server.h
+        StartCommand.cpp
+        StartCommand.h)
 
 add_executable(server ${SOURCE_FILES})

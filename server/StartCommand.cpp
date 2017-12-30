@@ -3,6 +3,7 @@
 //
 
 #include <cstdlib>
+#include <iostream>
 #include "StartCommand.h"
 #include "GameInfo.h"
 #include "GamesList.h"
@@ -17,5 +18,11 @@ void StartCommand::execute(vector<string> *args) {
   int clientSocket = atoi(args->front().c_str());
   string name = args->back();
   GameInfo gi(clientSocket, name);
-  gamesList->addgame(gi);
+  int res = gamesList->addgame(gi);
+  //notify user command was made (-1 for error).
+  ssize_t n = write(clientSocket, &res, sizeof(res));
+  if (n == -1) {
+    cout << "Error writing message to client" << endl;
+    return;
+  }
 }

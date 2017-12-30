@@ -45,15 +45,15 @@ Game* GameMenu::showMenu() {
         case 3: {
             try {
                 gtype = PvsRP;
-                string command("");
+                string command;
                 client = new Client("127.0.0.1", 8000, *this->d);
                 this->p1 = new NetworkPlayer(*client);
                 this->p2 = new NetworkReadPlayer(*client);
-                while (command != "join") {
+                while (true) {
                     this->d->showSubMenu(command);
                     this->client->sendCommand(command);
-                    this->getCommandFromServer(command);
-                    if (command == "start") {
+                    bool startGame = this->getInformationFromServer(command);
+                    if (startGame) {
                         break;
                     }
                 }
@@ -61,8 +61,13 @@ Game* GameMenu::showMenu() {
                     d->showMessage(msg);
                     return NULL;
                 }
-                d->showMessage(client->getMessage());
-                break;
+                //Waits for other player.
+                if(client->getNum() == 1) {
+                  break;
+                } else {
+                  this->d->showMessage("Problem in connection to the other player");
+                  exit(1);
+                }
             }
             default:{
                 this->p1 = new HumanPlayer(XSIGN);
@@ -76,34 +81,40 @@ Game* GameMenu::showMenu() {
             return game;
     }
 
-    void GameMenu::getCommandFromServer(string &c) {
-        char str[c.size()];
-        strcpy(str, c.c_str());
-        string s = strtok(str, " ");
-        if (s == "start") {
+    bool GameMenu::getInformationFromServer(string command) {
+      char str[command.size()];
+      strcpy(str, command.c_str());
+      string s = strtok(str, " ");
+      int res = this->client->getNum();
+      if (s == "start") {
+          if(res != -1){
             this->p1->setSign(XSIGN);
             this->p2->setSign(OSIGN);
             d->showMessage("waiting for other Player to connect...");
-            atoi(client->getMessage().c_str());
-            return;
+            return true;
+          }
+          return false;
         }
         if (s == "join") {
-            int isAvailable = atoi(client->getMessage().c_str());
-            if (isAvailable == -1) {
-                c = "mistake";
-                return;
+            if (res == -1) {
+                return false;
             }
             this->p1->setSign(OSIGN);
             this->p2->setSign(XSIGN);
-            return;
+            return true;
         }
-        if (s == "games_list") {
-            int gameListSize = atoi(client->getMessage().c_str());
-            for (int i=0; i< gameListSize; i++) {
-                d->showMessage(client->getMessage());
+        if (s == "list_games") {
+            if(res == 0) {
+              this->d->showMessage("There are no open games\n");
+            } else {
+              for (int i = 0; i < res; i++) {
+                d->showMessage(client->getMessage() + "\n");
+              }
             }
+          return false;
         }
         d->showMessage("Please enter a valid command.\n");
+        return false;
     }
 
 

@@ -116,6 +116,5 @@ void ConsoleDisplay::showSubMenu(string &command) {
           "3.list_games. \n"
           "4.close <name> " << endl;
   getline(cin, command);
-  cout << command << endl;
 }
 

@@ -7,7 +7,7 @@ CommandsManager::CommandsManager() {
   commandsMap["start"] = new StartCommand();
   commandsMap["close"] = new CloseCommand();
   commandsMap["join"] = new JoinCommand();
-  commandsMap["list"] = new GamesListCommand();
+  commandsMap["list_games"] = new GamesListCommand();
 
 }
 void CommandsManager::executeCommand(string command, vector<string> args) {

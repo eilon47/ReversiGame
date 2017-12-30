@@ -62,6 +62,7 @@ class Client {
      * gets the server number and the port number from file.
      */
         void getSettingsFromFile();
+        int getNum();
     void sendCommand(string command);
 
         private:

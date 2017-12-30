@@ -20,7 +20,8 @@ public:
     void closeAllThreads();
 private:
     CommandsManager *cm;
-    bool checkConnection(ssize_t n);
+    vector<pthread_t> threads;
+  bool checkConnection(ssize_t n);
     vector<string> getArgs(char *);
 };
 

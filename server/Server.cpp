@@ -13,10 +13,15 @@
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 10
 #define CLASS_PATH "../exe/ServerSettings.txt"
+struct ConnectingArgs {
+      ClientManager* clientManager;
+    int socketServer;
+  };
+Server::Server(int port): port(port), serverSocket(0), cm(new ClientManager),
+                          threads(new vector<pthread_t>) {}
 
-Server::Server(int port): port(port), serverSocket(0), cm(new ClientManager) {}
-
-Server::Server(): serverSocket(0), port(getPortFromFile(CLASS_PATH)), cm(new ClientManager) {}
+Server::Server(): serverSocket(0), port(getPortFromFile(CLASS_PATH)), cm(new ClientManager),
+                  threads(new vector<pthread_t>) {}
 
 Server::~Server() {
   delete  cm;
@@ -60,23 +65,30 @@ void Server::start() {
   // Start listening to incoming connections
   listen(serverSocket, MAX_CONNECTED_CLIENTS);
   // Define the client socket's structures
-  struct sockaddr_in clientAddress;
-  socklen_t clientAddressLen;
-  while (true) {
-    cout << "Waiting for client connections..." << endl;
-    // Accept a new client connection
-    int clientSocket = accept(serverSocket, (struct
-        sockaddr *) &clientAddress, &clientAddressLen);
-    cout << "Client connected" << endl;
-    if (clientSocket == -1) {
-      throw "Error on accept";
+
+  ConnectingArgs* ca = new ConnectingArgs;
+  ca->socketServer = serverSocket;
+  ca->clientManager = cm;
+  for(int i = 0; i < MAX_CONNECTED_CLIENTS; i++) {
+    pthread_t thread;
+    int rc = pthread_create(&thread, NULL, openConnectionToOneClient, (void *) ca);
+    if(rc){
+      cout << "Error: unable to create thread, " << rc << endl;
+      exit(-1);
     }
-    this->cm->handleClient(clientSocket);
+    this->threads->push_back(thread);
   }
+  for(int i = 0; i < threads->size(); i++) {
+    pthread_join(threads->at(i), NULL);
+  }
+  delete ca;
 }
 
 void Server::stop() {
   this->cm->closeAllThreads();
+  for(int i = 0; i < this->threads->size(); i++){
+    pthread_cancel(this->threads->at(i));
+  }
   close(this->serverSocket);
 }
 
@@ -98,4 +110,21 @@ int Server::getPortFromFile(string path) {
   }
   file.close();
   return port;
+}
+
+void* Server::openConnectionToOneClient(void *args) {
+  ConnectingArgs* ca = (ConnectingArgs *) args;
+  struct sockaddr_in clientAddress;
+  socklen_t clientAddressLen;
+  while (true) {
+    cout << "Waiting for client connections..." << endl;
+    // Accept a new client connection
+    int clientSocket = accept(ca->socketServer, (struct
+        sockaddr *) &clientAddress, &clientAddressLen);
+    cout << "Client connected" << endl;
+    if (clientSocket == -1) {
+      throw "Error on accept";
+    }
+    ca->clientManager->handleClient(clientSocket);
+  }
 }

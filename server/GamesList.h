@@ -13,6 +13,10 @@ public:
   static GamesList* getInstance( );
   int addgame(GameInfo &gameInfo);
   GameInfo& getGame(int i);
+  GameInfo& getGameByName(string name);
+  GameInfo& getGameBySocket1(int clientSocket);
+  bool isGameExist(string name);
+  bool isGameExist(int clientSocket1);
   int getSizeOfList();
   bool isEmpty();
   void deleteGame(GameInfo &gameInfo);

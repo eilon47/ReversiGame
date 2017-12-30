@@ -22,18 +22,21 @@ void JoinCommand::execute(vector<string> *args) {
     GamesList *gamesList = GamesList::getInstance();
     pthread_mutex_lock(&join_mutex);
     for(int i = 0; i< gamesList->getSizeOfList(); i++) {
-        GameInfo game = gamesList->getGame(i);
-        if (name == game.getName() && game.isGameAvailable()) {
-            clientSocket1 = game.getClientSocket2();
-            game.addClient2(clientSocket2);
+        GameInfo *game = &gamesList->getGame(i);
+        if (name == game->getName() && game->isGameAvailable()) {
+            clientSocket1 = game->getClientSocket1();
+            game->addClient2(clientSocket2);
             numGame = i;
             break;
         }
     }
     pthread_mutex_unlock(&join_mutex);
+  //Tell the client the game was found or not and if connected.
     if(clientSocket1 == 0) {
        writeToClient(clientSocket2, -1);
         return;
+    } else {
+      writeToClient(clientSocket2, 0);
     }
     setPlayer(clientSocket1,1);
     setPlayer(clientSocket2,1);
@@ -48,16 +51,17 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
     //First initialize;
     int playing = gameInfo.getClientSocket1();
     int waiting = gameInfo.getClientSocket2();
+    string message;
     connection = true;
     while(connection) {
-        handlePlayingClient(playing);
+        handlePlayingClient(playing, message);
         if(!connection) {
             this->writeToClient(waiting, "(-1, -1)");
             return;
         }
         cout <<  "Client socket " << playing << " played:"<< message << endl;
-        this->writeToClient(waiting, *message);
-        if(endGame(*message)) {
+        this->writeToClient(waiting, message);
+        if(endGame(message)) {
             connection = false;
             return;
         }
@@ -65,7 +69,7 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
             this->writeToClient(playing, "(-1, -1)");
             return;
         }
-        if(badMove(*message)) {
+        if(badMove(message)) {
             continue;
         }
         //Swap playing and waiting.
@@ -74,19 +78,19 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
         waiting = temp;
     }
 }
-void JoinCommand::handlePlayingClient(int clientSocket) {
+void JoinCommand::handlePlayingClient(int clientSocket, string &message) {
     signal(SIGPIPE, SIG_IGN);
     int size = 0;
     ssize_t n = this->readFromClient(clientSocket, size);
     if(!checkConnection(n)) {
         return;
     }
-    char point[size + 1];
-    n = this->readFromClient(clientSocket, point);
+    char msg[size];
+    n = this->readFromClient(clientSocket, msg, size);
     if(!checkConnection(n)) {
         return;
     }
-    *message = point;
+    message = msg;
 }
 
 void JoinCommand::setPlayer(int clientSocket, int numTurn) {
@@ -102,13 +106,13 @@ bool JoinCommand::checkConnection(ssize_t n) {
     }
     return connection;
 }
-bool JoinCommand::endGame(string point) {
+bool JoinCommand::endGame(string &point) {
     if (strcmp(point.c_str(), "(-1,-1)") == 0) {
         return true;
     }
     return false;
 }
-bool JoinCommand::badMove(string point) {
+bool JoinCommand::badMove(string &point) {
     if (strcmp(point.c_str(), "(0,0)") == 0) {
         return true;
     }
@@ -122,14 +126,15 @@ ssize_t JoinCommand::readFromClient(int clientSocket,int &num) {
     }
     return n;
 }
-ssize_t JoinCommand::readFromClient(int clientSocket,char *msg) {
-    bzero(msg,sizeof(msg));
-    ssize_t n = read(clientSocket, &msg, sizeof(msg));
+ssize_t JoinCommand::readFromClient(int clientSocket, char *msg, int sizeOfMsg) {
+    char m[sizeOfMsg];
+    bzero(m,sizeof(m));
+    ssize_t n = read(clientSocket, &m, sizeof(m));
     if (n == -1) {
         cout << "Error reading point" << endl;
         return -1;
     }
-
+    strcpy(msg, m);
     return n;
 }
 ssize_t JoinCommand::writeToClient(int clientSocket,int num) {
