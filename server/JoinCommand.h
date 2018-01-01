@@ -15,8 +15,8 @@ class JoinCommand : public Command {
     bool checkConnection(ssize_t n);
     bool endGame(string &point);
     bool badMove(string &point);
+    void deleteGameFromList(GameInfo &g);
     void setPlayer(int clientSocket, int numTurn);
-    void notifyGameStarts(int clientSocket);
     ssize_t readFromClient(int clientSocket, int &num);
     ssize_t readFromClient(int clientSocket, char* msg, int sizeOfMsg);
     ssize_t writeToClient(int clientSocket, int num);

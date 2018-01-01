@@ -9,23 +9,25 @@
 #include <sstream>
 #include <cstdlib>
 #include "ClientManager.h"
-
+static void* handClient_t(void * ci);
 struct clientInfo {
   ClientManager *cm;
   int cs;
 };
+
 ClientManager::ClientManager() {
     this->cm = new CommandsManager();
 }
 ClientManager::~ClientManager(){
   delete this->cm;
 }
-void ClientManager::closeAllThreads() {
+void ClientManager::cancelAllThreads() {
   for(int i = 0; i < this->threads.size(); i++){
     pthread_cancel(threads[i]);
   }
+  //GameList close all sockets from game
 }
-void* ClientManager::handClient_t(void *ci) {
+void* handClient_t(void *ci) {
     clientInfo *client = (clientInfo*) ci;
     int clientSocket = client->cs;
     ClientManager *clientManager = client->cm;
@@ -35,7 +37,7 @@ void ClientManager::doCommand(int clientSocket) {
     signal(SIGPIPE, SIG_IGN);
     while(true) {
       int size = 0;
-        ssize_t n = read(clientSocket, &size, sizeof(size));
+      ssize_t n = read(clientSocket, &size, sizeof(size));
       if (n == -1) {
         cout << "Error reading point" << endl;
         return;
@@ -78,13 +80,7 @@ void ClientManager::handleClient(int clientId) {
     this->threads.push_back(thread);
 }
 
-bool ClientManager::checkConnection(ssize_t n) {
-    if (n == 0) {
-        cout << "Player disconnected" << endl;
-        return false;
-    }
-    return true;
-}
+
 vector<string> ClientManager::getArgs(char *msg) {
     char* arg;
     arg = strtok(msg ," ");

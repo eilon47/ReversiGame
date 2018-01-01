@@ -25,19 +25,21 @@ void GamesListCommand::execute(vector<string> *args) {
   if(size > 0) {
     for(int i = 0; i < size; i++) {
       GameInfo game = gl->getGame(i);
-      string s = game.getName();
-      int len =(int) s.size() + 1;
-      char name[len];
-      strcpy(name, s.c_str());
-      n = write(clientSocket, &len, sizeof(len));
-      if (n == -1) {
-        cout << "Error writing message to client" << endl;
-        return;
-      }
-      n = write(clientSocket, &name, sizeof(name));
-      if (n == -1) {
-        cout << "Error writing message to client" << endl;
-        return;
+      if(game.isGameAvailable()) {
+        string s = game.getName();
+        int len = (int) s.size() + 1;
+        char name[len];
+        strcpy(name, s.c_str());
+        n = write(clientSocket, &len, sizeof(len));
+        if (n == -1) {
+          cout << "Error writing message to client" << endl;
+          return;
+        }
+        n = write(clientSocket, &name, sizeof(name));
+        if (n == -1) {
+          cout << "Error writing message to client" << endl;
+          return;
+        }
       }
     }
   }

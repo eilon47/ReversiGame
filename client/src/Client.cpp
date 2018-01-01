@@ -68,7 +68,6 @@ void Client::sendMove(Point move) {
   }
 }
 void Client::sendCommand(string command) {
-
     int size = (int) command.size() + 1;
     char message[size];
     bzero((char*)message,sizeof(message));
@@ -85,13 +84,13 @@ void Client::sendCommand(string command) {
 
 Point Client::getMove() {
     int size;
-    int n = read(clientSocket, &size, sizeof(size));
+    ssize_t n = read(clientSocket, &size, sizeof(size));
     if (n == -1) {
         throw "Error reading turn from socket";
     }
     char point[size];
-    n = read(clientSocket, &point, sizeof(point));
-  if (n == -1) {
+    ssize_t n2 = read(clientSocket, &point, sizeof(point));
+  if (n2 == -1) {
     throw "Error reading turn from socket";
   }
     Point p1(point);

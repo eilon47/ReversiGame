@@ -54,21 +54,28 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
     string message;
     connection = true;
     while(connection) {
+
         handlePlayingClient(playing, message);
         if(!connection) {
-            this->writeToClient(waiting, "(-1, -1)");
-            return;
+          this->writeToClient(waiting, "(-1, -1)");
+          this->deleteGameFromList(gameInfo);
+          return;
         }
         cout <<  "Client socket " << playing << " played:"<< message << endl;
+
         this->writeToClient(waiting, message);
+        if(!connection) {
+          this->writeToClient(playing, "(-1, -1)");
+          this->deleteGameFromList(gameInfo);
+          return;
+        }
+
         if(endGame(message)) {
+          this->deleteGameFromList(gameInfo);
             connection = false;
             return;
         }
-        if(!connection) {
-            this->writeToClient(playing, "(-1, -1)");
-            return;
-        }
+
         if(badMove(message)) {
             continue;
         }
@@ -76,6 +83,7 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
         int temp = playing;
         playing = waiting;
         waiting = temp;
+        message = "";
     }
 }
 void JoinCommand::handlePlayingClient(int clientSocket, string &message) {
@@ -146,13 +154,18 @@ ssize_t JoinCommand::writeToClient(int clientSocket,int num) {
     return n;
 }
 ssize_t JoinCommand::writeToClient(int clientSocket, string msg) {
-    char m[msg.size()];
+    int size = (int) msg.size() + 1;
+    char m[size];
     strcpy(m, msg.c_str());
-    this->writeToClient(clientSocket, (int) msg.size());
+    this->writeToClient(clientSocket, size);
     ssize_t n = write(clientSocket, &m, sizeof(m));
     if (n == -1) {
         cout << "Error writing message to client" << endl;
         return -1;
     }
     return n;
+}
+void JoinCommand::deleteGameFromList(GameInfo &g) {
+  GamesList *gamesList = GamesList::getInstance();
+  gamesList->deleteGame(g);
 }

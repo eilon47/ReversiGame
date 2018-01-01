@@ -18,12 +18,10 @@ public:
   ~Server();
     void start();
     void stop();
-    static void* openConnectionToOneClient(void* args);
-    static void* closeInput(void *input);
  private:
     int port;
     ClientManager *cm;
-    vector<pthread_t> *threads;
+    pthread_t serverThreadId;
     int serverSocket; // the socket's file descriptor
     int getPortFromFile(string path);
 

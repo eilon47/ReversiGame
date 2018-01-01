@@ -10,42 +10,27 @@
 #include <complex>
 #include <cstdlib>
 
-using namespace std;
 #define MAX_CONNECTED_CLIENTS 10
 #define CLASS_PATH "../exe/ServerSettings.txt"
+
+static void* acceptClient(void*);
+
 struct ConnectingArgs {
       ClientManager* clientManager;
-    int socketServer;
+      int socketServer;
   };
-Server::Server(int port): port(port), serverSocket(0), cm(new ClientManager),
-                          threads(new vector<pthread_t>) {}
+using namespace std;
 
-Server::Server(): serverSocket(0), port(getPortFromFile(CLASS_PATH)), cm(new ClientManager),
-                  threads(new vector<pthread_t>) {}
+Server::Server(int port): port(port), serverSocket(0), cm(new ClientManager) {}
+
+Server::Server(): serverSocket(0), port(getPortFromFile(CLASS_PATH)), cm(new ClientManager){}
 
 Server::~Server() {
   delete  cm;
 }
 
-void* Server::closeInput(void *server) {
-  string s;
-  Server *server1 = (Server *) server;
-  while(true){
-    cin >> s;
-    if(s == "exit"){
-      break;
-    }
-  }
-  server1->stop();
-}
-
 void Server::start() {
-  pthread_t tClose;
-  int rc = pthread_create(&tClose, NULL, closeInput,(void *) this);
-  if (rc) {
-    cout << "Error: unable to create thread, " << rc << endl;
-    exit(-1);
-  }
+
   // Create a socket point
   serverSocket = socket(AF_INET, SOCK_STREAM, 0);
   if (serverSocket == -1) {
@@ -64,31 +49,20 @@ void Server::start() {
   }
   // Start listening to incoming connections
   listen(serverSocket, MAX_CONNECTED_CLIENTS);
-  // Define the client socket's structures
-
   ConnectingArgs* ca = new ConnectingArgs;
-  ca->socketServer = serverSocket;
+  ca->socketServer =  serverSocket;
   ca->clientManager = cm;
-  for(int i = 0; i < MAX_CONNECTED_CLIENTS; i++) {
-    pthread_t thread;
-    int rc = pthread_create(&thread, NULL, openConnectionToOneClient, (void *) ca);
-    if(rc){
-      cout << "Error: unable to create thread, " << rc << endl;
-      exit(-1);
-    }
-    this->threads->push_back(thread);
-  }
-  for(int i = 0; i < threads->size(); i++) {
-    pthread_join(threads->at(i), NULL);
+  int rc = pthread_create(&serverThreadId, NULL, acceptClient , (void *) ca);
+  if(rc){
+    cout << "Error: unable to create thread, " << rc << endl;
+    exit(-1);
   }
   delete ca;
 }
 
 void Server::stop() {
-  this->cm->closeAllThreads();
-  for(int i = 0; i < this->threads->size(); i++){
-    pthread_cancel(this->threads->at(i));
-  }
+  this->cm->cancelAllThreads();
+  pthread_cancel(serverThreadId);
   close(this->serverSocket);
 }
 
@@ -112,13 +86,13 @@ int Server::getPortFromFile(string path) {
   return port;
 }
 
-void* Server::openConnectionToOneClient(void *args) {
+static void* acceptClient(void *args) {
   ConnectingArgs* ca = (ConnectingArgs *) args;
   struct sockaddr_in clientAddress;
   socklen_t clientAddressLen;
   while (true) {
     cout << "Waiting for client connections..." << endl;
-    // Accept a new client connection
+    // Accept a new cli ent connection
     int clientSocket = accept(ca->socketServer, (struct
         sockaddr *) &clientAddress, &clientAddressLen);
     cout << "Client connected" << endl;
