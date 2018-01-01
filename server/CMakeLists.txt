@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(server)
+project(ReversiGame)
 
 set(CMAKE_CXX_FLAGS -pthread)
 

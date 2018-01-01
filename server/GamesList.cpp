@@ -7,6 +7,7 @@
 GamesList::GamesList() {
     this->gi = new vector<GameInfo>;
 }
+
 int GamesList::addgame(GameInfo &gameInfo) {
     /////ADD MUTEX////
     for(int i = 0; i < gi->size(); i++) {
@@ -30,6 +31,7 @@ GameInfo& GamesList::getGameByName(string name) {
         }
     }
 }
+
 GameInfo& GamesList::getGameBySocket1(int clientSocket) {
     for(int i = 0; i < this->getSizeOfList(); i++){
         if(clientSocket == this->getGame(i).getClientSocket1()){
@@ -48,13 +50,18 @@ void GamesList::deleteGame(GameInfo &gameInfo) {
 bool GamesList::isEmpty() {
     return this->gi->empty();
 }
-
-GamesList* GamesList:: instance = 0;
+pthread_mutex_t GamesList::lock;
+GamesList* GamesList::instance = 0;
 GamesList* GamesList::getInstance() {
-    if (!instance) {
-        instance = new GamesList();
+    if(instance == 0) {
+        pthread_mutex_lock(&lock);
+        if (instance == 0) {
+            instance = new GamesList();
+        }
+        pthread_mutex_unlock(&lock);
     }
     return instance;
+
 }
 bool GamesList::isGameExist(string name) {
     for(int i = 0; i < gi->size(); i++) {
@@ -63,6 +70,7 @@ bool GamesList::isGameExist(string name) {
         }
     }
     return false;
+
 }
 bool GamesList::isGameExist(int clientSocket1) {
     for(int i = 0; i < gi->size(); i++) {

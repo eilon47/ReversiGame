@@ -17,13 +17,14 @@ struct clientInfo {
 
 ClientManager::ClientManager() {
     this->cm = new CommandsManager();
+    this->threads = new vector<pthread_t>;
 }
 ClientManager::~ClientManager(){
   delete this->cm;
 }
 void ClientManager::cancelAllThreads() {
-  for(int i = 0; i < this->threads.size(); i++){
-    pthread_cancel(threads[i]);
+  for(int i = 0; i < this->threads->size(); i++){
+    pthread_cancel(threads->at(i));
   }
   //GameList close all sockets from game
 }
@@ -77,7 +78,7 @@ void ClientManager::handleClient(int clientId) {
         cout << "Error: unable to create thread, " << rc << endl;
         exit(-1);
     }
-    this->threads.push_back(thread);
+    this->threads->push_back(thread);
 }
 
 

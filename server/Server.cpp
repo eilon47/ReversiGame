@@ -88,12 +88,13 @@ int Server::getPortFromFile(string path) {
 
 static void* acceptClient(void *args) {
   ConnectingArgs* ca = (ConnectingArgs *) args;
+  int serverSocket = ca->socketServer;
   struct sockaddr_in clientAddress;
   socklen_t clientAddressLen;
   while (true) {
     cout << "Waiting for client connections..." << endl;
     // Accept a new cli ent connection
-    int clientSocket = accept(ca->socketServer, (struct
+    int clientSocket = accept(serverSocket, (struct
         sockaddr *) &clientAddress, &clientAddressLen);
     cout << "Client connected" << endl;
     if (clientSocket == -1) {

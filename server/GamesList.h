@@ -24,6 +24,7 @@ private:
     GamesList();
     vector<GameInfo> *gi ;
     static GamesList* instance;
+    static pthread_mutex_t lock;
 
 };
 
