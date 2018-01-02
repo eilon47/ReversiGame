@@ -10,7 +10,7 @@
 using namespace std;
 class GamesList {
 public:
-  static GamesList* getInstance( );
+  static GamesList* getInstance();
   int addgame(GameInfo &gameInfo);
   GameInfo& getGame(int i);
   GameInfo& getGameByName(string name);

@@ -8,6 +8,7 @@
 #include "NetworkPlayer.h"
 #include "NetworkReadPlayer.h"
 
+
 GameMenu::GameMenu(Display &display) {
     this->d = &display;
 }
@@ -46,7 +47,7 @@ Game* GameMenu::showMenu() {
             try {
                 gtype = PvsRP;
                 string command;
-                client = new Client("127.0.0.1", 8000, *this->d);
+                client = new Client("127.0.0.1", 8070, *this->d);
                 this->p1 = new NetworkPlayer(*client);
                 this->p2 = new NetworkReadPlayer(*client);
                 while (true) {

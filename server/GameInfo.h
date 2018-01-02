@@ -18,6 +18,9 @@ class GameInfo {
     int getClientSocket1() const;
     int getClientSocket2() const;
     bool isGameAvailable();
+    void closeClients();
+    void printStartMsg();
+    void printEndMsg();
     bool operator==(const GameInfo &gameInfo) const;
 
 };

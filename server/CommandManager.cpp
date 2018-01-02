@@ -2,6 +2,7 @@
 // Created by elon on 25/12/17.
 //
 
+#include <iostream>
 #include "CommandManager.h"
 CommandsManager::CommandsManager() {
   commandsMap["start"] = new StartCommand();
@@ -10,7 +11,7 @@ CommandsManager::CommandsManager() {
   commandsMap["list_games"] = new GamesListCommand();
 
 }
-void CommandsManager::executeCommand(string command, vector<string> args) {
+void CommandsManager::executeCommand(string &command, vector<string> &args) {
   Command *commandObj = commandsMap[command];
   commandObj->execute(&args);
 }

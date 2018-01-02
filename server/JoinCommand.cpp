@@ -51,14 +51,16 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
     //First initialize;
     int playing = gameInfo.getClientSocket1();
     int waiting = gameInfo.getClientSocket2();
+    gameInfo.printStartMsg();
     string message;
     connection = true;
     while(connection) {
-
         handlePlayingClient(playing, message);
         if(!connection) {
           this->writeToClient(waiting, "(-1, -1)");
-          this->deleteGameFromList(gameInfo);
+            gameInfo.printEndMsg();
+            this->deleteGameFromList(gameInfo);
+
           return;
         }
         cout <<  "Client socket " << playing << " played:"<< message << endl;
@@ -66,11 +68,13 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
         this->writeToClient(waiting, message);
         if(!connection) {
           this->writeToClient(playing, "(-1, -1)");
+            gameInfo.printEndMsg();
           this->deleteGameFromList(gameInfo);
           return;
         }
 
         if(endGame(message)) {
+            gameInfo.printEndMsg();
           this->deleteGameFromList(gameInfo);
             connection = false;
             return;
@@ -94,8 +98,9 @@ void JoinCommand::handlePlayingClient(int clientSocket, string &message) {
         return;
     }
     char msg[size];
-    n = this->readFromClient(clientSocket, msg, size);
-    if(!checkConnection(n)) {
+    bzero((char *)msg, sizeof(msg));
+    ssize_t n2 = this->readFromClient(clientSocket, msg, size);
+    if(!checkConnection(n2)) {
         return;
     }
     message = msg;

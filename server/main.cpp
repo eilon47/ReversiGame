@@ -7,9 +7,9 @@
 #include "Server.h"
 using namespace std;
 int main() {
-  Server server(8000);
   try {
-      server.start();
+    Server server(8070);
+    server.start();
       cout << "Enter exit to stop server" << endl;
       string str;
       cin >> str;

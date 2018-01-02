@@ -13,14 +13,14 @@ using namespace std;
 class ClientManager {
 public:
     ClientManager();
-    void doCommand(int clientSocket);
+    //void doCommand(int clientSocket);
     void handleClient(int clientSocket);
     void cancelAllThreads();
     ~ClientManager();
 private:
     CommandsManager *cm;
     vector<pthread_t> *threads;
-    vector<string> getArgs(char *);
+    vector<string> getArgs(char*);
 };
 
 

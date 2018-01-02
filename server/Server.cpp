@@ -47,17 +47,17 @@ void Server::start() {
   *) &serverAddress, sizeof(serverAddress)) == -1) {
     throw "Error on binding";
   }
-  // Start listening to incoming connections
-  listen(serverSocket, MAX_CONNECTED_CLIENTS);
   ConnectingArgs* ca = new ConnectingArgs;
   ca->socketServer =  serverSocket;
   ca->clientManager = cm;
+  // Start listening to incoming connections
+  listen(serverSocket, MAX_CONNECTED_CLIENTS);
+
   int rc = pthread_create(&serverThreadId, NULL, acceptClient , (void *) ca);
   if(rc){
     cout << "Error: unable to create thread, " << rc << endl;
     exit(-1);
   }
-  delete ca;
 }
 
 void Server::stop() {
@@ -98,7 +98,8 @@ static void* acceptClient(void *args) {
         sockaddr *) &clientAddress, &clientAddressLen);
     cout << "Client connected" << endl;
     if (clientSocket == -1) {
-      throw "Error on accept";
+      char msg[] = "Error on accept";
+      throw msg;
     }
     ca->clientManager->handleClient(clientSocket);
   }

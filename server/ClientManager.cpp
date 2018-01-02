@@ -9,10 +9,10 @@
 #include <sstream>
 #include <cstdlib>
 #include "ClientManager.h"
-static void* handClient_t(void * ci);
+static void* doCommand(void * ci);
 struct clientInfo {
-  ClientManager *cm;
-  int cs;
+  CommandsManager *cm;
+  int cSocket;
 };
 
 ClientManager::ClientManager() {
@@ -23,25 +23,27 @@ ClientManager::~ClientManager(){
   delete this->cm;
 }
 void ClientManager::cancelAllThreads() {
+  GamesList *gl = GamesList::getInstance();
+  //GameList deletes games and closes all sockets from the game
+  for(int i = 0 ; i < gl->getSizeOfList(); i++) {
+    gl->deleteGame(gl->getGame(i));
+  }
   for(int i = 0; i < this->threads->size(); i++){
     pthread_cancel(threads->at(i));
   }
-  //GameList close all sockets from game
 }
-void* handClient_t(void *ci) {
-    clientInfo *client = (clientInfo*) ci;
-    int clientSocket = client->cs;
-    ClientManager *clientManager = client->cm;
-    clientManager->doCommand(clientSocket);
-}
-void ClientManager::doCommand(int clientSocket) {
+
+static void* doCommand(void *info) {
     signal(SIGPIPE, SIG_IGN);
+  clientInfo *ci = (clientInfo *) info;
+  int clientSocket = ci->cSocket;
+  CommandsManager *commandsManager = ci->cm;
     while(true) {
       int size = 0;
       ssize_t n = read(clientSocket, &size, sizeof(size));
       if (n == -1) {
         cout << "Error reading point" << endl;
-        return;
+        return NULL;
       }
       char message[size];
       bzero((char *) message, sizeof(message));
@@ -49,15 +51,29 @@ void ClientManager::doCommand(int clientSocket) {
       cout << message << endl;
       if (n2 == -1) {
         cout << "Error reading point" << endl;
-        return;
+        return NULL;
       }
+      //String of client's socket
       stringstream clientString;
       clientString << clientSocket;
-      cout << clientString.str() << endl;
-      vector<string> args(this->getArgs(message));
-      string command = args[0];
-      args[0] = clientString.str();
-      this->cm->executeCommand(command, args);
+      string csStr(clientString.str());
+
+      //String of message
+      string str(message);
+      istringstream iss(str);
+      //First word for command.
+      string command;
+      iss >> command;
+      vector<string> args;
+      //Add the client's socket first to the args.
+      args.push_back(csStr);
+      string arg;
+      iss >> arg;
+      do {
+        args.push_back(arg);
+        iss >> arg;
+      } while (iss);
+      commandsManager->executeCommand(command, args);
       if (command == "start") {
         GamesList *gamesList = GamesList::getInstance();
         if (gamesList->isGameExist(clientSocket)) {
@@ -69,11 +85,11 @@ void ClientManager::doCommand(int clientSocket) {
     }
 }
 void ClientManager::handleClient(int clientId) {
-    clientInfo *ci;
-    ci->cm = this;
-    ci->cs = clientId;
+    clientInfo *ci = new clientInfo;
+    ci->cm = this->cm;
+    ci->cSocket = clientId;
     pthread_t thread;
-    int rc = pthread_create(&thread, NULL, handClient_t, (void *) ci);
+    int rc = pthread_create(&thread, NULL, doCommand , (void *) ci);
     if (rc) {
         cout << "Error: unable to create thread, " << rc << endl;
         exit(-1);
@@ -82,14 +98,4 @@ void ClientManager::handleClient(int clientId) {
 }
 
 
-vector<string> ClientManager::getArgs(char *msg) {
-    char* arg;
-    arg = strtok(msg ," ");
-    vector<string> ret;
-    do {
-      string s(arg);
-      ret.insert(ret.end(), s);
-      arg = strtok(NULL ," \n\0");
-    } while(arg != NULL);
-    return ret;
-}
+

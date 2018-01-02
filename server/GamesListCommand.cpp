@@ -15,7 +15,7 @@ void GamesListCommand::execute(vector<string> *args) {
   //Write to client size of list
   //Write to client size of string and string.
   GamesList *gl = GamesList::getInstance();
-  int size = gl->getSizeOfList();
+  int size   = this->numOfAvGames();
   //sends the size of the list.
   ssize_t n = write(clientSocket, &size, sizeof(size));
   if (n == -1) {
@@ -43,4 +43,15 @@ void GamesListCommand::execute(vector<string> *args) {
       }
     }
   }
+}
+
+int GamesListCommand::numOfAvGames() {
+  int counter = 0;
+  GamesList *gl = GamesList::getInstance();
+  for(int  i =0; i < gl->getSizeOfList(); i++) {
+    if(gl->getGame(i).isGameAvailable()){
+      counter++;
+    }
+  }
+  return counter;
 }

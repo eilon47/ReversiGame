@@ -9,6 +9,8 @@
 class GamesListCommand : public Command {
  public:
   void execute(vector<string> *args);
+ private:
+  int numOfAvGames();
 };
 
 #endif //REVERSIGAME_GAMESLISTCOMMAND_H

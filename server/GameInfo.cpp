@@ -2,7 +2,10 @@
 // Created by elon on 25/12/17.
 //
 
+#include <unistd.h>
+#include <iostream>
 #include "GameInfo.h"
+using namespace std;
 GameInfo::GameInfo(int clientSocket, string name) {
   this->clientSocket1 = clientSocket;
   this->clientSocket2 = -1;
@@ -30,4 +33,17 @@ bool GameInfo::operator==(const GameInfo &gameInfo) const {
   bool b = (this->getClientSocket1() == gameInfo.getClientSocket1());
   bool c = (this->getClientSocket2() == gameInfo.getClientSocket2());
   return (a && b && c);
+}
+void GameInfo::closeClients() {
+  close(this->clientSocket1);
+  if(!this->available){
+    close(this->clientSocket2);
+  }
+}
+void GameInfo::printEndMsg() {
+  cout << "The game: " << this->name << " has ended" << endl;
+}
+void GameInfo::printStartMsg() {
+  cout << "The game: " << this->name << " with players: " << clientSocket1 << " vs. "
+       << clientSocket2 << " begins now!" << endl;
 }

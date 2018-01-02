@@ -42,6 +42,7 @@ GameInfo& GamesList::getGameBySocket1(int clientSocket) {
 void GamesList::deleteGame(GameInfo &gameInfo) {
     for(int i = 0; i < gi->size(); i++) {
         if (gameInfo == gi->at(i)) {
+            gameInfo.closeClients();
             this->gi->erase(this->gi->begin() + i);
             return;
         }
@@ -51,7 +52,7 @@ bool GamesList::isEmpty() {
     return this->gi->empty();
 }
 pthread_mutex_t GamesList::lock;
-GamesList* GamesList::instance = 0;
+GamesList* GamesList::instance;
 GamesList* GamesList::getInstance() {
     if(instance == 0) {
         pthread_mutex_lock(&lock);
