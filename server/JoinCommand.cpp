@@ -12,13 +12,11 @@ pthread_mutex_t join_mutex;
 
 void JoinCommand::execute(vector<string> *args, int clientSocket2) {
     connection = true;
-    if(args->size() < 2){
-        return;
-    }
     int numGame = 0;
     int clientSocket1 = 0;
     string name = args->at(0);
     GamesList *gamesList = GamesList::getInstance();
+
     pthread_mutex_lock(&join_mutex);
     for(int i = 0; i< gamesList->getSizeOfList(); i++) {
         GameInfo *game = &gamesList->getGame(i);
@@ -30,12 +28,13 @@ void JoinCommand::execute(vector<string> *args, int clientSocket2) {
         }
     }
     pthread_mutex_unlock(&join_mutex);
+
   //Tell the client the game was found or not and if connected.
     if(clientSocket1 == 0) {
        writeToClient(clientSocket2, -1);
         return;
     } else {
-      writeToClient(clientSocket2, 0);
+      writeToClient(clientSocket2, 1);
     }
     setPlayer(clientSocket1,1);
     setPlayer(clientSocket2,1);
@@ -73,6 +72,8 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
         }
 
         if(endGame(message)) {
+            this->writeToClient(playing, "(-1, -1)");
+            this->writeToClient(waiting, "(-1, -1)");
             gameInfo.printEndMsg();
           this->deleteGameFromList(gameInfo);
             connection = false;
@@ -123,39 +124,43 @@ bool JoinCommand::badMove(string &point) {
     return false;
 }
 ssize_t JoinCommand::readFromClient(int clientSocket,int &num) {
+    signal(SIGPIPE, SIG_IGN);
     ssize_t n = read(clientSocket, &num, sizeof(num));
     if (n == -1) {
-        cout << "Error reading point" << endl;
+        //cout << "Error reading point" << endl;
         return -1;
     }
     return n;
 }
 ssize_t JoinCommand::readFromClient(int clientSocket, string &msg) {
+    signal(SIGPIPE, SIG_IGN);
     int num = 0;
     ssize_t n = read(clientSocket, &num, sizeof(num));
     if (n == -1) {
-        cout << "Error reading point" << endl;
+        cout << "Error reading message from client" << endl;
         return -1;
     }
     char m[num];
     bzero((char*)&m, sizeof(m));
     n = read(clientSocket, &m, sizeof(m));
     if (n == -1) {
-        cout << "Error reading point" << endl;
+        cout << "Error reading message from client" << endl;
         return -1;
     }
     msg = m;
     return n;
 }
 ssize_t JoinCommand::writeToClient(int clientSocket,int num) {
+    signal(SIGPIPE, SIG_IGN);
     ssize_t n = write(clientSocket, &num, sizeof(num));
     if (n == -1) {
-        cout << "Error writing message to client" << endl;
+        //cout << "Error writing message to client" << endl;
         return -1;
     }
     return n;
 }
 ssize_t JoinCommand::writeToClient(int clientSocket, string msg) {
+    signal(SIGPIPE, SIG_IGN);
     int size = (int) msg.size() + 1;
     char m[size];
     strcpy(m, msg.c_str());

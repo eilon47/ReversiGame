@@ -14,6 +14,7 @@ CMakeFiles/server.dir/ClientManager.cpp.o: ../StartCommand.h
 CMakeFiles/server.dir/Command.cpp.o: ../Command.cpp
 CMakeFiles/server.dir/Command.cpp.o: ../Command.h
 
+CMakeFiles/server.dir/CommandManager.cpp.o: ../ClientManager.h
 CMakeFiles/server.dir/CommandManager.cpp.o: ../Command.h
 CMakeFiles/server.dir/CommandManager.cpp.o: ../CommandManager.cpp
 CMakeFiles/server.dir/CommandManager.cpp.o: ../CommandManager.h

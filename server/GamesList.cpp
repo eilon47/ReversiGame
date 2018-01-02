@@ -7,15 +7,16 @@
 GamesList::GamesList() {
     this->gi = new vector<GameInfo>;
 }
-
-int GamesList::addgame(GameInfo &gameInfo) {
-    /////ADD MUTEX////
+pthread_mutex_t GamesList::lockAdd;
+int GamesList::addGame(GameInfo &gameInfo) {
+    pthread_mutex_lock(&lockAdd);
     for(int i = 0; i < gi->size(); i++) {
         if (gameInfo.getName() == this->getGame(i).getName()) {
             return -1;
         }
     }
     this->gi->push_back(gameInfo);
+    pthread_mutex_unlock(&lockAdd);
     return 0;
 }
 int GamesList::getSizeOfList() {
@@ -51,15 +52,17 @@ void GamesList::deleteGame(GameInfo &gameInfo) {
 bool GamesList::isEmpty() {
     return this->gi->empty();
 }
-pthread_mutex_t GamesList::lock;
+pthread_mutex_t GamesList::lockInstance;
 GamesList* GamesList::instance;
 GamesList* GamesList::getInstance() {
     if(instance == 0) {
-        pthread_mutex_lock(&lock);
+
+        pthread_mutex_lock(&lockInstance);
         if (instance == 0) {
             instance = new GamesList();
         }
-        pthread_mutex_unlock(&lock);
+        pthread_mutex_unlock(&lockInstance);
+
     }
     return instance;
 

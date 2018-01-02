@@ -63,11 +63,12 @@ Game* GameMenu::showMenu() {
                     return NULL;
                 }
                 //Waits for other player.
-                if(client->getNum() == 1) {
-                  break;
-                } else {
+                if(client->getNum() == -1) {
+                    boardSize = -1;
                   this->d->showMessage("Problem in connection to the other player");
-                  exit(1);
+                    break;
+                } else {
+                    break;
                 }
             }
             default:{
@@ -100,21 +101,22 @@ Game* GameMenu::showMenu() {
             if (res == -1) {
                 return false;
             }
+            //this->client->getMessage();
             this->p1->setSign(OSIGN);
             this->p2->setSign(XSIGN);
             return true;
         }
         if (s == "list_games") {
             if(res == 0) {
-              this->d->showMessage("There are no open games\n");
+              this->d->showMessage("There are no open games");
             } else {
               for (int i = 0; i < res; i++) {
-                d->showMessage(client->getMessage() + "\n");
+                d->showMessage(client->getMessage());
               }
             }
           return false;
         }
-        d->showMessage("Please enter a valid command.\n");
+        d->showMessage("Please enter a valid command.");
         return false;
     }
 

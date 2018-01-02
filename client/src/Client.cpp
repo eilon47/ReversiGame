@@ -57,45 +57,54 @@ void Client::connectToServer() {
 }
 void Client::sendMove(Point move) {
   signal(SIGPIPE, SIG_IGN);
-  string m = move.toString();
-  int size = (int) m.size()+1;
-  char message[size];
-  strcpy(message, m.c_str());
-  ssize_t n = write(clientSocket, &size, sizeof(size));
-  if (n == -1) {
-      throw "Error writing turn to socket";
-  }
-  if(!checkConnection(n)){
-    return;
-  }
-  n = write(clientSocket, &message, sizeof(message));
-  if (n == -1) {
-    throw "Error writing turn to socket";
-  }
-  if(!checkConnection(n)){
-    return;
-  }
+    try {
+        string m = move.toString();
+        int size = (int) m.size() + 1;
+        char message[size];
+        strcpy(message, m.c_str());
+        ssize_t n = write(clientSocket, &size, sizeof(size));
+        if (n == -1) {
+            throw "Error writing turn to socket";
+        }
+        if (!checkConnection(n)) {
+            return;
+        }
+        n = write(clientSocket, &message, sizeof(message));
+        if (n == -1) {
+            throw "Error writing turn to socket";
+        }
+        if (!checkConnection(n)) {
+            return;
+        }
+    }catch (char const* msg) {
+        display->showMessage(msg);
+    }
 }
 void Client::sendCommand(string command) {
   signal(SIGPIPE, SIG_IGN);
-    int size = (int) command.size() + 1;
-    char message[size];
-    bzero((char*)&message,sizeof(message));
-    strcpy(message, command.c_str());
-    ssize_t n = write(clientSocket, &size, sizeof(size));
-    if (n == -1) {
-        throw "Error writing turn to socket";
+    try {
+        int size = (int) command.size() + 1;
+        char message[size];
+        bzero((char*)&message,sizeof(message));
+        strcpy(message, command.c_str());
+        ssize_t n = write(clientSocket, &size, sizeof(size));
+        if (n == -1) {
+            throw "Error writing turn to socket";
+        }
+        if(!checkConnection(n)){
+            return;
+        }
+        ssize_t n2 = write(clientSocket, &message, sizeof(message));
+        if (n2 == -1) {
+            throw "Error writing turn to socket";
+        }
+        if(!checkConnection(n)){
+            return;
+        }
     }
-  if(!checkConnection(n)){
-    return;
-  }
-    ssize_t n2 = write(clientSocket, &message, sizeof(message));
-    if (n2 == -1) {
-        throw "Error writing turn to socket";
+    catch (char const* msg) {
+        display->showMessage(msg);
     }
-  if(!checkConnection(n)){
-    return;
-  }
 }
 
 Point Client::getMove() {
@@ -135,7 +144,7 @@ void Client::getNumTurn() {
 
 int Client::getNum() {
   signal(SIGPIPE, SIG_IGN);
-  int num;
+  int num = 0;
   ssize_t n = read(clientSocket, &num, sizeof(int));
   if (n == -1){
     throw "Error in getting sign";
@@ -199,7 +208,6 @@ int Client::getClientSign() { return this->turnNum; }
 bool Client::checkConnection(ssize_t n) {
   signal(SIGPIPE, SIG_IGN);
   if (n == 0) {
-    cout << "Player disconnected" << endl;
     connection = false;
   }
   return connection;

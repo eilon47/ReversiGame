@@ -12,7 +12,7 @@ class GamesList {
 public:
   static GamesList* getInstance();
   static void deleteGameList();
-  int addgame(GameInfo &gameInfo);
+  int addGame(GameInfo &gameInfo);
   GameInfo& getGame(int i);
   GameInfo& getGameByName(string name);
   GameInfo& getGameBySocket1(int clientSocket);
@@ -27,7 +27,9 @@ private:
     ~GamesList();
     vector<GameInfo> *gi ;
     static GamesList* instance;
-    static pthread_mutex_t lock;
+    static pthread_mutex_t lockInstance;
+    static pthread_mutex_t lockAdd;
+
 
 };
 

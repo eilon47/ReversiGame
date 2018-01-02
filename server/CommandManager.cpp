@@ -3,7 +3,10 @@
 //
 
 #include <iostream>
+#include <csignal>
 #include "CommandManager.h"
+#include "ClientManager.h"
+
 CommandsManager::CommandsManager() {
   commandsMap["start"] = new StartCommand();
   commandsMap["join"] = new JoinCommand();
@@ -11,6 +14,7 @@ CommandsManager::CommandsManager() {
 
 }
 void CommandsManager::executeCommand(string &command, vector<string> &args, int clientSocket) {
+  signal(SIGPIPE,SIG_IGN);
   if(this->isCommandValid(command)) {
     Command *commandObj = commandsMap[command];
     commandObj->execute(&args, clientSocket);
@@ -18,8 +22,11 @@ void CommandsManager::executeCommand(string &command, vector<string> &args, int 
     cout << "unknown command" << endl;
     int res = -1;
     ssize_t n = write(clientSocket, &res, sizeof(res));
+    if (!checkConnection(n)) {
+      close(clientSocket);
+      return;
+    }
     if(n == -1){
-      cout << "Error reading point" << endl;
       return;
     }
   }
@@ -38,4 +45,12 @@ bool CommandsManager::isCommandValid(string command) {
     }
   }
   return false;
+}
+
+bool CommandsManager::checkConnection(ssize_t n) {
+  if (n == 0) {
+    cout << "Player disconnected" << endl;
+    return false;
+  }
+  return true;
 }

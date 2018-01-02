@@ -9,7 +9,7 @@ void ConsoleDisplay::showBoard(Board &b) {
   cout << b;
 }
 void ConsoleDisplay::showMessage(string s) {
-  cout << s;
+  cout << s << endl;
 }
 void ConsoleDisplay::showPossibleMoves(vector<Point> &v) {
   for(int i = 0; i < v.size(); i++) {
@@ -113,8 +113,7 @@ void ConsoleDisplay::showSubMenu(string &command) {
   cout << "Please choose a command:\n"
           "1.start <name>.\n"
           "2.join <name>.\n"
-          "3.list_games. \n"
-          "4.close <name> " << endl;
+          "3.list_games." << endl;
   getline(cin, command);
 }
 

@@ -9,7 +9,7 @@
 
 //Constructors.
 Game::Game(Board &b, Player &p1, Player &p2, Rules &rules, Display &display,GAME_T type)
-    : b(&b), p1(&p1), p2(&p2),turn(true), rules(&rules), display(&display), type(type){
+    : b(&b), p1(&p1), p2(&p2),turn(true), rules(&rules), display(&display), type(type) {
   if(type != PvsRP) {
     //if player is not initialized with sign.
     if (p1.getSign() == EMPTY) {
@@ -167,6 +167,9 @@ Game& Game::operator=(const Game &p) {
   this->display = p.display;
 }
 void Game::netRun() {
+    if (b->getSize() == 0) {
+        return;
+    }
   if(this->currentPlayer()->getSign() == OSIGN && type == PvsRP) {
     turn = !turn;
   }
@@ -189,9 +192,9 @@ void Game::netRun() {
         vMoves[0].setPoint(-2,-2);
         p = this->currentPlayer()->getPointFromPlayer(*b, vMoves);
         if (turn) {
-          display->showMessage("You have no moves, turn passes to other player.\n");
+          display->showMessage("You have no moves, turn passes to other player.");
         } else {
-          display->showMessage("The other player has no moves, now it's your turn.\n");
+          display->showMessage("The other player has no moves, now it's your turn.");
         }
         turn = !turn;
         continue;
@@ -201,16 +204,16 @@ void Game::netRun() {
     sort(vMoves.begin(), vMoves.end());
     if (turn) {
       this->display->showPossibleMoves(vMoves);
-      display->showMessage("Please enter your move: row col\n");
+      display->showMessage("Please enter your move: row col");
     } else {
-      display->showMessage("Waiting for the other player's move...\n");
+      display->showMessage("Waiting for the other player's move...");
     }
     p = this->currentPlayer()->getPointFromPlayer(*b, vMoves);
     if((p.getX() == 0 || p.getY() == 0)) {
       if (turn) {
-        display->showMessage("You can not do that move, please choose another move.\n");
+        display->showMessage("You can not do that move, please choose another move.");
       } else {
-        display->showMessage("The other player choose bad move - he tries again.\n");
+        display->showMessage("The other player choose bad move - he tries again.");
       }
       continue;
     }
@@ -218,7 +221,7 @@ void Game::netRun() {
       return;
     }
     if(!turn){
-      display->showMessage("The other player played: " + p.toString() + "\n");
+      display->showMessage("The other player played: " + p.toString());
     }
     score = this->playOneTurn(p, currentPlayer()->getSign());
     display->showBoard(*this->b);
@@ -250,18 +253,18 @@ void Game::localRun() {
       }
       oneMove = true;
       turn = !turn;
-      display->showMessage("No possible moves. Game passes back to the other player.\n");
+      display->showMessage("No possible moves. Game passes back to the other player.");
       continue;
     }
     oneMove = false;
     sort(vMoves.begin(), vMoves.end());
     if (type == PvsP || (type == PvsAI && turn)) {
       this->display->showPossibleMoves(vMoves);
-      display->showMessage("Please enter your move: row col\n");
+      display->showMessage("Please enter your move: row col");
     }
     Point p = this->currentPlayer()->getPointFromPlayer(*b, vMoves);
     if (!this->checkVecHasPoint(vMoves, p) || p.getX() == 0 || p.getY() == 0) {
-      display->showMessage("You can not do that move.\n");
+      display->showMessage("You can not do that move.");
       continue;
     }
     score = this->playOneTurn(p, currentPlayer()->getSign());

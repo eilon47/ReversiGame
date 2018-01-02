@@ -17,7 +17,7 @@ void StartCommand::execute(vector<string> *args, int clientSocket) {
   GamesList* gamesList = GamesList::getInstance();
   string name = args->front();
   GameInfo gi(clientSocket, name);
-  int res = gamesList->addgame(gi);
+  int res = gamesList->addGame(gi);
   //notify user command was made (-1 for error).
   ssize_t n = write(clientSocket, &res, sizeof(res));
   if (n == -1) {

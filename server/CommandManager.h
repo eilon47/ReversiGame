@@ -19,6 +19,7 @@ class CommandsManager {
   bool isCommandValid(string command);
  private:
   map<string, Command *> commandsMap;
+    bool checkConnection(ssize_t n);
 };
 
 #endif //REVERSIGAME_COMMANDMANAGER_H

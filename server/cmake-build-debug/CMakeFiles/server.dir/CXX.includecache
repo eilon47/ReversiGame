@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/elon/Desktop/Git/ReversiGame/server/ClientManager.cpp
+/home/dandan/Desktop/git/ReversiGame/server/ClientManager.cpp
 iostream
 -
 string
@@ -20,21 +20,21 @@ sstream
 cstdlib
 -
 ClientManager.h
-/home/elon/Desktop/Git/ReversiGame/server/ClientManager.h
+/home/dandan/Desktop/git/ReversiGame/server/ClientManager.h
 
-/home/elon/Desktop/Git/ReversiGame/server/ClientManager.h
+/home/dandan/Desktop/git/ReversiGame/server/ClientManager.h
 vector
 -
 CommandManager.h
-/home/elon/Desktop/Git/ReversiGame/server/CommandManager.h
+/home/dandan/Desktop/git/ReversiGame/server/CommandManager.h
 GamesList.h
-/home/elon/Desktop/Git/ReversiGame/server/GamesList.h
+/home/dandan/Desktop/git/ReversiGame/server/GamesList.h
 
-/home/elon/Desktop/Git/ReversiGame/server/Command.cpp
+/home/dandan/Desktop/git/ReversiGame/server/Command.cpp
 Command.h
-/home/elon/Desktop/Git/ReversiGame/server/Command.h
+/home/dandan/Desktop/git/ReversiGame/server/Command.h
 
-/home/elon/Desktop/Git/ReversiGame/server/Command.h
+/home/dandan/Desktop/git/ReversiGame/server/Command.h
 vector
 -
 string
@@ -42,53 +42,57 @@ string
 unistd.h
 -
 
-/home/elon/Desktop/Git/ReversiGame/server/CommandManager.cpp
+/home/dandan/Desktop/git/ReversiGame/server/CommandManager.cpp
 iostream
 -
+csignal
+-
 CommandManager.h
-/home/elon/Desktop/Git/ReversiGame/server/CommandManager.h
+/home/dandan/Desktop/git/ReversiGame/server/CommandManager.h
+ClientManager.h
+/home/dandan/Desktop/git/ReversiGame/server/ClientManager.h
 
-/home/elon/Desktop/Git/ReversiGame/server/CommandManager.h
+/home/dandan/Desktop/git/ReversiGame/server/CommandManager.h
 map
 -
 Command.h
-/home/elon/Desktop/Git/ReversiGame/server/Command.h
+/home/dandan/Desktop/git/ReversiGame/server/Command.h
 GamesList.h
-/home/elon/Desktop/Git/ReversiGame/server/GamesList.h
+/home/dandan/Desktop/git/ReversiGame/server/GamesList.h
 StartCommand.h
-/home/elon/Desktop/Git/ReversiGame/server/StartCommand.h
+/home/dandan/Desktop/git/ReversiGame/server/StartCommand.h
 JoinCommand.h
-/home/elon/Desktop/Git/ReversiGame/server/JoinCommand.h
+/home/dandan/Desktop/git/ReversiGame/server/JoinCommand.h
 GamesListCommand.h
-/home/elon/Desktop/Git/ReversiGame/server/GamesListCommand.h
+/home/dandan/Desktop/git/ReversiGame/server/GamesListCommand.h
 
-/home/elon/Desktop/Git/ReversiGame/server/GameInfo.cpp
+/home/dandan/Desktop/git/ReversiGame/server/GameInfo.cpp
 unistd.h
 -
 iostream
 -
 GameInfo.h
-/home/elon/Desktop/Git/ReversiGame/server/GameInfo.h
+/home/dandan/Desktop/git/ReversiGame/server/GameInfo.h
 
-/home/elon/Desktop/Git/ReversiGame/server/GameInfo.h
+/home/dandan/Desktop/git/ReversiGame/server/GameInfo.h
 string
 -
 
-/home/elon/Desktop/Git/ReversiGame/server/GamesList.cpp
+/home/dandan/Desktop/git/ReversiGame/server/GamesList.cpp
 cstdlib
 -
 GamesList.h
-/home/elon/Desktop/Git/ReversiGame/server/GamesList.h
+/home/dandan/Desktop/git/ReversiGame/server/GamesList.h
 
-/home/elon/Desktop/Git/ReversiGame/server/GamesList.h
+/home/dandan/Desktop/git/ReversiGame/server/GamesList.h
 vector
 -
 string
 -
 GameInfo.h
-/home/elon/Desktop/Git/ReversiGame/server/GameInfo.h
+/home/dandan/Desktop/git/ReversiGame/server/GameInfo.h
 
-/home/elon/Desktop/Git/ReversiGame/server/GamesListCommand.cpp
+/home/dandan/Desktop/git/ReversiGame/server/GamesListCommand.cpp
 csignal
 -
 cstring
@@ -98,15 +102,15 @@ cstdlib
 iostream
 -
 GamesListCommand.h
-/home/elon/Desktop/Git/ReversiGame/server/GamesListCommand.h
+/home/dandan/Desktop/git/ReversiGame/server/GamesListCommand.h
 GamesList.h
-/home/elon/Desktop/Git/ReversiGame/server/GamesList.h
+/home/dandan/Desktop/git/ReversiGame/server/GamesList.h
 
-/home/elon/Desktop/Git/ReversiGame/server/GamesListCommand.h
+/home/dandan/Desktop/git/ReversiGame/server/GamesListCommand.h
 Command.h
-/home/elon/Desktop/Git/ReversiGame/server/Command.h
+/home/dandan/Desktop/git/ReversiGame/server/Command.h
 
-/home/elon/Desktop/Git/ReversiGame/server/JoinCommand.cpp
+/home/dandan/Desktop/git/ReversiGame/server/JoinCommand.cpp
 cstdlib
 -
 csignal
@@ -116,19 +120,19 @@ string.h
 iostream
 -
 JoinCommand.h
-/home/elon/Desktop/Git/ReversiGame/server/JoinCommand.h
+/home/dandan/Desktop/git/ReversiGame/server/JoinCommand.h
 GamesList.h
-/home/elon/Desktop/Git/ReversiGame/server/GamesList.h
+/home/dandan/Desktop/git/ReversiGame/server/GamesList.h
 
-/home/elon/Desktop/Git/ReversiGame/server/JoinCommand.h
+/home/dandan/Desktop/git/ReversiGame/server/JoinCommand.h
 Command.h
-/home/elon/Desktop/Git/ReversiGame/server/Command.h
+/home/dandan/Desktop/git/ReversiGame/server/Command.h
 GameInfo.h
-/home/elon/Desktop/Git/ReversiGame/server/GameInfo.h
+/home/dandan/Desktop/git/ReversiGame/server/GameInfo.h
 
-/home/elon/Desktop/Git/ReversiGame/server/Server.cpp
+/home/dandan/Desktop/git/ReversiGame/server/Server.cpp
 Server.h
-/home/elon/Desktop/Git/ReversiGame/server/Server.h
+/home/dandan/Desktop/git/ReversiGame/server/Server.h
 sys/socket.h
 -
 netinet/in.h
@@ -148,7 +152,7 @@ complex
 cstdlib
 -
 
-/home/elon/Desktop/Git/ReversiGame/server/Server.h
+/home/dandan/Desktop/git/ReversiGame/server/Server.h
 iostream
 -
 unistd.h
@@ -156,27 +160,27 @@ unistd.h
 vector
 -
 ClientManager.h
-/home/elon/Desktop/Git/ReversiGame/server/ClientManager.h
+/home/dandan/Desktop/git/ReversiGame/server/ClientManager.h
 
-/home/elon/Desktop/Git/ReversiGame/server/StartCommand.cpp
+/home/dandan/Desktop/git/ReversiGame/server/StartCommand.cpp
 cstdlib
 -
 iostream
 -
 StartCommand.h
-/home/elon/Desktop/Git/ReversiGame/server/StartCommand.h
+/home/dandan/Desktop/git/ReversiGame/server/StartCommand.h
 GameInfo.h
-/home/elon/Desktop/Git/ReversiGame/server/GameInfo.h
+/home/dandan/Desktop/git/ReversiGame/server/GameInfo.h
 GamesList.h
-/home/elon/Desktop/Git/ReversiGame/server/GamesList.h
+/home/dandan/Desktop/git/ReversiGame/server/GamesList.h
 
-/home/elon/Desktop/Git/ReversiGame/server/StartCommand.h
+/home/dandan/Desktop/git/ReversiGame/server/StartCommand.h
 Command.h
-/home/elon/Desktop/Git/ReversiGame/server/Command.h
+/home/dandan/Desktop/git/ReversiGame/server/Command.h
 
-/home/elon/Desktop/Git/ReversiGame/server/main.cpp
+/home/dandan/Desktop/git/ReversiGame/server/main.cpp
 cstdlib
 -
 Server.h
-/home/elon/Desktop/Git/ReversiGame/server/Server.h
+/home/dandan/Desktop/git/ReversiGame/server/Server.h
 
