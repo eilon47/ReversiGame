@@ -81,3 +81,11 @@ bool GamesList::isGameExist(int clientSocket1) {
     }
     return false;
 }
+void GamesList::deleteGameList() {
+    if(instance != 0){
+        delete instance;
+    }
+}
+GamesList::~GamesList() {
+    delete this->gi;
+}

@@ -11,6 +11,7 @@ using namespace std;
 class GamesList {
 public:
   static GamesList* getInstance();
+  static void deleteGameList();
   int addgame(GameInfo &gameInfo);
   GameInfo& getGame(int i);
   GameInfo& getGameByName(string name);
@@ -22,6 +23,7 @@ public:
   void deleteGame(GameInfo &gameInfo);
 private:
     GamesList();
+    ~GamesList();
     vector<GameInfo> *gi ;
     static GamesList* instance;
     static pthread_mutex_t lock;
