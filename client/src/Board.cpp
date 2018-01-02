@@ -69,6 +69,7 @@ void Board::setBoard() {
 }
 //Destructor.
 Board::~Board()  {
+
   for(int i = 0; i < this->size; i++) {
     delete[] this->board[i];
   }

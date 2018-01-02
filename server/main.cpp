@@ -1,6 +1,6 @@
-/*
- * server main.
- */
+//
+// server main class.
+//
 
 
 #include <cstdlib>

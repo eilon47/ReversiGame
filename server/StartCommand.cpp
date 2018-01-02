@@ -1,12 +1,8 @@
 //
-// Created by elon on 25/12/17.
+// class of StartCommand.
 //
-
-#include <cstdlib>
-#include <iostream>
 #include "StartCommand.h"
-#include "GameInfo.h"
-#include "GamesList.h"
+
 
 /**
  * args suppose to have the first client socket and the name he waants tog

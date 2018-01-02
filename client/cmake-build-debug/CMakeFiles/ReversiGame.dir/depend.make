@@ -86,6 +86,7 @@ CMakeFiles/ReversiGame.dir/src/HumanPlayer.cpp.o: ../src/Sign.h
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/AIPlayer.h
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/Board.h
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/Client.h
+CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/ConsoleDisplay.h
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/Display.h
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/NetworkPlayer.cpp
 CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o: ../src/NetworkPlayer.h

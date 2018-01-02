@@ -12,8 +12,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4170d52-8e91-488f-b7ff-521a55df6c5a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/main.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/main.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Board.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Board.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/GameMenu.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/GameMenu.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/ReversiGame" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/ReversiGame" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/GamesListCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/GamesListCommand.cpp.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/server" afterPath="$PROJECT_DIR$/cmake-build-debug/server" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/CXX.includecache" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/depend.internal" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/depend.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/main.cpp" afterPath="$PROJECT_DIR$/../client/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/src/Board.cpp" afterPath="$PROJECT_DIR$/../client/src/Board.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/src/Client.cpp" afterPath="$PROJECT_DIR$/../client/src/Client.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/src/Client.h" afterPath="$PROJECT_DIR$/../client/src/Client.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/src/ConsoleDisplay.h" afterPath="$PROJECT_DIR$/../client/src/ConsoleDisplay.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/src/Display.h" afterPath="$PROJECT_DIR$/../client/src/Display.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/src/Game.cpp" afterPath="$PROJECT_DIR$/../client/src/Game.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/src/GameMenu.cpp" afterPath="$PROJECT_DIR$/../client/src/GameMenu.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/src/GameMenu.h" afterPath="$PROJECT_DIR$/../client/src/GameMenu.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/src/NetworkPlayer.cpp" afterPath="$PROJECT_DIR$/../client/src/NetworkPlayer.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientManager.cpp" afterPath="$PROJECT_DIR$/ClientManager.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientManager.h" afterPath="$PROJECT_DIR$/ClientManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Command.cpp" afterPath="$PROJECT_DIR$/Command.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Command.h" afterPath="$PROJECT_DIR$/Command.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CommandManager.cpp" afterPath="$PROJECT_DIR$/CommandManager.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CommandManager.h" afterPath="$PROJECT_DIR$/CommandManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameInfo.cpp" afterPath="$PROJECT_DIR$/GameInfo.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameInfo.h" afterPath="$PROJECT_DIR$/GameInfo.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GamesList.cpp" afterPath="$PROJECT_DIR$/GamesList.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GamesList.h" afterPath="$PROJECT_DIR$/GamesList.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GamesListCommand.cpp" afterPath="$PROJECT_DIR$/GamesListCommand.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GamesListCommand.h" afterPath="$PROJECT_DIR$/GamesListCommand.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JoinCommand.cpp" afterPath="$PROJECT_DIR$/JoinCommand.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JoinCommand.h" afterPath="$PROJECT_DIR$/JoinCommand.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server.cpp" afterPath="$PROJECT_DIR$/Server.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server.h" afterPath="$PROJECT_DIR$/Server.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartCommand.cpp" afterPath="$PROJECT_DIR$/StartCommand.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/StartCommand.h" afterPath="$PROJECT_DIR$/StartCommand.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,21 +67,30 @@
       <file leaf-file-name="JoinCommand.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JoinCommand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="173" column="1" lean-forward="true" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
+            <state relative-caret-position="2196">
+              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding>
-                <element signature="e#0#2#0" expanded="false" />
-                <element signature="e#39#57#0" expanded="true" />
+                <element signature="e#73#97#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GamesListCommand.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GamesListCommand.cpp">
+      <file leaf-file-name="Server.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+            <state relative-caret-position="126">
+              <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameInfo.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameInfo.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -51,9 +99,11 @@
       <file leaf-file-name="JoinCommand.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JoinCommand.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="360">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="20" selection-end-column="7" />
+              <folding>
+                <element signature="e#141#159#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,9 +111,33 @@
       <file leaf-file-name="GamesList.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GamesList.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="2" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Server.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding>
+                <marker date="1514931362086" expanded="true" signature="510:1054" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StartCommand.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StartCommand.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="e#102#122#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,69 +145,31 @@
       <file leaf-file-name="GamesList.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GamesList.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-852">
-              <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="1116">
+              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
-                <element signature="e#41#59#0" expanded="true" />
+                <element signature="e#60#78#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StartCommand.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StartCommand.cpp">
+      <file leaf-file-name="GamesListCommand.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GamesListCommand.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-              <folding>
-                <marker date="1514918506988" expanded="true" signature="448:715" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientManager.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ClientManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            <state relative-caret-position="288">
+              <caret line="16" column="7" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="16" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClientManager.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ClientManager.cpp">
+      <file leaf-file-name="GamesListCommand.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GamesListCommand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1098">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding>
-                <element signature="e#41#60#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandManager.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CommandManager.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="e#39#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandManager.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CommandManager.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-              <folding>
-                <element signature="e#114#128#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="54">
+              <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,28 +197,28 @@
         <option value="$PROJECT_DIR$/gamesList.h" />
         <option value="$PROJECT_DIR$/gamesList.cpp" />
         <option value="$PROJECT_DIR$/WaitingGame.h" />
-        <option value="$PROJECT_DIR$/Command.cpp" />
         <option value="$PROJECT_DIR$/CloseCommand.h" />
         <option value="$PROJECT_DIR$/CloseCommand.cpp" />
-        <option value="$PROJECT_DIR$/Server.h" />
-        <option value="$PROJECT_DIR$/Server.cpp" />
-        <option value="$PROJECT_DIR$/ClientManager.h" />
-        <option value="$PROJECT_DIR$/GameInfo.h" />
-        <option value="$PROJECT_DIR$/GameInfo.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Command.h" />
+        <option value="$PROJECT_DIR$/Command.cpp" />
+        <option value="$PROJECT_DIR$/GameInfo.cpp" />
+        <option value="$PROJECT_DIR$/GameInfo.h" />
+        <option value="$PROJECT_DIR$/GamesList.h" />
+        <option value="$PROJECT_DIR$/GamesList.cpp" />
         <option value="$PROJECT_DIR$/GamesListCommand.h" />
+        <option value="$PROJECT_DIR$/GamesListCommand.cpp" />
         <option value="$PROJECT_DIR$/JoinCommand.h" />
+        <option value="$PROJECT_DIR$/JoinCommand.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Server.cpp" />
+        <option value="$PROJECT_DIR$/Server.h" />
+        <option value="$PROJECT_DIR$/StartCommand.cpp" />
         <option value="$PROJECT_DIR$/StartCommand.h" />
         <option value="$PROJECT_DIR$/ClientManager.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/ClientManager.h" />
         <option value="$PROJECT_DIR$/CommandManager.h" />
         <option value="$PROJECT_DIR$/CommandManager.cpp" />
-        <option value="$PROJECT_DIR$/JoinCommand.cpp" />
-        <option value="$PROJECT_DIR$/GamesList.h" />
-        <option value="$PROJECT_DIR$/StartCommand.cpp" />
-        <option value="$PROJECT_DIR$/GamesList.cpp" />
-        <option value="$PROJECT_DIR$/GamesListCommand.cpp" />
       </list>
     </option>
   </component>
@@ -194,10 +230,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="962" />
-    <option name="y" value="24" />
-    <option name="width" value="958" />
-    <option name="height" value="1056" />
+    <option name="x" value="2" />
+    <option name="y" value="-4" />
+    <option name="width" value="960" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -320,23 +356,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203797000" />
+    <option name="totallyTimeSpent" value="209365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.313089" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3128371" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.108900525" sideWeight="0.49354145" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31509846" sideWeight="0.5064586" order="15" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3078534" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2984293" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2998933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12860192" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40418848" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4325782" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -467,8 +502,7 @@
         <state relative-caret-position="234">
           <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
-            <element signature="e#0#19#0" expanded="false" />
-            <marker date="1514900865243" expanded="true" signature="667:1211" ph="{...}" />
+            <marker date="1514931362086" expanded="true" signature="510:1054" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -499,8 +533,7 @@
         <state relative-caret-position="1386">
           <caret line="63" column="12" lean-forward="true" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
           <folding>
-            <element signature="e#0#19#0" expanded="false" />
-            <marker date="1514900865243" expanded="true" signature="667:1211" ph="{...}" />
+            <marker date="1514931362086" expanded="true" signature="510:1054" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -558,14 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/c++/5/ext/new_allocator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
@@ -588,36 +613,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CloseCommand.cpp" />
-    <entry file="file://$PROJECT_DIR$/GameInfo.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/string.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="453" column="12" lean-forward="false" selection-start-line="453" selection-start-column="12" selection-end-line="453" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="false" />
-            <marker date="1514900865243" expanded="true" signature="667:1211" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameInfo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="39" column="23" lean-forward="false" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -626,37 +625,6 @@
         <state relative-caret-position="202">
           <caret line="108" column="18" lean-forward="false" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GamesListCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StartCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Command.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="56" lean-forward="false" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Command.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -670,102 +638,173 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="36">
+          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JoinCommand.h">
+    <entry file="file://$PROJECT_DIR$/StartCommand.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClientManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommandManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#114#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommandManager.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
+            <marker date="1514931362046" expanded="true" signature="358:625" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ClientManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1098">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="2" />
           <folding>
-            <element signature="e#41#60#0" expanded="true" />
+            <element signature="e#138#231#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding>
+            <element signature="e#148#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Command.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="e#60#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Command.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CommandManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CommandManager.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameInfo.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <folding>
+            <element signature="e#71#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameInfo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GamesList.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GamesList.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-852">
-          <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        <state relative-caret-position="1116">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
-            <element signature="e#41#59#0" expanded="true" />
+            <element signature="e#60#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StartCommand.cpp">
+    <entry file="file://$PROJECT_DIR$/GamesListCommand.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="288">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GamesListCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JoinCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="20" selection-end-column="7" />
           <folding>
-            <marker date="1514918506988" expanded="true" signature="448:715" ph="{...}" />
+            <element signature="e#141#159#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JoinCommand.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="173" column="1" lean-forward="true" selection-start-line="173" selection-start-column="1" selection-end-line="173" selection-end-column="1" />
+        <state relative-caret-position="2196">
+          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding>
-            <element signature="e#0#2#0" expanded="false" />
-            <element signature="e#39#57#0" expanded="true" />
+            <element signature="e#73#97#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GamesListCommand.cpp">
+    <entry file="file://$PROJECT_DIR$/Server.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        <state relative-caret-position="126">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1514931362086" expanded="true" signature="510:1054" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StartCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#102#122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

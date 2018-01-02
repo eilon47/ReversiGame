@@ -1,5 +1,5 @@
 //
-// Created by elon on 25/12/17.
+// class of Command.cpp
 //
 #include "Command.h"
 Command::Command() {

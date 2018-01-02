@@ -44,20 +44,10 @@ class Client {
      */
         Point getMove();
     /**
-     * getClientSign.
-     * @return the player's sign.
-     */
-        int getClientSign();
-    /**
      * getMessage.
      * @return a message from server.
      */
         string getMessage();
-    /**
-     * getNumTurn.
-     * gets initially the turn number from server (1 or 2).
-     */
-        void getNumTurn();
     /**
      * getSettingsFromFile.
      * gets the server number and the port number from file.

@@ -13,7 +13,10 @@ int main() {
     p = gm.showMenu();
     if(p == NULL) {
       delete d;
-      break;
+        if (gm.toEndGAME()) {
+            break;
+        }
+        continue;
     }
     p->run();
     delete d;

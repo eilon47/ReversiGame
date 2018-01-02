@@ -1,7 +1,7 @@
 //
-// Created by elon on 25/12/17.
+// class of GamesListCommand.
+// in charge of sending the client the list og games available.
 //
-
 #include <csignal>
 #include <cstring>
 #include <cstdlib>

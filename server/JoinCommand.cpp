@@ -1,11 +1,8 @@
 //
-// Created by elon on 25/12/17.
+// class of JoinCommand.
+// in charge of the JoinCommand command.
 //
 
-#include <cstdlib>
-#include <csignal>
-#include <string.h>
-#include <iostream>
 #include "JoinCommand.h"
 #include "GamesList.h"
 pthread_mutex_t join_mutex;
@@ -123,15 +120,7 @@ bool JoinCommand::badMove(string &point) {
     }
     return false;
 }
-ssize_t JoinCommand::readFromClient(int clientSocket,int &num) {
-    signal(SIGPIPE, SIG_IGN);
-    ssize_t n = read(clientSocket, &num, sizeof(num));
-    if (n == -1) {
-        //cout << "Error reading point" << endl;
-        return -1;
-    }
-    return n;
-}
+
 ssize_t JoinCommand::readFromClient(int clientSocket, string &msg) {
     signal(SIGPIPE, SIG_IGN);
     int num = 0;

@@ -1,9 +1,8 @@
 //
-// Created by elon on 25/12/17.
+// class of GameInfo.
 //
 
-#include <unistd.h>
-#include <iostream>
+
 #include "GameInfo.h"
 using namespace std;
 GameInfo::GameInfo(int clientSocket, string name) {

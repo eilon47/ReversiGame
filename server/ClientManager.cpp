@@ -1,15 +1,14 @@
 //
-// Created by dandan on 26/12/17.
+// class of ClientManager.
+// in charge of managing all the clients.
 //
 
-#include <iostream>
-#include <string>
-#include <csignal>
-#include <string.h>
-#include <sstream>
-#include <cstdlib>
 #include "ClientManager.h"
 static void* doCommand(void * ci);
+/**
+ * ClientInfo holds a pointer to the commang manager
+ * and the client socket number.
+ */
 struct clientInfo {
   CommandsManager *cm;
   int cSocket;

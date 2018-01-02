@@ -1,11 +1,10 @@
 //
-// Created by elon on 25/12/17.
+// class of CommandManager.
+// in charge of managing all the commands.
 //
 
-#include <iostream>
-#include <csignal>
+
 #include "CommandManager.h"
-#include "ClientManager.h"
 
 CommandsManager::CommandsManager() {
   commandsMap["start"] = new StartCommand();

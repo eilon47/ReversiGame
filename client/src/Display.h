@@ -49,7 +49,10 @@ class Display {
    * @param p2 player 2.
    */
   virtual void showEndGame(Player &p1, Player &p2) = 0;
-
+/**
+   * showSubMenu.
+   * @param command - the command val to send to server.
+   */
     virtual void showSubMenu(string &command) = 0;
 };
 

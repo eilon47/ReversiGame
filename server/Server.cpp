@@ -1,14 +1,9 @@
+//
+// class of server.
+//
 #include "Server.h"
 
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <string.h>
-#include <stdio.h>
-#include <fstream>
-#include <sstream>
-#include <pthread.h>
-#include <complex>
-#include <cstdlib>
+
 
 #define MAX_CONNECTED_CLIENTS 10
 #define CLASS_PATH "../exe/ServerSettings.txt"

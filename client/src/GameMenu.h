@@ -33,6 +33,13 @@ public:
      * Destructor.
      */
     ~GameMenu();
+/**
+ * toEndGAME.
+ * checks if the user wants to quit or it was a problem
+ * with connecting to server.
+ * @return true if user chose to quit and false otherwise.
+ */
+    bool toEndGAME();
 private:
     Board *b;
     Rules *r;
@@ -42,6 +49,7 @@ private:
     Game *game;
     Client *client;
     Display *d;
+    bool isQuit;
 };
 
 #endif //REVERSIGAME_GAMEMENU_H

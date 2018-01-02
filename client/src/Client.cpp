@@ -1,5 +1,6 @@
 //
-// Created by dandan on 05/12/17.
+// Client.cpp
+// class of client is charge of handling client with a server.
 //
 
 #include <sys/socket.h>
@@ -129,19 +130,6 @@ Point Client::getMove() {
     return p1;
 }
 
-void Client::getNumTurn() {
-  signal(SIGPIPE, SIG_IGN);
-    int num;
-    ssize_t n = read(clientSocket, &num, sizeof(int));
-    if (n == -1){
-        throw "Error in getting sign";
-    }
-  if(!checkConnection(n)){
-    return;
-  }
-    this->turnNum = num;
-}
-
 int Client::getNum() {
   signal(SIGPIPE, SIG_IGN);
   int num = 0;
@@ -154,6 +142,7 @@ int Client::getNum() {
   }
   return num;
 }
+
 string Client::getMessage() {
   signal(SIGPIPE, SIG_IGN);
   int size = 0;
@@ -203,7 +192,6 @@ void Client::getSettingsFromFile() {
   file.close();
 }
 
-int Client::getClientSign() { return this->turnNum; }
 
 bool Client::checkConnection(ssize_t n) {
   signal(SIGPIPE, SIG_IGN);

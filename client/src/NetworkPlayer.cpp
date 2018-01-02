@@ -3,11 +3,13 @@
 //
 
 #include "NetworkPlayer.h"
+#include "ConsoleDisplay.h"
 
 NetworkPlayer::NetworkPlayer(Client &c) : client(&c), numOfSoldiers(2) {
     try {
         client->connectToServer();
-    } catch (char* msg) {
+    } catch (char const* msg) {
+        throw msg;
     }
 }
 NetworkPlayer::NetworkPlayer(const NetworkPlayer &cp) {

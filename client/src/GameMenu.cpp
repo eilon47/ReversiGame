@@ -11,12 +11,14 @@
 
 GameMenu::GameMenu(Display &display) {
     this->d = &display;
+    this->isQuit = false;
 }
 Game* GameMenu::showMenu() {
     int boardSize = 0,rules = 0,type = 0;
     //Show menu with display and change the values of board rules and type.
     this->d->showMenu(type, rules, boardSize);
     if(type == 4) {
+        this->isQuit = true;
         return NULL;
     }
     //Creating the wanted game.
@@ -59,7 +61,10 @@ Game* GameMenu::showMenu() {
                     }
                 }
                 }catch (const char* msg) {
-                    d->showMessage(msg);
+                    b = new Board();
+                    p1 = new HumanPlayer();
+                    p2 = new HumanPlayer();
+                    r = new RegularRules();
                     return NULL;
                 }
                 //Waits for other player.
@@ -119,7 +124,7 @@ Game* GameMenu::showMenu() {
         d->showMessage("Please enter a valid command.");
         return false;
     }
-
+bool GameMenu::toEndGAME() { return isQuit; }
 
 //Destructor.
     GameMenu::~GameMenu() {

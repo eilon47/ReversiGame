@@ -5,7 +5,6 @@
 #include "Sign.h"
 #include "Game.h"
 #include "NetworkPlayer.h"
-#include "NetworkReadPlayer.h"
 
 //Constructors.
 Game::Game(Board &b, Player &p1, Player &p2, Rules &rules, Display &display,GAME_T type)

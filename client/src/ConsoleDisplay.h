@@ -47,7 +47,10 @@ class ConsoleDisplay : public Display{
    * @param p2 player 2.
    */
   void showEndGame(Player &p1, Player &p2);
-
+  /**
+   * showSubMenu.
+   * @param command - the command val to send to server.
+   */
     void showSubMenu(string &command);
 };
 

@@ -237,6 +237,8 @@ Player.h
 /home/dandan/Desktop/git/ReversiGame/client/src/NetworkPlayer.cpp
 NetworkPlayer.h
 /home/dandan/Desktop/git/ReversiGame/client/src/NetworkPlayer.h
+ConsoleDisplay.h
+/home/dandan/Desktop/git/ReversiGame/client/src/ConsoleDisplay.h
 
 /home/dandan/Desktop/git/ReversiGame/client/src/NetworkPlayer.h
 Player.h
