@@ -52,9 +52,9 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
     int playing = gameInfo.getClientSocket1();
     int waiting = gameInfo.getClientSocket2();
     gameInfo.printStartMsg();
-    string message;
     connection = true;
     while(connection) {
+        string message;
         handlePlayingClient(playing, message);
         if(!connection) {
           this->writeToClient(waiting, "(-1, -1)");
@@ -87,23 +87,15 @@ void JoinCommand::handleClients(GameInfo gameInfo) {
         int temp = playing;
         playing = waiting;
         waiting = temp;
-        message = "";
     }
 }
 void JoinCommand::handlePlayingClient(int clientSocket, string &message) {
     signal(SIGPIPE, SIG_IGN);
-    int size = 0;
-    ssize_t n = this->readFromClient(clientSocket, size);
-    if(!checkConnection(n)) {
-        return;
-    }
-    char msg[size];
-    bzero((char *)msg, sizeof(msg));
-    ssize_t n2 = this->readFromClient(clientSocket, msg, size);
+    ssize_t n2 = this->readFromClient(clientSocket, message);
     if(!checkConnection(n2)) {
         return;
     }
-    message = msg;
+
 }
 
 void JoinCommand::setPlayer(int clientSocket, int numTurn) {
@@ -132,22 +124,28 @@ bool JoinCommand::badMove(string &point) {
     return false;
 }
 ssize_t JoinCommand::readFromClient(int clientSocket,int &num) {
-    ssize_t n = read(clientSocket, &num, sizeof(&num));
+    ssize_t n = read(clientSocket, &num, sizeof(num));
     if (n == -1) {
         cout << "Error reading point" << endl;
         return -1;
     }
     return n;
 }
-ssize_t JoinCommand::readFromClient(int clientSocket, char *msg, int sizeOfMsg) {
-    char m[sizeOfMsg];
-    bzero(m,sizeof(m));
-    ssize_t n = read(clientSocket, &m, sizeof(m));
+ssize_t JoinCommand::readFromClient(int clientSocket, string &msg) {
+    int num = 0;
+    ssize_t n = read(clientSocket, &num, sizeof(num));
     if (n == -1) {
         cout << "Error reading point" << endl;
         return -1;
     }
-    strcpy(msg, m);
+    char m[num];
+    bzero((char*)&m, sizeof(m));
+    n = read(clientSocket, &m, sizeof(m));
+    if (n == -1) {
+        cout << "Error reading point" << endl;
+        return -1;
+    }
+    msg = m;
     return n;
 }
 ssize_t JoinCommand::writeToClient(int clientSocket,int num) {

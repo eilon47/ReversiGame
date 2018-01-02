@@ -70,7 +70,7 @@ void Client::sendMove(Point move) {
 void Client::sendCommand(string command) {
     int size = (int) command.size() + 1;
     char message[size];
-    bzero((char*)message,sizeof(message));
+    bzero((char*)&message,sizeof(message));
     strcpy(message, command.c_str());
     ssize_t n = write(clientSocket, &size, sizeof(size));
     if (n == -1) {

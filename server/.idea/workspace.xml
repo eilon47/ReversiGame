@@ -12,113 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4170d52-8e91-488f-b7ff-521a55df6c5a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/main.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/main.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/AIPlayer.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/AIPlayer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Board.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Board.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Client.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Client.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/ConsoleDisplay.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/ConsoleDisplay.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Game.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Game.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/GameMenu.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/GameMenu.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/HumanPlayer.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/HumanPlayer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/NetworkPlayer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/NetworkReadPlayer.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/NetworkReadPlayer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Player.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Player.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Point.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Point.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/RegularRules.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/RegularRules.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Rules.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Rules.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Sign.cpp.o" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/src/Sign.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/ReversiGame" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/ReversiGame" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/ClientManager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/ClientManager.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/CloseCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/CloseCommand.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/Command.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/Command.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/CommandManager.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/CommandManager.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/GameInfo.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/GameInfo.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/GamesList.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/GamesList.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/GamesListCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/GamesListCommand.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/JoinCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/JoinCommand.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/Server.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/Server.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/StartCommand.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/StartCommand.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/server" afterPath="$PROJECT_DIR$/cmake-build-debug/server" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/CMakeLists.txt" afterPath="$PROJECT_DIR$/../client/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/CMakeError.log" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/CMakeError.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/CXX.includecache" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/build.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/depend.internal" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/flags.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiGame.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiTest.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiTest.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiTest.dir/build.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiTest.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiTest.dir/flags.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/ReversiTest.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/clion-environment.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/ReversiGame.cbp" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/ReversiGame.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/cmake_install.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/CTestTestfile.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/CTestTestfile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/Makefile" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/cmake_install.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/cmake_install.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/CTestTestfile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/Makefile" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/cmake_install.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gmock.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/CTestTestfile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/cmake_install.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googlemock/gtest/gtest.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" afterPath="$PROJECT_DIR$/../client/cmake-build-debug/lib/googletest-master/googletest-distribution.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/src/GameMenu.cpp" afterPath="$PROJECT_DIR$/../client/src/GameMenu.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/src/Client.cpp" afterPath="$PROJECT_DIR$/../client/src/Client.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientManager.cpp" afterPath="$PROJECT_DIR$/ClientManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientManager.h" afterPath="$PROJECT_DIR$/ClientManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CommandManager.cpp" afterPath="$PROJECT_DIR$/CommandManager.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CommandManager.h" afterPath="$PROJECT_DIR$/CommandManager.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameInfo.cpp" afterPath="$PROJECT_DIR$/GameInfo.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GameInfo.h" afterPath="$PROJECT_DIR$/GameInfo.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GamesList.cpp" afterPath="$PROJECT_DIR$/GamesList.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GamesList.h" afterPath="$PROJECT_DIR$/GamesList.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GamesListCommand.cpp" afterPath="$PROJECT_DIR$/GamesListCommand.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GamesListCommand.h" afterPath="$PROJECT_DIR$/GamesListCommand.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JoinCommand.cpp" afterPath="$PROJECT_DIR$/JoinCommand.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server.cpp" afterPath="$PROJECT_DIR$/Server.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/CXX.includecache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/server.dir/depend.internal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/ReversiGame.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/ReversiGame.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JoinCommand.h" afterPath="$PROJECT_DIR$/JoinCommand.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -152,15 +52,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JoinCommand.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JoinCommand.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JoinCommand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3058">
-              <caret line="141" column="21" lean-forward="false" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
+            <state relative-caret-position="-348">
+              <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
               <folding>
                 <element signature="e#0#2#0" expanded="false" />
                 <element signature="e#39#57#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JoinCommand.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JoinCommand.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -177,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GamesListCommand.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GamesListCommand.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GamesListCommand.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+            <state relative-caret-position="88">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -204,6 +114,7 @@
       <find>stop</find>
       <find>catch</find>
       <find>throw</find>
+      <find>bzero</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,7 +136,6 @@
         <option value="$PROJECT_DIR$/CloseCommand.cpp" />
         <option value="$PROJECT_DIR$/StartCommand.h" />
         <option value="$PROJECT_DIR$/StartCommand.cpp" />
-        <option value="$PROJECT_DIR$/JoinCommand.h" />
         <option value="$PROJECT_DIR$/Server.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/GamesList.h" />
@@ -240,6 +150,7 @@
         <option value="$PROJECT_DIR$/ClientManager.cpp" />
         <option value="$PROJECT_DIR$/GameInfo.h" />
         <option value="$PROJECT_DIR$/GameInfo.cpp" />
+        <option value="$PROJECT_DIR$/JoinCommand.h" />
         <option value="$PROJECT_DIR$/JoinCommand.cpp" />
       </list>
     </option>
@@ -372,18 +283,18 @@
       <workItem from="1514796299075" duration="8325000" />
       <workItem from="1514821406472" duration="610000" />
       <workItem from="1514834497897" duration="3341000" />
-      <workItem from="1514884341749" duration="7247000" />
+      <workItem from="1514884341749" duration="10915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186352000" />
+    <option name="totallyTimeSpent" value="190020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2540366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2540366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3125" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10940919" sideWeight="0.49354145" order="14" side_tool="false" content_ui="tabs" />
@@ -392,7 +303,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4100877" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28399122" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -406,21 +317,21 @@
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31798247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10940919" sideWeight="0.49354145" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31509846" sideWeight="0.5064586" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30811402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2982456" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19214208" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2540366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41118422" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3366228" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932165" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
@@ -433,33 +344,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/JoinCommand.cpp</url>
-          <line>142</line>
-          <option name="timeStamp" value="165" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="166" />
+      <option name="time" value="170" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="CMakeRunConfiguration">
-        <watch expression="args" />
-        <watch expression="msg" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Server.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2684">
-          <caret line="122" column="3" lean-forward="false" selection-start-line="122" selection-start-column="3" selection-end-line="122" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -651,14 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JoinCommand.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -753,7 +634,7 @@
         <state relative-caret-position="439">
           <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
           <folding>
-            <element signature="e#39#58#0" expanded="true" />
+            <element signature="e#39#58#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -804,17 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JoinCommand.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3058">
-          <caret line="141" column="21" lean-forward="false" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#2#0" expanded="false" />
-            <element signature="e#39#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CommandManager.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -827,9 +697,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GamesListCommand.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="88">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JoinCommand.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="453" column="12" lean-forward="false" selection-start-line="453" selection-start-column="12" selection-end-line="453" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JoinCommand.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-348">
+          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#2#0" expanded="false" />
+            <element signature="e#39#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -18,7 +18,7 @@ class JoinCommand : public Command {
     void deleteGameFromList(GameInfo &g);
     void setPlayer(int clientSocket, int numTurn);
     ssize_t readFromClient(int clientSocket, int &num);
-    ssize_t readFromClient(int clientSocket, char* msg, int sizeOfMsg);
+    ssize_t readFromClient(int clientSocket, string &msg);
     ssize_t writeToClient(int clientSocket, int num);
     ssize_t writeToClient(int clietnSocket, string msg);
  private:
