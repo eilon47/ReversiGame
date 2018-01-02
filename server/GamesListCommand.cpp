@@ -22,7 +22,7 @@ void GamesListCommand::execute(vector<string> *args, int clientSocket) {
     return;
   }
   if(size > 0) {
-    for(int i = 0; i < size; i++) {
+    for(int i = 0; i < gl->getSizeOfList(); i++) {
       GameInfo game = gl->getGame(i);
       if(game.isGameAvailable()) {
         string s = game.getName();

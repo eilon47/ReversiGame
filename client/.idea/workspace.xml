@@ -323,7 +323,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155547000" />
+    <option name="totallyTimeSpent" value="156133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
@@ -698,7 +698,7 @@
         <state relative-caret-position="248">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="e#108#127#0" expanded="true" />
+            <element signature="e#108#127#0" expanded="false" />
           </folding>
         </state>
       </provider>
