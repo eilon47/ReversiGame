@@ -9,14 +9,14 @@
 #include "Command.h"
 #include "GamesList.h"
 #include "StartCommand.h"
-#include "CloseCommand.h"
 #include "JoinCommand.h"
 #include "GamesListCommand.h"
 class CommandsManager {
  public:
   CommandsManager();
   ~CommandsManager();
-  void executeCommand(string &command, vector<string> &args);
+  void executeCommand(string &command, vector<string> &args, int clientSocket);
+  bool isCommandValid(string command);
  private:
   map<string, Command *> commandsMap;
 };

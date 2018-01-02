@@ -13,10 +13,9 @@
  * give to the game, then we add that to the server.
  * @param args
  */
-void StartCommand::execute(vector<string> *args) {
+void StartCommand::execute(vector<string> *args, int clientSocket) {
   GamesList* gamesList = GamesList::getInstance();
-  int clientSocket = atoi(args->front().c_str());
-  string name = args->back();
+  string name = args->front();
   GameInfo gi(clientSocket, name);
   int res = gamesList->addgame(gi);
   //notify user command was made (-1 for error).

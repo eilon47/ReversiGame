@@ -3,7 +3,6 @@
 
 CMakeFiles/server.dir/ClientManager.cpp.o: ../ClientManager.cpp
 CMakeFiles/server.dir/ClientManager.cpp.o: ../ClientManager.h
-CMakeFiles/server.dir/ClientManager.cpp.o: ../CloseCommand.h
 CMakeFiles/server.dir/ClientManager.cpp.o: ../Command.h
 CMakeFiles/server.dir/ClientManager.cpp.o: ../CommandManager.h
 CMakeFiles/server.dir/ClientManager.cpp.o: ../GameInfo.h
@@ -12,16 +11,9 @@ CMakeFiles/server.dir/ClientManager.cpp.o: ../GamesListCommand.h
 CMakeFiles/server.dir/ClientManager.cpp.o: ../JoinCommand.h
 CMakeFiles/server.dir/ClientManager.cpp.o: ../StartCommand.h
 
-CMakeFiles/server.dir/CloseCommand.cpp.o: ../CloseCommand.cpp
-CMakeFiles/server.dir/CloseCommand.cpp.o: ../CloseCommand.h
-CMakeFiles/server.dir/CloseCommand.cpp.o: ../Command.h
-CMakeFiles/server.dir/CloseCommand.cpp.o: ../GameInfo.h
-CMakeFiles/server.dir/CloseCommand.cpp.o: ../GamesList.h
-
 CMakeFiles/server.dir/Command.cpp.o: ../Command.cpp
 CMakeFiles/server.dir/Command.cpp.o: ../Command.h
 
-CMakeFiles/server.dir/CommandManager.cpp.o: ../CloseCommand.h
 CMakeFiles/server.dir/CommandManager.cpp.o: ../Command.h
 CMakeFiles/server.dir/CommandManager.cpp.o: ../CommandManager.cpp
 CMakeFiles/server.dir/CommandManager.cpp.o: ../CommandManager.h
@@ -51,7 +43,6 @@ CMakeFiles/server.dir/JoinCommand.cpp.o: ../JoinCommand.cpp
 CMakeFiles/server.dir/JoinCommand.cpp.o: ../JoinCommand.h
 
 CMakeFiles/server.dir/Server.cpp.o: ../ClientManager.h
-CMakeFiles/server.dir/Server.cpp.o: ../CloseCommand.h
 CMakeFiles/server.dir/Server.cpp.o: ../Command.h
 CMakeFiles/server.dir/Server.cpp.o: ../CommandManager.h
 CMakeFiles/server.dir/Server.cpp.o: ../GameInfo.h
@@ -69,7 +60,6 @@ CMakeFiles/server.dir/StartCommand.cpp.o: ../StartCommand.cpp
 CMakeFiles/server.dir/StartCommand.cpp.o: ../StartCommand.h
 
 CMakeFiles/server.dir/main.cpp.o: ../ClientManager.h
-CMakeFiles/server.dir/main.cpp.o: ../CloseCommand.h
 CMakeFiles/server.dir/main.cpp.o: ../Command.h
 CMakeFiles/server.dir/main.cpp.o: ../CommandManager.h
 CMakeFiles/server.dir/main.cpp.o: ../GameInfo.h

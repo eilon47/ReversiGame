@@ -10,8 +10,7 @@
 #include "GamesList.h"
 
 
-void GamesListCommand::execute(vector<string> *args) {
-  int clientSocket = atoi(args->at(0).c_str());
+void GamesListCommand::execute(vector<string> *args, int clientSocket) {
   //Write to client size of list
   //Write to client size of string and string.
   GamesList *gl = GamesList::getInstance();

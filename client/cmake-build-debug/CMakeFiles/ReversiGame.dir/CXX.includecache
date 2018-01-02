@@ -25,6 +25,8 @@ Sign.h
 ../src/Sign.h
 Display.h
 ../src/Display.h
+sys/types.h
+-
 
 ../src/ConsoleDisplay.h
 Display.h
@@ -143,6 +145,8 @@ fstream
 -
 sstream
 -
+csignal
+-
 
 /home/elon/Desktop/Git/ReversiGame/client/src/Client.h
 cstring
@@ -153,6 +157,8 @@ Sign.h
 /home/elon/Desktop/Git/ReversiGame/client/src/Sign.h
 Display.h
 /home/elon/Desktop/Git/ReversiGame/client/src/Display.h
+sys/types.h
+-
 
 /home/elon/Desktop/Git/ReversiGame/client/src/ConsoleDisplay.cpp
 cstdlib

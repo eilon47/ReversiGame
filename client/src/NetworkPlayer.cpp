@@ -46,6 +46,9 @@ NetworkPlayer::NetworkPlayer(const NetworkPlayer &cp) {
       p.setPoint(0,0);
     }
     client->sendMove(p);
+    if(!client->getConnection()) {
+      p.setPoint(-1, -1);
+    }
     return p;
 }
 

@@ -23,6 +23,7 @@ public:
   void deleteGame(GameInfo &gameInfo);
 private:
     GamesList();
+    GamesList(const GamesList &);
     ~GamesList();
     vector<GameInfo> *gi ;
     static GamesList* instance;

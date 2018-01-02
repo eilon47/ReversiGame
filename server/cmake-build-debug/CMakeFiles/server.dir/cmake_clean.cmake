@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/server.dir/ClientManager.cpp.o"
-  "CMakeFiles/server.dir/CloseCommand.cpp.o"
   "CMakeFiles/server.dir/Command.cpp.o"
   "CMakeFiles/server.dir/CommandManager.cpp.o"
   "CMakeFiles/server.dir/GameInfo.cpp.o"

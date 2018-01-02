@@ -6,8 +6,6 @@ set(CMAKE_CXX_FLAGS -pthread)
 set(SOURCE_FILES
         ClientManager.cpp
         ClientManager.h
-        CloseCommand.cpp
-        CloseCommand.h
         Command.cpp
         Command.h
         CommandManager.cpp

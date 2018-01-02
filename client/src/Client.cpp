@@ -10,6 +10,7 @@
 #include <unistd.h>
 #include <fstream>
 #include <sstream>
+#include <csignal>
 
 using namespace std;
 #define CLASS_PATH "../exe/ClientSettings.txt"
@@ -52,8 +53,10 @@ void Client::connectToServer() {
     }
     //connections confirmation.
     display->showMessage("Connected to server\n");
+    connection = true;
 }
 void Client::sendMove(Point move) {
+  signal(SIGPIPE, SIG_IGN);
   string m = move.toString();
   int size = (int) m.size()+1;
   char message[size];
@@ -62,12 +65,19 @@ void Client::sendMove(Point move) {
   if (n == -1) {
       throw "Error writing turn to socket";
   }
+  if(!checkConnection(n)){
+    return;
+  }
   n = write(clientSocket, &message, sizeof(message));
   if (n == -1) {
     throw "Error writing turn to socket";
   }
+  if(!checkConnection(n)){
+    return;
+  }
 }
 void Client::sendCommand(string command) {
+  signal(SIGPIPE, SIG_IGN);
     int size = (int) command.size() + 1;
     char message[size];
     bzero((char*)&message,sizeof(message));
@@ -76,55 +86,83 @@ void Client::sendCommand(string command) {
     if (n == -1) {
         throw "Error writing turn to socket";
     }
+  if(!checkConnection(n)){
+    return;
+  }
     ssize_t n2 = write(clientSocket, &message, sizeof(message));
     if (n2 == -1) {
         throw "Error writing turn to socket";
     }
+  if(!checkConnection(n)){
+    return;
+  }
 }
 
 Point Client::getMove() {
+  signal(SIGPIPE, SIG_IGN);
     int size;
     ssize_t n = read(clientSocket, &size, sizeof(size));
     if (n == -1) {
         throw "Error reading turn from socket";
     }
+  if(!checkConnection(n)){
+    return Point(-1,-1);
+  }
     char point[size];
     ssize_t n2 = read(clientSocket, &point, sizeof(point));
   if (n2 == -1) {
     throw "Error reading turn from socket";
+  }
+  if(!checkConnection(n2)){
+    return Point(-1,-1);
   }
     Point p1(point);
     return p1;
 }
 
 void Client::getNumTurn() {
+  signal(SIGPIPE, SIG_IGN);
     int num;
     ssize_t n = read(clientSocket, &num, sizeof(int));
     if (n == -1){
         throw "Error in getting sign";
     }
+  if(!checkConnection(n)){
+    return;
+  }
     this->turnNum = num;
 }
 
 int Client::getNum() {
+  signal(SIGPIPE, SIG_IGN);
   int num;
   ssize_t n = read(clientSocket, &num, sizeof(int));
   if (n == -1){
     throw "Error in getting sign";
   }
+  if(!checkConnection(n)){
+    return -1;
+  }
   return num;
 }
 string Client::getMessage() {
+  signal(SIGPIPE, SIG_IGN);
   int size = 0;
-  int n = read(clientSocket, &size, sizeof(size));
+  ssize_t n = read(clientSocket, &size, sizeof(size));
   if (n == -1) {
     throw "Error in reading message";
+  }
+  if(!checkConnection(n)){
+    return "no connection";
   }
   char c[size];
     bzero((void *)&c, sizeof(c));
   n = read(clientSocket,&c,sizeof(c));
   if (n == -1) {
     throw "Error in reading message";
+  }
+  if(!checkConnection(n)){
+    return "no connection";
   }
   string m = c;
   return m;
@@ -157,3 +195,15 @@ void Client::getSettingsFromFile() {
 }
 
 int Client::getClientSign() { return this->turnNum; }
+
+bool Client::checkConnection(ssize_t n) {
+  signal(SIGPIPE, SIG_IGN);
+  if (n == 0) {
+    cout << "Player disconnected" << endl;
+    connection = false;
+  }
+  return connection;
+}
+bool Client::getConnection() {
+  return connection;
+}

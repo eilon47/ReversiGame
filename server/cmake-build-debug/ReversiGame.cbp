@@ -90,12 +90,6 @@
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/ClientManager.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.cpp">
-			<Option target="server"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.h">
-			<Option target="server"/>
-		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/Command.cpp">
 			<Option target="server"/>
 		</Unit>

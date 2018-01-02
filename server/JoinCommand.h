@@ -9,7 +9,7 @@
 #include "GameInfo.h"
 class JoinCommand : public Command {
  public:
-    void execute(vector<string> *args);
+    void execute(vector<string> *args, int clientSocket);
     void handleClients(GameInfo gameInfo);
     void handlePlayingClient(int clientSocket, string &message);
     bool checkConnection(ssize_t n);

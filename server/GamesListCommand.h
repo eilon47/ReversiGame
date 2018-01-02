@@ -8,7 +8,7 @@
 #include "Command.h"
 class GamesListCommand : public Command {
  public:
-  void execute(vector<string> *args);
+  void execute(vector<string> *args, int clientSocket);
  private:
   int numOfAvGames();
 };

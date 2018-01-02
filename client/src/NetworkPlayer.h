@@ -29,6 +29,7 @@ class NetworkPlayer : public Player {
          * @return Point the player chose.
          */
         Point getPointFromPlayer(Board b, vector<Point> v);
+
   private:
         SIGN sign;
         int numOfSoldiers;

@@ -30,18 +30,6 @@ CommandManager.h
 GamesList.h
 /home/elon/Desktop/Git/ReversiGame/server/GamesList.h
 
-/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.cpp
-cstdlib
--
-CloseCommand.h
-/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.h
-GamesList.h
-/home/elon/Desktop/Git/ReversiGame/server/GamesList.h
-
-/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.h
-Command.h
-/home/elon/Desktop/Git/ReversiGame/server/Command.h
-
 /home/elon/Desktop/Git/ReversiGame/server/Command.cpp
 Command.h
 /home/elon/Desktop/Git/ReversiGame/server/Command.h
@@ -69,8 +57,6 @@ GamesList.h
 /home/elon/Desktop/Git/ReversiGame/server/GamesList.h
 StartCommand.h
 /home/elon/Desktop/Git/ReversiGame/server/StartCommand.h
-CloseCommand.h
-/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.h
 JoinCommand.h
 /home/elon/Desktop/Git/ReversiGame/server/JoinCommand.h
 GamesListCommand.h

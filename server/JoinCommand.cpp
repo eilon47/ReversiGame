@@ -10,15 +10,14 @@
 #include "GamesList.h"
 pthread_mutex_t join_mutex;
 
-void JoinCommand::execute(vector<string> *args) {
+void JoinCommand::execute(vector<string> *args, int clientSocket2) {
     connection = true;
     if(args->size() < 2){
         return;
     }
     int numGame = 0;
     int clientSocket1 = 0;
-    int clientSocket2 = atoi(args->at(0).c_str());
-    string name = args->at(1);
+    string name = args->at(0);
     GamesList *gamesList = GamesList::getInstance();
     pthread_mutex_lock(&join_mutex);
     for(int i = 0; i< gamesList->getSizeOfList(); i++) {

@@ -4,7 +4,6 @@
 CMakeFiles/server.dir/ClientManager.cpp.o
  /home/elon/Desktop/Git/ReversiGame/server/ClientManager.cpp
  /home/elon/Desktop/Git/ReversiGame/server/ClientManager.h
- /home/elon/Desktop/Git/ReversiGame/server/CloseCommand.h
  /home/elon/Desktop/Git/ReversiGame/server/Command.h
  /home/elon/Desktop/Git/ReversiGame/server/CommandManager.h
  /home/elon/Desktop/Git/ReversiGame/server/GameInfo.h
@@ -12,17 +11,10 @@ CMakeFiles/server.dir/ClientManager.cpp.o
  /home/elon/Desktop/Git/ReversiGame/server/GamesListCommand.h
  /home/elon/Desktop/Git/ReversiGame/server/JoinCommand.h
  /home/elon/Desktop/Git/ReversiGame/server/StartCommand.h
-CMakeFiles/server.dir/CloseCommand.cpp.o
- /home/elon/Desktop/Git/ReversiGame/server/CloseCommand.cpp
- /home/elon/Desktop/Git/ReversiGame/server/CloseCommand.h
- /home/elon/Desktop/Git/ReversiGame/server/Command.h
- /home/elon/Desktop/Git/ReversiGame/server/GameInfo.h
- /home/elon/Desktop/Git/ReversiGame/server/GamesList.h
 CMakeFiles/server.dir/Command.cpp.o
  /home/elon/Desktop/Git/ReversiGame/server/Command.cpp
  /home/elon/Desktop/Git/ReversiGame/server/Command.h
 CMakeFiles/server.dir/CommandManager.cpp.o
- /home/elon/Desktop/Git/ReversiGame/server/CloseCommand.h
  /home/elon/Desktop/Git/ReversiGame/server/Command.h
  /home/elon/Desktop/Git/ReversiGame/server/CommandManager.cpp
  /home/elon/Desktop/Git/ReversiGame/server/CommandManager.h
@@ -52,7 +44,6 @@ CMakeFiles/server.dir/JoinCommand.cpp.o
  /home/elon/Desktop/Git/ReversiGame/server/JoinCommand.h
 CMakeFiles/server.dir/Server.cpp.o
  /home/elon/Desktop/Git/ReversiGame/server/ClientManager.h
- /home/elon/Desktop/Git/ReversiGame/server/CloseCommand.h
  /home/elon/Desktop/Git/ReversiGame/server/Command.h
  /home/elon/Desktop/Git/ReversiGame/server/CommandManager.h
  /home/elon/Desktop/Git/ReversiGame/server/GameInfo.h
@@ -70,7 +61,6 @@ CMakeFiles/server.dir/StartCommand.cpp.o
  /home/elon/Desktop/Git/ReversiGame/server/StartCommand.h
 CMakeFiles/server.dir/main.cpp.o
  /home/elon/Desktop/Git/ReversiGame/server/ClientManager.h
- /home/elon/Desktop/Git/ReversiGame/server/CloseCommand.h
  /home/elon/Desktop/Git/ReversiGame/server/Command.h
  /home/elon/Desktop/Git/ReversiGame/server/CommandManager.h
  /home/elon/Desktop/Git/ReversiGame/server/GameInfo.h

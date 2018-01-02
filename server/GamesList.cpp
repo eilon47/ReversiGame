@@ -89,3 +89,7 @@ void GamesList::deleteGameList() {
 GamesList::~GamesList() {
     delete this->gi;
 }
+GamesList::GamesList(const GamesList &gl) {
+  this->instance = gl.instance;
+  this->gi = gl.gi;
+}

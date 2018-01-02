@@ -53,11 +53,6 @@ static void* doCommand(void *info) {
         cout << "Error reading point" << endl;
         return NULL;
       }
-      //String of client's socket
-      stringstream clientString;
-      clientString << clientSocket;
-      string csStr(clientString.str());
-
       //String of message
       string str(message);
       istringstream iss(str);
@@ -65,15 +60,13 @@ static void* doCommand(void *info) {
       string command;
       iss >> command;
       vector<string> args;
-      //Add the client's socket first to the args.
-      args.push_back(csStr);
       string arg;
       iss >> arg;
       do {
         args.push_back(arg);
         iss >> arg;
       } while (iss);
-      commandsManager->executeCommand(command, args);
+      commandsManager->executeCommand(command, args, clientSocket);
       if (command == "start") {
         GamesList *gamesList = GamesList::getInstance();
         if (gamesList->isGameExist(clientSocket)) {

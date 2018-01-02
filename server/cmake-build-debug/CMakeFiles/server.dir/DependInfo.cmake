@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/elon/Desktop/Git/ReversiGame/server/ClientManager.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/ClientManager.cpp.o"
-  "/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/CloseCommand.cpp.o"
   "/home/elon/Desktop/Git/ReversiGame/server/Command.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/Command.cpp.o"
   "/home/elon/Desktop/Git/ReversiGame/server/CommandManager.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/CommandManager.cpp.o"
   "/home/elon/Desktop/Git/ReversiGame/server/GameInfo.cpp" "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/GameInfo.cpp.o"

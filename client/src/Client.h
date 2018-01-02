@@ -10,6 +10,7 @@
 #include "Point.h"
 #include "Sign.h"
 #include "Display.h"
+#include <sys/types.h>
 
 class Client {
     public:
@@ -63,13 +64,16 @@ class Client {
      */
         void getSettingsFromFile();
         int getNum();
+        bool checkConnection(ssize_t n);
     void sendCommand(string command);
+  bool getConnection();
 
         private:
         Display *display;
         const char *serverIP;
         int serverPort;
         int clientSocket;
+        bool connection;
         int turnNum;
     };
 

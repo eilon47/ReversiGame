@@ -150,33 +150,6 @@ ClientManager.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/ClientManager.cpp.s
 .PHONY : ClientManager.cpp.s
 
-CloseCommand.o: CloseCommand.cpp.o
-
-.PHONY : CloseCommand.o
-
-# target to build an object file
-CloseCommand.cpp.o:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CloseCommand.cpp.o
-.PHONY : CloseCommand.cpp.o
-
-CloseCommand.i: CloseCommand.cpp.i
-
-.PHONY : CloseCommand.i
-
-# target to preprocess a source file
-CloseCommand.cpp.i:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CloseCommand.cpp.i
-.PHONY : CloseCommand.cpp.i
-
-CloseCommand.s: CloseCommand.cpp.s
-
-.PHONY : CloseCommand.s
-
-# target to generate assembly for a file
-CloseCommand.cpp.s:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/CloseCommand.cpp.s
-.PHONY : CloseCommand.cpp.s
-
 Command.o: Command.cpp.o
 
 .PHONY : Command.o
@@ -432,9 +405,6 @@ help:
 	@echo "... ClientManager.o"
 	@echo "... ClientManager.i"
 	@echo "... ClientManager.s"
-	@echo "... CloseCommand.o"
-	@echo "... CloseCommand.i"
-	@echo "... CloseCommand.s"
 	@echo "... Command.o"
 	@echo "... Command.i"
 	@echo "... Command.s"
