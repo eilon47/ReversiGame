@@ -57,9 +57,19 @@ public:
    */
   void deleteGame(GameInfo &gameInfo);
 private:
+    /**
+     * constructor
+     */
     GamesList();
+    /**
+     * copy constructor
+     */
     GamesList(const GamesList &);
+    /**
+     * destructor
+     */
     ~GamesList();
+    //members
     vector<GameInfo> *gi ;
     static GamesList* instance;
     static pthread_mutex_t lockInstance;

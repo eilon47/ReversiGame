@@ -185,8 +185,6 @@ Game.h
 /home/dandan/Desktop/git/ReversiGame/client/src/Game.h
 NetworkPlayer.h
 /home/dandan/Desktop/git/ReversiGame/client/src/NetworkPlayer.h
-NetworkReadPlayer.h
-/home/dandan/Desktop/git/ReversiGame/client/src/NetworkReadPlayer.h
 
 /home/dandan/Desktop/git/ReversiGame/client/src/Game.h
 iostream
@@ -205,6 +203,8 @@ Display.h
 /home/dandan/Desktop/git/ReversiGame/client/src/Display.h
 
 /home/dandan/Desktop/git/ReversiGame/client/src/GameMenu.cpp
+sstream
+-
 GameMenu.h
 /home/dandan/Desktop/git/ReversiGame/client/src/GameMenu.h
 AIPlayer.h

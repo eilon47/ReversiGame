@@ -54,7 +54,6 @@ CMakeFiles/ReversiGame.dir/src/Game.cpp.o: ../src/Game.cpp
 CMakeFiles/ReversiGame.dir/src/Game.cpp.o: ../src/Game.h
 CMakeFiles/ReversiGame.dir/src/Game.cpp.o: ../src/HumanPlayer.h
 CMakeFiles/ReversiGame.dir/src/Game.cpp.o: ../src/NetworkPlayer.h
-CMakeFiles/ReversiGame.dir/src/Game.cpp.o: ../src/NetworkReadPlayer.h
 CMakeFiles/ReversiGame.dir/src/Game.cpp.o: ../src/Player.h
 CMakeFiles/ReversiGame.dir/src/Game.cpp.o: ../src/Point.h
 CMakeFiles/ReversiGame.dir/src/Game.cpp.o: ../src/Rules.h

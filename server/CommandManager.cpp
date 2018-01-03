@@ -13,21 +13,21 @@ CommandsManager::CommandsManager() {
 
 }
 void CommandsManager::executeCommand(string &command, vector<string> &args, int clientSocket) {
-  signal(SIGPIPE,SIG_IGN);
-  if(this->isCommandValid(command)) {
-    Command *commandObj = commandsMap[command];
-    commandObj->execute(&args, clientSocket);
-  } else {
-    cout << "unknown command" << endl;
-    int res = -1;
-    ssize_t n = write(clientSocket, &res, sizeof(res));
-    if (!checkConnection(n)) {
-      close(clientSocket);
-      return;
+  signal(SIGPIPE, SIG_IGN);
+  try {
+    if (this->isCommandValid(command)) {
+      Command *commandObj = commandsMap[command];
+      commandObj->execute(&args, clientSocket);
+    } else {
+      cout << "unknown command" << endl;
+      int res = -1;
+      ssize_t n = write(clientSocket, &res, sizeof(res));
+      if (!checkConnection(n)) {
+        return;
+      }
     }
-    if(n == -1){
-      return;
-    }
+  } catch (char const* msg) {
+    throw msg;
   }
 }
 CommandsManager::~CommandsManager() {
@@ -47,7 +47,7 @@ bool CommandsManager::isCommandValid(string command) {
 }
 
 bool CommandsManager::checkConnection(ssize_t n) {
-  if (n == 0) {
+  if (n == 0 || n == -1) {
     cout << "Player disconnected" << endl;
     return false;
   }

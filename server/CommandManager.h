@@ -40,7 +40,13 @@ class CommandsManager {
      */
     ~CommandsManager();
  private:
+    //Member
   map<string, Command *> commandsMap;
+    /**
+     * checks connection to client.
+     * @param n the return value from read/write
+     * @return true or false
+     */
     bool checkConnection(ssize_t n);
 };
 

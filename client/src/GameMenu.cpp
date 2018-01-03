@@ -2,6 +2,7 @@
 * GameMenu source file.
 */
 
+#include <sstream>
 #include "GameMenu.h"
 #include "AIPlayer.h"
 #include "RegularRules.h"
@@ -49,7 +50,7 @@ Game* GameMenu::showMenu() {
             try {
                 gtype = PvsRP;
                 string command;
-                client = new Client("127.0.0.1", 8070, *this->d);
+                client = new Client(*this->d);
                 this->p1 = new NetworkPlayer(*client);
                 this->p2 = new NetworkReadPlayer(*client);
                 while (true) {
@@ -91,7 +92,11 @@ Game* GameMenu::showMenu() {
     bool GameMenu::getInformationFromServer(string command) {
       char str[command.size()];
       strcpy(str, command.c_str());
-      string s = strtok(str, " ");
+        //String of message
+        istringstream iss(str);
+        //First word for command.
+        string s;
+        iss >> s;
       int res = this->client->getNum();
       if (s == "start") {
           if(res != -1){
@@ -100,6 +105,7 @@ Game* GameMenu::showMenu() {
             d->showMessage("waiting for other Player to connect...");
             return true;
           }
+          d->showMessage("Please enter valid name");
           return false;
         }
         if (s == "join") {

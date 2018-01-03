@@ -25,19 +25,19 @@ Client::Client(Display &display): clientSocket(0), turnNum(0), display(&display)
 void Client::connectToServer() {
     clientSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (clientSocket == -1) {
-        display->showMessage("Error opening socket\n");
+        display->showMessage("Error opening socket");
         throw "Error opening socket";
     }
     struct in_addr address;
     if (!inet_aton(serverIP, &address)) {
-      display->showMessage("Can't parse IP address\n");
+      display->showMessage("Can't parse IP address");
         throw "Can't parse IP address";
     }
 
     struct hostent *server;
     server = gethostbyaddr((const void *)&address, sizeof address, AF_INET);
     if (server == NULL) {
-      display->showMessage("Host is unreachable\n");
+      display->showMessage("Host is unreachable");
         throw "Host is unreachable";
     }
 
@@ -49,11 +49,11 @@ void Client::connectToServer() {
     serverAddress.sin_port = htons(serverPort);
 
     if (connect(clientSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress)) == -1) {
-      display->showMessage("Error connecting to server\n");
+      display->showMessage("Error connecting to server");
         throw "Error connecting to server";
     }
     //connections confirmation.
-    display->showMessage("Connected to server\n");
+    display->showMessage("Connected to server");
     connection = true;
 }
 void Client::sendMove(Point move) {

@@ -38,7 +38,6 @@ public:
 private:
     CommandsManager *cm;
     vector<pthread_t> *threads;
-    vector<string> getArgs(char*);
 };
 
 

@@ -41,7 +41,7 @@ static void* doCommand(void *info) {
       int size = 0;
       ssize_t n = read(clientSocket, &size, sizeof(size));
       if (n == -1) {
-        cout << "Error reading point" << endl;
+          cout << "Error reading point" << endl;
         return NULL;
       }
       char message[size];
