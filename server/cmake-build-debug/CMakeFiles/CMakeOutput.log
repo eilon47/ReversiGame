@@ -1,4 +1,4 @@
-The system is: Linux - 4.10.0-42-generic - x86_64
+The system is: Linux - 4.13.0-26-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/3.8.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_bf771/fast"
-/usr/bin/make -f CMakeFiles/cmTC_bf771.dir/build.make CMakeFiles/cmTC_bf771.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bf771.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_bf771.dir/testCCompiler.c.o   -c /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_bf771
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf771.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_bf771.dir/testCCompiler.c.o  -o cmTC_bf771 
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_97c9c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_97c9c.dir/build.make CMakeFiles/cmTC_97c9c.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_97c9c.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_97c9c.dir/testCCompiler.c.o   -c /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_97c9c
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97c9c.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_97c9c.dir/testCCompiler.c.o  -o cmTC_97c9c 
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3ec2f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3ec2f.dir/build.make CMakeFiles/cmTC_3ec2f.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3ec2f.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_3ec2f.dir/CMakeCCompilerABI.c.o   -c /home/dandan/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_3ec2f
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ec2f.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTC_3ec2f.dir/CMakeCCompilerABI.c.o  -o cmTC_3ec2f 
+Run Build Command:"/usr/bin/make" "cmTC_da0cd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_da0cd.dir/build.make CMakeFiles/cmTC_da0cd.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_da0cd.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_da0cd.dir/CMakeCCompilerABI.c.o   -c /home/elon/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_da0cd
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da0cd.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTC_da0cd.dir/CMakeCCompilerABI.c.o  -o cmTC_da0cd 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -59,23 +59,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3ec2f' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccg2gzQI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_3ec2f /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_3ec2f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_da0cd' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjY4sZJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_da0cd /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_da0cd.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_3ec2f/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_3ec2f.dir/build.make CMakeFiles/cmTC_3ec2f.dir/build]
-  ignore line: [make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_3ec2f.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_3ec2f.dir/CMakeCCompilerABI.c.o   -c /home/dandan/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_3ec2f]
-  ignore line: [/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ec2f.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_3ec2f.dir/CMakeCCompilerABI.c.o  -o cmTC_3ec2f ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_da0cd/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_da0cd.dir/build.make CMakeFiles/cmTC_da0cd.dir/build]
+  ignore line: [make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_da0cd.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_da0cd.dir/CMakeCCompilerABI.c.o   -c /home/elon/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_da0cd]
+  ignore line: [/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da0cd.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTC_da0cd.dir/CMakeCCompilerABI.c.o  -o cmTC_da0cd ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3ec2f' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccg2gzQI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_3ec2f /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_3ec2f.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_da0cd' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccjY4sZJ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_da0cd /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_da0cd.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccg2gzQI.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccjY4sZJ.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -108,7 +108,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_3ec2f] ==> ignore
+    arg [cmTC_da0cd] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -120,7 +120,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_3ec2f.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_da0cd.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -152,17 +152,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_57eec/fast"
-/usr/bin/make -f CMakeFiles/cmTC_57eec.dir/build.make CMakeFiles/cmTC_57eec.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_57eec.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_57eec.dir/feature_tests.c.o   -c /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_57eec
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57eec.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_57eec.dir/feature_tests.c.o  -o cmTC_57eec 
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_7e513/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7e513.dir/build.make CMakeFiles/cmTC_7e513.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7e513.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_7e513.dir/feature_tests.c.o   -c /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_7e513
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e513.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_7e513.dir/feature_tests.c.o  -o cmTC_7e513 
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -172,17 +172,17 @@ make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-bu
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_58974/fast"
-/usr/bin/make -f CMakeFiles/cmTC_58974.dir/build.make CMakeFiles/cmTC_58974.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_58974.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_58974.dir/feature_tests.c.o   -c /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_58974
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58974.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_58974.dir/feature_tests.c.o  -o cmTC_58974 
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_e5994/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e5994.dir/build.make CMakeFiles/cmTC_e5994.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e5994.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_e5994.dir/feature_tests.c.o   -c /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e5994
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5994.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_e5994.dir/feature_tests.c.o  -o cmTC_e5994 
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -192,17 +192,17 @@ make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-bu
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_92b1c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_92b1c.dir/build.make CMakeFiles/cmTC_92b1c.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_92b1c.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_92b1c.dir/feature_tests.c.o   -c /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.c
-Linking C executable cmTC_92b1c
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92b1c.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_92b1c.dir/feature_tests.c.o  -o cmTC_92b1c 
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b2cde/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b2cde.dir/build.make CMakeFiles/cmTC_b2cde.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2cde.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_b2cde.dir/feature_tests.c.o   -c /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b2cde
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2cde.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_b2cde.dir/feature_tests.c.o  -o cmTC_b2cde 
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -210,30 +210,30 @@ make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-bu
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e341d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e341d.dir/build.make CMakeFiles/cmTC_e341d.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e341d.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_e341d.dir/testCXXCompiler.cxx.o -c /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_e341d
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e341d.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_e341d.dir/testCXXCompiler.cxx.o  -o cmTC_e341d 
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b8992/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b8992.dir/build.make CMakeFiles/cmTC_b8992.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b8992.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_b8992.dir/testCXXCompiler.cxx.o -c /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_b8992
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8992.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_b8992.dir/testCXXCompiler.cxx.o  -o cmTC_b8992 
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f4218/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f4218.dir/build.make CMakeFiles/cmTC_f4218.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f4218.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_f4218.dir/CMakeCXXCompilerABI.cpp.o -c /home/dandan/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_f4218
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4218.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_f4218.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f4218 
+Run Build Command:"/usr/bin/make" "cmTC_d5bea/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d5bea.dir/build.make CMakeFiles/cmTC_d5bea.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d5bea.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_d5bea.dir/CMakeCXXCompilerABI.cpp.o -c /home/elon/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_d5bea
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5bea.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_d5bea.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d5bea 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper
@@ -243,23 +243,23 @@ Thread model: posix
 gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4218' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbrKtL0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f4218 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_f4218.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d5bea' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9SRQVM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d5bea /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d5bea.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f4218/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f4218.dir/build.make CMakeFiles/cmTC_f4218.dir/build]
-  ignore line: [make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_f4218.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_f4218.dir/CMakeCXXCompilerABI.cpp.o -c /home/dandan/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_f4218]
-  ignore line: [/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4218.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_f4218.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f4218 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d5bea/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d5bea.dir/build.make CMakeFiles/cmTC_d5bea.dir/build]
+  ignore line: [make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_d5bea.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_d5bea.dir/CMakeCXXCompilerABI.cpp.o -c /home/elon/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_d5bea]
+  ignore line: [/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5bea.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_d5bea.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_d5bea ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper]
@@ -269,13 +269,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.5) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/5/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4218' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbrKtL0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f4218 /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_f4218.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d5bea' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/5/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9SRQVM.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_d5bea /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5 -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/5/../../.. CMakeFiles/cmTC_d5bea.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/5/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccbrKtL0.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc9SRQVM.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -292,7 +292,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f4218] ==> ignore
+    arg [cmTC_d5bea] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/5/crtbegin.o] ==> ignore
@@ -304,7 +304,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/5/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5/../../..]
-    arg [CMakeFiles/cmTC_f4218.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_d5bea.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -334,17 +334,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c9188/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c9188.dir/build.make CMakeFiles/cmTC_c9188.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c9188.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_c9188.dir/feature_tests.cxx.o -c /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c9188
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9188.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_c9188.dir/feature_tests.cxx.o  -o cmTC_c9188 
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_99d37/fast"
+/usr/bin/make -f CMakeFiles/cmTC_99d37.dir/build.make CMakeFiles/cmTC_99d37.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_99d37.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_99d37.dir/feature_tests.cxx.o -c /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_99d37
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99d37.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_99d37.dir/feature_tests.cxx.o  -o cmTC_99d37 
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -407,17 +407,17 @@ make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-bu
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_78d1c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_78d1c.dir/build.make CMakeFiles/cmTC_78d1c.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_78d1c.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_78d1c.dir/feature_tests.cxx.o -c /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_78d1c
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78d1c.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_78d1c.dir/feature_tests.cxx.o  -o cmTC_78d1c 
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_b14ff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b14ff.dir/build.make CMakeFiles/cmTC_b14ff.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b14ff.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_b14ff.dir/feature_tests.cxx.o -c /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b14ff
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b14ff.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_b14ff.dir/feature_tests.cxx.o  -o cmTC_b14ff 
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -480,17 +480,17 @@ make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-bu
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_da391/fast"
-/usr/bin/make -f CMakeFiles/cmTC_da391.dir/build.make CMakeFiles/cmTC_da391.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_da391.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_da391.dir/feature_tests.cxx.o -c /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_da391
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da391.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_da391.dir/feature_tests.cxx.o  -o cmTC_da391 
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_fdec3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fdec3.dir/build.make CMakeFiles/cmTC_fdec3.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fdec3.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_fdec3.dir/feature_tests.cxx.o -c /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_fdec3
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdec3.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_fdec3.dir/feature_tests.cxx.o  -o cmTC_fdec3 
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -553,17 +553,17 @@ make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-bu
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e0ec7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e0ec7.dir/build.make CMakeFiles/cmTC_e0ec7.dir/build
-make[1]: Entering directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e0ec7.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_e0ec7.dir/feature_tests.cxx.o -c /home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e0ec7
-/home/dandan/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0ec7.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_e0ec7.dir/feature_tests.cxx.o  -o cmTC_e0ec7 
-make[1]: Leaving directory '/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_7ced6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7ced6.dir/build.make CMakeFiles/cmTC_7ced6.dir/build
+make[1]: Entering directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7ced6.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_7ced6.dir/feature_tests.cxx.o -c /home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7ced6
+/home/elon/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ced6.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_7ced6.dir/feature_tests.cxx.o  -o cmTC_7ced6 
+make[1]: Leaving directory '/home/elon/Desktop/Git/ReversiGame/server/cmake-build-debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

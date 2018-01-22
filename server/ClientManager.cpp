@@ -4,7 +4,7 @@
 //
 
 #include "ClientManager.h"
-#define MAX_THREADS 6
+#define MAX_THREADS 5
 static void* doCommand(void * ci);
 /**
  * ClientInfo holds a pointer to the commang manager
@@ -68,14 +68,6 @@ static void* doCommand(void *info) {
       if (command == "start") {
         GamesList *gamesList = GamesList::getInstance();
         if (gamesList->isGameExist(clientSocket)) {
-          GameInfo gi = gamesList->getGameBySocket1(clientSocket);
-            int startGame = 1;
-            ssize_t n = write(clientSocket, &startGame, sizeof(startGame));
-            if (n == -1) {
-                //cout << "Error writing message to client" << endl;
-                break;
-            }
-            // while (gi.isGameAvailable()) {/*Wait for other player to join.*/}
           break;
         }
       }

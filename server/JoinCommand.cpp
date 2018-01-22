@@ -33,7 +33,11 @@ void JoinCommand::execute(vector<string> *args, int clientSocket2) {
     } else {
       writeToClient(clientSocket2, 1);
     }
+    //notify player game
     setPlayer(clientSocket1,1);
+
+
+  setPlayer(clientSocket1,1);
     setPlayer(clientSocket2,1);
     handleClients(gamesList->getGame(numGame));
     ///

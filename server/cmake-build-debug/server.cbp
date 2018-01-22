@@ -90,12 +90,6 @@
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/ClientManager.h">
 			<Option target="server"/>
 		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.cpp">
-			<Option target="server"/>
-		</Unit>
-		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/CloseCommand.h">
-			<Option target="server"/>
-		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/Command.cpp">
 			<Option target="server"/>
 		</Unit>
@@ -142,6 +136,18 @@
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/StartCommand.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/Task.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/Task.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/ThreadPool.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/ThreadPool.h">
 			<Option target="server"/>
 		</Unit>
 		<Unit filename="/home/elon/Desktop/Git/ReversiGame/server/main.cpp">

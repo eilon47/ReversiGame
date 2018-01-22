@@ -6,19 +6,16 @@
 #include "Game.h"
 #include "GameMenu.h"
 int main() {
+  Display *d = new ConsoleDisplay;
   while(true) {
-    Display *d = new ConsoleDisplay;
     GameMenu gm(*d);
     Game *p;
     p = gm.showMenu();
-    if(p == NULL) {
-      delete d;
-        if (gm.toEndGAME()) {
-            break;
-        }
-        continue;
+    if(gm.toEndGAME()) {
+      break;
     }
     p->run();
-    delete d;
+    delete p;
   }
+  delete d;
 }

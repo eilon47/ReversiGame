@@ -12,7 +12,7 @@ pthread_mutex_t GamesList::lockAdd;
 int GamesList::addGame(GameInfo &gameInfo) {
     pthread_mutex_lock(&lockAdd);
     for(int i = 0; i < gi->size(); i++) {
-        if (gameInfo.getName() == this->getGame(i).getName()) {
+        if (gameInfo.getName() == this->getGame(i).getName() && this->getGame(i).isGameAvailable()) {
             return -1;
         }
     }
