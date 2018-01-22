@@ -96,6 +96,7 @@ Game* GameMenu::showMenu() {
 
     bool GameMenu::getInformationFromServer(string command) {
       char str[command.size()];
+        int check = 0;
       strcpy(str, command.c_str());
         //String of message
         istringstream iss(str);
@@ -108,6 +109,9 @@ Game* GameMenu::showMenu() {
             this->p1->setSign(XSIGN);
             this->p2->setSign(OSIGN);
             d->showMessage("waiting for other Player to connect...");
+              while (check != 1) {
+                  check = this->client->getNum();
+              }
             return true;
           }
           d->showMessage("Please enter valid name");

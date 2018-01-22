@@ -69,7 +69,13 @@ static void* doCommand(void *info) {
         GamesList *gamesList = GamesList::getInstance();
         if (gamesList->isGameExist(clientSocket)) {
           GameInfo gi = gamesList->getGameBySocket1(clientSocket);
-          while (gi.isGameAvailable()) {/*Wait for other player to join.*/}
+            int startGame = 1;
+            ssize_t n = write(clientSocket, &startGame, sizeof(startGame));
+            if (n == -1) {
+                //cout << "Error writing message to client" << endl;
+                break;
+            }
+            // while (gi.isGameAvailable()) {/*Wait for other player to join.*/}
           break;
         }
       }
