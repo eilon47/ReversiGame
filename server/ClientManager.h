@@ -13,6 +13,8 @@
 #include <vector>
 #include "CommandManager.h"
 #include "GamesList.h"
+#include "ThreadPool.h"
+
 using namespace std;
 
 class ClientManager {
@@ -37,7 +39,8 @@ public:
     ~ClientManager();
 private:
     CommandsManager *cm;
-    vector<pthread_t> *threads;
+    ThreadPool *tPool;
+
 };
 
 

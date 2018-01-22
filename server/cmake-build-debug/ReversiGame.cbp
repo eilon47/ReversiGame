@@ -138,6 +138,18 @@
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/server/StartCommand.h">
 			<Option target="server"/>
 		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/server/Task.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/server/Task.h">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/server/ThreadPool.cpp">
+			<Option target="server"/>
+		</Unit>
+		<Unit filename="/home/dandan/Desktop/git/ReversiGame/server/ThreadPool.h">
+			<Option target="server"/>
+		</Unit>
 		<Unit filename="/home/dandan/Desktop/git/ReversiGame/server/main.cpp">
 			<Option target="server"/>
 		</Unit>

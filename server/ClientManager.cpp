@@ -4,6 +4,7 @@
 //
 
 #include "ClientManager.h"
+#define MAX_THREADS 6
 static void* doCommand(void * ci);
 /**
  * ClientInfo holds a pointer to the commang manager
@@ -16,19 +17,17 @@ struct clientInfo {
 
 ClientManager::ClientManager() {
     this->cm = new CommandsManager();
-    this->threads = new vector<pthread_t>;
+    this->tPool = new ThreadPool(MAX_THREADS);
 }
 ClientManager::~ClientManager(){
   delete this->cm;
+    tPool->terminate();
 }
 void ClientManager::cancelAllThreads() {
   GamesList *gl = GamesList::getInstance();
   //GameList deletes games and closes all sockets from the game
   for(int i = 0 ; i < gl->getSizeOfList(); i++) {
     gl->deleteGame(gl->getGame(i));
-  }
-  for(int i = 0; i < this->threads->size(); i++){
-    pthread_cancel(threads->at(i));
   }
 }
 
@@ -80,14 +79,12 @@ void ClientManager::handleClient(int clientId) {
     clientInfo *ci = new clientInfo;
     ci->cm = this->cm;
     ci->cSocket = clientId;
-    pthread_t thread;
-    int rc = pthread_create(&thread, NULL, doCommand , (void *) ci);
-    if (rc) {
-        cout << "Error: unable to create thread, " << rc << endl;
-        exit(-1);
-    }
-    this->threads->push_back(thread);
+    Task  *t = new Task(doCommand, (void *) ci);
+    tPool->addTask(t);
+//    int rc = pthread_create(&thread, NULL, doCommand , (void *) ci);
+//    if (rc) {
+//        cout << "Error: unable to create thread, " << rc << endl;
+//        exit(-1);
+//    }
+//    this->threads->push_back(thread);
 }
-
-
-

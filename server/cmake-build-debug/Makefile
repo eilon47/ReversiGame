@@ -366,6 +366,60 @@ StartCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/StartCommand.cpp.s
 .PHONY : StartCommand.cpp.s
 
+Task.o: Task.cpp.o
+
+.PHONY : Task.o
+
+# target to build an object file
+Task.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Task.cpp.o
+.PHONY : Task.cpp.o
+
+Task.i: Task.cpp.i
+
+.PHONY : Task.i
+
+# target to preprocess a source file
+Task.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Task.cpp.i
+.PHONY : Task.cpp.i
+
+Task.s: Task.cpp.s
+
+.PHONY : Task.s
+
+# target to generate assembly for a file
+Task.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Task.cpp.s
+.PHONY : Task.cpp.s
+
+ThreadPool.o: ThreadPool.cpp.o
+
+.PHONY : ThreadPool.o
+
+# target to build an object file
+ThreadPool.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/ThreadPool.cpp.o
+.PHONY : ThreadPool.cpp.o
+
+ThreadPool.i: ThreadPool.cpp.i
+
+.PHONY : ThreadPool.i
+
+# target to preprocess a source file
+ThreadPool.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/ThreadPool.cpp.i
+.PHONY : ThreadPool.cpp.i
+
+ThreadPool.s: ThreadPool.cpp.s
+
+.PHONY : ThreadPool.s
+
+# target to generate assembly for a file
+ThreadPool.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/ThreadPool.cpp.s
+.PHONY : ThreadPool.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -429,6 +483,12 @@ help:
 	@echo "... StartCommand.o"
 	@echo "... StartCommand.i"
 	@echo "... StartCommand.s"
+	@echo "... Task.o"
+	@echo "... Task.i"
+	@echo "... Task.s"
+	@echo "... ThreadPool.o"
+	@echo "... ThreadPool.i"
+	@echo "... ThreadPool.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

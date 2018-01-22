@@ -16,9 +16,11 @@ struct ConnectingArgs {
   };
 using namespace std;
 
-Server::Server(int port): port(port), serverSocket(0), cm(new ClientManager) {}
+Server::Server(int port): port(port), serverSocket(0),
+                          cm(new ClientManager) {}
 
-Server::Server(): serverSocket(0), port(getPortFromFile(CLASS_PATH)), cm(new ClientManager){}
+Server::Server(): serverSocket(0), port(getPortFromFile(CLASS_PATH)),
+                  cm(new ClientManager){}
 
 Server::~Server() {
   delete  cm;
@@ -47,7 +49,6 @@ void Server::start() {
   ca->clientManager = cm;
   // Start listening to incoming connections
   listen(serverSocket, MAX_CONNECTED_CLIENTS);
-
   int rc = pthread_create(&serverThreadId, NULL, acceptClient , (void *) ca);
   if(rc){
     cout << "Error: unable to create thread, " << rc << endl;

@@ -22,6 +22,6 @@ set(SOURCE_FILES
         Server.cpp
         Server.h
         StartCommand.cpp
-        StartCommand.h)
+        StartCommand.h ThreadPool.cpp ThreadPool.h Task.cpp Task.h)
 
 add_executable(server ${SOURCE_FILES})

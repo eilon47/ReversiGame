@@ -19,7 +19,12 @@ Game* GameMenu::showMenu() {
     //Show menu with display and change the values of board rules and type.
     this->d->showMenu(type, rules, boardSize);
     if(type == 4) {
+        b = new Board();
         this->isQuit = true;
+        this->p1 = new HumanPlayer(XSIGN);
+        this->p2 = new HumanPlayer(OSIGN);
+        this->r = new RegularRules();
+        gtype = PvsP;
         return NULL;
     }
     //Creating the wanted game.
@@ -50,7 +55,7 @@ Game* GameMenu::showMenu() {
             try {
                 gtype = PvsRP;
                 string command;
-                client = new Client(*this->d);
+                client = new Client("127.0.0.1", 3124, *this->d);
                 this->p1 = new NetworkPlayer(*client);
                 this->p2 = new NetworkReadPlayer(*client);
                 while (true) {

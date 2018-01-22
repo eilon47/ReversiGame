@@ -297,6 +297,54 @@ CMakeFiles/server.dir/StartCommand.cpp.o.provides: CMakeFiles/server.dir/StartCo
 CMakeFiles/server.dir/StartCommand.cpp.o.provides.build: CMakeFiles/server.dir/StartCommand.cpp.o
 
 
+CMakeFiles/server.dir/ThreadPool.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/ThreadPool.cpp.o: ../ThreadPool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/server.dir/ThreadPool.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/ThreadPool.cpp.o -c /home/dandan/Desktop/git/ReversiGame/server/ThreadPool.cpp
+
+CMakeFiles/server.dir/ThreadPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/ThreadPool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dandan/Desktop/git/ReversiGame/server/ThreadPool.cpp > CMakeFiles/server.dir/ThreadPool.cpp.i
+
+CMakeFiles/server.dir/ThreadPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/ThreadPool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dandan/Desktop/git/ReversiGame/server/ThreadPool.cpp -o CMakeFiles/server.dir/ThreadPool.cpp.s
+
+CMakeFiles/server.dir/ThreadPool.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/ThreadPool.cpp.o.requires
+
+CMakeFiles/server.dir/ThreadPool.cpp.o.provides: CMakeFiles/server.dir/ThreadPool.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/ThreadPool.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/ThreadPool.cpp.o.provides
+
+CMakeFiles/server.dir/ThreadPool.cpp.o.provides.build: CMakeFiles/server.dir/ThreadPool.cpp.o
+
+
+CMakeFiles/server.dir/Task.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/Task.cpp.o: ../Task.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/server.dir/Task.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/Task.cpp.o -c /home/dandan/Desktop/git/ReversiGame/server/Task.cpp
+
+CMakeFiles/server.dir/Task.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/Task.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dandan/Desktop/git/ReversiGame/server/Task.cpp > CMakeFiles/server.dir/Task.cpp.i
+
+CMakeFiles/server.dir/Task.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/Task.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dandan/Desktop/git/ReversiGame/server/Task.cpp -o CMakeFiles/server.dir/Task.cpp.s
+
+CMakeFiles/server.dir/Task.cpp.o.requires:
+
+.PHONY : CMakeFiles/server.dir/Task.cpp.o.requires
+
+CMakeFiles/server.dir/Task.cpp.o.provides: CMakeFiles/server.dir/Task.cpp.o.requires
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/Task.cpp.o.provides.build
+.PHONY : CMakeFiles/server.dir/Task.cpp.o.provides
+
+CMakeFiles/server.dir/Task.cpp.o.provides.build: CMakeFiles/server.dir/Task.cpp.o
+
+
 # Object files for target server
 server_OBJECTS = \
 "CMakeFiles/server.dir/ClientManager.cpp.o" \
@@ -308,7 +356,9 @@ server_OBJECTS = \
 "CMakeFiles/server.dir/JoinCommand.cpp.o" \
 "CMakeFiles/server.dir/main.cpp.o" \
 "CMakeFiles/server.dir/Server.cpp.o" \
-"CMakeFiles/server.dir/StartCommand.cpp.o"
+"CMakeFiles/server.dir/StartCommand.cpp.o" \
+"CMakeFiles/server.dir/ThreadPool.cpp.o" \
+"CMakeFiles/server.dir/Task.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
@@ -323,9 +373,11 @@ server: CMakeFiles/server.dir/JoinCommand.cpp.o
 server: CMakeFiles/server.dir/main.cpp.o
 server: CMakeFiles/server.dir/Server.cpp.o
 server: CMakeFiles/server.dir/StartCommand.cpp.o
+server: CMakeFiles/server.dir/ThreadPool.cpp.o
+server: CMakeFiles/server.dir/Task.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -343,6 +395,8 @@ CMakeFiles/server.dir/requires: CMakeFiles/server.dir/JoinCommand.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/main.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/Server.cpp.o.requires
 CMakeFiles/server.dir/requires: CMakeFiles/server.dir/StartCommand.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/ThreadPool.cpp.o.requires
+CMakeFiles/server.dir/requires: CMakeFiles/server.dir/Task.cpp.o.requires
 
 .PHONY : CMakeFiles/server.dir/requires
 

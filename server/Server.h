@@ -14,6 +14,8 @@
 #include <unistd.h>
 #include <vector>
 #include "ClientManager.h"
+#include "ThreadPool.h"
+
 using namespace std;
 
 class Server {
@@ -47,7 +49,6 @@ public:
     pthread_t serverThreadId;
     int serverSocket; // the socket's file descriptor
     int getPortFromFile(string path);
-
 };
 
 #endif //SERVER_SERVER_H

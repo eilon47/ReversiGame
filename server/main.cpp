@@ -8,7 +8,7 @@
 using namespace std;
 int main() {
   try {
-    Server server;
+    Server server (3124);
     server.start();
       cout << "Enter exit to stop server" << endl;
       string str;

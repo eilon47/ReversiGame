@@ -27,6 +27,8 @@ CommandManager.h
 /home/dandan/Desktop/git/ReversiGame/server/CommandManager.h
 GamesList.h
 /home/dandan/Desktop/git/ReversiGame/server/GamesList.h
+ThreadPool.h
+/home/dandan/Desktop/git/ReversiGame/server/ThreadPool.h
 
 /home/dandan/Desktop/git/ReversiGame/server/Command.cpp
 Command.h
@@ -149,6 +151,8 @@ vector
 -
 ClientManager.h
 /home/dandan/Desktop/git/ReversiGame/server/ClientManager.h
+ThreadPool.h
+/home/dandan/Desktop/git/ReversiGame/server/ThreadPool.h
 
 /home/dandan/Desktop/git/ReversiGame/server/StartCommand.cpp
 StartCommand.h
@@ -165,6 +169,28 @@ GameInfo.h
 /home/dandan/Desktop/git/ReversiGame/server/GameInfo.h
 GamesList.h
 /home/dandan/Desktop/git/ReversiGame/server/GamesList.h
+
+/home/dandan/Desktop/git/ReversiGame/server/Task.cpp
+Task.h
+/home/dandan/Desktop/git/ReversiGame/server/Task.h
+
+/home/dandan/Desktop/git/ReversiGame/server/Task.h
+
+/home/dandan/Desktop/git/ReversiGame/server/ThreadPool.cpp
+ThreadPool.h
+/home/dandan/Desktop/git/ReversiGame/server/ThreadPool.h
+unistd.h
+-
+iostream
+-
+
+/home/dandan/Desktop/git/ReversiGame/server/ThreadPool.h
+Task.h
+/home/dandan/Desktop/git/ReversiGame/server/Task.h
+queue
+-
+pthread.h
+-
 
 /home/dandan/Desktop/git/ReversiGame/server/main.cpp
 cstdlib

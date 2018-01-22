@@ -11,6 +11,8 @@ CMakeFiles/server.dir/ClientManager.cpp.o
  /home/dandan/Desktop/git/ReversiGame/server/GamesListCommand.h
  /home/dandan/Desktop/git/ReversiGame/server/JoinCommand.h
  /home/dandan/Desktop/git/ReversiGame/server/StartCommand.h
+ /home/dandan/Desktop/git/ReversiGame/server/Task.h
+ /home/dandan/Desktop/git/ReversiGame/server/ThreadPool.h
 CMakeFiles/server.dir/Command.cpp.o
  /home/dandan/Desktop/git/ReversiGame/server/Command.cpp
  /home/dandan/Desktop/git/ReversiGame/server/Command.h
@@ -53,12 +55,21 @@ CMakeFiles/server.dir/Server.cpp.o
  /home/dandan/Desktop/git/ReversiGame/server/Server.cpp
  /home/dandan/Desktop/git/ReversiGame/server/Server.h
  /home/dandan/Desktop/git/ReversiGame/server/StartCommand.h
+ /home/dandan/Desktop/git/ReversiGame/server/Task.h
+ /home/dandan/Desktop/git/ReversiGame/server/ThreadPool.h
 CMakeFiles/server.dir/StartCommand.cpp.o
  /home/dandan/Desktop/git/ReversiGame/server/Command.h
  /home/dandan/Desktop/git/ReversiGame/server/GameInfo.h
  /home/dandan/Desktop/git/ReversiGame/server/GamesList.h
  /home/dandan/Desktop/git/ReversiGame/server/StartCommand.cpp
  /home/dandan/Desktop/git/ReversiGame/server/StartCommand.h
+CMakeFiles/server.dir/Task.cpp.o
+ /home/dandan/Desktop/git/ReversiGame/server/Task.cpp
+ /home/dandan/Desktop/git/ReversiGame/server/Task.h
+CMakeFiles/server.dir/ThreadPool.cpp.o
+ /home/dandan/Desktop/git/ReversiGame/server/Task.h
+ /home/dandan/Desktop/git/ReversiGame/server/ThreadPool.cpp
+ /home/dandan/Desktop/git/ReversiGame/server/ThreadPool.h
 CMakeFiles/server.dir/main.cpp.o
  /home/dandan/Desktop/git/ReversiGame/server/ClientManager.h
  /home/dandan/Desktop/git/ReversiGame/server/Command.h
@@ -69,4 +80,6 @@ CMakeFiles/server.dir/main.cpp.o
  /home/dandan/Desktop/git/ReversiGame/server/JoinCommand.h
  /home/dandan/Desktop/git/ReversiGame/server/Server.h
  /home/dandan/Desktop/git/ReversiGame/server/StartCommand.h
+ /home/dandan/Desktop/git/ReversiGame/server/Task.h
+ /home/dandan/Desktop/git/ReversiGame/server/ThreadPool.h
  /home/dandan/Desktop/git/ReversiGame/server/main.cpp

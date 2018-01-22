@@ -13,6 +13,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/dandan/Desktop/git/ReversiGame/server/JoinCommand.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/JoinCommand.cpp.o"
   "/home/dandan/Desktop/git/ReversiGame/server/Server.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/Server.cpp.o"
   "/home/dandan/Desktop/git/ReversiGame/server/StartCommand.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/StartCommand.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/Task.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/Task.cpp.o"
+  "/home/dandan/Desktop/git/ReversiGame/server/ThreadPool.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/ThreadPool.cpp.o"
   "/home/dandan/Desktop/git/ReversiGame/server/main.cpp" "/home/dandan/Desktop/git/ReversiGame/server/cmake-build-debug/CMakeFiles/server.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
